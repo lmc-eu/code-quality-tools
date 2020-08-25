@@ -1,0 +1,27 @@
+{
+  "name": "@lmc-eu/conventional-changelog-lmc-bitbucket",
+  "version": "1.0.0",
+  "description": "conventional-changelog LMC preset for BitBucket",
+  "keywords": [
+    "lmc",
+    "bitbucket",
+    "changelog",
+    "conventional-changelog",
+    "preset"
+  ],
+  "repository": "ssh://git@bitbucket.lmc.cz:7999/js/conventional-changelog-lmc-bitbucket.git",
+  "author": "Tomáš Litera <tomas.litera@lmc.eu>",
+  "license": "private",
+  "private": true,
+  "files": [
+    "src"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "compare-func": "^2.0.0",
+    "q": "^1.5.1"
+  },
+  "engines": {
+    "node": ">=4.x"
+  }
+}
