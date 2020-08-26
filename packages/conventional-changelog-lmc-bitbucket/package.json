@@ -11,8 +11,7 @@
   ],
   "repository": "ssh://git@bitbucket.lmc.cz:7999/js/conventional-changelog-lmc-bitbucket.git",
   "author": "Tomáš Litera <tomas.litera@lmc.eu>",
-  "license": "private",
-  "private": true,
+  "license": "MIT",
   "files": [
     "src"
   ],
