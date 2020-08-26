@@ -1,1 +1,30 @@
+# Dependencies
 node_modules
+
+# Local configuration
+/.env
+/.npmrc
+/local.mk
+
+# Generated files
+/.nvmrc
+/coverage
+/gh-pages
+
+# Garbage
+*.lerna_backup
+*.log
+*~
+*#
+.DS_Store
+.eslintcache
+
+# IDE stuff
+.netbeans
+nbproject
+.idea
+.node_history
+*.sublime-*
+*.atom-*
+.tern-*
+jsconfig.json
