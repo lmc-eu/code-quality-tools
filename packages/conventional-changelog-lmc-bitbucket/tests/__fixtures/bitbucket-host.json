@@ -1,0 +1,7 @@
+{
+  "version": "v2.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@any.bbucket.host:7999/proj/repo-name.git"
+  }
+}
