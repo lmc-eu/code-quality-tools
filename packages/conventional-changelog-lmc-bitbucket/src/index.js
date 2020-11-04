@@ -6,14 +6,21 @@ const { resolve } = require('path');
 const parserOpts = {
   headerPattern: /^([a-zA-Z]*-[0-9_]*)? ?([\w ]*)(?:\((.*)\))?: (.*)$/,
   headerCorrespondence: ['body', 'type', 'scope', 'subject'],
+  noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES'],
   revertPattern: /^revert:\s([\s\S]*?)\s*This reverts commit (\w*)\./,
   revertCorrespondence: ['header', 'hash'],
 };
 
 const writerOpts = {
-  transform: commit => {
-    const discard = true;
+  transform: (commit, context) => {
+    let discard = true;
     const issues = [];
+
+    commit.notes.forEach(function(note) {
+      note.title = 'BREAKING CHANGES';
+      discard = false;
+    });
+
     const transformedCommit = commit;
 
     if (commit.type === 'BREAKING CHANGE') {
@@ -50,6 +57,16 @@ const writerOpts = {
       transformedCommit.hash = commit.hash.substring(0, 7);
     }
 
+    const issueUrl = context.packageData.bugs && context.packageData.bugs.url;
+
+    if (typeof transformedCommit.subject === 'string') {
+      transformedCommit.subject = transformedCommit.subject.replace(/#([a-zA-Z0-9\-]+)/g, function(_, issue) {
+        issues.push(issue);
+
+        return formatIssue(issueUrl, issue);
+      });
+    }
+
     // remove references that already appear in the subject
     transformedCommit.references = commit.references.filter(reference => {
       if (issues.indexOf(reference.issue) === -1) {
@@ -57,7 +74,7 @@ const writerOpts = {
       }
 
       return false;
-    });
+    }).map((reference) => formatIssue(issueUrl, reference.issue)).join(', ');
 
     return transformedCommit;
   },
@@ -84,3 +101,17 @@ module.exports = Q.all([
     writerOpts,
   };
 });
+
+/**
+ * Formats issues using the issueURL as the prefix of the complete issue URL
+ * @param {string} issueUrl - if the issueURL is falsy, then the issue will be printed as-is. Otherwise, it will be printed as a link
+ * @param {string} issue - the issue reference (without the # in-front of it)
+ * @return {string} - Either the issue or a Markdown-formatted link to the issue.
+ */
+function formatIssue(issueUrl, issue) {
+  if (issueUrl) {
+    return '[#' + issue + '](' + issueUrl + '/' + issue + ')';
+  } else {
+    return '#' + issue;
+  }
+}

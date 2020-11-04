@@ -12,13 +12,32 @@
   "repository": "ssh://git@bitbucket.lmc.cz:7999/js/conventional-changelog-lmc-bitbucket.git",
   "author": "Tomáš Litera <tomas.litera@lmc.eu>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://jira.int.lmc.cz/browse"
+  },
   "files": [
     "src"
   ],
   "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "compare-func": "^2.0.0",
     "q": "^1.5.1"
+  },
+  "devDependencies": {
+    "better-than-before": "^1.0.0",
+    "conventional-changelog-core": "^4.2.0",
+    "git-dummy-commit": "^1.3.0",
+    "jest": "^26.4.2",
+    "jest-extended": "^0.11.5",
+    "shelljs": "^0.8.4",
+    "through2": "^4.0.2"
+  },
+  "jest": {
+    "setupFilesAfterEnv": ["jest-extended"],
+    "testTimeout": 30000
   },
   "engines": {
     "node": ">=4.x"
