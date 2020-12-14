@@ -55,6 +55,12 @@ betterThanBefore.setups([
     gitDummyCommit(['Revert \\"Feat: bad feature\\"', 'This reverts commit 12345.'], false);
     gitDummyCommit(['Revert: Feat: custom revert format', 'This reverts commit 5678.']);
   },
+  function() {
+    gitDummyCommit([
+      'Pull request #550: Deps: Update dependency eslint-config-prettier to v7',
+      'Merge in FP/fp-admin from dependencies/major-eslint to master'
+    ]);
+  },
 ]);
 
 describe('lmc bitbucket preset', function() {
@@ -93,6 +99,7 @@ describe('lmc bitbucket preset', function() {
         expect(chunk).not.toInclude('revert');
         expect(chunk).not.toInclude('***:**');
         expect(chunk).not.toInclude(': Not backward compatible.');
+        expect(chunk).not.toInclude('Pull request');
 
         expect(chunk).toEqual(expect.stringMatching(/oops \(\[[0-9a-z]{7}\]\(http:\/\/any.bbucket.host:7999\/projects\/proj\/repos\/repo-name\/commits\/[0-9a-z]{7}\)\)/)); // commit hash is linked
 
