@@ -1,7 +1,4 @@
 {
-  "devDependencies": {
-    "lerna": "^3.22.1"
-  },
   "name": "code-quality-tools",
   "version": "1.0.0",
   "description": "Monorepo aggregating various packages, generators, scripts and other goodies to make code look/work better",
@@ -9,5 +6,14 @@
   "author": "Tomáš Litera <tomas.litera@lmc.eu>",
   "license": "MIT",
   "private": true,
-  "workspaces": ["packages/*"]
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "test": "lerna run test",
+    "diff": "lerna diff",
+    "changed": "lerna changed",
+    "list": "lerna ls"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
 }
