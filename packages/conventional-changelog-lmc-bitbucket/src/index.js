@@ -57,6 +57,12 @@ const writerOpts = {
       transformedCommit.hash = commit.hash.substring(0, 7);
     }
 
+    // Remove port from host URI
+    if (typeof context.host === 'string') {
+      context.host = context.host.match(/(^https?:\/\/[a-z.-]*)/)[0];
+    }
+
+    // Take issue url from package.json
     const issueUrl = context.packageData.bugs && context.packageData.bugs.url;
 
     if (typeof transformedCommit.subject === 'string') {
