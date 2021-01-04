@@ -101,7 +101,7 @@ describe('lmc bitbucket preset', function() {
         expect(chunk).not.toInclude(': Not backward compatible.');
         expect(chunk).not.toInclude('Pull request');
 
-        expect(chunk).toEqual(expect.stringMatching(/oops \(\[[0-9a-z]{7}\]\(http:\/\/any.bbucket.host:7999\/projects\/proj\/repos\/repo-name\/commits\/[0-9a-z]{7}\)\)/)); // commit hash is linked
+        expect(chunk).toEqual(expect.stringMatching(/oops \(\[[0-9a-z]{7}\]\(http:\/\/any.bbucket.host\/projects\/proj\/repos\/repo-name\/commits\/[0-9a-z]{7}\)\)/)); // commit hash is linked
 
         done();
       }));
@@ -241,7 +241,7 @@ describe('lmc bitbucket preset', function() {
         expect(chunk).toInclude('some more features');
         expect(chunk).not.toInclude('BREAKING');
 
-        expect(chunk).toInclude('http://any.bbucket.host:7999/projects/proj/repos/repo-name/compare/diff?targetBranch' +
+        expect(chunk).toInclude('http://any.bbucket.host/projects/proj/repos/repo-name/compare/diff?targetBranch' +
           '=refs%2Ftags%2Fv1.0.0&sourceBranch=refs%2Ftags%2Fv2.0.0');
 
         i++;
