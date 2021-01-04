@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/conventional-changelog-lmc-bitbucket",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "conventional-changelog LMC preset for BitBucket",
   "keywords": [
     "lmc",
@@ -36,7 +36,9 @@
     "through2": "^4.0.2"
   },
   "jest": {
-    "setupFilesAfterEnv": ["jest-extended"],
+    "setupFilesAfterEnv": [
+      "jest-extended"
+    ],
     "testTimeout": 30000
   },
   "engines": {
