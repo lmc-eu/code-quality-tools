@@ -58,6 +58,7 @@ betterThanBefore.setups([
   function() {
     gitDummyCommit([
       'Pull request #550: Deps: Update dependency eslint-config-prettier to v7',
+      'FP-1174 FP-1135 Chore: Add comments to shell scripts',
       'Merge in FP/fp-admin from dependencies/major-eslint to master'
     ]);
   },
