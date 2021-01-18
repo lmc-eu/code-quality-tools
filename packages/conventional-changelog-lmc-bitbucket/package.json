@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/conventional-changelog-lmc-bitbucket",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "conventional-changelog LMC preset for BitBucket",
   "keywords": [
     "lmc",
