@@ -1,0 +1,23 @@
+{
+  "name": "prettier-config",
+  "version": "1.0.0",
+  "description": "LMC's configuration for Prettier",
+  "keywords": [
+    "prettier",
+    "lmc",
+    "config"
+  ],
+  "author": "Tomáš Litera <tomas.litera@lmc.eu>",
+  "license": "MIT",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@bitbucket.lmc.cz:7999/js/code-quality-tools.git"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
