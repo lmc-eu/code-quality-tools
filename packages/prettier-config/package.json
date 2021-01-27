@@ -1,7 +1,7 @@
 {
-  "name": "prettier-config",
+  "name": "@lmc-eu/prettier-config",
   "version": "1.0.0",
-  "description": "LMC's configuration for Prettier",
+  "description": "LMC's ESlint configuration for Prettier",
   "keywords": [
     "prettier",
     "lmc",
