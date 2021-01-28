@@ -1,0 +1,27 @@
+{
+  "name": "@lmc-eu/commitlint-config",
+  "version": "1.0.0",
+  "description": "LMC's configuration for commitlint",
+  "keywords": [
+    "commitlint",
+    "lmc",
+    "config"
+  ],
+  "author": "Tomáš Litera <tomas.litera@lmc.eu>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@bitbucket.lmc.cz:7999/js/code-quality-tools.git"
+  },
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "@commitlint/config-conventional": "^11.0.0",
+    "@lmc-eu/conventional-changelog-lmc-bitbucket": "^1.2.0"
+  }
+}
