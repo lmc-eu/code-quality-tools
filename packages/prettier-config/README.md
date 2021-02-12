@@ -35,9 +35,7 @@ Or you can of course choose your preffered way of using configs:
 <summary><i>.prettierrc</i> or <i>.prettierrc.json</i></summary>
 
 ```json
-{
-  "extends": ["@lmc-eu/prettier-config"]
-}
+"@lmc-eu/prettier-config"
 ```
 
 </details>
