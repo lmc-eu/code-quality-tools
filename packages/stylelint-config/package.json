@@ -1,0 +1,30 @@
+{
+  "name": "@lmc-eu/stylelint-config",
+  "version": "1.0.0",
+  "description": "LMC's config for stylelint",
+  "keywords": [
+    "stylelint",
+    "lmc",
+    "config"
+  ],
+  "author": "Tomáš Litera <tomas.litera@lmc.eu>",
+  "license": "MIT",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@bitbucket.lmc.cz:7999/js/code-quality-tools.git"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^13.12.0"
+  }
+}
