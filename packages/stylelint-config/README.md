@@ -14,6 +14,18 @@ npm install --save-dev @lmc-eu/stylelint-config
 
 > We assume you are using prettier.
 
+## Configurations
+
+### `@lmc-eu/stylelint-config`
+
+Use this ruleset to configure StyleLint to work with your code
+
+## Optional configurations
+
+### `@lmc-eu/stylelint-config/optional`
+
+Use this ruleset in conjunction with any of the above rulesets. Provides additional insights into potential inconsistencies in the project.
+
 ## Recommended stylelint config
 
 ```js
@@ -24,6 +36,7 @@ npm install --save-dev @lmc-eu/stylelint-config
 module.exports = {
   extends: [
     '@lmc-eu/stylelint-config',
+    '@lmc-eu/stylelint-config/optional',
     'stylelint-config-prettier',
   ],
 }
@@ -36,6 +49,7 @@ module.exports = {
 {
   "extends": [
     "@lmc-eu/stylelint-config",
+    "@lmc-eu/stylelint-config/optional",
     "stylelint-config-prettier"
   ]
 }
@@ -51,6 +65,7 @@ module.exports = {
   "stylelint": {
     "extends": [
       "@lmc-eu/stylelint-config",
+      "@lmc-eu/stylelint-config/optional",
       "stylelint-config-prettier"
     ]
   }
