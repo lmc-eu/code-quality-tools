@@ -125,7 +125,6 @@ module.exports = {
       }
     ],
     'at-rule-name-case': 'lower',
-    // 'color-no-hex': true, @TODO: should we support hex colors?
     'color-named': 'never',
     'comment-no-empty': true,
     'declaration-block-no-duplicate-properties': [
