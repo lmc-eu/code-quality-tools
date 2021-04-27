@@ -6,7 +6,6 @@ module.exports = {
   ],
   defaultSeverity: 'error',
   rules: {
-    'scss/partial-no-import': true,
     'block-no-empty': true,
     'string-no-newline': true,
     'string-quotes': 'single',
