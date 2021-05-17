@@ -4,5 +4,15 @@
   ],
   "version": "independent",
   "npmClient": "yarn",
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "command": {
+    "version": {
+      "push": false,
+      "message": "Chore: Release [CI-SKIP]",
+      "ignoreChanges": [
+        "test/**",
+        "yarn.lock"
+      ]
+    }
+  }
 }
