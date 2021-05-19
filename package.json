@@ -13,9 +13,12 @@
     "test": "lerna run test",
     "diff": "lerna diff",
     "changed": "lerna changed",
-    "list": "lerna ls"
+    "list": "lerna ls",
+    "commit:lint:test": "yarn commitlint --from HEAD~1 --to HEAD --verbose"
   },
   "devDependencies": {
+    "commitlint-cli": "^1.1.3",
+    "husky": "^6.0.0",
     "lerna": "^3.22.1"
   }
 }
