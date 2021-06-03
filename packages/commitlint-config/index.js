@@ -3,7 +3,7 @@ module.exports = {
   parserPreset: '@lmc-eu/conventional-changelog-lmc-bitbucket',
   ignores: [commit => commit.includes('[CI-SKIP]')],
   rules: {
-    'type-case': [2, 'always', 'pascal-case'],
+    'type-case': [1, 'always', 'pascal-case'],
     'type-enum': [
       2,
       'always',
