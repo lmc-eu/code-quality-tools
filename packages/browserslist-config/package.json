@@ -8,7 +8,7 @@
     "lmc"
   ],
   "author": "Adam Kudrna <adam.kudrna@lmc.eu>",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "main": "index.js",
   "publishConfig": {
     "access": "public"

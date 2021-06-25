@@ -7,7 +7,7 @@
     "url": "https://github.com/lmc-eu/code-quality-tools"
   },
   "author": "Tomáš Litera <tomas.litera@lmc.eu>",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "private": true,
   "workspaces": [
     "packages/*"

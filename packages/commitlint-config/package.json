@@ -8,7 +8,7 @@
     "config"
   ],
   "author": "Tomáš Litera <tomas.litera@lmc.eu>",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "https://github.com/lmc-eu/code-quality-tools",

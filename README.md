@@ -14,6 +14,14 @@ This monorepo contains shareable configurations for various coding-style/best pr
 | Prettier               | [@lmc-eu/prettier-config](packages/prettier-config)                                           | [![@lmc-eu/prettier-config][pc-badge]][pc-npm]                             |
 | Stylelint              | [@lmc-eu/stylelint-config](packages/stylelint-config)                                         | [![@lmc-eu/stylelint-config][slc-badge]][slc-npm]                          |
 
+## License
+
+See the [LICENSE](LICENSE) file for information.
+
+## Credit
+
+We got a lot of inspiration from similar project at [STRV][strv-github]. Thank you very much ❤️!
+
 [lmc-home]: https://www.lmc.eu
 [blc-npm]: https://npmjs.org/package/%40lmc-eu/browserslist-config
 [blc-badge]: https://img.shields.io/npm/v/%40lmc-eu/browserslist-config.svg?style=flat-square
@@ -25,3 +33,4 @@ This monorepo contains shareable configurations for various coding-style/best pr
 [clc-badge]: https://img.shields.io/npm/v/%40lmc-eu/commitlint-config.svg?style=flat-square
 [slc-npm]: https://www.npmjs.com/package/@lmc-eu/stylelint-config
 [slc-badge]: https://img.shields.io/npm/v/%40lmc-eu/stylelint-config.svg?style=flat-square
+[strv-github]: https://github.com/strvcom/code-quality-tools
