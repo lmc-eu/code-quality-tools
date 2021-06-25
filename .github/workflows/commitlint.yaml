@@ -1,16 +1,13 @@
----
 name: Commitlint
 on:
   push:
     branches-ignore:
-      - "master"
+      - main
 
 jobs:
   commitlint:
     runs-on: ubuntu-20.04
     timeout-minutes: 5
-    env:
-      CI: "true"
 
     steps:
       - uses: actions/checkout@v2
@@ -20,10 +17,11 @@ jobs:
         with:
           node-version: 14
 
-      - name: Fetch master
-        run: git fetch --no-tags --depth=50 origin master
+      - name: Fetch main
+        run: git fetch --no-tags --depth=50 origin main
 
-      - run: make install
+      - name: Install dependencies
+        run: make install
 
       - name: Commitlint
-        run: npx commitlint --color --verbose --from $(git merge-base origin/master HEAD)
+        run: npx commitlint --color --verbose --from $(git merge-base origin/main HEAD)
