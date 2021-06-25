@@ -14,7 +14,7 @@
     "url": "https://github.com/lmc-eu/conventional-changelog-lmc-bitbucket"
   },
   "author": "Tomáš Litera <tomas.litera@lmc.eu>",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://jira.int.lmc.cz/browse"
   },
