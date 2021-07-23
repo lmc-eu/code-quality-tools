@@ -1,0 +1,24 @@
+{
+  "name": "@lmc-eu/browserslist-config",
+  "version": "1.0.0",
+  "description": "LMC's config for Browserslist",
+  "keywords": [
+    "browserslist",
+    "browserslist-config",
+    "lmc"
+  ],
+  "author": "Adam Kudrna <adam.kudrna@lmc.eu>",
+  "license": "MIT",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lmc-eu/code-quality-tools",
+    "directory": "packages/browserslist-config"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}

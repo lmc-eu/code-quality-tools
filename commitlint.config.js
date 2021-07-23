@@ -6,10 +6,11 @@ module.exports = {
   ],
   rules: {
     'scope-enum': [1, 'always', [
+      'browserslist',
       'commitlint',
+      'conventional-changelog',
       'prettier',
       'stylelint',
-      'conventional-changelog'
     ]],
 
     'footer-max-line-length': [0],

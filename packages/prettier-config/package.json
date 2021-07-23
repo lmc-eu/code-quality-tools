@@ -15,7 +15,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@bitbucket.lmc.cz:7999/js/code-quality-tools.git"
+    "url": "https://github.com/lmc-eu/code-quality-tools",
+    "directory": "prettier-config"
   },
   "engines": {
     "node": ">=10"

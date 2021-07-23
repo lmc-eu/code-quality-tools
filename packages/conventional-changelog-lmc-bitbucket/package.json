@@ -9,7 +9,10 @@
     "conventional-changelog",
     "preset"
   ],
-  "repository": "ssh://git@bitbucket.lmc.cz:7999/js/conventional-changelog-lmc-bitbucket.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lmc-eu/conventional-changelog-lmc-bitbucket"
+  },
   "author": "Tomáš Litera <tomas.litera@lmc.eu>",
   "license": "MIT",
   "bugs": {
