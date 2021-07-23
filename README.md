@@ -1,19 +1,22 @@
 # Code Quality Tools
 
-> Build with ❤️ at [LMC][lmc-home]
+> Built with ❤️ at [LMC][lmc-home]
 
 This monorepo contains shareable configurations for various coding-style/best practices/lint tools to make the configurations consistent across projects and provide easy setup mechanism.
 
-## Available configurations
+## Available Configurations
 
-| Tool                   | Package                                                                                       | Version                                                                           | Description                              |
-| ---------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ---------------------------------------- |
-| Conventional Changelog | [@lmc-eu/conventional-changelog-lmc-bitbucket](packages/conventional-changelog-lmc-bitbucket) | [![@lmc-eu/conventional-changelog-lmc-bitbucket][cc-badge]][cc-npm]               | Configuration for Conventional Changelog |
-| Prettir Config | [@lmc-eu/prettier-config](packages/prettier-config) | [![@lmc-eu/prettier-config][pc-badge]][pc-npm]               | Configuration for Prettier |
-| Commitlint | [@lmc-eu/commitlint-config](packages/commitlint-config) | [![@lmc-eu/commitlint-config][clc-badge]][clc-npm]               | Configuration for Commitlint |
-| Stylelint | [@lmc-eu/stylelint-config](packages/stylelint-config) | [![@lmc-eu/stylelint-config][slc-badge]][slc-npm]               | Configuration for Stylelint |
+| Tool                   | Package                                                                                       | Version                                                                    |
+| ---------------------- | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Browserslist           | [@lmc-eu/browserslist-config](packages/browserslist-config)                                   | [![@lmc-eu/browserslist-config][blc-badge]][blc-npm]                       |
+| Commitlint             | [@lmc-eu/commitlint-config](packages/commitlint-config)                                       | [![@lmc-eu/commitlint-config][clc-badge]][clc-npm]                         |
+| Conventional Changelog | [@lmc-eu/conventional-changelog-lmc-bitbucket](packages/conventional-changelog-lmc-bitbucket) | [![@lmc-eu/conventional-changelog-lmc-bitbucket][cc-badge]][cc-npm]        |
+| Prettier               | [@lmc-eu/prettier-config](packages/prettier-config)                                           | [![@lmc-eu/prettier-config][pc-badge]][pc-npm]                             |
+| Stylelint              | [@lmc-eu/stylelint-config](packages/stylelint-config)                                         | [![@lmc-eu/stylelint-config][slc-badge]][slc-npm]                          |
 
 [lmc-home]: https://www.lmc.eu
+[blc-npm]: https://npmjs.org/package/%40lmc-eu/browserslist-config
+[blc-badge]: https://img.shields.io/npm/v/%40lmc-eu/browserslist-config.svg?style=flat-square
 [cc-npm]: https://npmjs.org/package/%40lmc-eu/conventional-changelog-lmc-bitbucket
 [cc-badge]: https://img.shields.io/npm/v/%40lmc-eu/conventional-changelog-lmc-bitbucket.svg?style=flat-square
 [pc-npm]: https://www.npmjs.com/package/@lmc-eu/prettier-config

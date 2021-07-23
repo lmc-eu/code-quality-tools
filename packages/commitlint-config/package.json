@@ -11,7 +11,8 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "ssh://git@bitbucket.lmc.cz:7999/js/code-quality-tools.git"
+    "url": "https://github.com/lmc-eu/code-quality-tools",
+    "directory": "packages/commitlint-config"
   },
   "main": "index.js",
   "publishConfig": {
