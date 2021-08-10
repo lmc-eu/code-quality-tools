@@ -1,0 +1,12 @@
+# Code owners for code-quality-tools
+# https://help.github.com/en/articles/about-code-owners
+
+* @lmc-eu/frontend-developers
+
+# Packages' owners
+
+/packages/browserslist-config                   @adamkudrna @lmc-eu/frontend-developers
+/packages/commitlint-config                     @literat @lmc-eu/frontend-developers
+/packages/conventional-changelog-lmc-bitbucket  @literat @lmc-eu/frontend-developers
+/packages/prettier-config                       @literat @lmc-eu/frontend-developers
+/packages/stylelint-config                      @literat @lmc-eu/frontend-developers
