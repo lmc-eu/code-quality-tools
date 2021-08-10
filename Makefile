@@ -14,7 +14,7 @@ ESLINT_FLAGS :=
 REMARK_FLAGS :=
 
 # Git hooks to be installed into the project workspace
-GITFILES := $(patsubst utils/githooks/%, .git/hooks/%, $(wildcard utils/githooks/*))
+# GITFILES := $(patsubst bin/githooks/%, .git/hooks/%, $(wildcard bin/githooks/*))
 
 # Since this is the first target, Make will do this when make is invoked without arguments
 all: install
@@ -44,7 +44,7 @@ pristine: clean
 	rm -rf node_modules packages/*/node_modules
 
 release:
-	@utils/make/release.sh
+	@bin/make/release.sh
 
 # GENERIC TARGETS
 
