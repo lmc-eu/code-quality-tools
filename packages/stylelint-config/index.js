@@ -28,7 +28,7 @@ module.exports = {
     'declaration-block-no-shorthand-property-overrides': true,
     'selector-pseudo-class-no-unknown': true,
     'selector-pseudo-element-no-unknown': true,
-    'selector-pseudo-element-colon-notation': 'single',
+    'selector-pseudo-element-colon-notation': 'double',
     'selector-type-no-unknown': true,
     'selector-max-class': 5,
     'selector-max-empty-lines': 0,
