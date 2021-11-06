@@ -16,7 +16,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/lmc-eu/code-quality-tools",
-    "directory": "stylelint-config"
+    "directory": "packages/stylelint-config"
   },
   "engines": {
     "node": ">=10"
