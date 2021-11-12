@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/stylelint-config",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "LMC's config for stylelint",
   "keywords": [
     "stylelint",
