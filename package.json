@@ -21,7 +21,7 @@
     "format": "yarn format:check",
     "format:check": "prettier --check ./",
     "format:fix": "prettier --write ./",
-    "lint": "eslint ./packages/*",
+    "lint": "eslint ./",
     "lint:fix": "yarn lint --fix"
   },
   "devDependencies": {

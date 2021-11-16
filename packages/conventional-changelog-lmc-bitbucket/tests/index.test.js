@@ -1,11 +1,14 @@
-let conventionalChangelogCore = require('conventional-changelog-core');
-let preset = require('../');
-let gitDummyCommit = require('git-dummy-commit');
-let shell = require('shelljs');
-let through = require('through2');
-let betterThanBefore = require('better-than-before')();
+/* eslint-disable no-plusplus */
+/* eslint-disable no-undef */
+const conventionalChangelogCore = require('conventional-changelog-core');
+const gitDummyCommit = require('git-dummy-commit');
+const shell = require('shelljs');
+const through = require('through2');
+const betterThanBefore = require('better-than-before')();
 const path = require('path');
-let preparing = betterThanBefore.preparing;
+const preset = require('..');
+
+const { preparing } = betterThanBefore;
 
 betterThanBefore.setups([
   function () {
@@ -64,8 +67,8 @@ betterThanBefore.setups([
   },
 ]);
 
-describe('lmc bitbucket preset', function () {
-  it('should work if there is no semver tag', function (done) {
+describe('lmc bitbucket preset', () => {
+  it('should work if there is no semver tag', (done) => {
     preparing(1);
 
     conventionalChangelogCore({
@@ -74,66 +77,58 @@ describe('lmc bitbucket preset', function () {
         path: path.join(__dirname, '/__fixtures/bitbucket-host.json'),
       },
     })
-      .on('error', function (err) {
+      .on('error', (err) => {
         done(err);
       })
-      .pipe(
-        through(function (chunk) {
-          chunk = chunk.toString();
+      .pipe(through((chunk) => {
+        stringifiedChunk = chunk.toString();
 
-          expect(chunk).toInclude('amazing new module');
-          expect(chunk).toInclude('**compile:** avoid a bug');
-          expect(chunk).toInclude('make it faster');
-          expect(chunk).toInclude(', closes #1, #2'); // Links are not created
-          expect(chunk).toInclude('Not backward compatible.');
-          expect(chunk).toInclude('**compile:** The Change is huge.');
-          expect(chunk).toInclude('Features');
-          expect(chunk).toInclude('Bug Fixes');
-          expect(chunk).toInclude('Performance Improvements');
-          expect(chunk).toInclude('Reverts');
-          expect(chunk).toInclude('bad commit');
-          expect(chunk).toInclude('BREAKING CHANGE');
+        expect(stringifiedChunk).toInclude('amazing new module');
+        expect(stringifiedChunk).toInclude('**compile:** avoid a bug');
+        expect(stringifiedChunk).toInclude('make it faster');
+        expect(stringifiedChunk).toInclude(', closes #1, #2'); // Links are not created
+        expect(stringifiedChunk).toInclude('Not backward compatible.');
+        expect(stringifiedChunk).toInclude('**compile:** The Change is huge.');
+        expect(stringifiedChunk).toInclude('Features');
+        expect(stringifiedChunk).toInclude('Bug Fixes');
+        expect(stringifiedChunk).toInclude('Performance Improvements');
+        expect(stringifiedChunk).toInclude('Reverts');
+        expect(stringifiedChunk).toInclude('bad commit');
+        expect(stringifiedChunk).toInclude('BREAKING CHANGE');
 
-          // expect(chunk).not.toInclude('first commit');
-          expect(chunk).not.toInclude('feat');
-          expect(chunk).not.toInclude('fix');
-          expect(chunk).not.toInclude('perf');
-          expect(chunk).not.toInclude('revert');
-          expect(chunk).not.toInclude('***:**');
-          expect(chunk).not.toInclude(': Not backward compatible.');
-          expect(chunk).not.toInclude('Pull request');
+        // expect(stringifiedChunk).not.toInclude('first commit');
+        expect(stringifiedChunk).not.toInclude('feat');
+        expect(stringifiedChunk).not.toInclude('fix');
+        expect(stringifiedChunk).not.toInclude('perf');
+        expect(stringifiedChunk).not.toInclude('revert');
+        expect(stringifiedChunk).not.toInclude('***:**');
+        expect(stringifiedChunk).not.toInclude(': Not backward compatible.');
+        expect(stringifiedChunk).not.toInclude('Pull request');
 
-          expect(chunk).toEqual(
-            expect.stringMatching(
-              /oops \(\[[0-9a-z]{7}\]\(http:\/\/any.bbucket.host\/projects\/proj\/repos\/repo-name\/commits\/[0-9a-z]{7}\)\)/,
-            ),
-          ); // commit hash is linked
+        expect(stringifiedChunk).toEqual(expect.stringMatching(/oops \(\[[0-9a-z]{7}\]\(http:\/\/any.bbucket.host\/projects\/proj\/repos\/repo-name\/commits\/[0-9a-z]{7}\)\)/)); // commit hash is linked
 
-          done();
-        }),
-      );
+        done();
+      }));
   });
 
-  it('should generate issue links if package.json has a bugs URL', function (done) {
+  it('should generate issue links if package.json has a bugs URL', (done) => {
     preparing(2);
 
     conventionalChangelogCore({
       config: preset,
       // Default package data (this repo!)
     })
-      .on('error', function (err) {
+      .on('error', (err) => {
         done(err);
       })
-      .pipe(
-        through(function (chunk) {
-          chunk = chunk.toString();
-          expect(chunk).toInclude('in [#133](https://jira.int.lmc.cz/browse/133)');
-          done();
-        }),
-      );
+      .pipe(through((chunk) => {
+        stringifiedChunk = chunk.toString();
+        expect(stringifiedChunk).toInclude('in [#133](https://jira.int.lmc.cz/browse/133)');
+        done();
+      }));
   });
 
-  it('should not generate issue links when package.json does NOT have a bugs URL', function (done) {
+  it('should not generate issue links when package.json does NOT have a bugs URL', (done) => {
     preparing(3);
 
     conventionalChangelogCore(
@@ -143,107 +138,97 @@ describe('lmc bitbucket preset', function () {
           path: path.join(__dirname, '/fixtures/bitbucket-host.json'),
         },
       },
-      {
-        packageData: {}, // Empty package data
-      },
-    )
-      .on('error', function (err) {
+    }, {
+      packageData: {}, // Empty package data
+    })
+      .on('error', (err) => {
         done(err);
       })
-      .pipe(
-        through(function (chunk) {
-          chunk = chunk.toString();
-          expect(chunk).toInclude('in #133');
-          done();
-        }),
-      );
+      .pipe(through((chunk) => {
+        stringifiedChunk = chunk.toString();
+        expect(stringifiedChunk).toInclude('in #133');
+        done();
+      }));
   });
 
-  it('should not generate issue refs in-the-footer when the issue(s) appear in the subject line (the issues remain in the subject line)', function (done) {
+  it('should not generate issue refs in-the-footer when the issue(s) appear in the subject line (the issues remain in the subject line)', (done) => {
     preparing(3);
 
     conventionalChangelogCore({
       config: preset,
       // Default package data (this repo!)
     })
-      .on('error', function (err) {
+      .on('error', (err) => {
         done(err);
       })
-      .pipe(
-        through(function (chunk) {
-          chunk = chunk.toString();
-          expect(chunk).toInclude('**awesome:** fix [#88](');
-          expect(chunk).toInclude('88) [#TR-55](');
-          expect(chunk).not.toInclude('closes [#88](');
-          done();
-        }),
-      );
+      .pipe(through((chunk) => {
+        stringifiedChunk = chunk.toString();
+        expect(stringifiedChunk).toInclude('**awesome:** fix [#88](');
+        expect(stringifiedChunk).toInclude('88) [#TR-55](');
+        expect(stringifiedChunk).not.toInclude('closes [#88](');
+        done();
+      }));
   });
 
-  it('should not replace @username with GitHub user URL as feature is not available on BitBucket', function (done) {
+  it('should not replace @username with GitHub user URL as feature is not available on BitBucket', (done) => {
     preparing(4);
 
     conventionalChangelogCore({
       config: preset,
     })
-      .on('error', function (err) {
+      .on('error', (err) => {
         done(err);
       })
-      .pipe(
-        through(function (chunk) {
-          chunk = chunk.toString();
-          expect(chunk).toInclude('issue brought up by @bcoe! on Friday');
-          done();
-        }),
-      );
+      .pipe(through((chunk) => {
+        stringifiedChunk = chunk.toString();
+        expect(stringifiedChunk).toInclude('issue brought up by @bcoe! on Friday');
+        done();
+      }));
   });
 
-  it('should not discard commit if there is BREAKING CHANGE', function (done) {
+  it('should not discard commit if there is BREAKING CHANGE', (done) => {
     preparing(5);
 
     conventionalChangelogCore({
       config: preset,
     })
-      .on('error', function (err) {
+      .on('error', (err) => {
         done(err);
       })
-      .pipe(
-        through(function (chunk) {
-          chunk = chunk.toString();
+      .pipe(through((chunk) => {
+        stringifiedChunk = chunk.toString();
 
-          expect(chunk).toInclude('Documentation');
-          expect(chunk).toInclude('Styles');
-          expect(chunk).toInclude('Code Refactoring');
-          expect(chunk).toInclude('Tests');
-          expect(chunk).toInclude('Chores');
+        expect(stringifiedChunk).toInclude('Documentation');
+        expect(stringifiedChunk).toInclude('Styles');
+        expect(stringifiedChunk).toInclude('Code Refactoring');
+        expect(stringifiedChunk).toInclude('Tests');
+        expect(stringifiedChunk).toInclude('Chores');
 
-          done();
-        }),
-      );
+        done();
+      }));
   });
 
-  it('should render BREAKING CHANGES the same as BREAKING CHANGE', function (done) {
+  it('should render BREAKING CHANGES the same as BREAKING CHANGE', (done) => {
     preparing(6);
 
     conventionalChangelogCore({
       config: preset,
     })
-      .on('error', function (err) {
+      .on('error', (err) => {
         done(err);
       })
-      .pipe(
-        through(function (chunk) {
-          chunk = chunk.toString();
+      .pipe(through((chunk) => {
+        stringifiedChunk = chunk.toString();
 
-          expect(chunk).toInclude('BREAKING CHANGE');
-          expect(chunk).toInclude('Also works :)');
+        expect(stringifiedChunk).toInclude('BREAKING CHANGE');
+        expect(stringifiedChunk).toInclude('Also works :)');
 
           done();
         }),
       );
   });
 
-  it('should work if there is a semver tag', function (done) {
+  it('should work if there is a semver tag', (done) => {
     preparing(7);
     let i = 0;
 
@@ -254,34 +239,27 @@ describe('lmc bitbucket preset', function () {
         path: path.join(__dirname, '/__fixtures/bitbucket-host.json'),
       },
     })
-      .on('error', function (err) {
+      .on('error', (err) => {
         done(err);
       })
-      .pipe(
-        through(
-          function (chunk, enc, cb) {
-            chunk = chunk.toString();
+      .pipe(through((chunk, enc, cb) => {
+        stringifiedChunk = chunk.toString();
 
-            expect(chunk).toInclude('some more features');
-            expect(chunk).not.toInclude('BREAKING');
+        expect(stringifiedChunk).toInclude('some more features');
+        expect(stringifiedChunk).not.toInclude('BREAKING');
 
-            expect(chunk).toInclude(
-              'http://any.bbucket.host/projects/proj/repos/repo-name/compare/diff?targetBranch' +
-                '=refs%2Ftags%2Fv1.0.0&sourceBranch=refs%2Ftags%2Fv2.0.0',
-            );
+        expect(stringifiedChunk).toInclude('http://any.bbucket.host/projects/proj/repos/repo-name/compare/diff?targetBranch'
+          + '=refs%2Ftags%2Fv1.0.0&sourceBranch=refs%2Ftags%2Fv2.0.0');
 
-            i++;
-            cb();
-          },
-          function () {
-            expect(i).toEqual(1);
-            done();
-          },
-        ),
-      );
+        i++;
+        cb();
+      }, () => {
+        expect(i).toEqual(1);
+        done();
+      }));
   });
 
-  it('should work with unknown host', function (done) {
+  it('should work with unknown host', (done) => {
     preparing(7);
     let i = 0;
 
@@ -291,29 +269,24 @@ describe('lmc bitbucket preset', function () {
         path: path.join(__dirname, '/__fixtures/_unknown-host.json'),
       },
     })
-      .on('error', function (err) {
+      .on('error', (err) => {
         done(err);
       })
-      .pipe(
-        through(
-          function (chunk, enc, cb) {
-            chunk = chunk.toString();
+      .pipe(through((chunk, enc, cb) => {
+        stringifiedChunk = chunk.toString();
 
-            expect(chunk).toInclude('(http://unknown/compare');
-            expect(chunk).toMatch(/some more features \(.*\)/); // No commit hash!
+        expect(stringifiedChunk).toInclude('(http://unknown/compare');
+        expect(stringifiedChunk).toMatch(/some more features \(.*\)/); // No commit hash!
 
-            i++;
-            cb();
-          },
-          function () {
-            expect(i).toEqual(1);
-            done();
-          },
-        ),
-      );
+        i++;
+        cb();
+      }, () => {
+        expect(i).toEqual(1);
+        done();
+      }));
   });
 
-  it('should always output the repo URL using http/https even when the repo URL in package.json is some other protocol', function (done) {
+  it('should always output the repo URL using http/https even when the repo URL in package.json is some other protocol', (done) => {
     preparing(8);
     let i = 0;
 
@@ -322,29 +295,22 @@ describe('lmc bitbucket preset', function () {
       pkg: {
         path: path.join(__dirname, '/__fixtures/bitbucket-http-host.json'),
       },
-    })
-      .on('error', done)
-      .pipe(
-        through(
-          function (chunk, enc, cb) {
-            chunk = chunk.toString();
+    }).on('error', done).pipe(through((chunk, enc, cb) => {
+      stringifiedChunk = chunk.toString();
 
-            expect(chunk).toInclude('https://bitbucket.example.com/projects/EX/repos/example-repo/compare/');
-            expect(chunk).toInclude('https://bitbucket.example.com/projects/EX/repos/example-repo/commits/');
-            expect(chunk).toMatch(/some more features \(.*\)/);
+      expect(stringifiedChunk).toInclude('https://bitbucket.example.com/projects/EX/repos/example-repo/compare/');
+      expect(stringifiedChunk).toInclude('https://bitbucket.example.com/projects/EX/repos/example-repo/commits/');
+      expect(stringifiedChunk).toMatch(/some more features \(.*\)/);
 
-            i++;
-            cb();
-          },
-          function () {
-            expect(i).toEqual(1);
-            done();
-          },
-        ),
-      );
+      i++;
+      cb();
+    }, () => {
+      expect(i).toEqual(1);
+      done();
+    }));
   });
 
-  it('should render multiple issues that are in the footer without links when package.json does NOT have a bugs URL', function (done) {
+  it('should render multiple issues that are in the footer without links when package.json does NOT have a bugs URL', (done) => {
     preparing(9);
 
     conventionalChangelogCore({
@@ -353,56 +319,51 @@ describe('lmc bitbucket preset', function () {
         path: path.join(__dirname, '/__fixtures/bitbucket-host.json'),
       },
     })
-      .on('error', function (err) {
+      .on('error', (err) => {
         done(err);
       })
-      .pipe(
-        through(function (chunk) {
-          chunk = chunk.toString();
-          expect(chunk).toInclude('closes #1223, #OBG-23');
-          done();
-        }),
-      );
+      .pipe(through((chunk) => {
+        stringifiedChunk = chunk.toString();
+        expect(stringifiedChunk).toInclude('closes #1223, #OBG-23');
+        done();
+      }));
   });
 
-  it.skip('should render multiple issues that are in the footer as links when package.json has a bugs URL', function (done) {
+  it.skip('should render multiple issues that are in the footer as links when package.json has a bugs URL', (done) => {
     preparing(9);
 
     conventionalChangelogCore({
       config: preset,
       // Default package data (this repo!)
     })
-      .on('error', function (err) {
+      .on('error', (err) => {
         done(err);
       })
-      .pipe(
-        through(function (chunk) {
-          chunk = chunk.toString();
-          console.log(chunk);
-          expect(chunk).toInclude('closes [#1223](');
-          expect(chunk).toInclude('1223), [#OBG-23]');
-          done();
-        }),
-      );
+      .pipe(through((chunk) => {
+        stringifiedChunk = chunk.toString();
+        // eslint-disable-next-line no-console
+        console.log(stringifiedChunk);
+        expect(stringifiedChunk).toInclude('closes [#1223](');
+        expect(stringifiedChunk).toInclude('1223), [#OBG-23]');
+        done();
+      }));
   });
 
-  it.skip('should render revert commit using standard Git revert message convention', function (done) {
+  it.skip('should render revert commit using standard Git revert message convention', (done) => {
     preparing(10);
 
     conventionalChangelogCore({
       config: preset,
       // Default package data (this repo!)
     })
-      .on('error', function (err) {
+      .on('error', (err) => {
         done(err);
       })
-      .pipe(
-        through(function (chunk) {
-          chunk = chunk.toString();
-          expect(chunk).toInclude('Feat: bad feature');
-          expect(chunk).toInclude('Feat: custom revert format');
-          done();
-        }),
-      );
+      .pipe(through((chunk) => {
+        stringifiedChunk = chunk.toString();
+        expect(stringifiedChunk).toInclude('Feat: bad feature');
+        expect(stringifiedChunk).toInclude('Feat: custom revert format');
+        done();
+      }));
   });
 });

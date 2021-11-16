@@ -1,15 +1,23 @@
-'use strict';
-
 module.exports = {
-  plugins: ['stylelint-order'],
+  plugins: [
+    'stylelint-order',
+  ],
   rules: {
     'order/properties-order': [
       {
-        properties: ['content', 'position'],
+        properties: [
+          'content',
+          'position',
+        ],
       },
       {
         order: 'flexible',
-        properties: ['top', 'right', 'bottom', 'left'],
+        properties: [
+          'top',
+          'right',
+          'bottom',
+          'left',
+        ],
       },
       {
         properties: [
@@ -31,15 +39,34 @@ module.exports = {
       },
       {
         order: 'flexible',
-        properties: ['padding', 'padding-top', 'padding-right', 'padding-bottom', 'padding-left'],
+        properties: [
+          'padding',
+          'padding-top',
+          'padding-right',
+          'padding-bottom',
+          'padding-left',
+        ],
       },
       {
         order: 'flexible',
-        properties: ['margin', 'margin-top', 'margin-right', 'margin-bottom', 'margin-left'],
+        properties: [
+          'margin',
+          'margin-top',
+          'margin-right',
+          'margin-bottom',
+          'margin-left',
+        ],
       },
       {
         order: 'flexible',
-        properties: ['font', 'font-family', 'font-style', 'font-size', 'font-weight', 'color'],
+        properties: [
+          'font',
+          'font-family',
+          'font-style',
+          'font-size',
+          'font-weight',
+          'color',
+        ],
       },
       {
         properties: [
@@ -53,7 +80,9 @@ module.exports = {
         ],
       },
       {
-        properties: ['color'],
+        properties: [
+          'color',
+        ],
       },
       {
         properties: [
@@ -74,11 +103,17 @@ module.exports = {
       },
       {
         order: 'flexible',
-        properties: ['border-radius', 'box-shadow', 'box-sizing'],
+        properties: [
+          'border-radius',
+          'box-shadow',
+          'box-sizing',
+        ],
       },
       {
         order: 'flexible',
-        properties: ['z-index'],
+        properties: [
+          'z-index',
+        ],
       },
     ],
   },
