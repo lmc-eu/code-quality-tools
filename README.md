@@ -6,13 +6,14 @@ This monorepo contains shareable configurations for various coding-style/best pr
 
 ## Available Configurations
 
-| Tool                   | Package                                                                                       | Version                                                             |
-| ---------------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| Browserslist           | [@lmc-eu/browserslist-config](packages/browserslist-config)                                   | [![@lmc-eu/browserslist-config][blc-badge]][blc-npm]                |
-| Commitlint             | [@lmc-eu/commitlint-config](packages/commitlint-config)                                       | [![@lmc-eu/commitlint-config][clc-badge]][clc-npm]                  |
-| Conventional Changelog | [@lmc-eu/conventional-changelog-lmc-bitbucket](packages/conventional-changelog-lmc-bitbucket) | [![@lmc-eu/conventional-changelog-lmc-bitbucket][cc-badge]][cc-npm] |
-| Prettier               | [@lmc-eu/prettier-config](packages/prettier-config)                                           | [![@lmc-eu/prettier-config][pc-badge]][pc-npm]                      |
-| Stylelint              | [@lmc-eu/stylelint-config](packages/stylelint-config)                                         | [![@lmc-eu/stylelint-config][slc-badge]][slc-npm]                   |
+| Tool                   | Package                                                                                       | Version                                                                    |
+| ---------------------- | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Browserslist           | [@lmc-eu/browserslist-config](packages/browserslist-config)                                   | [![@lmc-eu/browserslist-config][blc-badge]][blc-npm]                       |
+| Commitlint             | [@lmc-eu/commitlint-config](packages/commitlint-config)                                       | [![@lmc-eu/commitlint-config][clc-badge]][clc-npm]                         |
+| Conventional Changelog | [@lmc-eu/conventional-changelog-lmc-bitbucket](packages/conventional-changelog-lmc-bitbucket) | [![@lmc-eu/conventional-changelog-lmc-bitbucket][cc-badge]][cc-npm]        |
+| Prettier               | [@lmc-eu/prettier-config](packages/prettier-config)                                           | [![@lmc-eu/prettier-config][pc-badge]][pc-npm]                             |
+| Stylelint              | [@lmc-eu/stylelint-config](packages/stylelint-config)                                         | [![@lmc-eu/stylelint-config][slc-badge]][slc-npm]                          |
+| ESLint                 | [@lmc-eu/eslint-config-base](packages/eslint-config-base)                                     | [![@lmc-eu/eslint-config-base][slc-badge]][slc-npm]                          |
 
 ## License
 
@@ -33,4 +34,6 @@ We got a lot of inspiration from similar project at [STRV][strv-github]. Thank y
 [clc-badge]: https://img.shields.io/npm/v/%40lmc-eu/commitlint-config.svg?style=flat-square
 [slc-npm]: https://www.npmjs.com/package/@lmc-eu/stylelint-config
 [slc-badge]: https://img.shields.io/npm/v/%40lmc-eu/stylelint-config.svg?style=flat-square
+[ec-base-npm]: https://www.npmjs.com/package/@lmc-eu/eslint-config-base
+[ec-base-badge]: https://img.shields.io/npm/v/%40lmc-eu/eslint-config-base.svg?style=flat-square
 [strv-github]: https://github.com/strvcom/code-quality-tools
