@@ -1,0 +1,27 @@
+name: Commitlint
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-20.04
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 50
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Fetch main
+        run: git fetch --no-tags --depth=50 origin main
+
+      - name: Install dependencies
+        run: make install
+
+      - name: Lint
+        run: yarn lint
