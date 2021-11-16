@@ -3,6 +3,21 @@ const Q = require('q');
 const readFile = Q.denodeify(require('fs').readFile);
 const { resolve } = require('path');
 
+/**
+ * Formats issues using the issueURL as the prefix of the complete issue URL
+ * @param {string} issueUrl - if the issueURL is falsy, then the issue will be printed as-is.
+ *                            Otherwise, it will be printed as a link
+ * @param {string} issue - the issue reference (without the # in-front of it)
+ * @return {string} - Either the issue or a Markdown-formatted link to the issue.
+ */
+function formatIssue(issueUrl, issue) {
+  if (issueUrl) {
+    return `[#${issue}](${issueUrl}/${issue})`;
+  }
+
+  return `#${issue}`;
+}
+
 const parserOpts = {
   headerPattern: /^(?:Pull request #[0-9]+: )?(?:([a-zA-Z]*-[0-9_]*)(?: ))* ?([\w ]*)(?:\((.*)\))?: (.*)$/,
   headerCorrespondence: ['body', 'type', 'scope', 'subject'],
@@ -16,7 +31,8 @@ const writerOpts = {
     let discard = true;
     const issues = [];
 
-    commit.notes.forEach(function (note) {
+    commit.notes.forEach((note) => {
+      // eslint-disable-next-line no-param-reassign
       note.title = 'BREAKING CHANGES';
       discard = false;
     });
@@ -59,6 +75,7 @@ const writerOpts = {
 
     // Remove port from host URI
     if (typeof context.host === 'string') {
+      // eslint-disable-next-line no-param-reassign, prefer-destructuring
       context.host = context.host.match(/(^https?:\/\/[a-z.-]*)/)[0];
     }
 
@@ -66,7 +83,7 @@ const writerOpts = {
     const issueUrl = context.packageData.bugs && context.packageData.bugs.url;
 
     if (typeof transformedCommit.subject === 'string') {
-      transformedCommit.subject = transformedCommit.subject.replace(/#([a-zA-Z0-9\-]+)/g, function (_, issue) {
+      transformedCommit.subject = transformedCommit.subject.replace(/#([a-zA-Z0-9-]+)/g, (_, issue) => {
         issues.push(issue);
 
         return formatIssue(issueUrl, issue);
@@ -74,17 +91,15 @@ const writerOpts = {
     }
 
     // remove references that already appear in the subject
-    transformedCommit.references = commit.references
-      .filter((reference) => {
-        if (issues.indexOf(reference.issue) === -1) {
-          return true;
-        }
+    transformedCommit.references = commit.references.filter((reference) => {
+      if (issues.indexOf(reference.issue) === -1) {
+        return true;
+      }
 
-        return false;
-      })
-      .map((reference) => formatIssue(issueUrl, reference.issue))
-      .join(', ');
+      return false;
+    }).map((reference) => formatIssue(issueUrl, reference.issue)).join(', ');
 
+    // eslint-disable-next-line consistent-return
     return transformedCommit;
   },
   groupBy: 'type',
@@ -110,17 +125,3 @@ module.exports = Q.all([
     writerOpts,
   };
 });
-
-/**
- * Formats issues using the issueURL as the prefix of the complete issue URL
- * @param {string} issueUrl - if the issueURL is falsy, then the issue will be printed as-is. Otherwise, it will be printed as a link
- * @param {string} issue - the issue reference (without the # in-front of it)
- * @return {string} - Either the issue or a Markdown-formatted link to the issue.
- */
-function formatIssue(issueUrl, issue) {
-  if (issueUrl) {
-    return '[#' + issue + '](' + issueUrl + '/' + issue + ')';
-  } else {
-    return '#' + issue;
-  }
-}

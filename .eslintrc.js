@@ -1,4 +1,3 @@
-'use strict'
 
 module.exports = {
 
@@ -11,6 +10,7 @@ module.exports = {
 
   extends: [
     './packages/eslint-config-base',
+    './packages/eslint-config-base/optional',
   ],
 
-}
+};
