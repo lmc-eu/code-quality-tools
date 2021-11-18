@@ -1,0 +1,35 @@
+{
+  "name": "@lmc-eu/eslint-config-graphql",
+  "description": "LMC's ESLint config for javascript applications that use GraphQL and Apollo client.",
+  "version": "0.1.0",
+  "author": "Tomas Litera <tomas.litera@lmc.eu>",
+  "keywords": [
+    "config",
+    "eslint",
+    "preset",
+    "lmc",
+    "graphql"
+  ],
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lmc-eu/code-quality-tools.git",
+    "directory": "packages/eslint-config-graphql"
+  },
+  "bugs": {
+    "url": "https://github.com/lmc-eu/code-quality-tools/issues"
+  },
+  "engines": {
+    "node": "^14 || >=16"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "eslint-plugin-graphql": "^4.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8"
+  }
+}
