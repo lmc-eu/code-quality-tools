@@ -7,11 +7,13 @@
 ### Installation
 
 NPM:
+
 ```
 npm i --dev @commitlint/cli @commitlint/config-conventional @lmc-eu/conventional-changelog-lmc-bitbucket
 ```
 
 Yarn:
+
 ```
 yarn add --dev @commitlint/cli @commitlint/config-conventional @lmc-eu/conventional-changelog-lmc-bitbucket
 ```
@@ -23,7 +25,7 @@ yarn add --dev @commitlint/cli @commitlint/config-conventional @lmc-eu/conventio
 Create a _commitlint.config.js_ file with the following contents:
 
 ```javascript
-'use strict'
+'use strict';
 
 module.exports = {
   extends: ['@commitlint/config-conventional'],
@@ -39,7 +41,7 @@ In a _package.json_ define following scripts:
 {
   "scripts": {
     "changelog": "conventional-changelog -p lmc-bitbucket -i CHANGELOG.md -s",
-    "changelog:origin": "conventional-changelog -p lmc-bitbucket -i CHANGELOG.md -s -r 0",
+    "changelog:origin": "conventional-changelog -p lmc-bitbucket -i CHANGELOG.md -s -r 0"
   }
 }
 ```

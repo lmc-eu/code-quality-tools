@@ -16,7 +16,7 @@ const writerOpts = {
     let discard = true;
     const issues = [];
 
-    commit.notes.forEach(function(note) {
+    commit.notes.forEach(function (note) {
       note.title = 'BREAKING CHANGES';
       discard = false;
     });
@@ -66,7 +66,7 @@ const writerOpts = {
     const issueUrl = context.packageData.bugs && context.packageData.bugs.url;
 
     if (typeof transformedCommit.subject === 'string') {
-      transformedCommit.subject = transformedCommit.subject.replace(/#([a-zA-Z0-9\-]+)/g, function(_, issue) {
+      transformedCommit.subject = transformedCommit.subject.replace(/#([a-zA-Z0-9\-]+)/g, function (_, issue) {
         issues.push(issue);
 
         return formatIssue(issueUrl, issue);
@@ -74,13 +74,16 @@ const writerOpts = {
     }
 
     // remove references that already appear in the subject
-    transformedCommit.references = commit.references.filter(reference => {
-      if (issues.indexOf(reference.issue) === -1) {
-        return true;
-      }
+    transformedCommit.references = commit.references
+      .filter((reference) => {
+        if (issues.indexOf(reference.issue) === -1) {
+          return true;
+        }
 
-      return false;
-    }).map((reference) => formatIssue(issueUrl, reference.issue)).join(', ');
+        return false;
+      })
+      .map((reference) => formatIssue(issueUrl, reference.issue))
+      .join(', ');
 
     return transformedCommit;
   },

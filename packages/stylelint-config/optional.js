@@ -1,28 +1,18 @@
-'use strict'
+'use strict';
 
 module.exports = {
-  plugins: [
-    'stylelint-order'
-  ],
+  plugins: ['stylelint-order'],
   rules: {
     'order/properties-order': [
       {
-        'properties': [
-          'content',
-          'position'
-        ]
+        properties: ['content', 'position'],
       },
       {
-        'order': 'flexible',
-        'properties': [
-          'top',
-          'right',
-          'bottom',
-          'left'
-        ]
+        order: 'flexible',
+        properties: ['top', 'right', 'bottom', 'left'],
       },
       {
-        'properties': [
+        properties: [
           'display',
           'flexbox',
           'grid',
@@ -36,58 +26,37 @@ module.exports = {
           'max-width',
           'height',
           'min-height',
-          'max-height'
-        ]
+          'max-height',
+        ],
       },
       {
-        'order': 'flexible',
-        'properties': [
-          'padding',
-          'padding-top',
-          'padding-right',
-          'padding-bottom',
-          'padding-left'
-        ]
+        order: 'flexible',
+        properties: ['padding', 'padding-top', 'padding-right', 'padding-bottom', 'padding-left'],
       },
       {
-        'order': 'flexible',
-        'properties': [
-          'margin',
-          'margin-top',
-          'margin-right',
-          'margin-bottom',
-          'margin-left'
-        ]
+        order: 'flexible',
+        properties: ['margin', 'margin-top', 'margin-right', 'margin-bottom', 'margin-left'],
       },
       {
-        'order': 'flexible',
-        'properties': [
-          'font',
-          'font-family',
-          'font-style',
-          'font-size',
-          'font-weight',
-          'color'
-        ]
+        order: 'flexible',
+        properties: ['font', 'font-family', 'font-style', 'font-size', 'font-weight', 'color'],
       },
       {
-        'properties': [
+        properties: [
           'text-align',
           'text-transform',
           'text-decoration',
           'text-indent',
           'line-height',
           'list-style',
-          'vertical-align'
-        ]
+          'vertical-align',
+        ],
       },
       {
-        'properties': [
-          'color'
-        ]
+        properties: ['color'],
       },
       {
-        'properties': [
+        properties: [
           'background',
           'background-image',
           'background-color',
@@ -100,23 +69,17 @@ module.exports = {
           'border-left',
           'border-right',
           'border-top',
-          'border-bottom'
-        ]
+          'border-bottom',
+        ],
       },
       {
-        'order': 'flexible',
-        'properties': [
-          'border-radius',
-          'box-shadow',
-          'box-sizing'
-        ]
+        order: 'flexible',
+        properties: ['border-radius', 'box-shadow', 'box-sizing'],
       },
       {
-        'order': 'flexible',
-        'properties': [
-          'z-index'
-        ]
-      }
+        order: 'flexible',
+        properties: ['z-index'],
+      },
     ],
-  }
-}
+  },
+};

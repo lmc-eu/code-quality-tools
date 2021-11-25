@@ -1,7 +1,5 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
@@ -9,10 +7,7 @@
     "version": {
       "push": false,
       "message": "Chore: Release [CI-SKIP]",
-      "ignoreChanges": [
-        "test/**",
-        "yarn.lock"
-      ]
+      "ignoreChanges": ["test/**", "yarn.lock"]
     }
   }
 }
