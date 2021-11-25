@@ -18,5 +18,5 @@ module.exports = {
     // except template literals - allows any whitespace characters in template literals
     // https://eslint.org/docs/rules/no-irregular-whitespace
     'no-irregular-whitespace': ['error', { skipTemplates: true }],
-  }
+  },
 };

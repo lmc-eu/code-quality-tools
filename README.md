@@ -6,14 +6,14 @@ This monorepo contains shareable configurations for various coding-style/best pr
 
 ## Available Configurations
 
-| Tool                   | Package                                                                                       | Version                                                                    |
-| ---------------------- | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| Browserslist           | [@lmc-eu/browserslist-config](packages/browserslist-config)                                   | [![@lmc-eu/browserslist-config][blc-badge]][blc-npm]                       |
-| Commitlint             | [@lmc-eu/commitlint-config](packages/commitlint-config)                                       | [![@lmc-eu/commitlint-config][clc-badge]][clc-npm]                         |
-| Conventional Changelog | [@lmc-eu/conventional-changelog-lmc-bitbucket](packages/conventional-changelog-lmc-bitbucket) | [![@lmc-eu/conventional-changelog-lmc-bitbucket][cc-badge]][cc-npm]        |
-| Prettier               | [@lmc-eu/prettier-config](packages/prettier-config)                                           | [![@lmc-eu/prettier-config][pc-badge]][pc-npm]                             |
-| Stylelint              | [@lmc-eu/stylelint-config](packages/stylelint-config)                                         | [![@lmc-eu/stylelint-config][slc-badge]][slc-npm]                          |
-| ESLint                 | [@lmc-eu/eslint-config-base](packages/eslint-config-base)                                     | [![@lmc-eu/eslint-config-base][slc-badge]][slc-npm]                          |
+| Tool                   | Package                                                                                       | Version                                                             |
+| ---------------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| Browserslist           | [@lmc-eu/browserslist-config](packages/browserslist-config)                                   | [![@lmc-eu/browserslist-config][blc-badge]][blc-npm]                |
+| Commitlint             | [@lmc-eu/commitlint-config](packages/commitlint-config)                                       | [![@lmc-eu/commitlint-config][clc-badge]][clc-npm]                  |
+| Conventional Changelog | [@lmc-eu/conventional-changelog-lmc-bitbucket](packages/conventional-changelog-lmc-bitbucket) | [![@lmc-eu/conventional-changelog-lmc-bitbucket][cc-badge]][cc-npm] |
+| Prettier               | [@lmc-eu/prettier-config](packages/prettier-config)                                           | [![@lmc-eu/prettier-config][pc-badge]][pc-npm]                      |
+| Stylelint              | [@lmc-eu/stylelint-config](packages/stylelint-config)                                         | [![@lmc-eu/stylelint-config][slc-badge]][slc-npm]                   |
+| ESLint                 | [@lmc-eu/eslint-config-base](packages/eslint-config-base)                                     | [![@lmc-eu/eslint-config-base][slc-badge]][slc-npm]                 |
 
 ## License
 

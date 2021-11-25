@@ -8,7 +8,6 @@ These rules are meant to be shared across all ESLint rulesets.
 >
 > See [@lmc-eu/code-quality-tools][cqt-home] for a full showdown of available rulesets.
 
-
 ## Configurations
 
 ### `@lmc-eu/eslint-config-base`
@@ -34,14 +33,11 @@ This entry point only errors on whitespace rules and sets all other rules to war
 ```js
 // .eslintrc.js
 
-'use strict'
+'use strict';
 
 module.exports = {
-  extends: [
-    '@lmc-eu/eslint-config-base',
-    '@lmc-eu/eslint-config-base/optional',
-  ],
-}
+  extends: ['@lmc-eu/eslint-config-base', '@lmc-eu/eslint-config-base/optional'],
+};
 ```
 
 <details>
@@ -49,10 +45,7 @@ module.exports = {
 
 ```json
 {
-  "extends": [
-    "@lmc-eu/eslint-config-base",
-    "@lmc-eu/eslint-config-base/optional",
-  ]
+  "extends": ["@lmc-eu/eslint-config-base", "@lmc-eu/eslint-config-base/optional"]
 }
 ```
 
@@ -64,10 +57,7 @@ module.exports = {
 ```json
 {
   "eslintConfig": {
-    "extends": [
-      "@lmc-eu/eslint-config-base",
-      "@lmc-eu/eslint-config-base/optional",
-    ]
+    "extends": ["@lmc-eu/eslint-config-base", "@lmc-eu/eslint-config-base/optional"]
   }
 }
 ```

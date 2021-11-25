@@ -1,42 +1,17 @@
 module.exports = {
   // Test files patterns
-  tests: [
-    'test/**',
-    '**/*.test.*',
-    '**/*.spec.*',
-  ],
+  tests: ['test/**', '**/*.test.*', '**/*.spec.*'],
 
   // Configuration files patterns
-  configs: [
-    '*config.*',
-    '**/config/**',
-    '**/configuration/**',
-  ],
+  configs: ['*config.*', '**/config/**', '**/configuration/**'],
 
-  javascripts: [
-    '*.js',
-    '.*.js',
-    '*.cjs',
-    '.*.cjs',
-  ],
+  javascripts: ['*.js', '.*.js', '*.cjs', '.*.cjs'],
 
-  esmodules: [
-    '*.mjs',
-    '.*.mjs',
-  ],
+  esmodules: ['*.mjs', '.*.mjs'],
 
-  typescripts: [
-    '*.ts',
-    '.*.ts',
-    '*.tsx',
-    '.*.tsx',
-  ],
+  typescripts: ['*.ts', '.*.ts', '*.tsx', '.*.tsx'],
 
-  storybook: [
-    '*.stories.{js,jsx,ts,tsx}',
-  ],
+  storybook: ['*.stories.{js,jsx,ts,tsx}'],
 
-  nextJs: [
-    'pages/**/*.{js,jsx,ts,tsx}', '*/pages/**/*.{js,jsx,ts,tsx}',
-  ],
+  nextJs: ['pages/**/*.{js,jsx,ts,tsx}', '*/pages/**/*.{js,jsx,ts,tsx}'],
 };

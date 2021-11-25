@@ -12,5 +12,5 @@ module.exports = {
     // Disallow duplicate module imports
     // https://eslint.org/docs/rules/no-duplicate-imports
     'no-duplicate-imports': 'warn', // airbnb off
-  }
+  },
 };
