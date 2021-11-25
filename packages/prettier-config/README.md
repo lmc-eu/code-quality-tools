@@ -15,7 +15,7 @@ npm install --save-dev @lmc-eu/prettier-config
 And reference it in your _.prettierrc.js_ file:
 
 ```js
-module.exports = require('@lmc-eu/prettier-config')
+module.exports = require('@lmc-eu/prettier-config');
 ```
 
 Or you can of course choose your preffered way of using configs:
@@ -52,7 +52,7 @@ module.exports = {
 
   // Add custom options bellow:
   useTabs: true,
-}
+};
 ```
 
 ## Notes
@@ -64,7 +64,7 @@ Versions of `prettier` prior to v1.17 did not feature the possibility to use a s
 ```js
 // .prettierrc.js
 
-module.exports = require('@lmc-eu/prettier-config')
+module.exports = require('@lmc-eu/prettier-config');
 ```
 
 ## More

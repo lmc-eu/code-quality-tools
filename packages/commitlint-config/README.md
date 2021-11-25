@@ -21,13 +21,11 @@ npm i --dev @commitlint/cli @lmc-eu/commitlint-config
 Create a _commitlint.config.js_ file with the following contents:
 
 ```js
-'use strict'
+'use strict';
 
 module.exports = {
-  extends: [
-    '@lmc-eu/commitlint-config',
-  ],
-}
+  extends: ['@lmc-eu/commitlint-config'],
+};
 ```
 
 ### Linting

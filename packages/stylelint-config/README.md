@@ -31,15 +31,11 @@ Use this ruleset in conjunction with any of the above rulesets. Provides additio
 ```js
 // .stylelintrc.js
 
-'use strict'
+'use strict';
 
 module.exports = {
-  extends: [
-    '@lmc-eu/stylelint-config',
-    '@lmc-eu/stylelint-config/optional',
-    'stylelint-config-prettier',
-  ],
-}
+  extends: ['@lmc-eu/stylelint-config', '@lmc-eu/stylelint-config/optional', 'stylelint-config-prettier'],
+};
 ```
 
 <details>
@@ -47,11 +43,7 @@ module.exports = {
 
 ```json
 {
-  "extends": [
-    "@lmc-eu/stylelint-config",
-    "@lmc-eu/stylelint-config/optional",
-    "stylelint-config-prettier"
-  ]
+  "extends": ["@lmc-eu/stylelint-config", "@lmc-eu/stylelint-config/optional", "stylelint-config-prettier"]
 }
 ```
 
@@ -63,11 +55,7 @@ module.exports = {
 ```json
 {
   "stylelint": {
-    "extends": [
-      "@lmc-eu/stylelint-config",
-      "@lmc-eu/stylelint-config/optional",
-      "stylelint-config-prettier"
-    ]
+    "extends": ["@lmc-eu/stylelint-config", "@lmc-eu/stylelint-config/optional", "stylelint-config-prettier"]
   }
 }
 ```
