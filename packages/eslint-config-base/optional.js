@@ -1,28 +1,31 @@
 const globs = require('./globs');
 
 module.exports = {
-
-  plugins: [
-    'import',
-  ],
+  plugins: ['import'],
 
   rules: {
     // Require Consistent Returns
     // This rule is aimed at ensuring all return statements either specify a value or don't specify
     // a value.
     // https://eslint.org/docs/rules/consistent-return
-    'consistent-return': ['warn', {
-      treatUndefinedAsUnspecified: true,
-    }],
+    'consistent-return': [
+      'warn',
+      {
+        treatUndefinedAsUnspecified: true,
+      },
+    ],
 
     // Validates JSDoc comments are syntactically correct
     // This rule aims to prevent invalid and incomplete JSDoc comments.
     // https://eslint.org/docs/rules/valid-jsdoc
-    'valid-jsdoc': ['warn', {
-      requireReturn: true,
-      requireParamType: true,
-      requireReturnDescription: false,
-    }],
+    'valid-jsdoc': [
+      'warn',
+      {
+        requireReturn: true,
+        requireParamType: true,
+        requireReturnDescription: false,
+      },
+    ],
 
     // Limit Maximum Depth
     // This rule aims to reduce the complexity of your code by allowing you to configure the maximum
@@ -87,13 +90,14 @@ module.exports = {
 
     // Require or disallow space before function opening parenthesis
     // https://eslint.org/docs/rules/space-before-function-paren
-    'space-before-function-paren': [ // airbnb error
+    'space-before-function-paren': [
+      // airbnb error
       'error',
       {
         anonymous: 'always',
         named: 'never',
-        asyncArrow: 'always'
-      }
+        asyncArrow: 'always',
+      },
     ],
 
     // Require spaces around operators
@@ -137,8 +141,8 @@ module.exports = {
     'no-multiple-empty-lines': [
       'error',
       {
-        max: 1
-      }
+        max: 1,
+      },
     ],
 
     // Disallow trailing whitespace at the end of lines
@@ -155,9 +159,10 @@ module.exports = {
 
     // Enforce consistent line breaks inside braces
     // http://eslint.org/docs/rules/object-curly-newline
-    'object-curly-newline': [ // airbnb error
+    'object-curly-newline': [
+      // airbnb error
       'error',
-      { consistent: true }
+      { consistent: true },
     ],
 
     // Disallow reassigning function parameters
@@ -166,12 +171,14 @@ module.exports = {
     'no-param-reassign': ['error', { props: true }], // airbnb error
   },
 
-  overrides: [{
-    files: globs.tests,
+  overrides: [
+    {
+      files: globs.tests,
 
-    rules: {
-      // Do not require function names in test files
-      'func-names': 'off',
+      rules: {
+        // Do not require function names in test files
+        'func-names': 'off',
+      },
     },
-  }],
+  ],
 };

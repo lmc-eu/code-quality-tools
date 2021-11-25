@@ -91,13 +91,16 @@ const writerOpts = {
     }
 
     // remove references that already appear in the subject
-    transformedCommit.references = commit.references.filter((reference) => {
-      if (issues.indexOf(reference.issue) === -1) {
-        return true;
-      }
+    transformedCommit.references = commit.references
+      .filter((reference) => {
+        if (issues.indexOf(reference.issue) === -1) {
+          return true;
+        }
 
-      return false;
-    }).map((reference) => formatIssue(issueUrl, reference.issue)).join(', ');
+        return false;
+      })
+      .map((reference) => formatIssue(issueUrl, reference.issue))
+      .join(', ');
 
     // eslint-disable-next-line consistent-return
     return transformedCommit;

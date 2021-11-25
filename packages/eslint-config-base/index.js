@@ -1,21 +1,12 @@
 const globs = require('./globs');
 
 module.exports = {
-
-  plugins: [
-    'import',
-  ],
+  plugins: ['import'],
 
   settings: {
     'import/resolver': {
       node: {
-        extensions: [
-          '.mjs',
-          '.cjs',
-          '.js',
-          '.json',
-          '.node',
-        ],
+        extensions: ['.mjs', '.cjs', '.js', '.json', '.node'],
       },
     },
   },
@@ -34,12 +25,14 @@ module.exports = {
 
   rules: {},
 
-  overrides: [{
-    files: globs.configs,
+  overrides: [
+    {
+      files: globs.configs,
 
-    rules: {
-      // Using process.env is encouraged in configuration files
-      'node/no-process-env': 'off',
+      rules: {
+        // Using process.env is encouraged in configuration files
+        'node/no-process-env': 'off',
+      },
     },
-  }],
+  ],
 };

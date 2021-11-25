@@ -8,39 +8,34 @@ module.exports = {
     // This rule requires or disallows blank lines between the given 2 kinds of statements. Properly
     // blank lines help developers to understand the code.
     // https://eslint.org/docs/rules/padding-line-between-statements
-    'padding-line-between-statements': [
-      'error',
-      { blankLine: 'always', prev: '*', next: 'return' }
-    ],
+    'padding-line-between-statements': ['error', { blankLine: 'always', prev: '*', next: 'return' }],
 
     // Require an empty line between class members
     // This rule improves readability by enforcing lines between class members. It will not check
     // empty lines before the first member and after the last member, since that is already taken
     // care of by padded-blocks.
     // https://eslint.org/docs/rules/lines-between-class-members
-    'lines-between-class-members': [
-      'error',
-      'always',
-      { exceptAfterSingleLine: true }
-    ],
+    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
 
     // Enforce Quote Style
     // This rule is aimed at ensuring consistency of string quotes.
     // https://eslint.org/docs/rules/quotes
-    quotes: [
-      'warn',
-      'single'
-    ],
+    quotes: ['warn', 'single'],
 
     // specify the maximum length of a line in your program
     // https://eslint.org/docs/rules/max-len
-    'max-len': ['error', 120, 2, {
-      ignoreUrls: true,
-      ignoreComments: false, // @TODO: should we also ignore comments?
-      ignoreRegExpLiterals: true,
-      ignoreStrings: true,
-      ignoreTemplateLiterals: true,
-    }],
+    'max-len': [
+      'error',
+      120,
+      2,
+      {
+        ignoreUrls: true,
+        ignoreComments: false, // @TODO: should we also ignore comments?
+        ignoreRegExpLiterals: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+      },
+    ],
 
     // Enforce spacing inside single-line blocks
     // https://eslint.org/docs/rules/block-spacing
@@ -86,8 +81,8 @@ module.exports = {
     'no-multiple-empty-lines': [
       'warn',
       {
-        max: 1
-      }
+        max: 1,
+      },
     ],
 
     // Disallow trailing whitespace at the end of lines
@@ -104,9 +99,10 @@ module.exports = {
 
     // Enforce consistent line breaks inside braces
     // http://eslint.org/docs/rules/object-curly-newline
-    'object-curly-newline': [ // airbnb error
+    'object-curly-newline': [
+      // airbnb error
       'warn',
-      { consistent: true }
+      { consistent: true },
     ],
-  }
+  },
 };

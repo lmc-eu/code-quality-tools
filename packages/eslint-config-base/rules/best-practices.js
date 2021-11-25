@@ -7,11 +7,14 @@ module.exports = {
     // disallow usage of expressions in statement position
     // but allow them in short circuit and ternary expressions
     // https://eslint.org/docs/rules/no-unused-expressions
-    'no-unused-expressions': ['error', {
-      allowShortCircuit: true,
-      allowTernary: true,
-      allowTaggedTemplates: false,
-    }],
+    'no-unused-expressions': [
+      'error',
+      {
+        allowShortCircuit: true,
+        allowTernary: true,
+        allowTaggedTemplates: false,
+      },
+    ],
 
     // Specify curly brace conventions for all control statements
     // https://eslint.org/docs/rules/curly
@@ -29,5 +32,5 @@ module.exports = {
     // allow only reassigment of properties like in DOM object
     // https://eslint.org/docs/rules/no-param-reassign
     'no-param-reassign': ['warn', { props: true }], // airbnb error
-  }
+  },
 };

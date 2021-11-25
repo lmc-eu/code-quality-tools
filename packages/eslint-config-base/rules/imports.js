@@ -14,8 +14,8 @@ module.exports = {
         mjs: 'never',
         jsx: 'never',
         ts: 'never',
-        tsx: 'never'
-      }
+        tsx: 'never',
+      },
     ],
 
     // Ensures that there is no resolvable path back to this module via its dependencies

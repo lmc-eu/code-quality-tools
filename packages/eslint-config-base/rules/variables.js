@@ -5,10 +5,13 @@ module.exports = {
     // declared (but is declared later)
     // Function declarations are exempted from the rule, so it is allowed to use a function name
     // before its declaration
-    'no-use-before-define': ['error', {
-      functions: false,
-      classes: true,
-      variables: true,
-    }],
+    'no-use-before-define': [
+      'error',
+      {
+        functions: false,
+        classes: true,
+        variables: true,
+      },
+    ],
   },
 };

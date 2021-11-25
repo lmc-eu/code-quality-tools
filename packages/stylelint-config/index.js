@@ -1,7 +1,5 @@
 module.exports = {
-  plugins: [
-    'stylelint-order',
-  ],
+  plugins: ['stylelint-order'],
   defaultSeverity: 'error',
   rules: {
     'block-no-empty': true,
@@ -11,9 +9,7 @@ module.exports = {
     'property-no-unknown': [
       true,
       {
-        ignoreProperties: [
-          '/^font-/',
-        ],
+        ignoreProperties: ['/^font-/'],
       },
     ],
     'no-missing-end-of-source-newline': true,
@@ -44,29 +40,20 @@ module.exports = {
     'function-comma-space-after': [
       'always',
       {
-        ignore: [
-          'rgba',
-        ],
+        ignore: ['rgba'],
       },
     ],
     'function-name-case': [
       'lower',
       {
-        ignoreFunctions: [
-          'DXImageTransform.Microsoft.Alpha',
-        ],
+        ignoreFunctions: ['DXImageTransform.Microsoft.Alpha'],
       },
     ],
     'comment-empty-line-before': [
       'always',
       {
-        except: [
-          'first-nested',
-        ],
-        ignore: [
-          'stylelint-commands',
-          'after-comment',
-        ],
+        except: ['first-nested'],
+        ignore: ['stylelint-commands', 'after-comment'],
       },
     ],
     'media-feature-colon-space-after': 'always',
@@ -75,50 +62,25 @@ module.exports = {
     indentation: [
       4,
       {
-        except: [
-          'value',
-        ],
-        ignore: [
-          'inside-parens',
-          'param',
-          'value',
-        ],
+        except: ['value'],
+        ignore: ['inside-parens', 'param', 'value'],
       },
     ],
     'max-empty-lines': 2,
     'rule-empty-line-before': [
       'always',
       {
-        except: [
-          'first-nested',
-        ],
-        ignore: [
-          'after-comment',
-        ],
+        except: ['first-nested'],
+        ignore: ['after-comment'],
       },
     ],
     'unit-case': 'lower',
-    'unit-allowed-list': [
-      'em',
-      'rem',
-      '%',
-      's',
-      'px',
-      'pt',
-      'ex',
-      'deg',
-      'cm',
-      'fr',
-      'vh',
-      'vw',
-    ],
+    'unit-allowed-list': ['em', 'rem', '%', 's', 'px', 'pt', 'ex', 'deg', 'cm', 'fr', 'vh', 'vw'],
     'property-case': 'lower',
     'value-keyword-case': [
       'lower',
       {
-        ignoreProperties: [
-          '$font-family-base',
-        ],
+        ignoreProperties: ['$font-family-base'],
       },
     ],
     'at-rule-name-case': 'lower',
@@ -127,17 +89,13 @@ module.exports = {
     'declaration-block-no-duplicate-properties': [
       true,
       {
-        ignore: [
-          'consecutive-duplicates-with-different-values',
-        ],
+        ignore: ['consecutive-duplicates-with-different-values'],
       },
     ],
     'declaration-block-no-redundant-longhand-properties': [
       true,
       {
-        ignoreShorthands: [
-          '/^flex/',
-        ],
+        ignoreShorthands: ['/^flex/'],
       },
     ],
     'font-family-no-missing-generic-family-keyword': true,
@@ -152,13 +110,8 @@ module.exports = {
     'at-rule-empty-line-before': [
       'always',
       {
-        except: [
-          'blockless-after-same-name-blockless',
-          'first-nested',
-        ],
-        ignore: [
-          'after-comment',
-        ],
+        except: ['blockless-after-same-name-blockless', 'first-nested'],
+        ignore: ['after-comment'],
       },
     ],
     'at-rule-name-space-after': 'always-single-line',
@@ -174,14 +127,8 @@ module.exports = {
     'custom-property-empty-line-before': [
       'always',
       {
-        except: [
-          'after-custom-property',
-          'first-nested',
-        ],
-        ignore: [
-          'after-comment',
-          'inside-single-line-block',
-        ],
+        except: ['after-custom-property', 'first-nested'],
+        ignore: ['after-comment', 'inside-single-line-block'],
       },
     ],
     'declaration-bang-space-after': 'never',
@@ -196,14 +143,8 @@ module.exports = {
     'declaration-empty-line-before': [
       'always',
       {
-        except: [
-          'after-declaration',
-          'first-nested',
-        ],
-        ignore: [
-          'after-comment',
-          'inside-single-line-block',
-        ],
+        except: ['after-declaration', 'first-nested'],
+        ignore: ['after-comment', 'inside-single-line-block'],
       },
     ],
     'function-comma-newline-after': 'always-multi-line',
@@ -222,9 +163,7 @@ module.exports = {
     'no-eol-whitespace': [
       true,
       {
-        ignore: [
-          'empty-lines',
-        ],
+        ignore: ['empty-lines'],
       },
     ],
     'selector-attribute-brackets-space-inside': 'never',
