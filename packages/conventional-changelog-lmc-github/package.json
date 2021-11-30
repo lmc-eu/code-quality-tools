@@ -1,0 +1,51 @@
+{
+  "name": "@lmc-eu/conventional-changelog-lmc-github",
+  "version": "1.0.0",
+  "description": "conventional-changelog LMC preset for GitHub",
+  "keywords": [
+    "lmc",
+    "github",
+    "changelog",
+    "conventional-changelog",
+    "preset"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lmc-eu/code-quality-tools",
+    "directory": "packages/conventional-changelog-lmc-github"
+  },
+  "author": "Tomáš Litera <tomas.litera@lmc.eu>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/lmc-eu/issues"
+  },
+  "files": [
+    "src"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "compare-func": "^2.0.0",
+    "q": "^1.5.1"
+  },
+  "devDependencies": {
+    "better-than-before": "^1.0.0",
+    "conventional-changelog-core": "^4.2.0",
+    "git-dummy-commit": "^1.3.0",
+    "jest": "^26.4.2",
+    "jest-extended": "^0.11.5",
+    "shelljs": "^0.8.4",
+    "through2": "^4.0.2"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "jest-extended"
+    ],
+    "testTimeout": 30000
+  },
+  "engines": {
+    "node": ">=4.x"
+  }
+}

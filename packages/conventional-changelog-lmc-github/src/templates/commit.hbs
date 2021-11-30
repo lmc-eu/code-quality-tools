@@ -1,0 +1,30 @@
+
+*{{#if scope}} **{{scope}}:**
+{{~/if}} {{#if subject}}
+  {{~subject}}
+{{~else}}
+  {{~header}}
+{{~/if}}
+
+{{~!-- commit link --}} {{#if @root.linkReferences~}}
+  ([{{hash}}](
+  {{~#if @root.repository~}}
+    {{~#if @root.host}}
+      {{~@root.host}}/
+    {{~/if}}
+    {{~#if @root.owner~}}
+      {{~@root.owner}}/
+    {{~/if~}}
+    {{~@root.repository}}/
+  {{~else}}
+    {{~@root.repoUrl}}/
+  {{~/if~}}
+  commits/{{~hash}}))
+{{~else}}
+  ({{~hash}})
+{{~/if}}
+
+{{~!-- commit references --}}
+{{~#if references~}}
+  , closes {{references}}
+{{~/if}}
