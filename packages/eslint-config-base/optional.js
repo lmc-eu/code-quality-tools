@@ -1,7 +1,9 @@
 const globs = require('./globs');
 
 module.exports = {
-  plugins: ['import'],
+  extends: ['plugin:jsdoc/recommended'],
+
+  plugins: ['import', 'jsdoc'],
 
   rules: {
     // Require Consistent Returns
@@ -12,18 +14,6 @@ module.exports = {
       'warn',
       {
         treatUndefinedAsUnspecified: true,
-      },
-    ],
-
-    // Validates JSDoc comments are syntactically correct
-    // This rule aims to prevent invalid and incomplete JSDoc comments.
-    // https://eslint.org/docs/rules/valid-jsdoc
-    'valid-jsdoc': [
-      'warn',
-      {
-        requireReturn: true,
-        requireParamType: true,
-        requireReturnDescription: false,
       },
     ],
 
