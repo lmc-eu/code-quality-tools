@@ -13,7 +13,7 @@ This monorepo contains shareable configurations for various coding-style/best pr
 | Conventional Changelog | [@lmc-eu/conventional-changelog-lmc-bitbucket](packages/conventional-changelog-lmc-bitbucket) | [![@lmc-eu/conventional-changelog-lmc-bitbucket][cc-badge]][cc-npm] |
 | Prettier               | [@lmc-eu/prettier-config](packages/prettier-config)                                           | [![@lmc-eu/prettier-config][pc-badge]][pc-npm]                      |
 | Stylelint              | [@lmc-eu/stylelint-config](packages/stylelint-config)                                         | [![@lmc-eu/stylelint-config][slc-badge]][slc-npm]                   |
-| ESLint                 | [@lmc-eu/eslint-config-base](packages/eslint-config-base)                                     | [![@lmc-eu/eslint-config-base][slc-badge]][slc-npm]                 |
+| ESLint                 | [@lmc-eu/eslint-config-base](packages/eslint-config-base)                                     | [![@lmc-eu/eslint-config-base][slc-badge]][ec-base-npm]             |
 
 ## License
 
