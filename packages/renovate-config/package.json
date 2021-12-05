@@ -1,0 +1,38 @@
+{
+  "name": "@lmc-eu/renovate-config",
+  "version": "0.0.1",
+  "description": "LMC's renovate configuration for dependencies upgrades",
+  "keywords": [
+    "renovate",
+    "lmc",
+    "config"
+  ],
+  "author": "Tomáš Litera <tomas.litera@lmc.eu>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lmc-eu/code-quality-tools",
+    "directory": "packages/renovate-config"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "renovate-config": {
+    "default": {
+      "extends": [
+        "config:base",
+        "schedule:weekly",
+        ":pinAllExceptPeerDependencies",
+        ":separateMultipleMajorReleases",
+        ":combinePatchMinorReleases",
+        ":disablePeerDependencies",
+        ":prConcurrentLimit10"
+      ],
+      "branchPrefix": "dependencies/",
+      "commitMessagePrefix": "Deps: "
+    }
+  }
+}
