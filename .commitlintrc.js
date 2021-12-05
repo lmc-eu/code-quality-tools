@@ -11,6 +11,7 @@ module.exports = {
         'conventional-changelog',
         'prettier',
         'stylelint',
+        'renovate',
         'eslint-config-base',
         'eslint-config-lmc',
         'eslint-config-graphql',
