@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/renovate-config",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "LMC's renovate configuration for dependencies upgrades",
   "keywords": [
     "renovate",
@@ -35,6 +35,9 @@
     },
     "scheduleWeeklyNonOfficeHours": {
       "schedule": ["after 10pm and before 7am on Monday"]
+    },
+    "scheduleWeeklyBusinessHours": {
+      "schedule": ["after 9am and before 5pm on Monday"]
     },
     "groupMajorProdDependencies": {
       "packageRules": [

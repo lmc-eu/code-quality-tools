@@ -35,7 +35,9 @@ Default preset
 }
 ```
 
-### `@lmc-eu:scheduleWeeklyNonOfficeHours`
+### Schedule
+
+#### `@lmc-eu:scheduleWeeklyNonOfficeHours`
 
 Schedule weekly non-office hours
 
@@ -45,7 +47,19 @@ Schedule weekly non-office hours
 }
 ```
 
-### `@lmc-eu:groupMajorProdDependencies`
+#### `@lmc-eu:scheduleWeeklyBusinessHours`
+
+Schedule weekly business hours
+
+```json
+{
+  "schedule": ["after 9am and before 5pm on Monday"]
+}
+```
+
+### Group
+
+#### `@lmc-eu:groupMajorProdDependencies`
 
 Group together major prod dependencies
 
@@ -63,7 +77,7 @@ Group together major prod dependencies
 }
 ```
 
-### `@lmc-eu:groupNonMajorProdDependencies`
+#### `@lmc-eu:groupNonMajorProdDependencies`
 
 Group together non-major prod dependencies
 
@@ -81,7 +95,7 @@ Group together non-major prod dependencies
 }
 ```
 
-### `@lmc-eu:groupAllDevDependencies`
+#### `@lmc-eu:groupAllDevDependencies`
 
 Group together all dev dependencies
 
