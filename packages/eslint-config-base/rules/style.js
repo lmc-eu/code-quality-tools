@@ -8,14 +8,21 @@ module.exports = {
     // This rule requires or disallows blank lines between the given 2 kinds of statements. Properly
     // blank lines help developers to understand the code.
     // https://eslint.org/docs/rules/padding-line-between-statements
-    'padding-line-between-statements': ['error', { blankLine: 'always', prev: '*', next: 'return' }],
+    'padding-line-between-statements': [
+      'error',
+      { blankLine: 'always', prev: '*', next: 'return' },
+    ],
 
     // Require an empty line between class members
     // This rule improves readability by enforcing lines between class members. It will not check
     // empty lines before the first member and after the last member, since that is already taken
     // care of by padded-blocks.
     // https://eslint.org/docs/rules/lines-between-class-members
-    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+    'lines-between-class-members': [
+      'error',
+      'always',
+      { exceptAfterSingleLine: true },
+    ],
 
     // Enforce Quote Style
     // This rule is aimed at ensuring consistency of string quotes.

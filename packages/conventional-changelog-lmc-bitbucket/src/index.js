@@ -19,7 +19,8 @@ function formatIssue(issueUrl, issue) {
 }
 
 const parserOpts = {
-  headerPattern: /^(?:Pull request #[0-9]+: )?(?:([a-zA-Z]*-[0-9_]*)(?: ))* ?([\w ]*)(?:\((.*)\))?: (.*)$/,
+  headerPattern:
+    /^(?:Pull request #[0-9]+: )?(?:([a-zA-Z]*-[0-9_]*)(?: ))* ?([\w ]*)(?:\((.*)\))?: (.*)$/,
   headerCorrespondence: ['body', 'type', 'scope', 'subject'],
   noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES'],
   revertPattern: /^revert:\s([\s\S]*?)\s*This reverts commit (\w*)\./,
@@ -83,11 +84,14 @@ const writerOpts = {
     const issueUrl = context.packageData.bugs && context.packageData.bugs.url;
 
     if (typeof transformedCommit.subject === 'string') {
-      transformedCommit.subject = transformedCommit.subject.replace(/#([a-zA-Z0-9-]+)/g, (_, issue) => {
-        issues.push(issue);
+      transformedCommit.subject = transformedCommit.subject.replace(
+        /#([a-zA-Z0-9-]+)/g,
+        (_, issue) => {
+          issues.push(issue);
 
-        return formatIssue(issueUrl, issue);
-      });
+          return formatIssue(issueUrl, issue);
+        },
+      );
     }
 
     // remove references that already appear in the subject

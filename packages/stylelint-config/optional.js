@@ -29,15 +29,34 @@ module.exports = {
       },
       {
         order: 'flexible',
-        properties: ['padding', 'padding-top', 'padding-right', 'padding-bottom', 'padding-left'],
+        properties: [
+          'padding',
+          'padding-top',
+          'padding-right',
+          'padding-bottom',
+          'padding-left',
+        ],
       },
       {
         order: 'flexible',
-        properties: ['margin', 'margin-top', 'margin-right', 'margin-bottom', 'margin-left'],
+        properties: [
+          'margin',
+          'margin-top',
+          'margin-right',
+          'margin-bottom',
+          'margin-left',
+        ],
       },
       {
         order: 'flexible',
-        properties: ['font', 'font-family', 'font-style', 'font-size', 'font-weight', 'color'],
+        properties: [
+          'font',
+          'font-family',
+          'font-style',
+          'font-size',
+          'font-weight',
+          'color',
+        ],
       },
       {
         properties: [
