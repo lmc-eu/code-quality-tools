@@ -20,8 +20,6 @@ module.exports = {
       'error',
       {
         ...prettierConfig,
-        // For better readability of the code
-        printWidth: 80,
       },
     ],
   },
