@@ -53,6 +53,7 @@ module.exports = {
           '**/protractor.conf.*.js', // protractor config
           '**/karma.conf.js', // karma config
           '**/.eslintrc.js', // eslint config
+          '**/.prettierrc.js', // prettier config
           '**/postcss.config.js', // postcss config
         ],
         optionalDependencies: false,
