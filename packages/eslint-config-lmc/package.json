@@ -38,7 +38,8 @@
     "@lmc-eu/prettier-config": "^1.0.0",
     "eslint-plugin-html": "^6.2.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0"
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-markdown": "^2.2.0"
   },
   "devDependencies": {
     "eslint": "^8.1.0",
@@ -47,6 +48,7 @@
     "@lmc-eu/prettier-config": "^1.0.0",
     "eslint-plugin-html": "^6.2.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0"
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-markdown": "^2.2.0"
   }
 }

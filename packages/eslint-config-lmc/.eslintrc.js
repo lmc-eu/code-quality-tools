@@ -13,7 +13,7 @@ module.exports = {
     'prettier',
   ],
 
-  plugins: ['html', 'prettier'],
+  plugins: ['html', 'markdown', 'prettier'],
 
   rules: {
     'prettier/prettier': [
