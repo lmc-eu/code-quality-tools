@@ -4,7 +4,7 @@ module.exports = {
     'scope-enum': [
       1,
       'always',
-      ['browserslist', 'commitlint', 'conventional-changelog', 'prettier', 'stylelint', 'eslint-config-base'],
+      ['browserslist', 'commitlint', 'conventional-changelog', 'prettier', 'stylelint', 'eslint'],
     ],
 
     'footer-max-line-length': [0],
