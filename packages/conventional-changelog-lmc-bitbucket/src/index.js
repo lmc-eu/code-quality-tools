@@ -5,10 +5,11 @@ const { resolve } = require('path');
 
 /**
  * Formats issues using the issueURL as the prefix of the complete issue URL
+ *
  * @param {string} issueUrl - if the issueURL is falsy, then the issue will be printed as-is.
  *                            Otherwise, it will be printed as a link
  * @param {string} issue - the issue reference (without the # in-front of it)
- * @return {string} - Either the issue or a Markdown-formatted link to the issue.
+ * @returns {string} - Either the issue or a Markdown-formatted link to the issue.
  */
 function formatIssue(issueUrl, issue) {
   if (issueUrl) {
