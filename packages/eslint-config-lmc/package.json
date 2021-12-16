@@ -1,0 +1,54 @@
+{
+  "name": "eslint-config-lmc",
+  "version": "1.0.0",
+  "description": "LMC's Ultimate ESlint configuration",
+  "keywords": [
+    "javascript",
+    "ecmascript",
+    "eslint",
+    "config",
+    "lmc",
+    "prettier"
+  ],
+  "author": "Tomáš Litera <tomas.litera@lmc.eu>",
+  "homepage": "https://github.com/lmc-eu/code-quality-tools#readme",
+  "license": "BSD-3-Clause",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": "^14 || >=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmc-eu/code-quality-tools.git",
+    "directory": "packages/eslint-config-lmc"
+  },
+  "bugs": {
+    "url": "https://github.com/lmc-eu/code-quality-tools/issues"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix"
+  },
+  "peerDependencies": {
+    "eslint": "^8.1.0",
+    "prettier": "^2.5.1",
+    "@lmc-eu/eslint-config-base": "^1.0.0",
+    "@lmc-eu/prettier-config": "^1.0.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-markdown": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.1.0",
+    "prettier": "^2.5.1",
+    "@lmc-eu/eslint-config-base": "^1.0.0",
+    "@lmc-eu/prettier-config": "^1.0.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-markdown": "^2.2.0"
+  }
+}

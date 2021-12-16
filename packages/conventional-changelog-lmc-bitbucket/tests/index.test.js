@@ -20,8 +20,14 @@ betterThanBefore.setups([
     shell.exec('git init --template=./git-templates');
 
     gitDummyCommit('Chore: first commit');
-    gitDummyCommit(['Feat: amazing new module', 'BREAKING CHANGE: Not backward compatible.']);
-    gitDummyCommit(['Fix(compile): avoid a bug', 'BREAKING CHANGE: The Change is huge.']);
+    gitDummyCommit([
+      'Feat: amazing new module',
+      'BREAKING CHANGE: Not backward compatible.',
+    ]);
+    gitDummyCommit([
+      'Fix(compile): avoid a bug',
+      'BREAKING CHANGE: The Change is huge.',
+    ]);
     gitDummyCommit(['Perf(ngOptions): make it faster', ' closes #1, #2']);
     gitDummyCommit('Revert(ngOptions): bad commit');
     gitDummyCommit('Fix(*): oops');
@@ -37,12 +43,27 @@ betterThanBefore.setups([
     gitDummyCommit(['Feat(awesome): issue brought up by @bcoe! on Friday']);
   },
   function () {
-    gitDummyCommit(['Docs(readme): make it clear', 'BREAKING CHANGE: The Change is huge.']);
-    gitDummyCommit(['Style(whitespace): make it easier to read', 'BREAKING CHANGE: The Change is huge.']);
-    gitDummyCommit(['Refactor(code): change a lot of code', 'BREAKING CHANGE: The Change is huge.']);
-    gitDummyCommit(['Test(*): more tests', 'BREAKING CHANGE: The Change is huge.']);
+    gitDummyCommit([
+      'Docs(readme): make it clear',
+      'BREAKING CHANGE: The Change is huge.',
+    ]);
+    gitDummyCommit([
+      'Style(whitespace): make it easier to read',
+      'BREAKING CHANGE: The Change is huge.',
+    ]);
+    gitDummyCommit([
+      'Refactor(code): change a lot of code',
+      'BREAKING CHANGE: The Change is huge.',
+    ]);
+    gitDummyCommit([
+      'Test(*): more tests',
+      'BREAKING CHANGE: The Change is huge.',
+    ]);
     gitDummyCommit(['WIP: Just in the middle of something...']);
-    gitDummyCommit(['Chore(deps): bump', 'BREAKING CHANGE: The Change is huge.']);
+    gitDummyCommit([
+      'Chore(deps): bump',
+      'BREAKING CHANGE: The Change is huge.',
+    ]);
   },
   function () {
     gitDummyCommit(['Feat(deps): bump', 'BREAKING CHANGE Also works :)']);
@@ -55,8 +76,14 @@ betterThanBefore.setups([
     gitDummyCommit(['Feat(foo): add thing', 'closes #1223 #OBG-23']);
   },
   function () {
-    gitDummyCommit(['Revert \\"Feat: bad feature\\"', 'This reverts commit 12345.'], false);
-    gitDummyCommit(['Revert: Feat: custom revert format', 'This reverts commit 5678.']);
+    gitDummyCommit(
+      ['Revert \\"Feat: bad feature\\"', 'This reverts commit 12345.'],
+      false,
+    );
+    gitDummyCommit([
+      'Revert: Feat: custom revert format',
+      'This reverts commit 5678.',
+    ]);
   },
   function () {
     gitDummyCommit([
@@ -89,7 +116,9 @@ describe('lmc bitbucket preset', () => {
           expect(stringifiedChunk).toInclude('make it faster');
           expect(stringifiedChunk).toInclude(', closes #1, #2'); // Links are not created
           expect(stringifiedChunk).toInclude('Not backward compatible.');
-          expect(stringifiedChunk).toInclude('**compile:** The Change is huge.');
+          expect(stringifiedChunk).toInclude(
+            '**compile:** The Change is huge.',
+          );
           expect(stringifiedChunk).toInclude('Features');
           expect(stringifiedChunk).toInclude('Bug Fixes');
           expect(stringifiedChunk).toInclude('Performance Improvements');
@@ -130,7 +159,9 @@ describe('lmc bitbucket preset', () => {
       .pipe(
         through((chunk) => {
           stringifiedChunk = chunk.toString();
-          expect(stringifiedChunk).toInclude('in [#133](https://jira.int.lmc.cz/browse/133)');
+          expect(stringifiedChunk).toInclude(
+            'in [#133](https://jira.int.lmc.cz/browse/133)',
+          );
           done();
         }),
       );
@@ -195,7 +226,9 @@ describe('lmc bitbucket preset', () => {
       .pipe(
         through((chunk) => {
           stringifiedChunk = chunk.toString();
-          expect(stringifiedChunk).toInclude('issue brought up by @bcoe! on Friday');
+          expect(stringifiedChunk).toInclude(
+            'issue brought up by @bcoe! on Friday',
+          );
           done();
         }),
       );
@@ -332,8 +365,12 @@ describe('lmc bitbucket preset', () => {
           (chunk, enc, cb) => {
             stringifiedChunk = chunk.toString();
 
-            expect(stringifiedChunk).toInclude('https://bitbucket.example.com/projects/EX/repos/example-repo/compare/');
-            expect(stringifiedChunk).toInclude('https://bitbucket.example.com/projects/EX/repos/example-repo/commits/');
+            expect(stringifiedChunk).toInclude(
+              'https://bitbucket.example.com/projects/EX/repos/example-repo/compare/',
+            );
+            expect(stringifiedChunk).toInclude(
+              'https://bitbucket.example.com/projects/EX/repos/example-repo/commits/',
+            );
             expect(stringifiedChunk).toMatch(/some more features \(.*\)/);
 
             i++;
