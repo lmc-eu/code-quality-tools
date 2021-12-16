@@ -159,6 +159,20 @@ module.exports = {
     // allow only reassigment of properties like in DOM object
     // https://eslint.org/docs/rules/no-param-reassign
     'no-param-reassign': ['error', { props: true }], // airbnb error
+
+    // Requires that each @param tag has a description value.
+    // it is better to focus on descriptive variable name
+    // and not to require an useless comments which should be redundant
+    // @see: https://github.com/lmc-eu/cookie-consent-manager/pull/120
+    // https://github.com/gajus/eslint-plugin-jsdoc#require-param-description
+    'jsdoc/require-param-description': ['off'],
+
+    // Requires that each @returns tag has a description value.
+    // it is better to focus on descriptive variable name
+    // and not to require an useless comments which should be redundant
+    // @see: https://github.com/lmc-eu/cookie-consent-manager/pull/120
+    // https://github.com/gajus/eslint-plugin-jsdoc#require-returns-description
+    'jsdoc/require-returns-description': ['off'],
   },
 
   overrides: [
