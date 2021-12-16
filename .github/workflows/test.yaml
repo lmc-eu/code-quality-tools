@@ -1,11 +1,13 @@
-name: Commitlint
+name: Test
+
 on:
   push:
-    branches-ignore:
-      - main
+  schedule:
+    - cron: '0 9 * * *' # every day at 9:00
 
 jobs:
-  lint:
+  test:
+    name: Tests and linting
     runs-on: ubuntu-20.04
     timeout-minutes: 5
 
@@ -26,5 +28,8 @@ jobs:
       - name: Lint
         run: yarn lint
 
-      - name: Format
+      - name: Check code-style format
         run: yarn format
+
+      - name: Test packages
+        run: yarn packages:test
