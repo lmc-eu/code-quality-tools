@@ -23,6 +23,9 @@
     "src"
   ],
   "main": "src/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "jest"
   },
