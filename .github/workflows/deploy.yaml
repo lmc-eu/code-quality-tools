@@ -28,7 +28,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Release
-        run: yarn lerna publish from-git --yes
+        run: make publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
