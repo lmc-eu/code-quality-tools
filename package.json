@@ -13,11 +13,12 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "lerna run test",
-    "diff": "lerna diff",
-    "changed": "lerna changed",
-    "list": "lerna ls",
-    "commit:lint:test": "yarn commitlint --from HEAD~1 --to HEAD --verbose",
+    "packages:diff": "lerna diff",
+    "packages:changed": "lerna changed",
+    "packages:list": "lerna ls",
+    "packages:test": "lerna run test",
+    "test": "yarn packages:test",
+    "commit:lint:test": "commitlint --from HEAD~1 --to HEAD --verbose",
     "format": "yarn format:check",
     "format:check": "prettier --check ./",
     "format:fix": "prettier --write ./",
