@@ -10,8 +10,7 @@ YARN_I := $(if $(CI), install --frozen-lockfile, install)
 # Modify these variables in local.mk to add flags to the commands, ie.
 # YARN_FLAGS += --prefer-offline
 YARN_FLAGS :=
-ESLINT_FLAGS :=
-REMARK_FLAGS :=
+LERNA_FLAGS :=
 
 # Git hooks to be installed into the project workspace
 # GITFILES := $(patsubst bin/githooks/%, .git/hooks/%, $(wildcard bin/githooks/*))
@@ -19,14 +18,9 @@ REMARK_FLAGS :=
 # Since this is the first target, Make will do this when make is invoked without arguments
 all: install
 
-
 # TASK DEFINITIONS
 
 install: node_modules
-
-lint: force install
-	eslint --cache --report-unused-disable-directives $(ESLINT_FLAGS) .
-	remark --quiet $(REMARK_FLAGS) .
 
 outdated:
 	yarn outdated || true
@@ -45,6 +39,14 @@ pristine: clean
 
 release:
 	@bin/make/release.sh
+
+publish:
+# @ee: https://github.com/lerna/lerna/tree/main/commands/publish#readme
+# Publish packages updated since the last release
+## `from-package` - list of packages to publish is determined by inspecting each `package.json`
+## `--yes` - skip all confirmation prompts
+## `--no-verify-access` - disable verification of the logged-in npm user's access to the packages about to be published
+	yarn lerna publish from-package --yes --no-verify-access $(LERNA_FLAGS)
 
 # GENERIC TARGETS
 
