@@ -27,7 +27,7 @@
     "access": "public"
   },
   "scripts": {
-    "test": "jest"
+    "test": "is-ci || jest"
   },
   "dependencies": {
     "compare-func": "^2.0.0",
