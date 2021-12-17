@@ -9,7 +9,7 @@ git fetch --no-tags --depth=50 origin main
 
 printf "\n=====>\tMerging to main...\n"
 
-git rebase main
+git rebase origin/main
 git checkout main
 git merge --ff-only release
 
