@@ -18,7 +18,7 @@ npm i --dev @commitlint/cli @lmc-eu/commitlint-config
 
 ### Configuration
 
-Create a _commitlint.config.js_ file with the following contents:
+Create a _.commitlintrc.js_ file with the following contents:
 
 ```js
 'use strict';
