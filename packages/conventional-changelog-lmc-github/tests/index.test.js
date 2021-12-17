@@ -109,7 +109,7 @@ describe('lmc github preset', () => {
 
           expect(chunk).toEqual(
             expect.stringMatching(
-              /oops \(\[[0-9a-z]{7}\]\(https:\/\/github.internal.example.com\/owner\/repo-name\/commits\/[0-9a-z]{7}\)\)/,
+              /oops \(\[[0-9a-z]{7}\]\(https:\/\/github.internal.example.com\/owner\/repo-name\/commit\/[0-9a-z]{7}\)\)/,
             ),
           ); // commit hash is linked
 
@@ -331,7 +331,7 @@ describe('lmc github preset', () => {
             chunk = chunk.toString();
 
             expect(chunk).toInclude('https://github.internal.example.com/owner/repo-name/compare/');
-            expect(chunk).toInclude('https://github.internal.example.com/owner/repo-name/commits/');
+            expect(chunk).toInclude('https://github.internal.example.com/owner/repo-name/commit/');
             expect(chunk).toMatch(/some more features \(.*\)/);
 
             i++;
