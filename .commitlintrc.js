@@ -16,6 +16,7 @@ module.exports = {
         'eslint-config-lmc',
         'eslint-config-graphql',
         'eslint-config-react',
+        'eslint-config-jest',
         // Use when commiting changes/additions/removals to packages in context
         'eslint',
         'rule',
