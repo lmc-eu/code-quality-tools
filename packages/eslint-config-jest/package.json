@@ -1,0 +1,36 @@
+{
+  "name": "@lmc-eu/eslint-config-jest",
+  "version": "1.0.0",
+  "description": "LMC's ESlint configuration for projects using Jest as test runner",
+  "keywords": [
+    "eslint",
+    "config",
+    "lmc",
+    "jest"
+  ],
+  "author": "Tomáš Litera <tomas.litera@lmc.eu>",
+  "homepage": "https://github.com/lmc-eu/code-quality-tools#readme",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": "^14 || >=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmc-eu/code-quality-tools.git",
+    "directory": "packages/eslint-config-jest"
+  },
+  "bugs": {
+    "url": "https://github.com/lmc-eu/code-quality-tools/issues"
+  },
+  "dependencies": {
+    "@lmc-eu/eslint-config-base": "^1.1.1",
+    "eslint-plugin-jest": "^25.3.0",
+    "eslint-plugin-jest-formatting": "^3.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.1.0"
+  }
+}
