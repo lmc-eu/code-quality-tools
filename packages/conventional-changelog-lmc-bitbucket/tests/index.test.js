@@ -1,3 +1,5 @@
+// We are dealing with Streams here, not Promises
+/* eslint-disable jest/no-done-callback */
 /* eslint-disable no-plusplus */
 /* eslint-disable no-undef */
 const conventionalChangelogCore = require('conventional-changelog-core');
@@ -277,7 +279,7 @@ describe('lmc bitbucket preset', () => {
             cb();
           },
           () => {
-            expect(i).toEqual(1);
+            expect(i).toBe(1);
             done();
           },
         ),
@@ -309,7 +311,7 @@ describe('lmc bitbucket preset', () => {
             cb();
           },
           () => {
-            expect(i).toEqual(1);
+            expect(i).toBe(1);
             done();
           },
         ),
@@ -340,7 +342,7 @@ describe('lmc bitbucket preset', () => {
             cb();
           },
           () => {
-            expect(i).toEqual(1);
+            expect(i).toBe(1);
             done();
           },
         ),
@@ -368,7 +370,7 @@ describe('lmc bitbucket preset', () => {
       );
   });
 
-  it.skip('should render multiple issues that are in the footer as links when package.json has a bugs URL', (done) => {
+  it('should render multiple issues that are in the footer as links when package.json has a bugs URL', (done) => {
     preparing(9);
 
     conventionalChangelogCore({
@@ -381,8 +383,7 @@ describe('lmc bitbucket preset', () => {
       .pipe(
         through((chunk) => {
           stringifiedChunk = chunk.toString();
-          // eslint-disable-next-line no-console
-          console.log(stringifiedChunk);
+
           expect(stringifiedChunk).toInclude('closes [#1223](');
           expect(stringifiedChunk).toInclude('1223), [#OBG-23]');
           done();
