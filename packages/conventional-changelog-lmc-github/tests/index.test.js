@@ -1,5 +1,7 @@
+// We are dealing with Streams here, not Promises
+/* eslint-disable jest/no-done-callback */
 /* eslint-disable no-plusplus */
-/* eslint-disable no-undef */
+
 /* eslint-disable no-param-reassign */
 const conventionalChangelogCore = require('conventional-changelog-core');
 const gitDummyCommit = require('git-dummy-commit');
@@ -275,7 +277,7 @@ describe('lmc github preset', () => {
             cb();
           },
           () => {
-            expect(i).toEqual(1);
+            expect(i).toBe(1);
             done();
           },
         ),
@@ -300,14 +302,14 @@ describe('lmc github preset', () => {
           (chunk, enc, cb) => {
             chunk = chunk.toString();
 
-            expect(chunk).toInclude('(http://unknown/compare');
+            expect(chunk).toInclude('(/compare');
             expect(chunk).toMatch(/some more features \(.*\)/); // No commit hash!
 
             i++;
             cb();
           },
           () => {
-            expect(i).toEqual(1);
+            expect(i).toBe(1);
             done();
           },
         ),
@@ -338,7 +340,7 @@ describe('lmc github preset', () => {
             cb();
           },
           () => {
-            expect(i).toEqual(1);
+            expect(i).toBe(1);
             done();
           },
         ),
@@ -366,7 +368,7 @@ describe('lmc github preset', () => {
       );
   });
 
-  it.skip('should render multiple issues that are in the footer as links when package.json has a bugs URL', (done) => {
+  it('should render multiple issues that are in the footer as links when package.json has a bugs URL', (done) => {
     preparing(9);
 
     conventionalChangelogCore({
