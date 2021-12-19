@@ -5,6 +5,9 @@
   "useWorkspaces": true,
   "command": {
     "version": {
+      "allowBranch": ["release"],
+      "conventionalCommits": true,
+      "changelogPreset": "./packages/conventional-changelog-lmc-github",
       "push": false,
       "message": "Chore: Release [CI-SKIP]",
       "ignoreChanges": ["test/**", "yarn.lock"]
