@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['eslint-config-airbnb/rules/react-hooks'].map(require.resolve),
+  extends: ['eslint-config-airbnb/rules/react-a11y'].map(require.resolve),
   rules: {
     // Enforce all anchors are valid, navigable elements
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
