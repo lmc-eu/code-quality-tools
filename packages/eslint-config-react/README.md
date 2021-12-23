@@ -2,6 +2,16 @@
 
 > LMC's ESLint configuration for React projects
 
+## Installation
+
+Wee need to install everything needed by the config using (installs package and also peer dependencies):
+
+```
+npx install-peerdeps --dev @lmc-eu/eslint-config-react
+```
+
+You can see in your package.json there are now a big list of devDependencies.
+
 ## Configurations
 
 ### `@lmc-eu/eslint-config-react`
