@@ -1859,6 +1859,14 @@
     npmlog "^4.1.2"
     write-file-atomic "^2.3.0"
 
+"@lmc-eu/conventional-changelog-lmc-bitbucket@^1.3.7":
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/@lmc-eu/conventional-changelog-lmc-bitbucket/-/conventional-changelog-lmc-bitbucket-1.3.7.tgz#8803092f66485d714af49461617d6e147aea2ba4"
+  integrity sha512-U4k+PY7xNqTAq1KoC2xYchV80gFlXpcjFymh9YMz5ue6gz2M1Pek5DtB0dYoliET5AYV/X6FYlKoPvUkFLKVZw==
+  dependencies:
+    compare-func "^2.0.0"
+    q "^1.5.1"
+
 "@microsoft/fetch-event-source@2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@microsoft/fetch-event-source/-/fetch-event-source-2.0.1.tgz#9ceecc94b49fbaa15666e38ae8587f64acce007d"
