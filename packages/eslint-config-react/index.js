@@ -18,6 +18,9 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
+    babelOptions: {
+      presets: ['@babel/preset-react'],
+    },
   },
 
   settings: {
