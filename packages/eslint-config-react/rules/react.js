@@ -1,7 +1,5 @@
 module.exports = {
-  extends: [
-    'eslint-config-airbnb/rules/react',
-  ].map(require.resolve),
+  extends: ['eslint-config-airbnb/rules/react'].map(require.resolve),
   rules: {
     // This rule allows you to enforce curly braces or disallow unnecessary curly braces
     //  in JSX props and/or children
@@ -10,7 +8,7 @@ module.exports = {
 
     // Prevent missing displayName in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
-    "react/display-name": ["warn", { "ignoreTranspilerName": true }],
+    'react/display-name': ['warn', { ignoreTranspilerName: true }],
 
     // PropTypes improve the reusability of your component by validating the received data
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
@@ -27,17 +25,20 @@ module.exports = {
     // Restrict file extensions that may contain JSX
     // JSX belongs to .js files.
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
-    "react/jsx-filename-extension": ['error', { "extensions": [".js", ".jsx"] }],
+    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
 
     // Disallow JSX props spreading
     // Used inside HOC, that is fine.
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-spreading.md
-    "react/jsx-props-no-spreading": ['warn', {
-      html: 'enforce',
-      custom: 'enforce',
-      explicitSpread: 'ignore',
-      exceptions: [],
-    }],
+    'react/jsx-props-no-spreading': [
+      'warn',
+      {
+        html: 'enforce',
+        custom: 'enforce',
+        explicitSpread: 'ignore',
+        exceptions: [],
+      },
+    ],
 
     // Enforce consistent usage of destructuring assignment of props, state, and context
     'react/destructuring-assignment': [
@@ -83,14 +84,17 @@ module.exports = {
 
     // Prevent missing parentheses around multilines JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/jsx-wrap-multilines.md
-    'react/jsx-wrap-multilines': ['warn', {
-      declaration: 'parens-new-line',
-      assignment: 'parens-new-line',
-      return: 'parens-new-line',
-      arrow: 'parens-new-line',
-      condition: 'parens-new-line',
-      logical: 'parens-new-line',
-      prop: 'parens-new-line',
-    }],
-  }
+    'react/jsx-wrap-multilines': [
+      'warn',
+      {
+        declaration: 'parens-new-line',
+        assignment: 'parens-new-line',
+        return: 'parens-new-line',
+        arrow: 'parens-new-line',
+        condition: 'parens-new-line',
+        logical: 'parens-new-line',
+        prop: 'parens-new-line',
+      },
+    ],
+  },
 };
