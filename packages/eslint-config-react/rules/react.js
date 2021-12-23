@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'airbnb/rules/react',
+    'eslint-config-airbnb/rules/react',
   ].map(require.resolve),
   rules: {
     // This rule allows you to enforce curly braces or disallow unnecessary curly braces
