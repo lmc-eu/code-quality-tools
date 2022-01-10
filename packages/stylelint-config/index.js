@@ -1,6 +1,5 @@
 module.exports = {
-  plugins: ['stylelint-order'],
-  defaultSeverity: 'error',
+  customSyntax: 'postcss-scss',
   rules: {
     'block-no-empty': true,
     'string-no-newline': true,

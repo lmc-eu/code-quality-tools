@@ -1,7 +1,7 @@
 {
   "name": "@lmc-eu/stylelint-config",
   "version": "2.0.2",
-  "description": "LMC's config for stylelint",
+  "description": "LMC's config for Stylelint",
   "keywords": [
     "stylelint",
     "lmc",
@@ -22,10 +22,10 @@
     "node": ">=10"
   },
   "dependencies": {
-    "stylelint-config-standard": "^20.0.0",
+    "postcss-scss": "^4.0.3",
     "stylelint-order": "^4.1.0"
   },
   "peerDependencies": {
-    "stylelint": "^13.12.0"
+    "stylelint": "^14.2.0"
   }
 }
