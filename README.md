@@ -14,6 +14,7 @@ This monorepo contains shareable configurations for various coding-style/best pr
 | Conventional Changelog | [@lmc-eu/conventional-changelog-lmc-github](packages/conventional-changelog-lmc-github)       | [![@lmc-eu/conventional-changelog-lmc-github][cc-gh-badge]][cc-gh-npm]    |
 | Prettier               | [@lmc-eu/prettier-config](packages/prettier-config)                                           | [![@lmc-eu/prettier-config][pc-badge]][pc-npm]                            |
 | Stylelint              | [@lmc-eu/stylelint-config](packages/stylelint-config)                                         | [![@lmc-eu/stylelint-config][slc-badge]][slc-npm]                         |
+| Renovate               | [@lmc-eu/renovate-config](packages/renovate-config)                                           | [![@lmc-eu/renovate-config][rc-badge]][rc-npm]                            |
 | ESLint                 | [@lmc-eu/eslint-config-base](packages/eslint-config-base)                                     | [![@lmc-eu/eslint-config-base][slc-badge]][ec-base-npm]                   |
 | ESLint                 | [@lmc-eu/eslint-config-graphql](packages/eslint-config-graphql)                               | [![@lmc-eu/eslint-config-graphql][ec-gql-badge]][ec-gql-npm]              |
 
@@ -38,6 +39,8 @@ We got a lot of inspiration from similar project at [STRV][strv-github]. Thank y
 [clc-badge]: https://img.shields.io/npm/v/%40lmc-eu/commitlint-config.svg?style=flat-square
 [slc-npm]: https://www.npmjs.com/package/@lmc-eu/stylelint-config
 [slc-badge]: https://img.shields.io/npm/v/%40lmc-eu/stylelint-config.svg?style=flat-square
+[rc-npm]: https://www.npmjs.com/package/@lmc-eu/renovate-config
+[rc-badge]: https://img.shields.io/npm/v/%40lmc-eu/renovate-config.svg?style=flat-square
 [ec-base-npm]: https://www.npmjs.com/package/@lmc-eu/eslint-config-base
 [ec-base-badge]: https://img.shields.io/npm/v/%40lmc-eu/eslint-config-base.svg?style=flat-square
 [ec-gql-npm]: https://www.npmjs.com/package/@lmc-eu/eslint-config-graphql
