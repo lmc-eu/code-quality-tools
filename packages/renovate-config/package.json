@@ -29,24 +29,36 @@
         "workarounds:all",
         ":prConcurrentLimit10"
       ],
-      "labels": ["dependencies"],
+      "labels": [
+        "dependencies"
+      ],
       "branchPrefix": "dependencies/",
       "commitMessagePrefix": "Deps: "
     },
     "scheduleWeeklyNonOfficeHours": {
-      "schedule": ["after 10pm and before 7am on Monday"]
+      "schedule": [
+        "after 10pm and before 7am on Monday"
+      ]
     },
     "scheduleWeeklyBusinessHours": {
-      "schedule": ["after 9am and before 5pm on Monday"]
+      "schedule": [
+        "after 9am and before 5pm on Monday"
+      ]
     },
     "groupMajorProdDependencies": {
       "packageRules": [
         {
           "groupName": "major prod dependencies",
           "groupSlug": "major-prod",
-          "matchPackagePatterns": ["*"],
-          "matchUpdateTypes": ["major"],
-          "matchDepTypes": ["dependencies"]
+          "matchPackagePatterns": [
+            "*"
+          ],
+          "matchUpdateTypes": [
+            "major"
+          ],
+          "matchDepTypes": [
+            "dependencies"
+          ]
         }
       ]
     },
@@ -55,9 +67,16 @@
         {
           "groupName": "non-major prod dependencies",
           "groupSlug": "non-major-prod",
-          "matchPackagePatterns": ["*"],
-          "matchUpdateTypes": ["minor", "patch"],
-          "matchDepTypes": ["dependencies"]
+          "matchPackagePatterns": [
+            "*"
+          ],
+          "matchUpdateTypes": [
+            "minor",
+            "patch"
+          ],
+          "matchDepTypes": [
+            "dependencies"
+          ]
         }
       ]
     },
@@ -67,8 +86,12 @@
           "groupName": "all dev dependencies",
           "groupSlug": "all-dev",
           "separateMajorMinor": false,
-          "matchPackagePatterns": ["*"],
-          "matchDepTypes": ["devDependencies"]
+          "matchPackagePatterns": [
+            "*"
+          ],
+          "matchDepTypes": [
+            "devDependencies"
+          ]
         }
       ]
     }
