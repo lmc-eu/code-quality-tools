@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/eslint-config-base",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "LMC's ESlint configuration preset",
   "keywords": [
     "eslint",

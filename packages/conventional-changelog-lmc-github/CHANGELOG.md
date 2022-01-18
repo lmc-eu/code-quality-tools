@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines and [LMC GitHub preset](https://github.com/lmc-eu/code-quality-tools/tree/main/packages/conventional-changelog-lmc-github) for the list of supported change types.
 
+<a name="2.0.0"></a>
+
+# [2.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-github@1.3.7...@lmc-eu/conventional-changelog-lmc-github@2.0.0) (2022-01-18)
+
+### BREAKING CHANGES
+
+- **conventional-changelog:** Switch from asterisk to hyphen #refs 48 ([c549e52](https://github.com/lmc-eu/code-quality-tools/commit/c549e52))
+  - in unordered lists only
+  - for compatibility with prettier formatting
+  - also hyphen is is most used symbol for unordered lists
+  - @see: https://github.com/prettier/prettier/issues/4251
+
+### Documetation
+
+- **conventional-changelog-lmc-github:** Include changelog ([3d60e67](https://github.com/lmc-eu/code-quality-tools/commit/3d60e67))
+
 <a name="1.0.1"></a>
 
 ## [1.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-github@1.0.0...@lmc-eu/conventional-changelog-lmc-github@1.0.1) (2021-12-17)

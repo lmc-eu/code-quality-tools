@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines and [LMC GitHub preset](https://github.com/lmc-eu/code-quality-tools/tree/main/packages/conventional-changelog-lmc-github) for the list of supported change types.
 
+<a name="3.0.0"></a>
+
+# [3.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@2.0.2...@lmc-eu/stylelint-config@3.0.0) (2022-01-18)
+
+## BREAKING CHANGES
+
+- **stylelint-config:** Require Stylelint 14 ([40f924f](https://github.com/lmc-eu/code-quality-tools/commit/40f924f))
+
 <a name="2.0.2"></a>
 
 ## [2.0.2](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@2.0.1...@lmc-eu/stylelint-config@2.0.2) (2021-12-18)

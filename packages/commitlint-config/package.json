@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/commitlint-config",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "LMC's configuration for commitlint",
   "keywords": [
     "commitlint",

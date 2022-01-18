@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines and [LMC GitHub preset](https://github.com/lmc-eu/code-quality-tools/tree/main/packages/conventional-changelog-lmc-github) for the list of supported change types.
 
+<a name="1.0.10"></a>
+
+## [1.0.10](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/commitlint-config@1.0.9...@lmc-eu/commitlint-config@1.0.10) (2022-01-18)
+
+### Documentation
+
+- **commitlint:** Include changelog ([32872ba](https://github.com/lmc-eu/code-quality-tools/commit/32872ba))
+
 <a name="1.0.9"></a>
 
 ## [1.0.9](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/commitlint-config@1.0.8...@lmc-eu/commitlint-config@1.0.9) (2021-12-18)

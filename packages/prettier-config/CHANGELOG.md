@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines and [LMC GitHub preset](https://github.com/lmc-eu/code-quality-tools/tree/main/packages/conventional-changelog-lmc-github) for the list of supported change types.
 
+<a name="1.2.2"></a>
+
+## [1.2.2](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/prettir-config@1.2.1...@lmc-eu/prettir-config@1.2.2) (2022-01-18)
+
+### Documentation
+
+- **prettier-config:** Include changelog ([078813b](https://github.com/lmc-eu/code-quality-tools/commit/078813b))
+
 <a name="1.2.1"></a>
 
 ## [1.2.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/prettir-config@1.2.0...@lmc-eu/prettir-config@1.2.1) (2021-12-18)
