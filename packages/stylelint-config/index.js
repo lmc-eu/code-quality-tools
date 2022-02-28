@@ -80,6 +80,7 @@ module.exports = {
       'lower',
       {
         ignoreProperties: ['$font-family-base'],
+        camelCaseSvgKeywords: true,
       },
     ],
     'at-rule-name-case': 'lower',
