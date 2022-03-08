@@ -23,7 +23,8 @@
     "format:check": "prettier --check ./",
     "format:fix": "prettier --write ./",
     "lint": "eslint ./",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "version": "yarn format:fix"
   },
   "devDependencies": {
     "commitlint-cli": "^1.1.3",
