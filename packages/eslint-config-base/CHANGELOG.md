@@ -1,3 +1,16 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="1.1.3"></a>
+
+## [1.1.3](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-base@1.1.2...@lmc-eu/eslint-config-base@1.1.3) (2022-03-08)
+
+Miscellaneous changes
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-base
+
 # Changelog
 
 All notable changes to this project will be documented in this file.

@@ -1,3 +1,18 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="3.0.1"></a>
+
+## [3.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@3.0.0...@lmc-eu/stylelint-config@3.0.1) (2022-03-08)
+
+### Features
+
+- **stylelint-config:** Set camelCaseSvgKeywords to true in value-keyword-case rule ([37f8331](https://github.com/lmc-eu/code-quality-tools/commit/37f8331))
+
+**Note:** Version bump only for package @lmc-eu/stylelint-config
+
 # Changelog
 
 All notable changes to this project will be documented in this file.

@@ -1,7 +1,7 @@
 {
   "name": "@lmc-eu/eslint-config-graphql",
   "description": "LMC's ESLint config for javascript applications that use GraphQL and Apollo client.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Tomas Litera <tomas.litera@lmc.eu>",
   "keywords": [
     "config",

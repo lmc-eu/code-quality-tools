@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/browserslist-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "LMC's config for Browserslist",
   "keywords": [
     "browserslist",

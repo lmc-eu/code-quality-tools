@@ -1,3 +1,16 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="1.0.1"></a>
+
+## [1.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/renovate-config@1.0.0...@lmc-eu/renovate-config@1.0.1) (2022-03-08)
+
+Miscellaneous changes
+
+**Note:** Version bump only for package @lmc-eu/renovate-config
+
 # Changelog
 
 All notable changes to this project will be documented in this file.

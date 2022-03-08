@@ -1,3 +1,22 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="1.0.11"></a>
+
+## [1.0.11](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/commitlint-config@1.0.9...@lmc-eu/commitlint-config@1.0.11) (2022-03-08)
+
+### Chores
+
+- Release [CI-SKIP] ([bd5fc33](https://github.com/lmc-eu/code-quality-tools/commit/bd5fc33))
+
+### Documentation
+
+- **commitlint:** Include changelog ([32872ba](https://github.com/lmc-eu/code-quality-tools/commit/32872ba))
+
+**Note:** Version bump only for package @lmc-eu/commitlint-config
+
 # Changelog
 
 All notable changes to this project will be documented in this file.

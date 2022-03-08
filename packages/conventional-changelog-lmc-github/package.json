@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/conventional-changelog-lmc-github",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "conventional-changelog LMC preset for GitHub",
   "keywords": [
     "lmc",
