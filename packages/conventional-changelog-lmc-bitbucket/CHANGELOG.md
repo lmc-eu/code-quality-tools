@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.2"></a>
+
+## [2.0.2](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-bitbucket@2.0.1...@lmc-eu/conventional-changelog-lmc-bitbucket@2.0.2) (2022-03-14)
+
+### Chores
+
+- **conventional-changelog:** Set max workers option for jest ([94890c8](https://github.com/lmc-eu/code-quality-tools/commit/94890c8))
+
+### Tests
+
+- **conventional-changelog:** Use of eslint-config-jest for tests ([6dc7091](https://github.com/lmc-eu/code-quality-tools/commit/6dc7091))
+
+**Note:** Version bump only for package @lmc-eu/conventional-changelog-lmc-bitbucket
+
 <a name="2.0.1"></a>
 
 ## [2.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-bitbucket@2.0.0...@lmc-eu/conventional-changelog-lmc-bitbucket@2.0.1) (2022-03-08)
