@@ -1,0 +1,14 @@
+{
+  "extends": ["@lmc-eu", "@lmc-eu:scheduleWeeklyBusinessHours", "group:allNonMajor", ":pinOnlyDevDependencies"],
+  "ignorePresets": [":ignoreModulesAndTests"],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/__tests__/**",
+    "**/test/**",
+    "**/tests/**",
+    "**/__fixtures__/**"
+  ],
+  "prConcurrentLimit": 3
+}
