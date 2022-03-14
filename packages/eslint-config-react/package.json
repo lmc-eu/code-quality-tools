@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/eslint-config-react",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0",
   "description": "LMC's ESlint configuration for React projects",
   "keywords": [
     "eslint",

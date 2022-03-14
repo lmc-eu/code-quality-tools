@@ -1,7 +1,38 @@
-# CHANGELOG
+# Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="1.0.0"></a>
+
+# 1.0.0 (2022-03-14)
+
+### Bug Fixes
+
+- **eslint-config-react:** Add missing peer dependencies for airbnb ([bcc5de3](https://github.com/lmc-eu/code-quality-tools/commit/bcc5de3))
+- **eslint-config-react:** Bad path to aribnb's react-a11y ruleset ([0d8216f](https://github.com/lmc-eu/code-quality-tools/commit/0d8216f))
+- **eslint-config-react:** Bad path to eslint-config-airbnb package ([1935c8b](https://github.com/lmc-eu/code-quality-tools/commit/1935c8b))
+
+### Chores
+
+- Release [CI-SKIP] ([63ba554](https://github.com/lmc-eu/code-quality-tools/commit/63ba554))
+- Release [CI-SKIP] ([a8d20d5](https://github.com/lmc-eu/code-quality-tools/commit/a8d20d5))
+- Release [CI-SKIP] ([acd5853](https://github.com/lmc-eu/code-quality-tools/commit/acd5853))
+
+### Documentation
+
+- **eslint-config-react:** How to install package and peer deps ([4bdb1b1](https://github.com/lmc-eu/code-quality-tools/commit/4bdb1b1))
+
+### Features
+
+- **eslint-config-react:** Extend parser option with @babel/preset-react ([f568b2c](https://github.com/lmc-eu/code-quality-tools/commit/f568b2c))
+- **eslint-config-react:** Introduce ESLint ruleset for React [#7](https://github.com/lmc-eu/code-quality-tools/issues/7) ([c6d0fa8](https://github.com/lmc-eu/code-quality-tools/commit/c6d0fa8))
+
+### Styles
+
+- **eslint-config-react:** Reformat code with prettier ([e1512cd](https://github.com/lmc-eu/code-quality-tools/commit/e1512cd))
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-react
 
 <a name="1.0.0-alpha.2"></a>
 
