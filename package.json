@@ -22,9 +22,10 @@
     "format": "yarn format:check",
     "format:check": "prettier --check ./",
     "format:fix": "prettier --write ./",
+    "format:fix:changelog": "prettier --write ./packages/**/CHANGELOG.md",
     "lint": "eslint ./",
     "lint:fix": "yarn lint --fix",
-    "version": "yarn format:fix"
+    "version": "yarn format:fix:changelog"
   },
   "devDependencies": {
     "commitlint-cli": "^1.1.3",
