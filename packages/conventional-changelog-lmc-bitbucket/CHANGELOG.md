@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.3"></a>
+
+## [2.0.3](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-bitbucket@2.0.2...@lmc-eu/conventional-changelog-lmc-bitbucket@2.0.3) (2022-03-25)
+
+### Dependencies
+
+- Pin dependencies ([521e78c](https://github.com/lmc-eu/code-quality-tools/commit/521e78c))
+- Update all non-major dependencies ([51b245d](https://github.com/lmc-eu/code-quality-tools/commit/51b245d))
+
+**Note:** Version bump only for package @lmc-eu/conventional-changelog-lmc-bitbucket
+
 <a name="2.0.2"></a>
 
 ## [2.0.2](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-bitbucket@2.0.1...@lmc-eu/conventional-changelog-lmc-bitbucket@2.0.2) (2022-03-14)

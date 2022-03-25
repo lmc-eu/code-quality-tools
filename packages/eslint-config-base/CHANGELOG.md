@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.4"></a>
+
+## [1.1.4](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-base@1.1.3...@lmc-eu/eslint-config-base@1.1.4) (2022-03-25)
+
+### Dependencies
+
+- Update dependency eslint-config-airbnb-base to v15 ([1178dae](https://github.com/lmc-eu/code-quality-tools/commit/1178dae))
+- Update dependency eslint-plugin-jsdoc to v38 ([3400c4c](https://github.com/lmc-eu/code-quality-tools/commit/3400c4c))
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-base
+
 <a name="1.1.3"></a>
 
 ## [1.1.3](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-base@1.1.2...@lmc-eu/eslint-config-base@1.1.3) (2022-03-08)

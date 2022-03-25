@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.0"></a>
+
+# [4.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@3.0.1...@lmc-eu/stylelint-config@4.0.0) (2022-03-25)
+
+## BREAKING CHANGES
+
+- **stylelint-config:** Remove `camelCaseSvgKeywords` in `value-keyword-case` ([aa5a358](https://github.com/lmc-eu/code-quality-tools/commit/aa5a358))
+  - this options requires svg keywords to be in camel case like `currentColor`
+  - this casing is considered as legacy by community and shoudl be avoided
+
+**Note:** Version bump only for package @lmc-eu/stylelint-config
+
 <a name="3.0.1"></a>
 
 ## [3.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@3.0.0...@lmc-eu/stylelint-config@3.0.1) (2022-03-08)
