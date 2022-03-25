@@ -20,6 +20,7 @@ LERNA_FLAGS 	:=
 .PHONY        : # Not needed here, but you can put your all your targets to be sure
                 # there is no name conflict between your files and your targets.
 
+##
 ## --- 💻 CQT Makefile ----------------------------------------------------------
 
 .PHONY: help
@@ -28,6 +29,7 @@ help: ## print this help message
 	| awk 'BEGIN {FS = ":.*?## "}{printf "\033[32m%-30s\033[0m %s\n", $$1, $$2}' \
 	| sed -e 's/\[32m##/[33m/'
 
+##
 ## --- 📦 Package management ----------------------------------------------------
 
 .PHONY: install
@@ -56,11 +58,16 @@ pristine: clean ## clean all installed dependencies
 node_modules: package.json ## install node modules
 	yarn $(YARN_I) $(YARN_FLAGS) && lerna bootstrap && touch node_modules
 
+##
 ## --- 🚀 Release management ----------------------------------------------------
 
 .PHONY: release
 release: ## create a new release
 	@bin/make/release.sh
+
+.PHONY: release-sync
+release-sync: ## sync release with main branch
+	@bin/ci/sync-release.sh
 
 .PHONY: publish
 publish: ## publish a release
