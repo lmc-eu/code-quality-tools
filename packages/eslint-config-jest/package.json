@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@lmc-eu/eslint-config-base": "^1.1.1",
-    "eslint-plugin-jest": "^25.3.0",
+    "eslint-plugin-jest": "^26.0.0",
     "eslint-plugin-jest-formatting": "^3.1.0"
   },
   "peerDependencies": {
