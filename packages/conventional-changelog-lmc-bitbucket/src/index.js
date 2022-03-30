@@ -40,7 +40,7 @@ const writerOpts = {
 
     const transformedCommit = commit;
 
-    if (commit.type === 'BREAKING CHANGE') {
+    if (commit.type === 'BREAKING CHANGE' || commit.type === 'BREAKING CHANGES') {
       transformedCommit.type = 'BREAKING CHANGES';
     } else if (commit.type === 'Feat') {
       transformedCommit.type = 'Features';

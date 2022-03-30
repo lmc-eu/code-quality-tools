@@ -22,6 +22,8 @@ betterThanBefore.setups([
     shell.exec('git init --template=./git-templates');
 
     gitDummyCommit('Chore: first commit');
+    gitDummyCommit('BREAKING CHANGE: Not so compatible change');
+    gitDummyCommit('BREAKING CHANGES: Another big change that break things');
     gitDummyCommit(['Feat: amazing new module', 'BREAKING CHANGE: Not backward compatible.']);
     gitDummyCommit(['Fix(compile): avoid a bug', 'BREAKING CHANGE: The Change is huge.']);
     gitDummyCommit(['Perf(ngOptions): make it faster', ' closes #1, #2']);
@@ -98,6 +100,8 @@ describe('lmc bitbucket preset', () => {
           expect(stringifiedChunk).toInclude('Reverts');
           expect(stringifiedChunk).toInclude('bad commit');
           expect(stringifiedChunk).toInclude('BREAKING CHANGE');
+          expect(stringifiedChunk).toInclude('Not so compatible change');
+          expect(stringifiedChunk).toInclude('Another big change that break things');
 
           // expect(stringifiedChunk).not.toInclude('first commit');
           expect(stringifiedChunk).not.toInclude('feat');
