@@ -4,4 +4,4 @@ const writerOpts = require('./writer-opts');
 module.exports = {
   parserOpts,
   writerOpts,
-}
+};
