@@ -23,6 +23,8 @@ betterThanBefore.setups([
     shell.exec('git init --template=./git-templates');
 
     gitDummyCommit('Chore: first commit');
+    gitDummyCommit('BREAKING CHANGE: Not so compatible change');
+    gitDummyCommit('BREAKING CHANGES: Another big change that break things');
     gitDummyCommit(['Feat: amazing new module', 'BREAKING CHANGE: Not backward compatible.']);
     gitDummyCommit(['Fix(compile): avoid a bug', 'BREAKING CHANGE: The Change is huge.']);
     gitDummyCommit(['Perf(ngOptions): make it faster', ' closes #1, #2']);
@@ -48,7 +50,7 @@ betterThanBefore.setups([
     gitDummyCommit(['Chore(deps): bump', 'BREAKING CHANGE: The Change is huge.']);
   },
   function () {
-    gitDummyCommit(['Feat(deps): bump', 'BREAKING CHANGE Also works :)']);
+    gitDummyCommit(['Feat(deps): bump', 'BREAKING CHANGES Also works :)']);
   },
   function () {
     shell.exec('git tag v1.0.0');
@@ -99,6 +101,8 @@ describe('lmc github preset', () => {
           expect(chunk).toInclude('Reverts');
           expect(chunk).toInclude('bad commit');
           expect(chunk).toInclude('BREAKING CHANGE');
+          expect(chunk).toInclude('Not so compatible change');
+          expect(chunk).toInclude('Another big change that break things');
 
           // expect(chunk).not.toInclude('first commit');
           expect(chunk).not.toInclude('feat');
