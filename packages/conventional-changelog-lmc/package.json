@@ -1,23 +1,23 @@
 {
-  "name": "@lmc-eu/conventional-changelog-lmc-github",
-  "version": "2.0.3",
-  "description": "conventional-changelog LMC preset for GitHub",
+  "name": "@lmc-eu/conventional-changelog-lmc",
+  "version": "1.0.0",
+  "description": "conventional-changelog LMC parser and writer",
   "keywords": [
     "lmc",
-    "github",
     "changelog",
     "conventional-changelog",
-    "preset"
+    "parser",
+    "writer"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/lmc-eu/code-quality-tools",
-    "directory": "packages/conventional-changelog-lmc-github"
+    "directory": "packages/conventional-changelog-lmc"
   },
   "author": "Tomáš Litera <tomas.litera@lmc.eu>",
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lmc-eu/issues"
+    "url": "https://github.com/lmc-eu/code-quality-tools/issues"
   },
   "files": [
     "src"
@@ -30,8 +30,7 @@
     "test": "is-ci || jest --maxWorkers=50%"
   },
   "dependencies": {
-    "@lmc-eu/conventional-changelog-lmc": "^1.0.0",
-    "q": "^1.5.1"
+    "compare-func": "^2.0.0"
   },
   "devDependencies": {
     "better-than-before": "1.0.0",
