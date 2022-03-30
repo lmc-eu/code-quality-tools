@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['@commitlint/config-conventional'],
-  parserPreset: '@lmc-eu/conventional-changelog-lmc-bitbucket',
+  parserPreset: '@lmc-eu/conventional-changelog-lmc',
   ignores: [(commit) => commit.includes('[CI-SKIP]')],
   rules: {
     'type-case': [1, 'always', 'pascal-case'],
