@@ -30,7 +30,7 @@
     "test": "is-ci || jest --maxWorkers=50%"
   },
   "dependencies": {
-    "compare-func": "^2.0.0",
+    "@lmc-eu/conventional-changelog-lmc": "^1.0.0",
     "q": "^1.5.1"
   },
   "devDependencies": {
