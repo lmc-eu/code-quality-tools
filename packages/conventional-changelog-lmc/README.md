@@ -1,3 +1,24 @@
+# @lmc-eu/conventional-changelog-lmc
+
+> LMC's Conventional Changelog Writer and Parser
+
+## Installation
+
+NPM:
+
+```
+npm i --dev @lmc-eu/conventional-changelog-lmc
+```
+
+Yarn:
+
+```
+yarn add --dev @lmc-eu/conventional-changelog-lmc
+```
+
+## Usage
+
+```js
 const Q = require('q');
 const readFile = Q.denodeify(require('fs').readFile);
 const { resolve } = require('path');
@@ -19,3 +40,4 @@ module.exports = Q.all([
     writerOpts,
   };
 });
+```
