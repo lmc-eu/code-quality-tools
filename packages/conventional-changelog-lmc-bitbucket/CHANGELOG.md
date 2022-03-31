@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.4"></a>
+
+## [2.0.4](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-bitbucket@2.0.3...@lmc-eu/conventional-changelog-lmc-bitbucket@2.0.4) (2022-03-31)
+
+### Bug Fixes
+
+- **conventional-changelog:** Allow parsing `BREAKING CHANGES` as commit type (fixes [#52](https://jira.int.lmc.cz/browse/52), [#54](https://jira.int.lmc.cz/browse/54)) ([aaf0269](https://github.com/lmc-eu/code-quality-tools/commit/aaf0269))
+
+### Dependencies
+
+- Update dependency jest to v27 ([939ff2b](https://github.com/lmc-eu/code-quality-tools/commit/939ff2b))
+
+**Note:** Version bump only for package @lmc-eu/conventional-changelog-lmc-bitbucket
+
 <a name="2.0.3"></a>
 
 ## [2.0.3](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-bitbucket@2.0.2...@lmc-eu/conventional-changelog-lmc-bitbucket@2.0.3) (2022-03-25)
