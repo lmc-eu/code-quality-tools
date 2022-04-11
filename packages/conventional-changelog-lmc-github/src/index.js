@@ -1,8 +1,7 @@
 const Q = require('q');
 const readFile = Q.denodeify(require('fs').readFile);
 const { resolve } = require('path');
-const parserOpts = require('./parser-opts');
-const writerOpts = require('./writer-opts');
+const { parserOpts, writerOpts } = require('@lmc-eu/conventional-changelog-lmc');
 
 module.exports = Q.all([
   readFile(resolve(__dirname, 'templates/template.hbs'), 'utf-8'),
