@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/eslint-config-jest",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "LMC's ESlint configuration for projects using Jest as test runner",
   "keywords": [
     "eslint",
@@ -26,7 +26,7 @@
     "url": "https://github.com/lmc-eu/code-quality-tools/issues"
   },
   "dependencies": {
-    "@lmc-eu/eslint-config-base": "^1.1.4",
+    "@lmc-eu/eslint-config-base": "^1.1.5",
     "eslint-plugin-jest": "^26.0.0",
     "eslint-plugin-jest-formatting": "^3.1.0"
   },

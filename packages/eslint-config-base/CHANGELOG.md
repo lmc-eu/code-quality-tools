@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.5"></a>
+
+## [1.1.5](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-base@1.1.4...@lmc-eu/eslint-config-base@1.1.5) (2022-05-05)
+
+### Dependencies
+
+- Update dependency eslint-plugin-jsdoc to v39 ([6a0ea2b](https://github.com/lmc-eu/code-quality-tools/commit/6a0ea2b))
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-base
+
 <a name="1.1.4"></a>
 
 ## [1.1.4](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-base@1.1.3...@lmc-eu/eslint-config-base@1.1.4) (2022-03-25)

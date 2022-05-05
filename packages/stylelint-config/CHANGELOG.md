@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.1"></a>
+
+## [4.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@4.0.0...@lmc-eu/stylelint-config@4.0.1) (2022-05-05)
+
+### Dependencies
+
+- Update dependency stylelint-order to v5 ([26880bd](https://github.com/lmc-eu/code-quality-tools/commit/26880bd))
+
+**Note:** Version bump only for package @lmc-eu/stylelint-config
+
 <a name="4.0.0"></a>
 
 # [4.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@3.0.1...@lmc-eu/stylelint-config@4.0.0) (2022-03-25)
