@@ -19,17 +19,19 @@ npm install --save-dev @lmc-eu/stylelint-config stylelint-config-prettier
 > We assume you are using Prettier. That's why we also recommend adding
 > `stylelint-config-prettier` above.
 
-## Configurations
+Configuration extends community maintained config [stylelint-config-standard-scss](https://github.com/stylelint-scss/stylelint-config-standard-scss).
+
+This config:
+
+- Extends the [`stylelint-config-recommended` shared config](https://github.com/stylelint/stylelint-config-recommended) and configures its rules for SCSS;
+- extends the [`stylelint-config-recommended-scss` shared config](https://github.com/stylelint-scss/stylelint-config-recommended-scss) and configures its rules for SCSS;
+- extends the [`stylelint-config-standard` shared config](https://github.com/stylelint/stylelint-config-standard) and configures its rules.
+
+## Configuration
 
 ### `@lmc-eu/stylelint-config`
 
 Use this ruleset to configure Stylelint to work with your code.
-
-## Optional configurations
-
-### `@lmc-eu/stylelint-config/optional`
-
-Use this ruleset in conjunction with any of the above rulesets. Provides additional insights into potential inconsistencies in the project.
 
 ## Recommended stylelint config
 
@@ -39,7 +41,7 @@ Use this ruleset in conjunction with any of the above rulesets. Provides additio
 'use strict';
 
 module.exports = {
-  extends: ['@lmc-eu/stylelint-config', '@lmc-eu/stylelint-config/optional', 'stylelint-config-prettier'],
+  extends: ['@lmc-eu/stylelint-config', 'stylelint-config-prettier'],
 };
 ```
 
@@ -48,7 +50,7 @@ module.exports = {
 
 ```json
 {
-  "extends": ["@lmc-eu/stylelint-config", "@lmc-eu/stylelint-config/optional", "stylelint-config-prettier"]
+  "extends": ["@lmc-eu/stylelint-config", "stylelint-config-prettier"]
 }
 ```
 
@@ -60,7 +62,91 @@ module.exports = {
 ```json
 {
   "stylelint": {
-    "extends": ["@lmc-eu/stylelint-config", "@lmc-eu/stylelint-config/optional", "stylelint-config-prettier"]
+    "extends": ["@lmc-eu/stylelint-config", "stylelint-config-prettier"]
+  }
+}
+```
+
+</details>
+
+---
+
+## Legacy Configurations
+
+Use this config to keep less strict ruleset that consists from the original one up to version 4.0.1:
+
+`@lmc-eu/stylelint-config/legacy`
+
+or its extended version with rules for properties order (formerly known as `optional` until 4.0.1):
+
+`@lmc-eu/stylelint-config/legacy-with-properties-order`
+
+## Recommended legacy stylelint config
+
+```js
+// .stylelintrc.js
+
+'use strict';
+
+module.exports = {
+  extends: ['@lmc-eu/stylelint-config/legacy', 'stylelint-config-prettier'],
+};
+```
+
+<details>
+<summary><i>.stylelintrc</i> or <i>.stylelintrc.json</i></summary>
+
+```json
+{
+  "extends": ["@lmc-eu/stylelint-config/legacy", "stylelint-config-prettier"]
+}
+```
+
+</details>
+
+<details>
+<summary><i>package.json</i></summary>
+
+```json
+{
+  "stylelint": {
+    "extends": ["@lmc-eu/stylelint-config/legacy", "stylelint-config-prettier"]
+  }
+}
+```
+
+</details>
+
+## Extended legacy config with properties order ruleset
+
+```js
+// .stylelintrc.js
+
+'use strict';
+
+module.exports = {
+  extends: ['@lmc-eu/stylelint-config/legacy-with-properties-order', 'stylelint-config-prettier'],
+};
+```
+
+<details>
+<summary><i>.stylelintrc</i> or <i>.stylelintrc.json</i></summary>
+
+```json
+{
+  "extends": ["@lmc-eu/stylelint-config/legacy-with-properties-order", "stylelint-config-prettier"]
+}
+```
+
+</details>
+
+<details>
+<summary><i>package.json</i></summary>
+
+```json
+{
+  "stylelint": {
+    "extends": ["@lmc-eu/stylelint-config/legacy-with-properties-order", "stylelint-config-prettier"]
   }
 }
 ```
