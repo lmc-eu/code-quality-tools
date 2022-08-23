@@ -45,6 +45,16 @@
         "after 9am and before 5pm on Monday"
       ]
     },
+    "scheduleEveryTwoWeeksNonOfficeHours": {
+      "schedule": [
+        "after 10pm and before 7am on the 2nd and 4th day instance on Monday"
+      ]
+    },
+    "scheduleEveryTwoWeeksBusinessHours": {
+      "schedule": [
+        "after 9am and before 5pm on the 2nd and 4th day instance on Monday"
+      ]
+    },
     "groupMajorProdDependencies": {
       "packageRules": [
         {
