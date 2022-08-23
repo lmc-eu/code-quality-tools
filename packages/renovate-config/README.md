@@ -57,6 +57,26 @@ Schedule weekly business hours
 }
 ```
 
+#### `@lmc-eu:scheduleEveryTwoWeeksBusinessHours`
+
+Schedule every two weeks business hours
+
+```json
+{
+  "schedule": ["after 9am and before 5pm on the 2nd and 4th day instance on Monday"]
+}
+```
+
+#### `@lmc-eu:scheduleEveryTwoWeeksNonOfficeHours`
+
+Schedule every two weeks non-office hours
+
+```json
+{
+  "schedule": ["after 10pm and before 7am on the 2nd and 4th day instance on Monday"]
+}
+```
+
 ### Group
 
 #### `@lmc-eu:groupMajorProdDependencies`
