@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.2"></a>
+
+## [1.0.2](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/renovate-config@1.0.1...@lmc-eu/renovate-config@1.0.2) (2022-09-23)
+
+### Features
+
+- **renovate:** Introduce every two weeks schedule ([772dc20](https://github.com/lmc-eu/code-quality-tools/commit/772dc20))
+
+**Note:** Version bump only for package @lmc-eu/renovate-config
+
 <a name="1.0.1"></a>
 
 ## [1.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/renovate-config@1.0.0...@lmc-eu/renovate-config@1.0.1) (2022-03-08)

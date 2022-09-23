@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.13"></a>
+
+## [1.0.13](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/commitlint-config@1.0.12...@lmc-eu/commitlint-config@1.0.13) (2022-09-23)
+
+### Bug Fixes
+
+- **commitlint-config:** Should depend on more general `conventional-changelog-lmc` (fixes [#46](https://github.com/lmc-eu/code-quality-tools/issues/46)) ([715a536](https://github.com/lmc-eu/code-quality-tools/commit/715a536))
+
+### Dependencies
+
+- Update dependency @commitlint/config-conventional to v17 ([8b35fc4](https://github.com/lmc-eu/code-quality-tools/commit/8b35fc4))
+
+**Note:** Version bump only for package @lmc-eu/commitlint-config
+
 <a name="1.0.12"></a>
 
 ## [1.0.12](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/commitlint-config@1.0.11...@lmc-eu/commitlint-config@1.0.12) (2022-03-25)
