@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/conventional-changelog-lmc-github",
-  "version": "2.0.5",
+  "version": "2.1.0",
   "description": "conventional-changelog LMC preset for GitHub",
   "keywords": [
     "lmc",
@@ -30,7 +30,7 @@
     "test": "is-ci || jest --maxWorkers=50%"
   },
   "dependencies": {
-    "@lmc-eu/conventional-changelog-lmc": "^1.0.0",
+    "@lmc-eu/conventional-changelog-lmc": "^1.1.0",
     "q": "^1.5.1"
   },
   "devDependencies": {

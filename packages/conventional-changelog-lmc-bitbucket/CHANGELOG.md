@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+
+## [2.1.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-bitbucket@2.0.5...@lmc-eu/conventional-changelog-lmc-bitbucket@2.1.0) (2022-09-26)
+
+### BREAKING CHANGES
+
+- **conventional-changelog:** Introduce `conventional-changelog-lmc` ([43a17cf](https://github.com/lmc-eu/code-quality-tools/commit/43a17cf))
+
+### Dependencies
+
+- Update all non-major dependencies ([06229f0](https://github.com/lmc-eu/code-quality-tools/commit/06229f0))
+- Update all non-major dependencies ([972a0da](https://github.com/lmc-eu/code-quality-tools/commit/972a0da))
+- Update dependency jest to v28 ([7f62139](https://github.com/lmc-eu/code-quality-tools/commit/7f62139))
+- Update dependency jest-extended to v3 ([c094516](https://github.com/lmc-eu/code-quality-tools/commit/c094516))
+
+**Note:** Version bump only for package @lmc-eu/conventional-changelog-lmc-bitbucket
+
 <a name="2.0.5"></a>
 
 ## [2.0.5](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-bitbucket@2.0.4...@lmc-eu/conventional-changelog-lmc-bitbucket@2.0.5) (2022-05-05)

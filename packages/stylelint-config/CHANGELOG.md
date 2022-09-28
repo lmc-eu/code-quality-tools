@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.0.0-alpha.0"></a>
+
+## [5.0.0-alpha.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@4.0.1...@lmc-eu/stylelint-config@5.0.0-alpha.0) (2022-09-26)
+
+### BREAKING CHANGES
+
+- **stylelint-config:** Switch to a community-maintained configurations ([e302df9](https://github.com/lmc-eu/code-quality-tools/commit/e302df9))
+
+**Note:** Version bump only for package @lmc-eu/stylelint-config
+
 <a name="4.0.1"></a>
 
 ## [4.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@4.0.0...@lmc-eu/stylelint-config@4.0.1) (2022-05-05)
