@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.0"></a>
+
+# [2.2.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-github@2.1.0...@lmc-eu/conventional-changelog-lmc-github@2.2.0) (2022-10-03)
+
+### Bug Fixes
+
+- **conventional-changelog:** Output format of chnagelog main file ([49bea0a](https://github.com/lmc-eu/code-quality-tools/commit/49bea0a))
+
+### Dependencies
+
+- Update all non-major dependencies ([85c6ce5](https://github.com/lmc-eu/code-quality-tools/commit/85c6ce5))
+
+### Features
+
+- **conventional-changelog:** Introduce recommended bump options ([1347c5e](https://github.com/lmc-eu/code-quality-tools/commit/1347c5e))
+
+**Note:** Version bump only for package @lmc-eu/conventional-changelog-lmc-github
+
 <a name="2.1.0"></a>
 
 ## [2.1.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-github@2.0.5...@lmc-eu/conventional-changelog-lmc-github@2.1.0) (2022-09-26)
