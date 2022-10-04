@@ -8,7 +8,7 @@ module.exports = {
       plugins: ['jest', 'jest-formatting'],
 
       env: {
-        mocha: true,
+        jest: true,
       },
 
       extends: ['plugin:jest/recommended', 'plugin:jest/style', 'plugin:jest-formatting/recommended'],
