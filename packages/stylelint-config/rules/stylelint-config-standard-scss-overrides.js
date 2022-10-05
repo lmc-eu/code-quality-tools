@@ -8,7 +8,8 @@ module.exports = {
       '(^([A-Z][a-zA-Z0-9]*)((--|__)[a-z][a-zA-Z0-9]*)*$)|(^([a-z][a-z0-9]*)(-[a-z0-9]+)*$)',
       {
         message:
-          'Expected class selector to be in format `MyComponent__myElement`, `MyComponent--modifier` or `kebab-case` for utility classes',
+          'Expected class selector to be in format `MyComponent__myElement`, `MyComponent--modifier` ' +
+          'or `kebab-case` for utility classes (selector-class-pattern)',
       },
     ],
 
@@ -36,6 +37,17 @@ module.exports = {
         except: ['blockless-after-same-name-blockless', 'first-nested'],
         ignore: ['after-comment'],
         ignoreAtRules: ['else'],
+      },
+    ],
+
+    // Allow only kebab-case variables naming. For private variables also allow underscore prefix.
+    // Reason: To allow underscore prefix for private variables.
+    // Docs: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/dollar-variable-pattern/README.md
+    'scss/dollar-variable-pattern': [
+      '^(_?[a-z][a-z0-9]*)(-[a-z0-9]+)*$',
+      {
+        message:
+          'Expected variable to be kebab-case. Underscore prefix for private variables is allowed (scss/dollar-variable-pattern)',
       },
     ],
   },
