@@ -11,7 +11,8 @@ module.exports = {
     'selector-nested-pattern': [
       '(^&:)|(^&\\[)|(^&\\.(is\\-|has\\-))',
       {
-        message: 'Only pseudo class selector, attribute selector and combination with state class is allowed',
+        message:
+          'Only pseudo class selector, attribute selector and combination with state class is allowed (selector-nested-pattern)',
       },
     ],
 
@@ -30,8 +31,7 @@ module.exports = {
       },
       {
         message:
-          'Transitioning all properties and absolute background URLs are ' +
-          'not allowed (declaration-property-value-disallowed-list)',
+          'Transitioning all properties and absolute background URLs are not allowed (declaration-property-value-disallowed-list)',
       },
     ],
 
