@@ -15,6 +15,7 @@ module.exports = {
       'bottom',
       'left',
       'z-index',
+      'isolation',
 
       // General appearance
       'appearance',
@@ -61,6 +62,7 @@ module.exports = {
       'align-items',
       'justify-self',
       'justify-content',
+      'justify-items',
       'order',
       'shape-outside',
       'shape-image-threshold',
