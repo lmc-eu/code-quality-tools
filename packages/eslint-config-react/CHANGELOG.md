@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+
+# [1.1.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-react@1.0.2...@lmc-eu/eslint-config-react@1.1.0) (2022-10-07)
+
+### Features
+
+- **eslint-config-react:** Allow `UNSAFE_` prefix in prop names ([#88](https://github.com/lmc-eu/code-quality-tools/issues/88)) ([1108c32](https://github.com/lmc-eu/code-quality-tools/commit/1108c32))
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-react
+
 <a name="1.0.2"></a>
 
 ## [1.0.2](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-react@1.0.1...@lmc-eu/eslint-config-react@1.0.2) (2022-05-05)

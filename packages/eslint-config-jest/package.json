@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/eslint-config-jest",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "LMC's ESlint configuration for projects using Jest as test runner",
   "keywords": [
     "eslint",

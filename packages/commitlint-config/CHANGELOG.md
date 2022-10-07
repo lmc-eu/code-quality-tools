@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.15"></a>
+
+## [1.0.15](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/commitlint-config@1.0.14...@lmc-eu/commitlint-config@1.0.15) (2022-10-07)
+
+### Bug Fixes
+
+- **commitlint:** Allow to use `upper-case` in commit type ([5e1528c](https://github.com/lmc-eu/code-quality-tools/commit/5e1528c))
+
+**Note:** Version bump only for package @lmc-eu/commitlint-config
+
 <a name="1.0.14"></a>
 
 ## [1.0.14](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/commitlint-config@1.0.13...@lmc-eu/commitlint-config@1.0.14) (2022-10-03)

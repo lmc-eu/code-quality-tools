@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.0.0-alpha.1"></a>
+
+# [5.0.0-alpha.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@5.0.0-alpha.0...@lmc-eu/stylelint-config@5.0.0-alpha.1) (2022-10-07)
+
+### Features
+
+- **stylelint-config:** Allow private SASS variables prefixed with `_` ([542fdcc](https://github.com/lmc-eu/code-quality-tools/commit/542fdcc))
+
+**Note:** Version bump only for package @lmc-eu/stylelint-config
+
 <a name="5.0.0-alpha.0"></a>
 
 ## [5.0.0-alpha.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@4.0.1...@lmc-eu/stylelint-config@5.0.0-alpha.0) (2022-09-26)
