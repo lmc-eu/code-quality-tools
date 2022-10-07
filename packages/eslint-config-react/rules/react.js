@@ -96,5 +96,10 @@ module.exports = {
         prop: 'parens-new-line',
       },
     ],
+
+    // Allow `UNSAFE_` prefix for React prop name
+    // Used especially in design systems to identify escape hatches
+    // https://eslint.org/docs/latest/rules/camelcase
+    camelcase: ['error', { properties: 'never', ignoreDestructuring: false, allow: ['^UNSAFE_'] }],
   },
 };
