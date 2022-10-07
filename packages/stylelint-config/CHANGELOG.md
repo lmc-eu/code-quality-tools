@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.0.0"></a>
+
+# [5.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@5.0.0-alpha.1...@lmc-eu/stylelint-config@5.0.0) (2022-10-07)
+
+### Features
+
+- **stylelint-config:** Add missing CSS properties to `CSS properties order` ruleset ([d2e48be](https://github.com/lmc-eu/code-quality-tools/commit/d2e48be))
+
+**Note:** Version bump only for package @lmc-eu/stylelint-config
+
 <a name="5.0.0-alpha.1"></a>
 
 # [5.0.0-alpha.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@5.0.0-alpha.0...@lmc-eu/stylelint-config@5.0.0-alpha.1) (2022-10-07)
