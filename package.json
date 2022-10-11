@@ -17,7 +17,7 @@
     "packages:changed": "lerna changed",
     "packages:list": "lerna ls",
     "packages:test": "lerna run test",
-    "test": "npm-run-all --serial lint packages:test format",
+    "test": "npm-run-all --serial lint:* packages:test format",
     "commit:lint:test": "commitlint --from HEAD~1 --to HEAD --verbose",
     "format": "yarn format:check",
     "format:check": "prettier --check ./",
@@ -25,6 +25,8 @@
     "format:fix:changelog": "prettier --write ./packages/**/CHANGELOG.md",
     "lint": "eslint ./",
     "lint:fix": "yarn lint --fix",
+    "lint:text": "textlint ./",
+    "lint:text:fix": "yarn textlint --fix",
     "version": "yarn format:fix:changelog"
   },
   "devDependencies": {

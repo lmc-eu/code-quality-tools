@@ -12,6 +12,7 @@ module.exports = {
         'prettier',
         'stylelint',
         'renovate',
+        'textlint',
         'eslint-config-base',
         'eslint-config-lmc',
         'eslint-config-graphql',
