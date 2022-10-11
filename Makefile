@@ -61,6 +61,10 @@ node_modules: package.json ## install node modules
 ##
 ## --- 🚀 Release management ----------------------------------------------------
 
+.PHONY: prerelease
+prerelease: ## create a new pre-release
+	@bin/make/prerelease.sh
+
 .PHONY: release
 release: ## create a new release
 	@bin/make/release.sh
