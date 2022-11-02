@@ -4,7 +4,7 @@
 [![Node version](https://img.shields.io/node/v/@lmc-eu/stylelint-config.svg?style=flat&logo=nodedotjs)](http://nodejs.org/download/)
 [![Stylelint version](https://img.shields.io/npm/dependency-version/@lmc-eu/stylelint-config/peer/stylelint?logo=stylelint)](https://github.com/stylelint/stylelint)
 
-> LMC's config for Stylelint
+> LMC’s config for Stylelint
 
 ## Usage
 
@@ -16,7 +16,7 @@ yarn add --dev @lmc-eu/stylelint-config stylelint-config-prettier
 npm install --save-dev @lmc-eu/stylelint-config stylelint-config-prettier
 ```
 
-> We assume you are using Prettier. That's why we also recommend adding
+> We assume you are using Prettier. That’s why we also recommend adding
 > `stylelint-config-prettier` above.
 
 Configuration extends community maintained config [stylelint-config-standard-scss](https://github.com/stylelint-scss/stylelint-config-standard-scss).
@@ -33,7 +33,7 @@ This config:
 
 Use this ruleset to configure Stylelint to work with your code.
 
-## Recommended stylelint config
+## Recommended Stylelint Configuration
 
 ```js
 // .stylelintrc.js
@@ -81,7 +81,7 @@ or its extended version with rules for properties order (formerly known as `opti
 
 `@lmc-eu/stylelint-config/legacy-with-properties-order`
 
-## Recommended legacy stylelint config
+## Recommended Legacy Stylelint Configuration
 
 ```js
 // .stylelintrc.js
@@ -117,7 +117,7 @@ module.exports = {
 
 </details>
 
-## Extended legacy config with properties order ruleset
+## Extended Legacy Configuration With Properties Order Ruleset
 
 ```js
 // .stylelintrc.js

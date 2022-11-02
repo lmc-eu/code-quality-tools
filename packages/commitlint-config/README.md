@@ -1,6 +1,6 @@
 # @lmc-eu/commitlint-config
 
-> LMC's config for commitlint
+> LMC’s config for commitlint
 
 ## Configurations
 

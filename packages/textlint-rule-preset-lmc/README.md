@@ -19,13 +19,13 @@ npm i --save-dev @lmc-eu/textlint-rule-preset-lmc
 ```js
 // .textlintrc.js
 
-'use strict'
+'use strict';
 
 module.exports = {
   rules: {
     '@lmc-eu/textlint-rule-preset-lmc': true,
   },
-}
+};
 ```
 
 <details>

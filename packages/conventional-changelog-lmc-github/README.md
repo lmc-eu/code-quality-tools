@@ -1,6 +1,6 @@
 # @lmc-eu/conventional-changelog-lmc-github
 
-> LMC's Conventional Changelog preset for GitHub repositories
+> LMC’s Conventional Changelog preset for GitHub repositories
 
 ## Usage
 

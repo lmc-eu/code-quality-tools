@@ -1,6 +1,6 @@
 # @lmc-eu/eslint-config-react
 
-> LMC's ESLint configuration for React projects
+> LMC’s ESLint configuration for React projects
 
 ## Installation
 
@@ -20,11 +20,11 @@ Use this ruleset to configure ESLint to work with React code.
 
 ### `@lmc-eu/eslint-config-react/optional`
 
-Use this ruleset in conjunction with the above ruleset. Provides additional insights into potential inconsistencies in the project.
+Use this ruleset together with the above ruleset. Provides additional insights into potential inconsistencies in the project.
 
 > For new projects, it is recommended to enable this ruleset. For existing projects, it is only recommended for the brave.
 
-## Recommended ESLint config
+## Recommended ESLint Configuration
 
 ```js
 // .eslintrc.js
@@ -60,8 +60,8 @@ module.exports = {
 
 </details>
 
-It is also recommended that you lint the whole project folder (ie. `npx eslint .`) instead of just
-some folders (ie. `npx eslint src test`) and create an _.eslintignore_ file excluding any unwanted
+It is also recommended that you lint the whole project folder (that is. `npx eslint .`) instead of just
+some folders (that is. `npx eslint src test`) and create an _.eslintignore_ file excluding any unwanted
 lint folders. Doing so will allow new directories to be created without worrying about having to update your
 tools to lint the new directory.
 

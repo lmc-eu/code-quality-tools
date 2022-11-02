@@ -18,7 +18,7 @@ And reference it in your _.prettierrc.js_ file:
 module.exports = require('@lmc-eu/prettier-config');
 ```
 
-Or you can of course choose your preffered way of using configs:
+Or you can choose your preffered way of using configs:
 
 <details>
 <summary><i>package.json</i></summary>
@@ -57,9 +57,9 @@ module.exports = {
 
 ## Notes
 
-### Prettier version
+### Prettier Version
 
-Versions of `prettier` prior to v1.17 did not feature the possibility to use a shared config via _package.json_. The way to do it is similar to when [extending](#Extending), except that you can just export the config directly:
+Versions of `prettier` before v1.17 did not feature the possibility to use a shared config via _package.json_. The way to do it is similar to when [extending](#Extending), except that you can just export the config directly:
 
 ```js
 // .prettierrc.js

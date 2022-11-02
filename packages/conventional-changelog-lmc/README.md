@@ -1,6 +1,6 @@
 # @lmc-eu/conventional-changelog-lmc
 
-> LMC's Conventional Changelog Writer and Parser
+> LMC’s Conventional Changelog Writer and Parser
 
 ## Installation
 

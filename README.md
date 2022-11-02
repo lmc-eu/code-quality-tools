@@ -19,7 +19,7 @@ This monorepo contains shareable configurations for various coding-style/best pr
 | ESLint                 | [@lmc-eu/eslint-config-graphql](packages/eslint-config-graphql)                               | [![@lmc-eu/eslint-config-graphql][ec-gql-badge]][ec-gql-npm]              |
 | ESLint                 | [@lmc-eu/eslint-config-react](packages/eslint-config-react)                                   | [![@lmc-eu/eslint-config-react][ec-react-badge]][ec-react-npm]            |
 | ESLint                 | [@lmc-eu/eslint-config-jest](packages/eslint-config-jest)                                     | [![@lmc-eu/eslint-config-jest][ec-jest-badge]][ec-jest-npm]               |
-| Textlint                 | [@lmc-eu/textlint-rule-preset-lmc](packages/textlint-rule-preset-lmc)                                     | [![@lmc-eu/textlint-rule-preset-lmc][tlc-badge]][tlc-npm]               |
+| Textlint               | [@lmc-eu/textlint-rule-preset-lmc](packages/textlint-rule-preset-lmc)                         | [![@lmc-eu/textlint-rule-preset-lmc][tlc-badge]][tlc-npm]                 |
 
 ## License
 
