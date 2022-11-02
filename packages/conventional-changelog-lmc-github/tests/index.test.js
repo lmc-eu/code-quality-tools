@@ -23,6 +23,7 @@ betterThanBefore.setups([
     shell.exec('git init --template=./git-templates');
 
     gitDummyCommit('Chore: first commit');
+    gitDummyCommit(['Feat!: first build setup', 'BREAKING CHANGE: New build system.']);
     gitDummyCommit('BREAKING CHANGE: Not so compatible change');
     gitDummyCommit('BREAKING CHANGES: Another big change that break things');
     gitDummyCommit(['Feat: amazing new module', 'BREAKING CHANGE: Not backward compatible.']);
@@ -51,6 +52,7 @@ betterThanBefore.setups([
   },
   function () {
     gitDummyCommit(['Feat(deps): bump', 'BREAKING CHANGES Also works :)']);
+    gitDummyCommit(['Test(*)!: more tests', 'BREAKING CHANGE: The Change is huge.']);
   },
   function () {
     shell.exec('git tag v1.0.0');
@@ -60,7 +62,7 @@ betterThanBefore.setups([
     gitDummyCommit(['Feat(foo): add thing', 'closes #1223 #OBG-23']);
   },
   function () {
-    gitDummyCommit(['Revert \\"Feat: bad feature\\"', 'This reverts commit 12345.'], false);
+    gitDummyCommit(['Revert: \\"Feat: bad feature\\"', 'This reverts commit 12345.'], false);
     gitDummyCommit(['Revert: Feat: custom revert format', 'This reverts commit 5678.']);
   },
   function () {
@@ -89,6 +91,7 @@ describe('lmc github preset', () => {
         through((chunk) => {
           chunk = chunk.toString();
 
+          expect(chunk).toInclude('first build setup');
           expect(chunk).toInclude('amazing new module');
           expect(chunk).toInclude('**compile:** avoid a bug');
           expect(chunk).toInclude('make it faster');
@@ -119,6 +122,24 @@ describe('lmc github preset', () => {
             ),
           ); // commit hash is linked
 
+          done();
+        }),
+      );
+  });
+
+  it('should not list breaking change twice if ! is used', (done) => {
+    preparing(1);
+
+    conventionalChangelogCore({
+      config: preset,
+    })
+      .on('error', (err) => {
+        done(err);
+      })
+      .pipe(
+        through((chunk) => {
+          chunk = chunk.toString();
+          expect(chunk).not.toMatch(/\* first build setup\r?\n/);
           done();
         }),
       );
@@ -247,6 +268,27 @@ describe('lmc github preset', () => {
 
           expect(chunk).toInclude('BREAKING CHANGE');
           expect(chunk).toInclude('Also works :)');
+
+          done();
+        }),
+      );
+  });
+
+  it('should omit optional ! in breaking commit', (done) => {
+    preparing(6);
+
+    conventionalChangelogCore({
+      config: preset,
+    })
+      .on('error', (err) => {
+        done(err);
+      })
+      .pipe(
+        through((chunk) => {
+          chunk = chunk.toString();
+
+          expect(chunk).toInclude('### Tests');
+          expect(chunk).toInclude('more tests');
 
           done();
         }),
@@ -385,7 +427,7 @@ describe('lmc github preset', () => {
       .pipe(
         through((chunk) => {
           chunk = chunk.toString();
-          // console.log(chunk);
+
           expect(chunk).toInclude('closes [#1223](');
           expect(chunk).toInclude('1223), [#OBG-23]');
           done();
@@ -393,7 +435,7 @@ describe('lmc github preset', () => {
       );
   });
 
-  it.skip('should render revert commit using standard Git revert message convention', (done) => {
+  it('should render revert commit using standard Git revert message convention', (done) => {
     preparing(10);
 
     conventionalChangelogCore({
@@ -406,6 +448,7 @@ describe('lmc github preset', () => {
       .pipe(
         through((chunk) => {
           chunk = chunk.toString();
+
           expect(chunk).toInclude('Feat: bad feature');
           expect(chunk).toInclude('Feat: custom revert format');
           done();
