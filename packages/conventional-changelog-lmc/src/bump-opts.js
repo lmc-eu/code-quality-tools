@@ -1,3 +1,5 @@
+const parserOpts = require('./parser-opts')
+
 module.exports = {
   whatBump: (commits) => {
     let level = 2;
@@ -25,11 +27,5 @@ module.exports = {
     };
   },
 
-  parserOpts: {
-    headerPattern: /^(?:Pull request #[0-9]+: )?(?:([a-zA-Z]*-[0-9_]*)(?: ))* ?([\w ]*)(?:\((.*)\))?: (.*)$/,
-    headerCorrespondence: ['body', 'type', 'scope', 'subject'],
-    noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES'],
-    revertPattern: /^revert:\s([\s\S]*?)\s*This reverts commit (\w*)\./,
-    revertCorrespondence: ['header', 'hash'],
-  },
+  parserOpts,
 };
