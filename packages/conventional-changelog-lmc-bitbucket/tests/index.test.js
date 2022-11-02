@@ -59,7 +59,7 @@ betterThanBefore.setups([
     gitDummyCommit(['Feat(foo): add thing', 'closes #1223 #OBG-23']);
   },
   function () {
-    gitDummyCommit(['Revert \\"Feat: bad feature\\"', 'This reverts commit 12345.'], false);
+    gitDummyCommit(['Revert: \\"Feat: bad feature\\"', 'This reverts commit 12345.'], false);
     gitDummyCommit(['Revert: Feat: custom revert format', 'This reverts commit 5678.']);
   },
   function () {
@@ -395,7 +395,7 @@ describe('lmc bitbucket preset', () => {
       );
   });
 
-  it.skip('should render revert commit using standard Git revert message convention', (done) => {
+  it('should render revert commit using standard Git revert message convention', (done) => {
     preparing(10);
 
     conventionalChangelogCore({

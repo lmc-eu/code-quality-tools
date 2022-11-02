@@ -26,9 +26,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "scripts": {
-    "test": "is-ci || jest --maxWorkers=50%"
-  },
   "dependencies": {
     "compare-func": "^2.0.0"
   },

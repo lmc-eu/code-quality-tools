@@ -1,6 +1,8 @@
-const parserOpts = require('./parser-opts')
+const parserOpts = require('./parser-opts');
 
 module.exports = {
+  parserOpts,
+
   whatBump: (commits) => {
     let level = 2;
     let breakings = 0;
@@ -26,6 +28,4 @@ module.exports = {
           : `There are ${breakings} BREAKING CHANGES and ${features} features`,
     };
   },
-
-  parserOpts,
 };
