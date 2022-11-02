@@ -9,7 +9,10 @@ module.exports = {
     let features = 0;
 
     commits.forEach((commit) => {
-      if (commit.type === 'BREAKING CHANGE' || commit.type === 'BREAKING CHANGES') {
+      if (commit.notes.length > 0) {
+        breakings += commit.notes.length;
+        level = 0;
+      } else if (commit.type === 'BREAKING CHANGE' || commit.type === 'BREAKING CHANGES') {
         breakings += 1;
         level = 0;
       } else if (commit.type === `Feat`) {
