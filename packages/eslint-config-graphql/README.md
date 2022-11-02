@@ -21,7 +21,7 @@ module.exports = {
 
 The shareable config can be customized in your [**eslint** configuration file](https://eslint.org/docs/user-guide/configuring).
 
-Additionally don't forget to have `.graphqlconfig` file:
+Additionally don’t forget to have `.graphqlconfig` file:
 
 ```json
 {

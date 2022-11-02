@@ -12,7 +12,7 @@ When configuring ESLint, please keep the following in mind:
 
 - Prefer _.eslintrc.js_ format over YAML/JSON
 
-  > JSON cannot contain comments or other simple code, and YAML requires custom parser. Using standard node.js module format speeds the whole linting process up.
+  > JSON cannot contain comments or other simple code, and YAML requires custom parser. Using standard Node.js module format speeds the whole linting process up.
 
 - Always extend only from **one environment configuration** per _.eslintrc.js_
 
@@ -36,7 +36,7 @@ When configuring ESLint, please keep the following in mind:
   > For example, the rule `node/no-process-env` is enabled by default because accessing any property on `process.env` object causes an expensive C-level function call. However, using `process.env` is the recommended way to manage application configuration. Therefore, some configuration files disable this rule for all files located in a directory named _config_ or _configuration_. Here, you gather all the required configuration options from `process.env` and export them in a module. The rest of your application no longer needs to access `process.env` directly and instead reads the configuration from that module.
 
 - Always consider re-configuring a rule rather than disabling it completely
-  > If a rule does not quite fit your exiting codebase and fixing the issues would take considerable amount of time/energy, please consider first if the rule could be re-configured to suit your project's current style, rather than disabling it right away.
+  > If a rule does not quite fit your exiting codebase and fixing the issues would take considerable amount of time/energy, please consider first if the rule could be re-configured to suit your project’s current style, rather than disabling it right away.
 
 ## Available rulesets
 
@@ -44,32 +44,32 @@ When configuring ESLint, please keep the following in mind:
 
 ### For [Node.js][nodejs-docs]
 
-- @lmc-eu/eslint-config-node/v14
-- @lmc-eu/eslint-config-node/v16
-- @lmc-eu/eslint-config-node/optional
-- @lmc-eu/eslint-config-node/style
+- `@lmc-eu/eslint-config-node/v14`
+- `@lmc-eu/eslint-config-node/v16`
+- `@lmc-eu/eslint-config-node/optional`
+- `@lmc-eu/eslint-config-node/style`
 
 ### For [React][react-docs]
 
-- @lmc-eu/eslint-config-react
-- @lmc-eu/eslint-config-react/optional
-- @lmc-eu/eslint-config-react/style
+- `@lmc-eu/eslint-config-react`
+- `@lmc-eu/eslint-config-react/optional`
+- `@lmc-eu/eslint-config-react/style`
 
 ### For [React Native][react-native-docs]
 
-- @lmc-eu/eslint-config-react-native
-- @lmc-eu/eslint-config-react-native/optional
-- @lmc-eu/eslint-config-react-native/style
+- `@lmc-eu/eslint-config-react-native`
+- `@lmc-eu/eslint-config-react-native/optional`
+- `@lmc-eu/eslint-config-react-native/style`
 
 ### For [TypeScript][typescript-docs]
 
 > Requires configuration. See the docs for more info.
 
-- @lmc-eu/typescript
+- `@lmc-eu/typescript`
 
 ### For [Jest][jest-docs]
 
-- @lmc-eu/eslint-config-jest
+- `@lmc-eu/eslint-config-jest`
 
 [nodejs-docs]: ../../packages/eslint-config-node
 [react-docs]: ../../packages/eslint-config-react

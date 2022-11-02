@@ -1,6 +1,6 @@
 # `@lmc-eu/browserslist-config`
 
-> LMC's config for Browserslist
+> LMC’s config for Browserslist
 
 ## Installation
 
@@ -30,7 +30,7 @@ Alternatively, add this to your `package.json` file:
 
 ### Extending
 
-If you need to support IE (or any other browser):
+To support Internet Explorer (or any other browser):
 
 ```
 extends @lmc-eu/browserslist-config
@@ -61,7 +61,7 @@ your `.browserslistrc` (or `package.json`, wherever you store your config):
 - …
 ```
 
-Refer to the stats file in your Browserslist configuration:
+As mentioned in the stats file in your Browserslist configuration:
 
 ```
 extends @lmc-eu/browserslist-config

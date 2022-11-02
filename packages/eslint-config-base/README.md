@@ -1,6 +1,6 @@
 # @lmc-eu/eslint-config-base
 
-## Shared rules
+## Shared Rules
 
 These rules are meant to be shared across all ESLint rulesets.
 
@@ -12,11 +12,11 @@ These rules are meant to be shared across all ESLint rulesets.
 
 ### `@lmc-eu/eslint-config-base`
 
-Use this ruleset to configure ESLint to work with every Javascript code.
+Use this ruleset to configure ESLint to work with every JavaScript code.
 
 ### `@lmc-eu/eslint-config-base/optional`
 
-Use this ruleset in conjunction with the above ruleset. Provides additional insights into potential inconsistencies in the project.
+Use this ruleset together with the above ruleset. Provides additional insights into potential inconsistencies in the project.
 
 > For new projects, it is recommended to enable this ruleset. For existing projects, it is only recommended for the brave.
 
@@ -28,7 +28,7 @@ Lints ES5 and below.
 
 This entry point only errors on whitespace rules and sets all other rules to warnings. View [the list of whitespace rules](https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/whitespace.js).
 
-## Recommended ESLint config
+## Recommended ESLint Configuration
 
 ```js
 // .eslintrc.js
@@ -62,8 +62,8 @@ module.exports = {
 }
 ```
 
-It is also recommended that you lint the whole project folder (ie. `npx eslint .`) instead of just
-some folders (ie. `npx eslint src test`) and create an _.eslintignore_ file excluding any unwanted
+It is also recommended that you lint the whole project folder (that is `npx eslint .`) instead of just
+some folders (that is. `npx eslint src test`) and create an _.eslintignore_ file excluding any unwanted
 lint folders. Doing so will allow new directories to be created without worrying about having to update your
 tools to lint the new directory.
 

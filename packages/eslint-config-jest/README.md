@@ -1,6 +1,6 @@
 # @lmc-eu/eslint-config-jest
 
-> LMC's ESLint config for projects using Jest as test runner
+> LMC’s ESLint config for projects using Jest as test runner
 
 These configuration files are suitable to lint Jest test files.
 

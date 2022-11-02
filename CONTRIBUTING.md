@@ -1,6 +1,6 @@
 # Contributing to `code-quality-tools`
 
-First of all, thanks for your contribution to this project! ❤️ Here are some tips how to make your contributing efforts efficient and eventually accepted & merged.
+First, thanks for your contribution to this project! ❤️ Here are some tips how to make your contributing efforts efficient and eventually accepted & merged.
 
 ## General usage
 
@@ -8,7 +8,7 @@ This project uses `Makefile` for managing various chores, like dependency instal
 
 ## Commit messages
 
-All commits you make should adhere to our commit guidelines. We use [conventional commits][conventional-commits] strategy with our [slight modification of used keywords][lmc-conventional-commits]. This is later used during release phase to determine how to bump the packages' version numbers based on commit history. 🚀
+All commits you make should adhere to our commit guidelines. We use [conventional commits][conventional-commits] strategy with our [slight modification of used keywords][lmc-conventional-commits]. This is later used during release phase to determine how to bump the packages version numbers based on commit history. 🚀
 
 ## Code style
 

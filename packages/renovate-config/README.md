@@ -1,10 +1,10 @@
 # `@lmc-eu/renovate-config`
 
-> LMC's config for renovate
+> LMC’s config for renovate
 
 ## Usage
 
-Enable Renovate in your repo and just `extends` in `renovate.json`.
+Enable Renovate in your repository and just `extends` in `renovate.json`.
 
 ```json
 {
@@ -12,7 +12,7 @@ Enable Renovate in your repo and just `extends` in `renovate.json`.
 }
 ```
 
-Note: You don't have to do `npm i -D @lmc-eu/renovate-config`.
+Note: You don’t have to do `npm i -D @lmc-eu/renovate-config`.
 
 ## Presets
 

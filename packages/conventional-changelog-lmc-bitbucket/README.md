@@ -1,6 +1,6 @@
 # @lmc-eu/conventional-changelog-lmc-bitbucket
 
-> LMC's Conventional Changelog preset for BitBucket repositories
+> LMC’s Conventional Changelog preset for BitBucket repositories
 
 ## Usage
 
