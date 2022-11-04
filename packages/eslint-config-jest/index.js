@@ -3,7 +3,7 @@ const globs = require('@lmc-eu/eslint-config-base/globs');
 module.exports = {
   overrides: [
     {
-      files: globs.tests,
+      files: [...globs.tests, 'config/jest/**'],
 
       plugins: ['jest', 'jest-formatting'],
 
