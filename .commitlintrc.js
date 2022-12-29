@@ -18,6 +18,7 @@ module.exports = {
         'eslint-config-graphql',
         'eslint-config-react',
         'eslint-config-jest',
+        'eslint-config-typescript',
         // Use when commiting changes/additions/removals to packages in context
         'eslint',
         'rule',

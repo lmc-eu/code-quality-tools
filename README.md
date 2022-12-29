@@ -19,6 +19,7 @@ This monorepo contains shareable configurations for various coding-style/best pr
 | ESLint                 | [@lmc-eu/eslint-config-graphql](packages/eslint-config-graphql)                               | [![@lmc-eu/eslint-config-graphql][ec-gql-badge]][ec-gql-npm]              |
 | ESLint                 | [@lmc-eu/eslint-config-react](packages/eslint-config-react)                                   | [![@lmc-eu/eslint-config-react][ec-react-badge]][ec-react-npm]            |
 | ESLint                 | [@lmc-eu/eslint-config-jest](packages/eslint-config-jest)                                     | [![@lmc-eu/eslint-config-jest][ec-jest-badge]][ec-jest-npm]               |
+| ESLint                 | [@lmc-eu/eslint-config-typescript](packages/eslint-config-typescript)                         | [![@lmc-eu/eslint-config-typescript][ec-ts-badge]][ec-ts-npm]             |
 | Textlint               | [@lmc-eu/textlint-rule-preset-lmc](packages/textlint-rule-preset-lmc)                         | [![@lmc-eu/textlint-rule-preset-lmc][tlc-badge]][tlc-npm]                 |
 
 ## License
@@ -52,6 +53,8 @@ We got a lot of inspiration from similar project at [STRV][strv-github]. Thank y
 [ec-react-badge]: https://img.shields.io/npm/v/%40lmc-eu/eslint-config-react.svg?style=flat-square
 [ec-jest-npm]: https://www.npmjs.com/package/@lmc-eu/eslint-config-jest
 [ec-jest-badge]: https://img.shields.io/npm/v/%40lmc-eu/eslint-config-jest.svg?style=flat-square
+[ec-ts-npm]: https://www.npmjs.com/package/@lmc-eu/eslint-config-typescript
+[ec-ts-badge]: https://img.shields.io/npm/v/%40lmc-eu/eslint-config-typescript.svg?style=flat-square
 [tlc-npm]: https://www.npmjs.com/package/@lmc-eu/textlint-rule-preset-lmc
 [tlc-badge]: https://img.shields.io/npm/v/%40lmc-eu/textlint-rule-preset-lmc.svg?style=flat-square
 [strv-github]: https://github.com/strvcom/code-quality-tools
