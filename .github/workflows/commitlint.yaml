@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 50
       - uses: actions/setup-node@v3
         with:
-          node-version: 14
+          node-version: 16
 
       - name: Fetch main
         run: git fetch --no-tags --depth=50 origin main
