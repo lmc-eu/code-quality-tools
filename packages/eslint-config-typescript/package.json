@@ -1,0 +1,37 @@
+{
+  "name": "@lmc-eu/eslint-config-typescript",
+  "description": "LMC's ESLint config for TypeScript projects",
+  "version": "1.0.0-alpha.0",
+  "keywords": [
+    "config",
+    "eslint",
+    "typescript",
+    "LMC"
+  ],
+  "author": "Tomáš Litera <tomas.litera@lmc.eu>",
+  "homepage": "https://github.com/lmc-eu/code-quality-tools#readme",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": "^16 || >=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lmc-eu/code-quality-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lmc-eu/code-quality-tools/issues"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@lmc-eu/eslint-config-base": "^1.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint-import-resolver-typescript": "^3.2.7"
+  },
+  "peerDependencies": {
+    "eslint": "^8"
+  }
+}
