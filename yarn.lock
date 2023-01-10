@@ -6303,10 +6303,10 @@ jest-extended@0.11.5:
     jest-get-type "^22.4.3"
     jest-matcher-utils "^22.0.0"
 
-jest-extended@3.2.2:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/jest-extended/-/jest-extended-3.2.2.tgz#5a1a60f3187428fbf60e10d2eb23b3fb8f848ccf"
-  integrity sha512-hjnKdy3xBUTbe3CH8nc5WDDvX2btn5x04XXcN1AGqUKT48dzqeF4oWvz+wW21N66lV5+OFmJB387dU3YRZfOSA==
+jest-extended@3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/jest-extended/-/jest-extended-3.2.3.tgz#286c19b4622e2ab828e1bb28d3b2d4a1ed64f8b9"
+  integrity sha512-YcdjfFv3+N2AiWq4aG6gT/r1mfLtDKnbXs0hKXNlL/hf37TKQJTlh2zNwuMUYnvwKRRMtO/X9CfZU1EmOgUREA==
   dependencies:
     jest-diff "^29.0.0"
     jest-get-type "^29.0.0"
@@ -8380,10 +8380,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@2.8.1:
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.1.tgz#4e1fd11c34e2421bc1da9aea9bd8127cd0a35efc"
-  integrity sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==
+prettier@2.8.2:
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.2.tgz#c4ea1b5b454d7c4b59966db2e06ed7eec5dfd160"
+  integrity sha512-BtRV9BcncDyI2tsuS19zzhzoxD8Dh8LiCx7j7tHzrkz8GFXAexeWFdi22mjE1d16dftH2qNaytVxqiRTGlMfpw==
 
 pretty-format@^22.4.3:
   version "22.4.3"
