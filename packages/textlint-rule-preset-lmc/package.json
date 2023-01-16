@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/textlint-rule-preset-lmc",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0",
   "description": "LMC's config for Textlint",
   "keywords": [
     "textlint",

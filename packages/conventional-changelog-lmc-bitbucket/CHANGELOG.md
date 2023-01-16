@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.3.1"></a>
+
+## [2.3.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-bitbucket@2.3.0...@lmc-eu/conventional-changelog-lmc-bitbucket@2.3.1) (2023-01-16)
+
+### Dependencies
+
+- Update all non-major dependencies ([e3581b4](https://github.com/lmc-eu/code-quality-tools/commit/e3581b4))
+- Update all non-major dependencies ([f91dbaf](https://github.com/lmc-eu/code-quality-tools/commit/f91dbaf))
+- Update all non-major dependencies ([51d91a2](https://github.com/lmc-eu/code-quality-tools/commit/51d91a2))
+- Update all non-major dependencies ([0ba414f](https://github.com/lmc-eu/code-quality-tools/commit/0ba414f))
+- Update dependency jest to v29.3.1 ([c8fdb8a](https://github.com/lmc-eu/code-quality-tools/commit/c8fdb8a))
+
+### Styles
+
+- **repo:** Rewrite documentation using Textlint ruleset ([22e19bd](https://github.com/lmc-eu/code-quality-tools/commit/22e19bd))
+
+**Note:** Version bump only for package @lmc-eu/conventional-changelog-lmc-bitbucket
+
 <a name="2.3.0"></a>
 
 # [2.3.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-bitbucket@2.2.0...@lmc-eu/conventional-changelog-lmc-bitbucket@2.3.0) (2022-11-03)

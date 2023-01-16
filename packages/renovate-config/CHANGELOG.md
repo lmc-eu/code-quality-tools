@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+
+# 1.2.0 (2023-01-16)
+
+### Chores
+
+- **ci:** Introduce `release-sync` command in Makefile ([029ad33](https://github.com/lmc-eu/code-quality-tools/commit/029ad33))
+- Release [CI-SKIP] ([a705162](https://github.com/lmc-eu/code-quality-tools/commit/a705162))
+
+### Features
+
+- **renovate:** Introduce every two weeks schedule ([772dc20](https://github.com/lmc-eu/code-quality-tools/commit/772dc20))
+
+### Styles
+
+- **repo:** Rewrite documentation using Textlint ruleset ([22e19bd](https://github.com/lmc-eu/code-quality-tools/commit/22e19bd))
+
+**Note:** Version bump only for package @lmc-eu/renovate-config
+
 <a name="1.1.0"></a>
 
 ## [1.1.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/renovate-config@1.0.1...@lmc-eu/renovate-config@1.1.0) (2022-09-26)

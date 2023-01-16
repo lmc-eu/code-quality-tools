@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.4"></a>
+
+## 1.2.4 (2023-01-16)
+
+### Chores
+
+- **ci:** Introduce `release-sync` command in Makefile ([029ad33](https://github.com/lmc-eu/code-quality-tools/commit/029ad33))
+
+### Styles
+
+- **repo:** Rewrite documentation using Textlint ruleset ([22e19bd](https://github.com/lmc-eu/code-quality-tools/commit/22e19bd))
+
+**Note:** Version bump only for package @lmc-eu/prettier-config
+
 <a name="1.2.3"></a>
 
 ## [1.2.3](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/prettier-config@1.2.2...@lmc-eu/prettier-config@1.2.3) (2022-03-08)

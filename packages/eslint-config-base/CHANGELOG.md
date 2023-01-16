@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.6"></a>
+
+## [1.1.6](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-base@1.1.5...@lmc-eu/eslint-config-base@1.1.6) (2023-01-16)
+
+### Styles
+
+- **repo:** Rewrite documentation using Textlint ruleset ([22e19bd](https://github.com/lmc-eu/code-quality-tools/commit/22e19bd))
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-base
+
 <a name="1.1.5"></a>
 
 ## [1.1.5](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-base@1.1.4...@lmc-eu/eslint-config-base@1.1.5) (2022-05-05)

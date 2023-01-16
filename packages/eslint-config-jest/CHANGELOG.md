@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+
+# [2.1.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-jest@2.0.0...@lmc-eu/eslint-config-jest@2.1.0) (2023-01-16)
+
+### Features
+
+- **eslint:** Add `config/jest` path into files options ([3f82085](https://github.com/lmc-eu/code-quality-tools/commit/3f82085))
+
+### Styles
+
+- **repo:** Rewrite documentation using Textlint ruleset ([22e19bd](https://github.com/lmc-eu/code-quality-tools/commit/22e19bd))
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-jest
+
 <a name="2.0.0"></a>
 
 # [2.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-jest@1.0.3...@lmc-eu/eslint-config-jest@2.0.0) (2022-11-03)

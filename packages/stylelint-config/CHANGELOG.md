@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.0.0"></a>
+
+# [6.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@5.0.0...@lmc-eu/stylelint-config@6.0.0) (2023-01-16)
+
+### Dependencies
+
+- Update dependency stylelint-config-standard-scss to v6 ([9b2c409](https://github.com/lmc-eu/code-quality-tools/commit/9b2c409))
+
+### Styles
+
+- **repo:** Rewrite documentation using Textlint ruleset ([22e19bd](https://github.com/lmc-eu/code-quality-tools/commit/22e19bd))
+
+  ### BREAKING CHANGES
+
+      - Removed stylelint less than 14.14.0 from peer dependencies.
+
+**Note:** Version bump only for package @lmc-eu/stylelint-config
+
 <a name="5.0.0"></a>
 
 # [5.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@5.0.0-alpha.1...@lmc-eu/stylelint-config@5.0.0) (2022-10-07)
