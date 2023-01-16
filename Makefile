@@ -62,8 +62,12 @@ node_modules: package.json ## install node modules
 ## --- 🚀 Release management ----------------------------------------------------
 
 .PHONY: prerelease
-prerelease: ## create a new pre-release
+prerelease: ## release current changes as prerelease versions
 	@bin/make/prerelease.sh
+
+.PHONY: graduate
+graduate: ## graduate prerelease versioned packages to stable versions
+	@bin/make/graduate.sh
 
 .PHONY: release
 release: ## create a new release
