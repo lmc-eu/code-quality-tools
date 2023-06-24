@@ -35,4 +35,4 @@ Additionally don’t forget to have `.graphqlconfig` file:
 
 This configuration uses the following plugins:
 
-- [`eslint-plugin-graphql`](https://github.com/apollographql/eslint-plugin-graphql)
+- [`@graphql-eslint/eslint-plugin`](https://the-guild.dev/graphql/eslint/docs/getting-started)
