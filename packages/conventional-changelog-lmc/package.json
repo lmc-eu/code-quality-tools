@@ -45,6 +45,6 @@
     "testTimeout": 30000
   },
   "engines": {
-    "node": ">=4.x"
+    "node": "^16 || ^18 || >=20"
   }
 }
