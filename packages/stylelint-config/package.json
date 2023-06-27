@@ -19,7 +19,7 @@
     "directory": "packages/stylelint-config"
   },
   "engines": {
-    "node": ">=10"
+    "node": "^16 || ^18 || >=20"
   },
   "dependencies": {
     "postcss-scss": "^4.0.3",
