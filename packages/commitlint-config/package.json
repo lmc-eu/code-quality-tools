@@ -19,7 +19,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=10"
+    "node": "^16 || ^18 || >=20"
   },
   "dependencies": {
     "@commitlint/config-conventional": "^17.0.0",
