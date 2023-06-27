@@ -21,7 +21,7 @@
     "directory": "packages/textlint-rule-preset-lmc"
   },
   "engines": {
-    "node": ">=14"
+    "node": "^16 || ^18 || >=20"
   },
   "dependencies": {
     "textlint": "^12.2.2",
