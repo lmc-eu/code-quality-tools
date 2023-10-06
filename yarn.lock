@@ -10612,10 +10612,10 @@ textlint-rule-helper@^2.1.1, textlint-rule-helper@^2.2.0:
     structured-source "^3.0.2"
     unist-util-visit "^2.0.3"
 
-textlint-rule-stop-words@^2.0.2:
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/textlint-rule-stop-words/-/textlint-rule-stop-words-2.0.9.tgz#36209f289857055eb6a09cf9e6997fd779d74378"
-  integrity sha512-UW7nWrqBUHfz/sRLTFo40BNjwXOiXSHg00TJuYY4GVDQtsWRLyAsOnXSBqClP4i6wl7ejMBeYmB5mfllYAYMgA==
+textlint-rule-stop-words@^3.0.0:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/textlint-rule-stop-words/-/textlint-rule-stop-words-3.0.2.tgz#e828dafec18b25d094b08f7cf41932d8a5f0b6a7"
+  integrity sha512-D9hqjZvQ0nQyq3mrPxq4YoCZEKCqEo2jEudSWwu9CTaHMH/CI5sn6l5lGu1NYNIBhrpTdfXXZReG76boJH6MQA==
   dependencies:
     lodash "^4.17.15"
     split-lines "^2.0.0"
