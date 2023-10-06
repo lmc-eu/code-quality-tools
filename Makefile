@@ -84,8 +84,7 @@ publish: ## publish a release
 # Publish packages updated since the last release
 #  `from-package` - list of packages to publish is determined by inspecting each `package.json`
 #  `--yes` - skip all confirmation prompts
-#  `--no-verify-access` - disable verification of the logged-in npm user's access to the packages about to be published
-	yarn lerna publish from-package --yes --no-verify-access $(LERNA_FLAGS)
+	yarn lerna publish from-package --yes $(LERNA_FLAGS)
 
 # GENERIC TARGETS
 
