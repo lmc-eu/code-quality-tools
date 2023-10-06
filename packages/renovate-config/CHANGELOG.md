@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+
+# [2.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/renovate-config@1.2.0...@lmc-eu/renovate-config@2.0.0) (2023-10-06)
+
+### BREAKING CHANGES
+
+- **renovate:** Drop support for Node.js v14 and older ([3e92473](https://github.com/lmc-eu/code-quality-tools/commit/3e92473)), closes [#130](https://github.com/lmc-eu/code-quality-tools/issues/130)
+
+**Note:** Version bump only for package @lmc-eu/renovate-config
+
 <a name="1.2.0"></a>
 
 # 1.2.0 (2023-01-16)

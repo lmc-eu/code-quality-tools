@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/eslint-config-react",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "LMC's ESlint configuration for React projects",
   "keywords": [
     "eslint",
@@ -28,7 +28,7 @@
   "dependencies": {
     "@babel/core": "^7.16.5",
     "@babel/eslint-parser": "^7.16.5",
-    "@lmc-eu/eslint-config-base": "^2.0.0",
+    "@lmc-eu/eslint-config-base": "^3.0.0",
     "eslint-config-airbnb": "^19.0.2"
   },
   "peerDependencies": {

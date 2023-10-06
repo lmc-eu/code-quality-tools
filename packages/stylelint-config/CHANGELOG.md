@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="7.0.0"></a>
+
+# [7.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@6.0.0...@lmc-eu/stylelint-config@7.0.0) (2023-10-06)
+
+### BREAKING CHANGES
+
+- **stylelint:** Drop support for Node.js v14 and older ([dc2f921](https://github.com/lmc-eu/code-quality-tools/commit/dc2f921)), closes [#130](https://github.com/lmc-eu/code-quality-tools/issues/130)
+
+**Note:** Version bump only for package @lmc-eu/stylelint-config
+
 <a name="6.0.0"></a>
 
 # [6.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@5.0.0...@lmc-eu/stylelint-config@6.0.0) (2023-01-16)

@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+
+# [2.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/browserslist-config@1.0.4...@lmc-eu/browserslist-config@2.0.0) (2023-10-06)
+
+### BREAKING CHANGES
+
+- **browserslist:** Drop support for Node.js v14 and older ([ccf0a65](https://github.com/lmc-eu/code-quality-tools/commit/ccf0a65)), closes [#130](https://github.com/lmc-eu/code-quality-tools/issues/130)
+
+**Note:** Version bump only for package @lmc-eu/browserslist-config
+
 <a name="1.0.4"></a>
 
 ## 1.0.4 (2023-01-16)

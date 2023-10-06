@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+
+# [2.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/prettier-config@1.2.4...@lmc-eu/prettier-config@2.0.0) (2023-10-06)
+
+### BREAKING CHANGES
+
+- **prettier:** Drop support for Node.js v14 and older ([4af5a9f](https://github.com/lmc-eu/code-quality-tools/commit/4af5a9f)), closes [#130](https://github.com/lmc-eu/code-quality-tools/issues/130)
+
+**Note:** Version bump only for package @lmc-eu/prettier-config
+
 <a name="1.2.4"></a>
 
 ## 1.2.4 (2023-01-16)

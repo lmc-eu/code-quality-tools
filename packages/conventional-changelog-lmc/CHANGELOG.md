@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+
+# [2.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc@1.3.2...@lmc-eu/conventional-changelog-lmc@2.0.0) (2023-10-06)
+
+### BREAKING CHANGES
+
+- **conventional-changelog:** Drop support for Node.js v14 ([c078433](https://github.com/lmc-eu/code-quality-tools/commit/c078433)), closes [#130](https://github.com/lmc-eu/code-quality-tools/issues/130)
+
+**Note:** Version bump only for package @lmc-eu/conventional-changelog-lmc
+
 <a name="1.3.2"></a>
 
 ## [1.3.2](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc@1.3.1...@lmc-eu/conventional-changelog-lmc@1.3.2) (2023-10-06)

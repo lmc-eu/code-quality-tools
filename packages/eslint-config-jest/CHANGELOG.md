@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+
+# [3.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-jest@2.1.1...@lmc-eu/eslint-config-jest@3.0.0) (2023-10-06)
+
+### BREAKING CHANGES
+
+- **eslint-config-jest:** Drop support for Node.js v14 ([24d2edb](https://github.com/lmc-eu/code-quality-tools/commit/24d2edb)), closes [#130](https://github.com/lmc-eu/code-quality-tools/issues/130)
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-jest
+
 <a name="2.1.1"></a>
 
 ## [2.1.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-jest@2.1.0...@lmc-eu/eslint-config-jest@2.1.1) (2023-10-06)

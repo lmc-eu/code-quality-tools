@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+
+# [3.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-bitbucket@2.3.2...@lmc-eu/conventional-changelog-lmc-bitbucket@3.0.0) (2023-10-06)
+
+### BREAKING CHANGES
+
+- **conventional-changelog:** Drop support for Node.js v14 ([d23674b](https://github.com/lmc-eu/code-quality-tools/commit/d23674b)), closes [#130](https://jira.int.lmc.cz/browse/130)
+
+**Note:** Version bump only for package @lmc-eu/conventional-changelog-lmc-bitbucket
+
 <a name="2.3.2"></a>
 
 ## [2.3.2](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-bitbucket@2.3.1...@lmc-eu/conventional-changelog-lmc-bitbucket@2.3.2) (2023-10-06)

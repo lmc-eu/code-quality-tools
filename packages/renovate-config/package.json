@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/renovate-config",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "LMC's renovate configuration for dependencies upgrades",
   "keywords": [
     "renovate",
