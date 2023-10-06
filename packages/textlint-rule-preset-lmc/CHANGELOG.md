@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.1"></a>
+
+## [2.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/textlint-rule-preset-lmc@2.0.0...@lmc-eu/textlint-rule-preset-lmc@2.0.1) (2023-10-06)
+
+### Dependencies
+
+- Update dependency textlint-rule-stop-words to v3 ([6fd1278](https://github.com/lmc-eu/code-quality-tools/commit/6fd1278))
+- Update dependency textlint-rule-terminology to v3 ([f15569c](https://github.com/lmc-eu/code-quality-tools/commit/f15569c))
+
+**Note:** Version bump only for package @lmc-eu/textlint-rule-preset-lmc
+
 <a name="2.0.0"></a>
 
 # [2.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/textlint-rule-preset-lmc@1.0.0...@lmc-eu/textlint-rule-preset-lmc@2.0.0) (2023-10-06)
