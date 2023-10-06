@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+
+# [2.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-graphql@1.0.2...@lmc-eu/eslint-config-graphql@2.0.0) (2023-10-06)
+
+### BREAKING CHANGES
+
+- **eslint-config-graphql:** Drop support for Node.js v14 ([b892d27](https://github.com/lmc-eu/code-quality-tools/commit/b892d27)), closes [#130](https://github.com/lmc-eu/code-quality-tools/issues/130)
+- **eslint-config-graphql:** Switch to community plugin ([97f15e2](https://github.com/lmc-eu/code-quality-tools/commit/97f15e2))
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-graphql
+
 <a name="1.0.2"></a>
 
 ## 1.0.2 (2023-01-16)

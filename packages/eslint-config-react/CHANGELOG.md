@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.2"></a>
+
+## [1.1.2](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-react@1.1.1...@lmc-eu/eslint-config-react@1.1.2) (2023-10-06)
+
+Miscellaneous changes
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-react
+
 <a name="1.1.1"></a>
 
 ## [1.1.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-react@1.1.0...@lmc-eu/eslint-config-react@1.1.1) (2023-01-16)

@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+
+# [2.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-base@1.1.6...@lmc-eu/eslint-config-base@2.0.0) (2023-10-06)
+
+### BREAKING CHANGES
+
+- **eslint-config-base:** Drop support for Node.js v14 ([c4c7287](https://github.com/lmc-eu/code-quality-tools/commit/c4c7287)), closes [#130](https://github.com/lmc-eu/code-quality-tools/issues/130)
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-base
+
 <a name="1.1.6"></a>
 
 ## [1.1.6](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-base@1.1.5...@lmc-eu/eslint-config-base@1.1.6) (2023-01-16)

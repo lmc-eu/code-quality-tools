@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.3.2"></a>
+
+## [2.3.2](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-github@2.3.1...@lmc-eu/conventional-changelog-lmc-github@2.3.2) (2023-10-06)
+
+### Dependencies
+
+- Update all non-major dependencies ([b625a8e](https://github.com/lmc-eu/code-quality-tools/commit/b625a8e))
+- Update all non-major dependencies ([d425fd9](https://github.com/lmc-eu/code-quality-tools/commit/d425fd9))
+
+**Note:** Version bump only for package @lmc-eu/conventional-changelog-lmc-github
+
 <a name="2.3.1"></a>
 
 ## [2.3.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-github@2.3.0...@lmc-eu/conventional-changelog-lmc-github@2.3.1) (2023-01-16)

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.18"></a>
+
+## [1.0.18](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/commitlint-config@1.0.17...@lmc-eu/commitlint-config@1.0.18) (2023-10-06)
+
+Miscellaneous changes
+
+**Note:** Version bump only for package @lmc-eu/commitlint-config
+
 <a name="1.0.17"></a>
 
 ## [1.0.17](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/commitlint-config@1.0.16...@lmc-eu/commitlint-config@1.0.17) (2023-01-16)
