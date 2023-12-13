@@ -173,6 +173,11 @@ module.exports = {
     // @see: https://github.com/lmc-eu/cookie-consent-manager/pull/120
     // https://github.com/gajus/eslint-plugin-jsdoc#require-returns-description
     'jsdoc/require-returns-description': ['off'],
+
+    // Require an empty line after description to ensure better readability
+    // @see: https://github.com/lmc-eu/code-quality-tools/issues/158
+    // https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/tag-lines.md
+    'jsdoc/tag-lines': ['warn', 'any', { startLines: 1 }],
   },
 
   overrides: [
