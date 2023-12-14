@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.1"></a>
+
+## [3.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-github@3.0.0...@lmc-eu/conventional-changelog-lmc-github@3.0.1) (2023-12-14)
+
+### Code Refactoring
+
+- **conventional-changelog:** Drop `q` from dependencies ([8df51e2](https://github.com/lmc-eu/code-quality-tools/commit/8df51e2)), closes [#135](https://github.com/lmc-eu/issues/135)
+
+### Dependencies
+
+- Update all non-major dependencies ([85835d0](https://github.com/lmc-eu/code-quality-tools/commit/85835d0))
+- Update dependency conventional-changelog-core to v6 ([676d0bf](https://github.com/lmc-eu/code-quality-tools/commit/676d0bf))
+- Update dependency jest-extended to v4 ([d14a9fe](https://github.com/lmc-eu/code-quality-tools/commit/d14a9fe))
+
+**Note:** Version bump only for package @lmc-eu/conventional-changelog-lmc-github
+
 <a name="3.0.0"></a>
 
 # [3.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-github@2.3.2...@lmc-eu/conventional-changelog-lmc-github@3.0.0) (2023-10-06)

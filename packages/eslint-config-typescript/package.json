@@ -1,7 +1,7 @@
 {
   "name": "@lmc-eu/eslint-config-typescript",
   "description": "LMC's ESLint config for TypeScript projects",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "keywords": [
     "config",
     "eslint",
@@ -26,7 +26,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "@lmc-eu/eslint-config-base": "^3.0.1",
+    "@lmc-eu/eslint-config-base": "^3.0.2",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "eslint-import-resolver-typescript": "^3.2.7"
