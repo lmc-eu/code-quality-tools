@@ -48,6 +48,18 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 'warn',
     'no-use-before-define': 'off',
 
+    // Allow alter TypesScript's compiler errors only with description
+    // This rule will warn only when you use ts-expect-error, ts-ignore, ts-nocheck without description
+    // @see: https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-ts-comment.md
+    '@typescript-eslint/ban-ts-comment': [
+      'warn',
+      {
+        'ts-expect-error': 'allow-with-description',
+        'ts-ignore': 'allow-with-description',
+        'ts-nocheck': 'allow-with-description',
+      },
+    ],
+
     // TS code is mostly self-documented and having JSDoc directives for everything is redundant
     // when you can easily infer return values and argument types from the code itself.
     'jsdoc/require-jsdoc': 'off',
