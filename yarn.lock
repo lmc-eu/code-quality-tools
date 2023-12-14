@@ -3733,18 +3733,17 @@ conventional-changelog-core@4.2.4:
     read-pkg-up "^3.0.0"
     through2 "^4.0.0"
 
-conventional-changelog-core@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/conventional-changelog-core/-/conventional-changelog-core-6.0.0.tgz#9460a5f320a851167f4b53a9a90cc30f2c2239d1"
-  integrity sha512-7WPwzTp3eRMot/2mbTAHF8m/0Ue4F/R/sMpSjmhBYi/+xnW2SqnXL/FMuYqEpNC2v3rjzRZ4p+9tYcKfHn02Cg==
+conventional-changelog-core@7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-core/-/conventional-changelog-core-7.0.0.tgz#d8879ebb8692cd1fa8126c209e1b3af34d94e113"
+  integrity sha512-UYgaB1F/COt7VFjlYKVE/9tTzfU3VUq47r6iWf6lM5T7TlOxr0thI63ojQueRLIpVbrtHK4Ffw+yQGduw2Bhdg==
   dependencies:
     "@hutson/parse-repository-url" "^5.0.0"
     add-stream "^1.0.0"
     conventional-changelog-writer "^7.0.0"
     conventional-commits-parser "^5.0.0"
     git-raw-commits "^4.0.0"
-    git-remote-origin-url "^2.0.0"
-    git-semver-tags "^6.0.0"
+    git-semver-tags "^7.0.0"
     hosted-git-info "^7.0.0"
     normalize-package-data "^6.0.0"
     read-pkg "^8.0.0"
@@ -5283,10 +5282,10 @@ git-semver-tags@^4.1.1:
     meow "^8.0.0"
     semver "^6.0.0"
 
-git-semver-tags@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/git-semver-tags/-/git-semver-tags-6.0.0.tgz#b011ef94ae23ec8121f311d92a5969fc91502e15"
-  integrity sha512-v5BL6psuUy+Ftuo99141XlOIDoJtKw5+YyDANS7fknSP0iT4cVIanc3toDsH4K+VpIWc19l2/xkwQmXMfloeUA==
+git-semver-tags@^7.0.0:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/git-semver-tags/-/git-semver-tags-7.0.1.tgz#74426e7d7710e5a263655e78b4c651eed804d63e"
+  integrity sha512-NY0ZHjJzyyNXHTDZmj+GG7PyuAKtMsyWSwh07CR2hOZFa+/yoTsXci/nF2obzL8UDhakFNkD9gNdt/Ed+cxh2Q==
   dependencies:
     meow "^12.0.1"
     semver "^7.5.2"
