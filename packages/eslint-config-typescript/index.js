@@ -2,7 +2,7 @@ const base = require('@lmc-eu/eslint-config-base');
 const globs = require('@lmc-eu/eslint-config-base/globs');
 
 module.exports = {
-  extends: [...require.resolve('@lmc-eu/eslint-config-base'), 'plugin:@typescript-eslint/recommended'],
+  extends: [require.resolve('@lmc-eu/eslint-config-base'), 'plugin:@typescript-eslint/recommended'],
 
   settings: {
     // Correctly recognize .ts and .d.ts files when checking import paths against the filesystem
