@@ -56,7 +56,7 @@ pristine: clean ## clean all installed dependencies
 
 .PHONY: node_modules
 node_modules: package.json ## install node modules
-	yarn $(YARN_I) $(YARN_FLAGS) && lerna bootstrap && touch node_modules
+	yarn $(YARN_I) $(YARN_FLAGS) && touch node_modules
 
 ##
 ## --- 🚀 Release management ----------------------------------------------------
