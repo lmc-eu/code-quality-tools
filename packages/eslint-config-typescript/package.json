@@ -1,7 +1,7 @@
 {
   "name": "@lmc-eu/eslint-config-typescript",
   "description": "LMC's ESLint config for TypeScript projects",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "keywords": [
     "config",
     "eslint",

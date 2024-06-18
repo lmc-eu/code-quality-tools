@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.2"></a>
+
+## [2.0.2](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc@2.0.1...@lmc-eu/conventional-changelog-lmc@2.0.2) (2024-06-18)
+
+### Dependencies
+
+- Update dependency conventional-changelog-core to v7 ([7f2287c](https://github.com/lmc-eu/code-quality-tools/commit/7f2287c))
+
+**Note:** Version bump only for package @lmc-eu/conventional-changelog-lmc
+
 <a name="2.0.1"></a>
 
 ## [2.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc@2.0.0...@lmc-eu/conventional-changelog-lmc@2.0.1) (2023-12-14)

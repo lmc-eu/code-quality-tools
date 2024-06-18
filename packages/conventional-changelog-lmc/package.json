@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/conventional-changelog-lmc",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "conventional-changelog LMC parser and writer",
   "keywords": [
     "lmc",
