@@ -1,20 +1,9 @@
 module.exports = {
   rules: {
-    // Reason: Avoid compound selectors' creation using nested ampersand SASS syntax.
-    // Main reasons why use this pattern:
-    // - Unification with design system components code style
-    // - Look up easily for the selector using fulltext search in IDEs
-    // - Better orientation in longer component's code when scrolled down
-    // - Makes `no-descending-specificity` stylelint rule work correctly
-    // - IDE's support clicking through from selector usage to its source
-    // Docs: https://stylelint.io/user-guide/rules/list/selector-nested-pattern/
-    'selector-nested-pattern': [
-      '(^&:)|(^&\\[)|(^&\\.(is\\-|has\\-))',
-      {
-        message:
-          'Only pseudo class selector, attribute selector and combination with state class is allowed (selector-nested-pattern)',
-      },
-    ],
+    // No default value
+    // Reason: Color-named values disabled - desired lint should check for design system token values only.
+    // Docs: https://stylelint.io/user-guide/rules/list/color-named
+    'color-named': 'never',
 
     // Reason: Except for utility classes and third-party overrides, !important can be avoided.
     // Docs: https://stylelint.io/user-guide/rules/list/declaration-no-important
@@ -35,6 +24,11 @@ module.exports = {
       },
     ],
 
+    // No default value
+    // Reason: Declaring font weights in other ways is unsafe.
+    // Docs: https://stylelint.io/user-guide/rules/list/font-weight-notation
+    'font-weight-notation': 'numeric',
+
     // Reason: Selector maximum class count should be just one but especially form parts/components
     // need more complex selectors to add styles when validation is applied.
     // Setting rule to "1" would be uneasy to pass in almost all projects so "2" is clearly just fine.
@@ -42,13 +36,13 @@ module.exports = {
     // Docs: https://stylelint.io/user-guide/rules/list/selector-max-class
     'selector-max-class': 2,
 
-    // Reason: IDs are handy for Javascript, not for CSS anymore.
-    // Docs: https://stylelint.io/user-guide/rules/list/selector-max-id
-    'selector-max-id': 0,
-
     // Reason: Keep selector specificity as low as possible by default.
     // Docs: https://stylelint.io/user-guide/rules/list/selector-max-compound-selectors
     'selector-max-compound-selectors': 3,
+
+    // Reason: IDs are handy for Javascript, not for CSS anymore.
+    // Docs: https://stylelint.io/user-guide/rules/list/selector-max-id
+    'selector-max-id': 0,
 
     // Reason: Keep selector specificity as low as possible by default.
     // Docs: https://stylelint.io/user-guide/rules/list/selector-max-specificity
@@ -58,19 +52,25 @@ module.exports = {
     // Docs: https://stylelint.io/user-guide/rules/list/selector-max-universal
     'selector-max-universal': 0,
 
+    // Reason: Avoid compound selectors' creation using nested ampersand SASS syntax.
+    // Main reasons why use this pattern:
+    // - Unification with design system components code style
+    // - Look up easily for the selector using fulltext search in IDEs
+    // - Better orientation in longer component's code when scrolled down
+    // - Makes `no-descending-specificity` stylelint rule work correctly
+    // - IDE's support clicking through from selector usage to its source
+    // Docs: https://stylelint.io/user-guide/rules/list/selector-nested-pattern/
+    'selector-nested-pattern': [
+      '(^&:)|(^&\\[)|(^&\\.(is\\-|has\\-))',
+      {
+        message:
+          'Only pseudo class selector, attribute selector and combination with state class is allowed (selector-nested-pattern)',
+      },
+    ],
+
     // Reason: In most cases, it only needlessly increases selector specificity.
     // Docs: https://stylelint.io/user-guide/rules/list/selector-no-qualifying-type
     'selector-no-qualifying-type': true,
-
-    // No default value
-    // Reason: Declaring font weights in other ways is unsafe.
-    // Docs: https://stylelint.io/user-guide/rules/list/font-weight-notation
-    'font-weight-notation': 'numeric',
-
-    // No default value
-    // Reason: Color-named values disabled - desired lint should check for design system token values only.
-    // Docs: https://stylelint.io/user-guide/rules/list/color-named
-    'color-named': 'never',
 
     // Default value: 'always' with secondary options.
     // Reason: Turned off to support grouping variables using empty lines.
