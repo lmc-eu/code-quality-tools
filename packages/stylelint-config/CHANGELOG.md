@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.0.0"></a>
+
+# [8.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@7.0.1...@lmc-eu/stylelint-config@8.0.0) (2024-07-03)
+
+### BREAKING CHANGES
+
+- **stylelint-config:** Upgrade to Stylelint 15 [#DS-1245](https://github.com/lmc-eu/code-quality-tools/issues/DS-1245) ([fc78ba8](https://github.com/lmc-eu/code-quality-tools/commit/fc78ba8))
+
+**Note:** Version bump only for package @lmc-eu/stylelint-config
+
 <a name="7.0.1"></a>
 
 ## [7.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@7.0.0...@lmc-eu/stylelint-config@7.0.1) (2023-10-06)
