@@ -1,0 +1,56 @@
+/*
+  Based on https://github.com/stylelint/stylelint-config-standard/blob/36.0.0/__tests__/valid.css
+  with modifications:
+
+  - order properties according to `order.js`,
+  - flag ID selectors.
+*/
+
+@import 'foo.css';
+@import 'bar.css';
+
+@custom-media --foo (min-width: 30em);
+
+/**
+ * Multi-line comment
+ */
+
+:root {
+  --brand-red: hsl(5deg 10% 40%);
+}
+
+/* Single-line comment */
+
+.class-foo:not(a, div) {
+  top: calc(100% - 2rem);
+  margin: 0;
+}
+
+/* Flush single line comment */
+@media (width >= 60em) {
+  .class-foo {
+    /* Flush to parent comment */
+    --offset: 0px;
+
+    left: calc(var(--offset) + 50%);
+    font-family: Helvetica, 'Arial Black', sans-serif;
+    color: #fff;
+  }
+
+  /* Flush nested single line comment */
+  a::after {
+    content: '→';
+    display: block;
+    background-image: url('x.svg');
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

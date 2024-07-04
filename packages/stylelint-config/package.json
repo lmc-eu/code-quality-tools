@@ -36,10 +36,23 @@
   "engines": {
     "node": "^18.12.0 || >=20"
   },
+  "scripts": {
+    "lint": "yarn lint:css",
+    "lint:css": "npm-run-all --serial lint:css:main lint:css:order lint:css:scss",
+    "lint:css:main": "stylelint --config index.js __tests__/__fixtures__/css-valid.css",
+    "lint:css:order": "stylelint --config rules/order.js __tests__/__fixtures__/css-valid.css",
+    "lint:css:scss": "stylelint --config rules/scss.js __tests__/__fixtures__/scss-valid.scss",
+    "test": "npm-run-all --serial lint test:unit",
+    "test:unit": "node --test"
+  },
   "dependencies": {
     "postcss-scss": "^4.0.3",
-    "stylelint-config-standard-scss": "^6.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
     "stylelint-order": "^6.0.0"
+  },
+  "devDependencies": {
+    "npm-run-all2": "^6.2.2",
+    "stylelint": "^16.0.0"
   },
   "peerDependencies": {
     "stylelint": "^16.0.0"
