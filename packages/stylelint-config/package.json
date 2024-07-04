@@ -9,7 +9,22 @@
   ],
   "author": "Tomáš Litera <tomas.litera@lmc.eu>",
   "license": "BSD-3-Clause",
+  "type": "module",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "rules/extras.js",
+    "rules/order.js",
+    "rules/scss.js"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
   "publishConfig": {
     "access": "public"
   },

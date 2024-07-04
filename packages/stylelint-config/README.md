@@ -36,12 +36,10 @@ Use this ruleset to configure Stylelint to work with your code.
 ## Recommended Stylelint Configuration
 
 ```js
-// .stylelintrc.js
+// .stylelintrc.mjs
 
-'use strict';
-
-module.exports = {
-  extends: ['@lmc-eu/stylelint-config', 'stylelint-config-prettier'],
+export default {
+  extends: ['@almacareer/stylelint-config', 'stylelint-config-prettier'],
 };
 ```
 
