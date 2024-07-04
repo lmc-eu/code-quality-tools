@@ -1,5 +1,5 @@
-module.exports = {
-  extends: ['stylelint-config-standard-scss'].map(require.resolve),
+export default {
+  extends: ['stylelint-config-standard-scss'],
   rules: {
     // Accept selector class pattern according to BEM methodology for general components
     // and kebab-case for utility components.
