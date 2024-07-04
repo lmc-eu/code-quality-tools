@@ -13,11 +13,6 @@ export default {
       },
     ],
 
-    // Default value: 'double'
-    // Reason: Keep unified with other languages. In CSS there may occur double quotes in variable values.
-    // Docs: https://stylelint.io/user-guide/rules/list/string-quotes
-    'string-quotes': 'single',
-
     // Default value: true
     // Reason: Generally developers don't quite understand flexbox and CSS grid. Let's avoid shorthands to easier readability for everyone.
     // Docs: https://stylelint.io/user-guide/rules/list/declaration-block-no-redundant-longhand-properties
