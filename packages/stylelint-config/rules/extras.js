@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   rules: {
     // No default value
     // Reason: Color-named values disabled - desired lint should check for design system token values only.
