@@ -1,8 +1,8 @@
-# `@lmc-eu/stylelint-config`
+# `@almacareer/stylelint-config`
 
-[![npm version](https://img.shields.io/npm/v/@lmc-eu/stylelint-config?label=npm%20package&logo=npm)](https://www.npmjs.org/package/@lmc-eu/stylelint-config)
-[![Node version](https://img.shields.io/node/v/@lmc-eu/stylelint-config.svg?style=flat&logo=nodedotjs)](http://nodejs.org/download/)
-[![Stylelint version](https://img.shields.io/npm/dependency-version/@lmc-eu/stylelint-config/peer/stylelint?logo=stylelint)](https://github.com/stylelint/stylelint)
+[![npm version](https://img.shields.io/npm/v/@almacareer/stylelint-config?label=npm%20package&logo=npm)](https://www.npmjs.org/package/@almacareer/stylelint-config)
+[![Node version](https://img.shields.io/node/v/@almacareer/stylelint-config.svg?style=flat&logo=nodedotjs)](http://nodejs.org/download/)
+[![Stylelint version](https://img.shields.io/npm/dependency-version/@almacareer/stylelint-config/peer/stylelint?logo=stylelint)](https://github.com/stylelint/stylelint)
 
 > LMC’s config for Stylelint
 
@@ -10,10 +10,10 @@
 
 ```bash
 # Yarn:
-yarn add --dev @lmc-eu/stylelint-config stylelint-config-prettier
+yarn add --dev @almacareer/stylelint-config stylelint-config-prettier
 
 # npm:
-npm install --save-dev @lmc-eu/stylelint-config stylelint-config-prettier
+npm install --save-dev @almacareer/stylelint-config stylelint-config-prettier
 ```
 
 > We assume you are using Prettier. That’s why we also recommend adding
@@ -29,7 +29,7 @@ This config:
 
 ## Configuration
 
-- **`@lmc-eu/stylelint-config`**
+- **`@almacareer/stylelint-config`**
 
 Use this ruleset to configure Stylelint to work with your code.
 
@@ -48,7 +48,7 @@ export default {
 
 ```json
 {
-  "extends": ["@lmc-eu/stylelint-config", "stylelint-config-prettier"]
+  "extends": ["@almacareer/stylelint-config", "stylelint-config-prettier"]
 }
 ```
 
@@ -60,7 +60,7 @@ export default {
 ```json
 {
   "stylelint": {
-    "extends": ["@lmc-eu/stylelint-config", "stylelint-config-prettier"]
+    "extends": ["@almacareer/stylelint-config", "stylelint-config-prettier"]
   }
 }
 ```
