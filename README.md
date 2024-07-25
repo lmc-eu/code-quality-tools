@@ -2,7 +2,7 @@
 
 > Built with ❤️ at [Alma Career][alma-home]
 
-This monorepo contains shareable configurations for various coding-style/best practices/lint tools to make the configurations consistent across projects and provide easy setup mechanism.
+This monorepo contains shareable configurations for various coding-style/best practices/lint tools to make the configurations consistent across projects and provide an easy setup mechanism.
 
 ## Available Configurations
 
@@ -12,7 +12,7 @@ This monorepo contains shareable configurations for various coding-style/best pr
 | Commitlint             | [@lmc-eu/commitlint-config](packages/commitlint-config)                                       | [![@lmc-eu/commitlint-config][clc-badge]][clc-npm]                        |
 | Conventional Changelog | [@lmc-eu/conventional-changelog-lmc-bitbucket](packages/conventional-changelog-lmc-bitbucket) | [![@lmc-eu/conventional-changelog-lmc-bitbucket][cc-bb-badge]][cc-bb-npm] |
 | Conventional Changelog | [@lmc-eu/conventional-changelog-lmc-github](packages/conventional-changelog-lmc-github)       | [![@lmc-eu/conventional-changelog-lmc-github][cc-gh-badge]][cc-gh-npm]    |
-| ESLint                 | [@lmc-eu/eslint-config-base](packages/eslint-config-base)                                     | [![@lmc-eu/eslint-config-base][slc-badge]][ec-base-npm]                   |
+| ESLint                 | [@lmc-eu/eslint-config-base](packages/eslint-config-base)                                     | [![@lmc-eu/eslint-config-base][ec-base-badge]][ec-base-npm]                   |
 | ESLint                 | [@lmc-eu/eslint-config-graphql](packages/eslint-config-graphql)                               | [![@lmc-eu/eslint-config-graphql][ec-gql-badge]][ec-gql-npm]              |
 | ESLint                 | [@lmc-eu/eslint-config-react](packages/eslint-config-react)                                   | [![@lmc-eu/eslint-config-react][ec-react-badge]][ec-react-npm]            |
 | ESLint                 | [@lmc-eu/eslint-config-jest](packages/eslint-config-jest)                                     | [![@lmc-eu/eslint-config-jest][ec-jest-badge]][ec-jest-npm]               |
@@ -28,7 +28,7 @@ See the [LICENSE](LICENSE) file for information.
 
 ## Credit
 
-We got a lot of inspiration from similar project at [STRV][strv-github]. Thank you very much ❤️!
+We got a lot of inspiration from the similar project at [STRV][strv-github]. Thank you very much ❤️!
 
 [alma-home]: https://www.almacareer.com
 [blc-npm]: https://npmjs.org/package/%40lmc-eu/browserslist-config
