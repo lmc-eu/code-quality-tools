@@ -1,0 +1,32 @@
+{
+  "name": "@almacareer/remark-config",
+  "description": "Alma Career's config for Markdown linting with Remark",
+  "version": "0.0.0",
+  "keywords": [
+    "config",
+    "lint",
+    "markdown",
+    "remark",
+    "alma",
+    "career"
+  ],
+  "author": "Tomáš Litera <tomas.litera@almacareer.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lmc-eu/code-quality-tools.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "remark-preset-lint-consistent": "^6.0.0",
+    "remark-preset-lint-markdown-style-guide": "^6.0.0",
+    "remark-preset-lint-recommended": "^7.0.0"
+  }
+}
