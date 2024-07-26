@@ -19,8 +19,8 @@ function formatIssue(issueUrl, issue) {
   return `#${issue}`;
 }
 
-function getWriterOpts () {
-  return  {
+function getWriterOpts() {
+  return {
     transform: (commit, context) => {
       let discard = true;
       const issues = [];
@@ -102,6 +102,6 @@ function getWriterOpts () {
     noteGroupsSort: 'title',
     notesSort: compareFunc,
   };
-};
+}
 
 module.exports.getWriterOpts = getWriterOpts;

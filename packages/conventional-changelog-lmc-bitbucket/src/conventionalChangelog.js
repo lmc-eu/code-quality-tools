@@ -3,7 +3,7 @@
 const { readFile } = require('fs').promises;
 const { resolve } = require('path');
 
-async function createConventionalChangelogOpts (parserOpts, writerOpts) {
+async function createConventionalChangelogOpts(parserOpts, writerOpts) {
   return Promise.all([
     readFile(resolve(__dirname, 'templates/template.hbs'), 'utf-8'),
     readFile(resolve(__dirname, 'templates/header.hbs'), 'utf-8'),

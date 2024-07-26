@@ -1,6 +1,6 @@
 /* eslint-disable jsdoc/require-jsdoc */
 
-function createConventionalRecommendedBumpOpts (parserOpts) {
+function createConventionalRecommendedBumpOpts(parserOpts) {
   return {
     parserOpts,
 
@@ -33,6 +33,6 @@ function createConventionalRecommendedBumpOpts (parserOpts) {
       };
     },
   };
-};
+}
 
 module.exports.createConventionalRecommendedBumpOpts = createConventionalRecommendedBumpOpts;
