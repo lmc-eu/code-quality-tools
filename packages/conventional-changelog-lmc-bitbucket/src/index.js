@@ -1,14 +1,19 @@
-const conventionalChangelog = require(`./conventional-changelog`);
-const { parserOpts, writerOpts, recommendedBumpOpts } = require('@lmc-eu/conventional-changelog-lmc');
+/* eslint-disable jsdoc/require-jsdoc */
+const { createConventionalChangelogOpts } = require(`./conventionalChangelog`);
+const { createParserOpts, createWriterOpts, createConventionalRecommendedBumpOpts } = require('@lmc-eu/conventional-changelog-lmc');
 
-module.exports = Promise.all([conventionalChangelog, parserOpts, recommendedBumpOpts, writerOpts]).then(
-  // Using same configuration as other configurations
-  // Did not find any documentation whether the output must be in this format
-  // eslint-disable-next-line no-shadow
-  ([conventionalChangelog, parserOpts, recommendedBumpOpts, writerOpts]) => ({
-    conventionalChangelog,
+async function createPreset () {
+  const parserOpts = createParserOpts()
+  const writerOpts = createWriterOpts()
+  const recommendedBumpOpts = createConventionalRecommendedBumpOpts(parserOpts)
+  const conventionalChangelog = await createConventionalChangelogOpts(parserOpts, writerOpts)
+
+  return {
     parserOpts,
-    recommendedBumpOpts,
     writerOpts,
-  }),
-);
+    recommendedBumpOpts,
+    conventionalChangelog
+  }
+}
+
+module.exports = createPreset;
