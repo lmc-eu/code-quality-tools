@@ -6,19 +6,19 @@
 
 Wee need to install everything needed by the config using (installs package and also peer dependencies):
 
-```
+```sh
 npx install-peerdeps --dev @lmc-eu/eslint-config-react
 ```
 
-You can see in your package.json there are now a big list of devDependencies.
+You can see in your package.json there is now a big list of devDependencies.
 
 ## Configurations
 
-### `@lmc-eu/eslint-config-react`
+- **`@lmc-eu/eslint-config-react`**
 
 Use this ruleset to configure ESLint to work with React code.
 
-### `@lmc-eu/eslint-config-react/optional`
+- **`@lmc-eu/eslint-config-react/optional`**
 
 Use this ruleset together with the above ruleset. Provides additional insights into potential inconsistencies in the project.
 

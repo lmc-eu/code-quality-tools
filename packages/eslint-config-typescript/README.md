@@ -14,7 +14,7 @@ See the example _.eslintrc.js_ file below for more details and make sure you rea
 
 ## Configurations
 
-### `@lmc-eu/eslint-config-typescript`
+- **`@lmc-eu/eslint-config-typescript`**
 
 Suitable for linting TypeScript source files.
 
@@ -65,7 +65,7 @@ module.exports = {
 
 A full configuration for a TypeScript on React project:
 
-> Please note, that you need to have [eslint-config-react] installed as well
+> Please note, that you need to have [eslint-config-react][eslint-config-react] installed as well
 
 ```js
 // .eslintrc.js

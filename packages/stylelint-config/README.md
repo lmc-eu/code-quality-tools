@@ -29,7 +29,7 @@ This config:
 
 ## Configuration
 
-### `@lmc-eu/stylelint-config`
+- **`@lmc-eu/stylelint-config`**
 
 Use this ruleset to configure Stylelint to work with your code.
 
