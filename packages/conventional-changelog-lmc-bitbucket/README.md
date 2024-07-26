@@ -8,13 +8,13 @@
 
 NPM:
 
-```
+```sh
 npm i --dev @commitlint/cli @commitlint/config-conventional @lmc-eu/conventional-changelog-lmc-bitbucket
 ```
 
 Yarn:
 
-```
+```sh
 yarn add --dev @commitlint/cli @commitlint/config-conventional @lmc-eu/conventional-changelog-lmc-bitbucket
 ```
 

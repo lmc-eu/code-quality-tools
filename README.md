@@ -12,7 +12,7 @@ This monorepo contains shareable configurations for various coding-style/best pr
 | Commitlint             | [@lmc-eu/commitlint-config](packages/commitlint-config)                                       | [![@lmc-eu/commitlint-config][clc-badge]][clc-npm]                        |
 | Conventional Changelog | [@lmc-eu/conventional-changelog-lmc-bitbucket](packages/conventional-changelog-lmc-bitbucket) | [![@lmc-eu/conventional-changelog-lmc-bitbucket][cc-bb-badge]][cc-bb-npm] |
 | Conventional Changelog | [@lmc-eu/conventional-changelog-lmc-github](packages/conventional-changelog-lmc-github)       | [![@lmc-eu/conventional-changelog-lmc-github][cc-gh-badge]][cc-gh-npm]    |
-| ESLint                 | [@lmc-eu/eslint-config-base](packages/eslint-config-base)                                     | [![@lmc-eu/eslint-config-base][ec-base-badge]][ec-base-npm]                   |
+| ESLint                 | [@lmc-eu/eslint-config-base](packages/eslint-config-base)                                     | [![@lmc-eu/eslint-config-base][ec-base-badge]][ec-base-npm]               |
 | ESLint                 | [@lmc-eu/eslint-config-graphql](packages/eslint-config-graphql)                               | [![@lmc-eu/eslint-config-graphql][ec-gql-badge]][ec-gql-npm]              |
 | ESLint                 | [@lmc-eu/eslint-config-react](packages/eslint-config-react)                                   | [![@lmc-eu/eslint-config-react][ec-react-badge]][ec-react-npm]            |
 | ESLint                 | [@lmc-eu/eslint-config-jest](packages/eslint-config-jest)                                     | [![@lmc-eu/eslint-config-jest][ec-jest-badge]][ec-jest-npm]               |

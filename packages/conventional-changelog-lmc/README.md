@@ -6,13 +6,13 @@
 
 NPM:
 
-```
+```sh
 npm i --dev @lmc-eu/conventional-changelog-lmc
 ```
 
 Yarn:
 
-```
+```sh
 yarn add --dev @lmc-eu/conventional-changelog-lmc
 ```
 

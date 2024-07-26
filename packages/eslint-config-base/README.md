@@ -10,21 +10,21 @@ These rules are meant to be shared across all ESLint rulesets.
 
 ## Configurations
 
-### `@lmc-eu/eslint-config-base`
+- **`@lmc-eu/eslint-config-base`**
 
 Use this ruleset to configure ESLint to work with every JavaScript code.
 
-### `@lmc-eu/eslint-config-base/optional`
+- **`@lmc-eu/eslint-config-base/optional`**
 
 Use this ruleset together with the above ruleset. Provides additional insights into potential inconsistencies in the project.
 
 > For new projects, it is recommended to enable this ruleset. For existing projects, it is only recommended for the brave.
 
-### `@lmc-eu/eslint-config-base/legacy`
+- **`@lmc-eu/eslint-config-base/legacy`**
 
 Lints ES5 and below.
 
-### `@lmc-eu/eslint-config-base/whitespace`
+- **`@lmc-eu/eslint-config-base/whitespace`**
 
 This entry point only errors on whitespace rules and sets all other rules to warnings. View [the list of whitespace rules](https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/whitespace.js).
 
