@@ -1,6 +1,25 @@
 export default {
   plugins: ['stylelint-order'],
   rules: {
+    'order/order': [
+      'dollar-variables',
+      'custom-properties',
+      {
+        name: 'extend',
+        type: 'at-rule',
+      },
+      {
+        hasBlock: false,
+        name: 'include',
+        type: 'at-rule',
+      },
+      'declarations',
+      'rules',
+      {
+        hasBlock: true,
+        type: 'at-rule',
+      },
+    ],
     'order/properties-order': [
       // All properties
       'all',
