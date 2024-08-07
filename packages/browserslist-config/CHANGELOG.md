@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.1"></a>
+
+## [2.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/browserslist-config@2.0.0...@lmc-eu/browserslist-config@2.0.1) (2024-08-07)
+
+### Styles
+
+- **repo:** Reformat markdown files base on remark-config ([7594cd7](https://github.com/lmc-eu/code-quality-tools/commit/7594cd7)), closes [#12](https://github.com/lmc-eu/code-quality-tools/issues/12)
+
+**Note:** Version bump only for package @lmc-eu/browserslist-config
+
 <a name="2.0.0"></a>
 
 # [2.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/browserslist-config@1.0.4...@lmc-eu/browserslist-config@2.0.0) (2023-10-06)

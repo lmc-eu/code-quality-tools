@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.2"></a>
+
+## [2.1.2](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-typescript@2.1.1...@lmc-eu/eslint-config-typescript@2.1.2) (2024-08-07)
+
+### Styles
+
+- **repo:** Reformat markdown files base on remark-config ([7594cd7](https://github.com/lmc-eu/code-quality-tools/commit/7594cd7)), closes [#12](https://github.com/lmc-eu/code-quality-tools/issues/12)
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-typescript
+
 <a name="2.1.1"></a>
 
 ## [2.1.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-typescript@2.1.0...@lmc-eu/eslint-config-typescript@2.1.1) (2024-06-18)

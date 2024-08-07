@@ -1,7 +1,7 @@
 {
   "name": "@almacareer/remark-config",
   "description": "Alma Career's config for Markdown linting with Remark",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "keywords": [
     "config",
     "lint",

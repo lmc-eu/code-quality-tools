@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.0"></a>
+
+# [3.1.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-base@3.0.2...@lmc-eu/eslint-config-base@3.1.0) (2024-08-07)
+
+### Features
+
+- **eslint-config-base:** Add support for Typescript in glob imports ([212a228](https://github.com/lmc-eu/code-quality-tools/commit/212a228))
+
+### Styles
+
+- **repo:** Reformat markdown files base on remark-config ([7594cd7](https://github.com/lmc-eu/code-quality-tools/commit/7594cd7)), closes [#12](https://github.com/lmc-eu/code-quality-tools/issues/12)
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-base
+
 <a name="3.0.2"></a>
 
 ## [3.0.2](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-base@3.0.1...@lmc-eu/eslint-config-base@3.0.2) (2023-12-14)

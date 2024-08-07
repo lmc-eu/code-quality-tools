@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.3"></a>
+
+## [3.0.3](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-bitbucket@3.0.2...@lmc-eu/conventional-changelog-lmc-bitbucket@3.0.3) (2024-08-07)
+
+### Styles
+
+- **repo:** Reformat markdown files base on remark-config ([7594cd7](https://github.com/lmc-eu/code-quality-tools/commit/7594cd7)), closes [#12](https://jira.int.lmc.cz/browse/12)
+
+**Note:** Version bump only for package @lmc-eu/conventional-changelog-lmc-bitbucket
+
 <a name="3.0.2"></a>
 
 ## [3.0.2](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/conventional-changelog-lmc-bitbucket@3.0.1...@lmc-eu/conventional-changelog-lmc-bitbucket@3.0.2) (2024-06-18)

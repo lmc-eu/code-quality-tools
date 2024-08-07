@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.0.0"></a>
+
+# 9.0.0 (2024-08-07)
+
+### BREAKING CHANGES
+
+- **stylelint-config:** Upgrade to Stylelint 15 [#DS-1245](https://github.com/lmc-eu/code-quality-tools/issues/DS-1245) ([fc78ba8](https://github.com/lmc-eu/code-quality-tools/commit/fc78ba8))
+- **stylelint:** Change package scope from @lmc-eu to @almacareer ([c3d6ffd](https://github.com/lmc-eu/code-quality-tools/commit/c3d6ffd))
+- **stylelint:** Drop support for Node.js v14 and older ([dc2f921](https://github.com/lmc-eu/code-quality-tools/commit/dc2f921)), closes [#130](https://github.com/lmc-eu/code-quality-tools/issues/130)
+- **stylelint:** Drop support for Node.js v16 ([94d70cc](https://github.com/lmc-eu/code-quality-tools/commit/94d70cc))
+- **stylelint:** Drop support of legacy rules ([0c51da7](https://github.com/lmc-eu/code-quality-tools/commit/0c51da7))
+- **stylelint:** Switch from CommonJS to EcmaScript modules ([48a54a8](https://github.com/lmc-eu/code-quality-tools/commit/48a54a8))
+
+### Chores
+
+- Release [CI-SKIP] ([cd3b0e1](https://github.com/lmc-eu/code-quality-tools/commit/cd3b0e1))
+- Release [CI-SKIP] ([75e1538](https://github.com/lmc-eu/code-quality-tools/commit/75e1538))
+- Release [CI-SKIP] ([36a2fd7](https://github.com/lmc-eu/code-quality-tools/commit/36a2fd7))
+
+### Code Refactoring
+
+- **stylelint:** Rename files with simple names ([4c022ab](https://github.com/lmc-eu/code-quality-tools/commit/4c022ab))
+
+### Dependencies
+
+- Update all non-major dependencies ([d425fd9](https://github.com/lmc-eu/code-quality-tools/commit/d425fd9))
+- Update dependency stylelint to v16 ([f0a2250](https://github.com/lmc-eu/code-quality-tools/commit/f0a2250))
+- Update dependency stylelint-order to v6 ([578489c](https://github.com/lmc-eu/code-quality-tools/commit/578489c))
+
+### Styles
+
+- **repo:** Reformat markdown files base on remark-config ([7594cd7](https://github.com/lmc-eu/code-quality-tools/commit/7594cd7)), closes [#12](https://github.com/lmc-eu/code-quality-tools/issues/12)
+
+### Tests
+
+- **stylelint:** Introduce unit tests ([f80db28](https://github.com/lmc-eu/code-quality-tools/commit/f80db28))
+
+**Note:** Version bump only for package @almacareer/stylelint-config
+
 <a name="8.0.0"></a>
 
 # [8.0.0](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/stylelint-config@7.0.1...@lmc-eu/stylelint-config@8.0.0) (2024-07-03)
