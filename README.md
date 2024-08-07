@@ -19,7 +19,8 @@ This monorepo contains shareable configurations for various coding-style/best pr
 | ESLint                 | [@lmc-eu/eslint-config-typescript](packages/eslint-config-typescript)                         | [![@lmc-eu/eslint-config-typescript][ec-ts-badge]][ec-ts-npm]             |
 | Prettier               | [@lmc-eu/prettier-config](packages/prettier-config)                                           | [![@lmc-eu/prettier-config][pc-badge]][pc-npm]                            |
 | Renovate               | [@lmc-eu/renovate-config](packages/renovate-config)                                           | [![@lmc-eu/renovate-config][rc-badge]][rc-npm]                            |
-| Stylelint              | [@lmc-eu/stylelint-config](packages/stylelint-config)                                         | [![@lmc-eu/stylelint-config][slc-badge]][slc-npm]                         |
+| Remark                 | [@almacareer/remark-config](packages/remark-config)                                           | [![@almacareer/remark-config][rmc-badge]][rmc-npm]                        |
+| Stylelint              | [@almacareer/stylelint-config](packages/stylelint-config)                                     | [![@almacareer/stylelint-config][slc-badge]][slc-npm]                     |
 | Textlint               | [@lmc-eu/textlint-rule-preset-lmc](packages/textlint-rule-preset-lmc)                         | [![@lmc-eu/textlint-rule-preset-lmc][tlc-badge]][tlc-npm]                 |
 
 ## License
@@ -28,7 +29,7 @@ See the [LICENSE](LICENSE) file for information.
 
 ## Credit
 
-We got a lot of inspiration from the similar project at [STRV][strv-github]. Thank you very much ❤️!
+We got a lot of inspiration from a similar project at [STRV][strv-github]. Thank you very much ❤️!
 
 [alma-home]: https://www.almacareer.com
 [blc-npm]: https://npmjs.org/package/%40lmc-eu/browserslist-config
@@ -41,8 +42,8 @@ We got a lot of inspiration from the similar project at [STRV][strv-github]. Tha
 [pc-badge]: https://img.shields.io/npm/v/%40lmc-eu/prettier-config.svg?style=flat-square
 [clc-npm]: https://www.npmjs.com/package/@lmc-eu/commitlint-config
 [clc-badge]: https://img.shields.io/npm/v/%40lmc-eu/commitlint-config.svg?style=flat-square
-[slc-npm]: https://www.npmjs.com/package/@lmc-eu/stylelint-config
-[slc-badge]: https://img.shields.io/npm/v/%40lmc-eu/stylelint-config.svg?style=flat-square
+[slc-npm]: https://www.npmjs.com/package/@almacareer/stylelint-config
+[slc-badge]: https://img.shields.io/npm/v/%40almacareer/stylelint-config.svg?style=flat-square
 [rc-npm]: https://www.npmjs.com/package/@lmc-eu/renovate-config
 [rc-badge]: https://img.shields.io/npm/v/%40lmc-eu/renovate-config.svg?style=flat-square
 [ec-base-npm]: https://www.npmjs.com/package/@lmc-eu/eslint-config-base
@@ -57,4 +58,6 @@ We got a lot of inspiration from the similar project at [STRV][strv-github]. Tha
 [ec-ts-badge]: https://img.shields.io/npm/v/%40lmc-eu/eslint-config-typescript.svg?style=flat-square
 [tlc-npm]: https://www.npmjs.com/package/@lmc-eu/textlint-rule-preset-lmc
 [tlc-badge]: https://img.shields.io/npm/v/%40lmc-eu/textlint-rule-preset-lmc.svg?style=flat-square
+[rmc-npm]: https://www.npmjs.com/package/@almacareer/remark-config
+[rmc-badge]: https://img.shields.io/npm/v/%40almacareer/remark-config.svg?style=flat-square
 [strv-github]: https://github.com/strvcom/code-quality-tools
