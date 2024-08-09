@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.3"></a>
+
+## [2.1.3](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-typescript@2.1.2...@lmc-eu/eslint-config-typescript@2.1.3) (2024-08-09)
+
+Miscellaneous changes
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-typescript
+
 <a name="2.1.2"></a>
 
 ## [2.1.2](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-typescript@2.1.1...@lmc-eu/eslint-config-typescript@2.1.2) (2024-08-07)
