@@ -43,12 +43,12 @@ module.exports = {
           '**/gulpfile.{js,ts}', // gulp config
           '**/gulpfile.*.{js,ts}', // gulp config
           '**/Gruntfile{,.js}', // grunt config
-          '**/.eslintrc.js', // eslint config
+          '**/.eslintrc.{,m,c}js', // eslint config
           '**/.prettierrc.js', // prettier config
           '**/*.config.{js,ts}', // other config
           '**/*.config.*.js,ts}', // other config
           '**/*.conf.{js,ts}', // other conf
-          '**/*.conf.*.js,ts}', // other conf
+          '**/*.conf.*.{js,ts}', // other conf
         ],
         optionalDependencies: false,
       },
