@@ -39,16 +39,16 @@ module.exports = {
           'test.{js,jsx,ts,tsx}', // repos with a single test file
           'test-*.{js,jsx,ts,tsx}', // repos with multiple top-level test files
           '**/*{.,_}{test,spec}.{js,jsx,ts,tsx}', // tests where the extension or filename suffix denotes that it is a test
-          '**/jest.setup.{js,ts}', // jest setup
-          '**/gulpfile.{js,ts}', // gulp config
-          '**/gulpfile.*.{js,ts}', // gulp config
+          '**/jest.setup.{,m,c}{j,t}s', // jest setup
+          '**/gulpfile.{,m,c}{j,t}s', // gulp config
+          '**/gulpfile.*.{,m,c}{j,t}s', // gulp config
           '**/Gruntfile{,.js}', // grunt config
           '**/.eslintrc.{,m,c}js', // eslint config
           '**/.prettierrc.js', // prettier config
-          '**/*.config.{js,ts}', // other config
-          '**/*.config.*.js,ts}', // other config
-          '**/*.conf.{js,ts}', // other conf
-          '**/*.conf.*.{js,ts}', // other conf
+          '**/*.config.{,m,c}{j,t}s', // other config
+          '**/*.config.*.{,m,c}{j,t}s', // other config
+          '**/*.conf.{,m,c}{j,t}s', // other conf
+          '**/*.conf.*.{,m,c}{j,t}s', // other conf
         ],
         optionalDependencies: false,
       },
