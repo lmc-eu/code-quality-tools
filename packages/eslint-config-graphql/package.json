@@ -1,7 +1,7 @@
 {
   "name": "@lmc-eu/eslint-config-graphql",
   "description": "LMC's ESLint config for javascript applications that use GraphQL and Apollo client.",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "author": "Tomas Litera <tomas.litera@lmc.eu>",
   "keywords": [
     "config",
@@ -28,7 +28,7 @@
   "main": "index.js",
   "dependencies": {
     "@graphql-eslint/eslint-plugin": "^3.19.1",
-    "@lmc-eu/eslint-config-base": "^3.1.1",
+    "@lmc-eu/eslint-config-base": "^3.1.2",
     "graphql": "^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0"
   },
   "peerDependencies": {

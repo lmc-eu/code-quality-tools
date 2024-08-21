@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.5"></a>
+
+## [3.0.5](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-graphql@3.0.4...@lmc-eu/eslint-config-graphql@3.0.5) (2024-08-21)
+
+Miscellaneous changes
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-graphql
+
 <a name="3.0.4"></a>
 
 ## [3.0.4](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-graphql@3.0.3...@lmc-eu/eslint-config-graphql@3.0.4) (2024-08-09)
