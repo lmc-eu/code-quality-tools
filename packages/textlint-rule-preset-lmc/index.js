@@ -32,7 +32,7 @@ module.exports = {
         'JavaScript',
         'Lodash',
         'Markdown',
-        ['Sass', 'SASS'],
+        'Sass',
         'TypeScript',
         'UglifyJS',
         ['JSDocs?', 'JSDoc'],
