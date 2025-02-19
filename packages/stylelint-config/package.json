@@ -53,8 +53,8 @@
     "stylelint-order": "^6.0.0"
   },
   "devDependencies": {
-    "npm-run-all2": "6.2.2",
-    "stylelint": "16.8.2"
+    "npm-run-all2": "6.2.6",
+    "stylelint": "16.14.1"
   },
   "peerDependencies": {
     "stylelint": "^16.0.0"
