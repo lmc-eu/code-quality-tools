@@ -40,6 +40,7 @@ module.exports = {
           'test-*.{js,jsx,ts,tsx}', // repos with multiple top-level test files
           '**/*{.,_}{test,spec}.{js,jsx,ts,tsx}', // tests where the extension or filename suffix denotes that it is a test
           '**/jest.setup.{,m,c}{j,t}s', // jest setup
+          '**/vitest.setup.{,m,c}{j,t}s', // vitest setup
           '**/gulpfile.{,m,c}{j,t}s', // gulp config
           '**/gulpfile.*.{,m,c}{j,t}s', // gulp config
           '**/Gruntfile{,.js}', // grunt config
