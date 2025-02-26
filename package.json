@@ -30,7 +30,8 @@
     "lint:text": "textlint ./",
     "lint:text:fix": "yarn lint:text --fix",
     "lint:md": "remark ./ --quiet",
-    "version": "yarn format:fix:changelog"
+    "version": "yarn format:fix:changelog",
+    "prepare": "is-ci || husky"
   },
   "devDependencies": {
     "commitlint-cli": "1.1.3",
