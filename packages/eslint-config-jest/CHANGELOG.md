@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.6"></a>
+
+## [3.0.6](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-jest@3.0.5...@lmc-eu/eslint-config-jest@3.0.6) (2025-02-27)
+
+Miscellaneous changes
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-jest
+
 <a name="3.0.5"></a>
 
 ## [3.0.5](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-jest@3.0.4...@lmc-eu/eslint-config-jest@3.0.5) (2024-08-21)

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.6"></a>
+
+## [2.0.6](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-react@2.0.5...@lmc-eu/eslint-config-react@2.0.6) (2025-02-27)
+
+Miscellaneous changes
+
+**Note:** Version bump only for package @lmc-eu/eslint-config-react
+
 <a name="2.0.5"></a>
 
 ## [2.0.5](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-react@2.0.4...@lmc-eu/eslint-config-react@2.0.5) (2024-08-21)

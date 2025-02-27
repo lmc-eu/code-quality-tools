@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.1.0"></a>
+
+# [9.1.0](https://github.com/lmc-eu/code-quality-tools/compare/@almacareer/stylelint-config@9.0.1...@almacareer/stylelint-config@9.1.0) (2025-02-27)
+
+### Dependencies
+
+- Update all non-major dependencies ([a5c9ab4](https://github.com/lmc-eu/code-quality-tools/commit/a5c9ab4))
+- Update dependency npm-run-all2 to v7 ([047bc22](https://github.com/lmc-eu/code-quality-tools/commit/047bc22))
+
+### Documentation
+
+- **stylelint-config:** Add recommended configuration, ordering and stylistic rules ([013f701](https://github.com/lmc-eu/code-quality-tools/commit/013f701))
+
+### Features
+
+- **stylelint:** Add more properties to check their order ([3ef4bf1](https://github.com/lmc-eu/code-quality-tools/commit/3ef4bf1))
+- **stylelint:** Specify the order of content within declaration blocks ([ccf4c12](https://github.com/lmc-eu/code-quality-tools/commit/ccf4c12))
+
+**Note:** Version bump only for package @almacareer/stylelint-config
+
 <a name="9.0.1"></a>
 
 ## [9.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@almacareer/stylelint-config@9.0.0...@almacareer/stylelint-config@9.0.1) (2024-08-21)

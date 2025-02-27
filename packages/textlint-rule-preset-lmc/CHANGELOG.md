@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.2"></a>
+
+## [2.0.2](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/textlint-rule-preset-lmc@2.0.1...@lmc-eu/textlint-rule-preset-lmc@2.0.2) (2025-02-27)
+
+### Bug Fixes
+
+- **textlint-config:** Only `Sass` term is considered as correct ([e26122c](https://github.com/lmc-eu/code-quality-tools/commit/e26122c))
+
+**Note:** Version bump only for package @lmc-eu/textlint-rule-preset-lmc
+
 <a name="2.0.1"></a>
 
 ## [2.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/textlint-rule-preset-lmc@2.0.0...@lmc-eu/textlint-rule-preset-lmc@2.0.1) (2023-10-06)
