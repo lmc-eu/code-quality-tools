@@ -1,6 +1,6 @@
 // We are dealing with Streams here, not Promises
-/* eslint-disable jest/no-done-callback */
 /* eslint-disable no-plusplus */
+/* eslint-disable jest/no-done-callback */
 /* eslint-disable no-undef */
 const conventionalChangelogCore = require('conventional-changelog-core');
 const gitDummyCommit = require('git-dummy-commit');
@@ -275,6 +275,7 @@ describe('lmc bitbucket preset', () => {
             expect(stringifiedChunk).not.toInclude('BREAKING');
 
             expect(stringifiedChunk).toInclude(
+              // eslint-disable-next-line operator-linebreak
               'http://any.bbucket.host/projects/proj/repos/repo-name/compare/diff?targetBranch' +
                 '=refs%2Ftags%2Fv1.0.0&sourceBranch=refs%2Ftags%2Fv2.0.0',
             );
