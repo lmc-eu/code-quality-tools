@@ -1,7 +1,6 @@
 // We are dealing with Streams here, not Promises
-/* eslint-disable jest/no-done-callback */
 /* eslint-disable no-plusplus */
-
+/* eslint-disable jest/no-done-callback */
 /* eslint-disable no-param-reassign */
 const conventionalChangelogCore = require('conventional-changelog-core');
 const gitDummyCommit = require('git-dummy-commit');
