@@ -8,6 +8,7 @@ export default {
       '(^([A-Z][a-zA-Z0-9]*)((--|__)[a-z][a-zA-Z0-9]*)*$)|(^([a-z][a-z0-9]*)(-[a-z0-9]+)*$)',
       {
         message:
+          // eslint-disable-next-line operator-linebreak
           'Expected class selector to be in format `MyComponent__myElement`, `MyComponent--modifier` ' +
           'or `kebab-case` for utility classes (selector-class-pattern)',
       },
