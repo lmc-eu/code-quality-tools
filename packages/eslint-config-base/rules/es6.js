@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   rules: {
     // Require braces in arrow function body
     // This rule can enforce the use of braces around arrow function body.

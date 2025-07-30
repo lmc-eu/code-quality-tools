@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   // Test files patterns
   tests: ['test/**', '**/*.test.*', '**/*.spec.*'],
 
