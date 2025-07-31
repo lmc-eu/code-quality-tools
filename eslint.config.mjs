@@ -8,8 +8,6 @@ import jest from './packages/eslint-config-jest/index.js';
 
 const compat = new FlatCompat({
   baseDirectory: import.meta.dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
 });
 
 export default defineConfig([
