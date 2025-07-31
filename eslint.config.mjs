@@ -1,9 +1,9 @@
-import { FlatCompat } from '@eslint/eslintrc';
 import prettier from 'eslint-config-prettier';
 import { defineConfig, globalIgnores } from 'eslint/config';
 import base from './packages/eslint-config-base/index.js';
 import optional from './packages/eslint-config-base/optional.js';
 import jest from './packages/eslint-config-jest/index.js';
+
 export default defineConfig([
   ...base,
   ...optional,
