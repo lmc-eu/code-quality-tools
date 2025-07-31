@@ -25,6 +25,12 @@ jobs:
       - name: Install dependencies
         run: make install
 
+      - name: Upload yarn.lock
+        uses: actions/upload-artifact@v4
+        with:
+          name: yarn-lock
+          path: yarn.lock
+
       - name: Lint
         run: yarn lint
 
