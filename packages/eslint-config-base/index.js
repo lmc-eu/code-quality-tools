@@ -1,4 +1,3 @@
-import js from '@eslint/js';
 import { FlatCompat } from '@eslint/eslintrc';
 import importsPlugin from 'eslint-plugin-import';
 import bestPractices from './rules/best-practices.js';
@@ -13,8 +12,6 @@ import globs from './globs.js';
 
 const compat = new FlatCompat({
   baseDirectory: import.meta.dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
 });
 
 export default [
