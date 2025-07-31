@@ -5,7 +5,7 @@ export NODE_OPTIONS := --trace-deprecation
 
 # On CI servers, use the `npm ci` installer to avoid introducing changes to the package-lock.json
 # On developer machines, prefer the generally more flexible `npm install`. 💪
-YARN_I 				:= $(if $(CI), install, install)
+YARN_I 				:= $(if $(CI), install --frozen-lockfile, install)
 
 # Modify these variables in local.mk to add flags to the commands, ie.
 # YARN_FLAGS += --prefer-offline
