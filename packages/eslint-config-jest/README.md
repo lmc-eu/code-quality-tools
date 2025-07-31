@@ -18,10 +18,10 @@ yarn add @lmc-eu/eslint-config-jest -D
 
 ## Usage
 
-Create a _eslint.config.mjs_ file with the following contents:
+Create a _eslint.config.js_ file with the following contents:
 
 ```js
-// eslint.config.mjs
+// eslint.config.js
 
 import { defineConfig } from 'eslint/config';
 import jest from '@lmc-eu/eslint-config-jest';
