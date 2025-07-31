@@ -1,3 +1,3 @@
-import baseOptionalFlat from '@lmc-eu/eslint-config-base/optional.js';
+import baseOptional from '@lmc-eu/eslint-config-base/optional.js';
 
-export default baseOptionalFlat;
+export default baseOptional;

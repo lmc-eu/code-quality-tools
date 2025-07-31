@@ -71,7 +71,6 @@ A full configuration for a TypeScript on React project:
 // eslint.config.mjs
 import { defineConfig, globalIgnores } from 'eslint/config';
 import { FlatCompat } from '@eslint/eslintrc';
-import js from '@eslint/js';
 import react from '@lmc-eu/eslint-config-react';
 import reactOptional from '@lmc-eu/eslint-config-react/optional';
 import ts from '@lmc-eu/eslint-config-typescript';
@@ -79,8 +78,6 @@ import tsReact from '@lmc-eu/eslint-config-typescript/react';
 
 const compat = new FlatCompat({
   baseDirectory: import.meta.dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
 });
 
 export default defineConfig([
