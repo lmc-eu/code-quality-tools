@@ -1,4 +1,4 @@
-name: Test
+name: 🔍 Code Quality Checks
 
 on:
   push:
@@ -12,24 +12,17 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 50
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: '.nvmrc'
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Fetch main
-        run: git fetch --no-tags --depth=50 origin main
+      - name: Setup Node and Install Dependencies
+        uses: ./.github/actions/setup-install
 
-      - name: Install dependencies
-        run: make install
-
-      - name: Lint
+      - name: 📐 Code Linting
         run: yarn lint
 
-      - name: Check code-style format
+      - name: 💅 Code Formatting
         run: yarn format
 
-      - name: Test packages
+      - name: 🧪 Testing Packages
         run: yarn packages:test

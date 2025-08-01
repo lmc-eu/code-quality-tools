@@ -1,4 +1,4 @@
-name: Deploy
+name: 🚀 Deploy
 on:
   push:
     branches:
@@ -10,12 +10,11 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: '.nvmrc'
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: ./.github/actions/setup-node
 
       - name: Fetch tags
         run: git fetch --tags origin release
@@ -24,7 +23,8 @@ jobs:
       - run: git config --global user.name "GitHub CI bot"
       - run: git config --global user.email "github-ci-bot@example.com"
 
-      - run: make install
+      - name: Install Dependencies
+        run: make install
 
       - name: Authenticate npm
         run: ./bin/ci/npm-auth.sh
