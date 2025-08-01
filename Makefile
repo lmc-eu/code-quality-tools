@@ -5,7 +5,7 @@ export NODE_OPTIONS := --trace-deprecation
 
 # On CI servers, use the `npm ci` installer to avoid introducing changes to the package-lock.json
 # On developer machines, prefer the generally more flexible `npm install`. 💪
-YARN_I 				:= $(if $(CI), install --frozen-lockfile, install)
+YARN_I 				:= $(if $(CI), install --immutable --inline-builds, install)
 
 # Modify these variables in local.mk to add flags to the commands, ie.
 # YARN_FLAGS += --prefer-offline
@@ -37,8 +37,8 @@ install: node_modules ## install dependencies
 
 .PHONY: outdated
 outdated: ## get list of all outdated packages
-	yarn outdated || true
-	lerna exec "yarn outdated || true"
+	yarn upgrade-interactive || true
+	lerna exec "yarn upgrade-interactive || true"
 
 .PHONY: unlock
 unlock: pristine ## recreates the lockfile
