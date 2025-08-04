@@ -1,5 +1,5 @@
 {
-  "name": "@lmc-eu/prettier-config",
+  "name": "@alma-oss/prettier-config",
   "version": "2.0.1",
   "description": "LMC's ESlint configuration for Prettier",
   "keywords": [
@@ -7,8 +7,8 @@
     "lmc",
     "config"
   ],
-  "author": "Tomáš Litera <tomas.litera@lmc.eu>",
-  "license": "BSD-3-Clause",
+  "author": "Tomáš Litera <tomas.litera@almacareer.com>",
+  "license": "MIT",
   "type": "module",
   "main": "index.js",
   "exports": {
