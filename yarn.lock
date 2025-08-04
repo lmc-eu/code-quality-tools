@@ -1634,6 +1634,8 @@ __metadata:
 "@lmc-eu/prettier-config@workspace:packages/prettier-config":
   version: 0.0.0-use.local
   resolution: "@lmc-eu/prettier-config@workspace:packages/prettier-config"
+  peerDependencies:
+    prettier: ^3.6.2
   languageName: unknown
   linkType: soft
 
