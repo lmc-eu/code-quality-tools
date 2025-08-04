@@ -5,6 +5,14 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"@alma-oss/prettier-config@workspace:packages/prettier-config":
+  version: 0.0.0-use.local
+  resolution: "@alma-oss/prettier-config@workspace:packages/prettier-config"
+  peerDependencies:
+    prettier: ^3.6.2
+  languageName: unknown
+  linkType: soft
+
 "@almacareer/remark-config@workspace:packages/remark-config":
   version: 0.0.0-use.local
   resolution: "@almacareer/remark-config@workspace:packages/remark-config"
@@ -1628,14 +1636,6 @@ __metadata:
     eslint-import-resolver-typescript: "npm:^3.2.7"
   peerDependencies:
     eslint: ^8
-  languageName: unknown
-  linkType: soft
-
-"@lmc-eu/prettier-config@workspace:packages/prettier-config":
-  version: 0.0.0-use.local
-  resolution: "@lmc-eu/prettier-config@workspace:packages/prettier-config"
-  peerDependencies:
-    prettier: ^3.6.2
   languageName: unknown
   linkType: soft
 
