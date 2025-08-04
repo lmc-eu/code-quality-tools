@@ -9,6 +9,7 @@
   ],
   "author": "Tomáš Litera <tomas.litera@lmc.eu>",
   "license": "BSD-3-Clause",
+  "type": "module",
   "main": "index.js",
   "publishConfig": {
     "access": "public"
@@ -20,5 +21,8 @@
   },
   "engines": {
     "node": "^16 || ^18 || >=20"
+  },
+  "peerDependencies": {
+    "prettier": "^3.6.2"
   }
 }
