@@ -11,6 +11,11 @@
   "license": "BSD-3-Clause",
   "type": "module",
   "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    }
+  },
   "publishConfig": {
     "access": "public"
   },
