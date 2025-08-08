@@ -6,7 +6,6 @@ import { beforeEach, describe, it } from 'node:test';
 
 import stylelint from 'stylelint';
 
-// eslint-disable-next-line import/extensions -- Specify the extension because Node is unable to detect module format.
 import config from '../rules/order.js';
 
 describe('CSS order', () => {

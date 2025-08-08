@@ -20,11 +20,7 @@
     "rules/scss.js"
   ],
   "exports": {
-    ".": {
-      "import": {
-        "default": "./index.js"
-      }
-    },
+    ".": "./index.js",
     "./package.json": "./package.json"
   },
   "publishConfig": {
