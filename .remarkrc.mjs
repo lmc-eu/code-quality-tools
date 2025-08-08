@@ -1,4 +1,5 @@
-import config from './packages/remark-config/index.js';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import config from '@almacareer/remark-config';
 
 export default {
   ...config,

@@ -1,3 +1,4 @@
-import prettierConfig from './packages/prettier-config/index.js';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import prettierConfig from '@alma-oss/prettier-config';
 
 export default prettierConfig;
