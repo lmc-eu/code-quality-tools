@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   rules: {
     // Require return statements to either always or never specify values
     // https://eslint.org/docs/rules/consistent-return

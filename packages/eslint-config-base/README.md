@@ -2,11 +2,11 @@
 
 ## Shared Rules
 
-These rules are meant to be shared across all ESLint rulesets.
+These rules are meant to be shared across all ESLint rule sets.
 
 > Generally you should not need to install or extend from these files as they are automatically included in their respective environment-specific configurations.
 >
-> See [@lmc-eu/code-quality-tools][cqt-home] for a full showdown of available rulesets.
+> See [@lmc-eu/code-quality-tools][cqt-home] for a full showdown of available rule sets.
 
 ## Configurations
 
@@ -31,35 +31,13 @@ This entry point only errors on whitespace rules and sets all other rules to war
 ## Recommended ESLint Configuration
 
 ```js
-// .eslintrc.js
+// eslint.config.mjs
 
-'use strict';
+import { defineConfig } from 'eslint/config';
+import base from '@lmc-eu/eslint-config-base';
+import optional from '@lmc-eu/eslint-config-base/optional';
 
-module.exports = {
-  extends: ['@lmc-eu/eslint-config-base', '@lmc-eu/eslint-config-base/optional'],
-};
-```
-
-<details>
-<summary><i>.eslintrc</i> or <i>.eslintrc.json</i></summary>
-
-```json
-{
-  "extends": ["@lmc-eu/eslint-config-base", "@lmc-eu/eslint-config-base/optional"]
-}
-```
-
-</details>
-
-<details>
-<summary><i>package.json</i></summary>
-
-```json
-{
-  "eslintConfig": {
-    "extends": ["@lmc-eu/eslint-config-base", "@lmc-eu/eslint-config-base/optional"]
-  }
-}
+export default defineConfig([...base, ...optional]);
 ```
 
 It is also recommended that you lint the whole project folder (that is `npx eslint .`) instead of just
