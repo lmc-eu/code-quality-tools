@@ -15,7 +15,7 @@ module.exports = {
       } else if (commit.type === 'BREAKING CHANGE' || commit.type === 'BREAKING CHANGES') {
         breakings += 1;
         level = 0;
-      } else if (commit.type === `Feat`) {
+      } else if (commit.type === 'Feat') {
         features += 1;
         if (level === 2) {
           level = 1;

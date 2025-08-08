@@ -6,7 +6,6 @@ import { beforeEach, describe, it } from 'node:test';
 
 import stylelint from 'stylelint';
 
-// eslint-disable-next-line import/extensions -- Specify the extension because Node is unable to detect module format.
 import config from '../rules/scss.js';
 
 const validScss = readFileSync('./__tests__/__fixtures__/scss-valid.scss', 'utf-8');
