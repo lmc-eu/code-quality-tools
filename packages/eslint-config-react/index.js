@@ -1,39 +1,46 @@
-const base = require('@lmc-eu/eslint-config-base');
+import base from '@lmc-eu/eslint-config-base';
+import settings from '@lmc-eu/eslint-config-base/settings';
+import babelParser from '@babel/eslint-parser';
+import react from './rules/react.js';
+import reactA11y from './rules/react-a11y.js';
+import reactHooks from './rules/react-hooks.js';
 
-module.exports = {
-  extends: ['@lmc-eu/eslint-config-base', './rules/react', './rules/react-a11y', './rules/react-hooks'].map(
-    require.resolve,
-  ),
-
-  parser: '@babel/eslint-parser',
-
-  env: {
-    browser: true,
-    es6: true,
-  },
-
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
+export default [
+  ...base,
+  react,
+  reactA11y,
+  reactHooks,
+  {
+    languageOptions: {
+      parser: babelParser,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        ecmaFeatures: {
+          jsx: true,
+        },
+        babelOptions: {
+          presets: ['@babel/preset-react'],
+        },
+      },
+      globals: {
+        browser: true,
+        es6: true,
+      },
     },
-    babelOptions: {
-      presets: ['@babel/preset-react'],
-    },
-  },
 
-  settings: {
-    react: {
-      version: 'detect',
-    },
+    rules: {},
 
-    'import/resolver': {
-      node: {
-        extensions: ['.jsx', ...base.settings['import/resolver'].node.extensions],
+    settings: {
+      react: {
+        version: 'detect',
+      },
+
+      'import/resolver': {
+        node: {
+          extensions: ['.jsx', ...settings['import/resolver'].node.extensions],
+        },
       },
     },
   },
-
-  rules: {},
-};
+];

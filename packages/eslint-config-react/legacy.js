@@ -1,4 +1,3 @@
-module.exports = {
-  extends: ['@lmc-eu/eslint-config-base/legacy'].map(require.resolve),
-  rules: {},
-};
+import baseLegacy from '@lmc-eu/eslint-config-base/legacy';
+
+export default baseLegacy;

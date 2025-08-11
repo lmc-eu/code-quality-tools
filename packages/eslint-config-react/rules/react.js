@@ -1,5 +1,11 @@
-module.exports = {
-  extends: ['eslint-config-airbnb/rules/react'].map(require.resolve),
+import { FlatCompat } from '@eslint/eslintrc';
+
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+});
+
+export default {
+  extends: compat.extends('eslint-config-airbnb/rules/react'),
   rules: {
     // This rule allows you to enforce curly braces or disallow unnecessary curly braces
     //  in JSX props and/or children
