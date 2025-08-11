@@ -5,6 +5,14 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"@alma-oss/commitlint-config@workspace:packages/commitlint-config":
+  version: 0.0.0-use.local
+  resolution: "@alma-oss/commitlint-config@workspace:packages/commitlint-config"
+  dependencies:
+    "@commitlint/config-conventional": "npm:^19.0.0"
+  languageName: unknown
+  linkType: soft
+
 "@alma-oss/prettier-config@workspace:packages/prettier-config":
   version: 0.0.0-use.local
   resolution: "@alma-oss/prettier-config@workspace:packages/prettier-config"
@@ -490,12 +498,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^17.0.0":
-  version: 17.8.1
-  resolution: "@commitlint/config-conventional@npm:17.8.1"
+"@commitlint/config-conventional@npm:^19.0.0":
+  version: 19.8.1
+  resolution: "@commitlint/config-conventional@npm:19.8.1"
   dependencies:
-    conventional-changelog-conventionalcommits: "npm:^6.1.0"
-  checksum: 10c0/70abdc9f1361386060b30620decc376bc33ff0c27c6f2f89511df1d53127d238af7c3409db22651282caa614d54b91b1f5e35905d12b1f5db70603c351f6e482
+    "@commitlint/types": "npm:^19.8.1"
+    conventional-changelog-conventionalcommits: "npm:^7.0.2"
+  checksum: 10c0/654786e1acd64756e5c88838c19d9eb5d5ee7a6f314af65585dc18cc4002990e971614e7c69f49e5489be9430671aa5b39af005a2160c5a4f26391258d38febf
   languageName: node
   linkType: hard
 
@@ -1516,15 +1525,6 @@ __metadata:
 "@lmc-eu/browserslist-config@workspace:packages/browserslist-config":
   version: 0.0.0-use.local
   resolution: "@lmc-eu/browserslist-config@workspace:packages/browserslist-config"
-  languageName: unknown
-  linkType: soft
-
-"@lmc-eu/commitlint-config@workspace:packages/commitlint-config":
-  version: 0.0.0-use.local
-  resolution: "@lmc-eu/commitlint-config@workspace:packages/commitlint-config"
-  dependencies:
-    "@commitlint/config-conventional": "npm:^17.0.0"
-    "@lmc-eu/conventional-changelog-lmc": "npm:^2.0.3"
   languageName: unknown
   linkType: soft
 
@@ -4518,6 +4518,7 @@ __metadata:
   resolution: "code-quality-tools@workspace:."
   dependencies:
     "@commitlint/cli": "npm:19.8.1"
+    conventional-changelog-conventionalcommits: "npm:^9.1.0"
     eslint: "npm:8.57.1"
     eslint-config-prettier: "npm:9.1.2"
     eslint-import-resolver-node: "npm:0.3.9"
@@ -4704,12 +4705,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "conventional-changelog-conventionalcommits@npm:6.1.0"
+"conventional-changelog-conventionalcommits@npm:^7.0.2":
+  version: 7.0.2
+  resolution: "conventional-changelog-conventionalcommits@npm:7.0.2"
   dependencies:
     compare-func: "npm:^2.0.0"
-  checksum: 10c0/b313f5c0160d109f58d976566e1331ede3a25ab19fbf43f86763b280659195de00a68551f7f3930bf1cbf39a5e707d94f2a25b79996e59043fa9ee0bed68a79f
+  checksum: 10c0/3cb1eab35e37fc973cfb3aed0e159f54414e49b222988da1c2aa86cc8a87fe7531491bbb7657fe5fc4dc0e25f5b50e2065ba8ac71cc4c08eed9189102a2b81bd
+  languageName: node
+  linkType: hard
+
+"conventional-changelog-conventionalcommits@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "conventional-changelog-conventionalcommits@npm:9.1.0"
+  dependencies:
+    compare-func: "npm:^2.0.0"
+  checksum: 10c0/b1dfbb8ce5983bb80837c35f089fb0f9603a1b067f34be680f88fde20871792e461e29d119d468bc293f38a1ca916c1c40a841f8c049a0a1efaa40582f4fecc9
   languageName: node
   linkType: hard
 
