@@ -1,14 +1,11 @@
 {
-  "extends": ["@lmc-eu", "@lmc-eu:scheduleWeeklyBusinessHours", "group:allNonMajor", ":pinOnlyDevDependencies"],
-  "ignorePresets": [":ignoreModulesAndTests"],
-  "ignorePaths": [
-    "**/node_modules/**",
-    "**/bower_components/**",
-    "**/vendor/**",
-    "**/__tests__/**",
-    "**/test/**",
-    "**/tests/**",
-    "**/__fixtures__/**"
+  "extends": [
+    "github>alma-oss/renovate-config",
+    "github>alma-oss/renovate-config:scheduleWeeklyBusinessHours",
+    "group:allNonMajor",
+    ":pinOnlyDevDependencies",
+    ":dependencyDashboard"
   ],
+  "enabledManagers": ["npm", "github-actions"],
   "prConcurrentLimit": 3
 }
