@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   rules: {
     // Disallow Early Use
     // This rule will warn when it encounters a reference to an identifier that has not been yet

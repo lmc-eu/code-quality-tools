@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   rules: {
     // disallow certain syntax forms
     // https://eslint.org/docs/rules/no-restricted-syntax

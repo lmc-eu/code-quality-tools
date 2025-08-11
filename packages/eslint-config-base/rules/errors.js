@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   rules: {
     // Disallow Use of console
     // In general, you should use a logging library which offers more flexibility in terms of log
