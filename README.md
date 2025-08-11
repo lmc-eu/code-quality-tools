@@ -31,8 +31,6 @@ We got a lot of inspiration from a similar project at [STRV][strv-github]. Thank
 [alma-home]: https://www.almacareer.com
 [blc-npm]: https://npmjs.org/package/%40lmc-eu/browserslist-config
 [blc-badge]: https://img.shields.io/npm/v/%40lmc-eu/browserslist-config.svg?style=flat-square
-[cc-bb-npm]: https://npmjs.org/package/%40lmc-eu/conventional-changelog-lmc-bitbucket
-[cc-bb-badge]: https://img.shields.io/npm/v/%40lmc-eu/conventional-changelog-lmc-bitbucket.svg?style=flat-square
 [pc-npm]: https://www.npmjs.com/package/@lmc-eu/prettier-config
 [pc-badge]: https://img.shields.io/npm/v/%40lmc-eu/prettier-config.svg?style=flat-square
 [clc-npm]: https://www.npmjs.com/package/@alma-oss/commitlint-config
