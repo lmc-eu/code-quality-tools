@@ -1,10 +1,10 @@
-# @lmc-eu/commitlint-config
+# @alma-oss/commitlint-config
 
-> LMC’s config for commitlint
+> Alma’s config for commitlint
 
 ## Configurations
 
-### `@lmc-eu/commitlint-config` (default config)
+### `@alma-oss/commitlint-config` (default config)
 
 Suitable for all projects.
 
@@ -13,7 +13,7 @@ Suitable for all projects.
 ### Installation
 
 ```sh
-npm i --dev @commitlint/cli @lmc-eu/commitlint-config
+npm install --save-dev @commitlint/cli @alma-oss/commitlint-config
 ```
 
 ### Configuration
@@ -21,10 +21,8 @@ npm i --dev @commitlint/cli @lmc-eu/commitlint-config
 Create a _.commitlintrc.js_ file with the following contents:
 
 ```js
-'use strict';
-
-module.exports = {
-  extends: ['@lmc-eu/commitlint-config'],
+export default {
+  extends: ['@alma-oss/commitlint-config'],
 };
 ```
 

@@ -1,21 +1,20 @@
 {
-  "name": "@lmc-eu/commitlint-config",
+  "name": "@alma-oss/commitlint-config",
   "version": "2.0.4",
-  "description": "LMC's configuration for commitlint",
+  "description": "Alma's configuration for commitlint",
   "keywords": [
     "commitlint",
-    "lmc",
+    "alma",
     "config"
   ],
-  "author": "Tomáš Litera <tomas.litera@lmc.eu>",
-  "license": "BSD-3-Clause",
   "type": "module",
+  "author": "Tomas Litera <tomas.litera@almacareer.com>",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/lmc-eu/code-quality-tools",
     "directory": "packages/commitlint-config"
   },
-  "main": "index.js",
   "exports": {
     ".": "./index.js"
   },
