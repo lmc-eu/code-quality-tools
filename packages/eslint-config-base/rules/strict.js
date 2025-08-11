@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   rules: {
     // Require or disallow strict mode directives
     // https://eslint.org/docs/rules/strict
