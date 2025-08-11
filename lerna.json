@@ -6,10 +6,13 @@
     "version": {
       "allowBranch": ["release"],
       "conventionalCommits": true,
-      "changelogPreset": "./packages/conventional-changelog-lmc-github",
+      "changelogPreset": "./changelog-preset.config.cjs",
+      "createRelease": "github",
       "push": false,
-      "message": "Chore: Release [CI-SKIP]",
       "ignoreChanges": ["test/**", "yarn.lock"]
+    },
+    "publish": {
+      "message": "chore(release): publish"
     }
   }
 }
