@@ -1,5 +1,13 @@
 {
-  "extends": ["@lmc-eu", "@lmc-eu:scheduleWeeklyBusinessHours", "group:allNonMajor", ":pinOnlyDevDependencies"],
+  "extends": [
+    "github>alma-oss/renovate-config",
+    "github>alma-oss/renovate-config:scheduleWeeklyBusinessHours",
+    "group:allNonMajor",
+    ":pinOnlyDevDependencies",
+    ":dependencyDashboard"
+  ],
+  "enabledManagers": ["npm", "github-actions"],
+  "commitMessagePrefix": "deps: ",
   "ignorePresets": [":ignoreModulesAndTests"],
   "ignorePaths": [
     "**/node_modules/**",
