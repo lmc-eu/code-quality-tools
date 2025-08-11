@@ -2030,7 +2030,6 @@ __metadata:
   resolution: "@lmc-eu/commitlint-config@workspace:packages/commitlint-config"
   dependencies:
     "@commitlint/config-conventional": "npm:^19.0.0"
-    "@lmc-eu/conventional-changelog-lmc": "npm:^2.0.3"
   languageName: unknown
   linkType: soft
 
@@ -2064,7 +2063,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@lmc-eu/conventional-changelog-lmc@npm:^2.0.3, @lmc-eu/conventional-changelog-lmc@npm:^2.0.4, @lmc-eu/conventional-changelog-lmc@workspace:packages/conventional-changelog-lmc":
+"@lmc-eu/conventional-changelog-lmc@npm:^2.0.4, @lmc-eu/conventional-changelog-lmc@workspace:packages/conventional-changelog-lmc":
   version: 0.0.0-use.local
   resolution: "@lmc-eu/conventional-changelog-lmc@workspace:packages/conventional-changelog-lmc"
   dependencies:
