@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   extends: ['./packages/commitlint-config'],
   rules: {
     'scope-enum': [
