@@ -41,6 +41,7 @@
     "@alma-oss/prettier-config": "workspace:^",
     "@almacareer/remark-config": "workspace:^",
     "@commitlint/cli": "19.8.1",
+    "conventional-changelog-conventionalcommits": "7.0.2",
     "eslint": "9.39.4",
     "eslint-config-prettier": "9.1.2",
     "eslint-import-resolver-node": "0.3.9",
