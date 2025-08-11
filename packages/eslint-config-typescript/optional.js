@@ -1,3 +1,3 @@
-module.exports = {
-  extends: require.resolve('@lmc-eu/eslint-config-base/optional'),
-};
+import baseOptional from '@lmc-eu/eslint-config-base/optional';
+
+export default baseOptional;

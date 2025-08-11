@@ -68,25 +68,31 @@ A full configuration for a TypeScript on React project:
 > Please note, that you need to have [eslint-config-react][eslint-config-react] installed as well
 
 ```js
-// .eslintrc.js
-'use strict';
+// eslint.config.mjs
+import { defineConfig, globalIgnores } from 'eslint/config';
+import { FlatCompat } from '@eslint/eslintrc';
+import react from '@lmc-eu/eslint-config-react';
+import reactOptional from '@lmc-eu/eslint-config-react/optional';
+import ts from '@lmc-eu/eslint-config-typescript';
+import tsReact from '@lmc-eu/eslint-config-typescript/react';
 
-module.exports = {
-  extends: [
-    '@lmc-eu/react',
-    '@lmc-eu/react/style',
-    '@lmc-eu/react/optional',
-    '@lmc-eu/typescript',
-    '@lmc-eu/typescript/style',
-    '@lmc-eu/typescript/react',
-  ],
+const compat = new FlatCompat({
+  baseDirectory: import.meta.dirname,
+});
 
-  parserOptions: {
-    // The project field is required in order for some TS-syntax-specific rules to function at all
-    // @see https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#configuration
-    project: './tsconfig.json',
+export default defineConfig([
+  ...react,
+  ...reactOptional,
+  ...ts,
+  ...tsReact,
+  {
+    parserOptions: {
+      // The project field is required in order for some TS-syntax-specific rules to function at all
+      // @see https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#configuration
+      project: './tsconfig.json',
+    },
   },
-};
+]);
 ```
 
 To actually lint .ts files, you must pass the `--ext` flag to ESLint:
