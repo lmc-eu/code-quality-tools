@@ -3,10 +3,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { beforeEach, describe, it } from 'node:test';
-
 import stylelint from 'stylelint';
-
-// eslint-disable-next-line import/extensions -- Specify the extension because Node is unable to detect module format.
 import config from '../index.js';
 
 describe('CSS', () => {
