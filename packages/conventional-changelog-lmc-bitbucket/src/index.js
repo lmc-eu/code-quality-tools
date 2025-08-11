@@ -1,5 +1,5 @@
-const conventionalChangelog = require(`./conventional-changelog`);
 const { parserOpts, writerOpts, recommendedBumpOpts } = require('@lmc-eu/conventional-changelog-lmc');
+const conventionalChangelog = require('./conventional-changelog');
 
 module.exports = Promise.all([conventionalChangelog, parserOpts, recommendedBumpOpts, writerOpts]).then(
   // Using same configuration as other configurations
