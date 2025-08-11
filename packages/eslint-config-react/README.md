@@ -27,38 +27,14 @@ Use this ruleset together with the above ruleset. Provides additional insights i
 ## Recommended ESLint Configuration
 
 ```js
-// .eslintrc.js
+// eslint.config.mjs
 
-'use strict';
+import { defineConfig } from 'eslint/config';
+import base from '@lmc-eu/eslint-config-react';
+import optional from '@lmc-eu/eslint-config-react/optional';
 
-module.exports = {
-  extends: ['@lmc-eu/eslint-config-react', '@lmc-eu/eslint-config-react/optional'],
-};
+export default defineConfig([...base, ...optional]);
 ```
-
-<details>
-<summary><i>.eslintrc</i> or <i>.eslintrc.json</i></summary>
-
-```json
-{
-  "extends": ["@lmc-eu/eslint-config-react", "@lmc-eu/eslint-config-react/optional"]
-}
-```
-
-</details>
-
-<details>
-<summary><i>package.json</i></summary>
-
-```json
-{
-  "eslintConfig": {
-    "extends": ["@lmc-eu/eslint-config-react", "@lmc-eu/eslint-config-react/optional"]
-  }
-}
-```
-
-</details>
 
 It is also recommended that you lint the whole project folder (that is. `npx eslint .`) instead of just
 some folders (that is. `npx eslint src test`) and create an _.eslintignore_ file excluding any unwanted
