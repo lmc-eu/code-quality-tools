@@ -33,8 +33,6 @@ We got a lot of inspiration from a similar project at [STRV][strv-github]. Thank
 [blc-badge]: https://img.shields.io/npm/v/%40lmc-eu/browserslist-config.svg?style=flat-square
 [cc-bb-npm]: https://npmjs.org/package/%40lmc-eu/conventional-changelog-lmc-bitbucket
 [cc-bb-badge]: https://img.shields.io/npm/v/%40lmc-eu/conventional-changelog-lmc-bitbucket.svg?style=flat-square
-[cc-gh-npm]: https://npmjs.org/package/%40lmc-eu/conventional-changelog-lmc-github
-[cc-gh-badge]: https://img.shields.io/npm/v/%40lmc-eu/conventional-changelog-lmc-github.svg?style=flat-square
 [pc-npm]: https://www.npmjs.com/package/@lmc-eu/prettier-config
 [pc-badge]: https://img.shields.io/npm/v/%40lmc-eu/prettier-config.svg?style=flat-square
 [clc-npm]: https://www.npmjs.com/package/@alma-oss/commitlint-config
