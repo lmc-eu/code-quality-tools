@@ -15,22 +15,28 @@
     "access": "public"
   },
   "engines": {
-    "node": "^16 || ^18 || >=20"
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lmc-eu/code-quality-tools.git",
     "directory": "packages/eslint-config-jest"
   },
+  "type": "module",
   "bugs": {
     "url": "https://github.com/lmc-eu/code-quality-tools/issues"
   },
   "dependencies": {
-    "@lmc-eu/eslint-config-base": "^3.1.3",
-    "eslint-plugin-jest": "^27.0.0",
+    "@eslint/compat": "^1.3.1",
+    "@eslint/eslintrc": "^3.3.1",
+    "@lmc-eu/eslint-config-base": "3.1.3",
+    "eslint-plugin-jest": "^29.0.1",
     "eslint-plugin-jest-formatting": "^3.1.0"
   },
   "peerDependencies": {
-    "eslint": "^8.1.0"
+    "eslint": "^9.31.0"
   }
 }

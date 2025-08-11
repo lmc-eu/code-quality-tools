@@ -1,19 +1,25 @@
-const globs = require('@lmc-eu/eslint-config-base/globs');
+import { FlatCompat } from '@eslint/eslintrc';
+import globs from '@lmc-eu/eslint-config-base/globs';
+import jest from 'eslint-plugin-jest';
+import { fixupPluginRules } from '@eslint/compat';
 
-module.exports = {
-  overrides: [
-    {
-      files: [...globs.tests, 'config/jest/**'],
+const compat = new FlatCompat();
 
-      plugins: ['jest', 'jest-formatting'],
+export default [
+  jest.configs['flat/recommended'],
+  jest.configs['flat/style'],
+  ...fixupPluginRules(compat.extends('plugin:jest-formatting/recommended')),
+  {
+    files: [...globs.tests, 'config/jest/**'],
 
-      env: {
+    plugins: { jest },
+
+    languageOptions: {
+      globals: {
         jest: true,
       },
-
-      extends: ['plugin:jest/recommended', 'plugin:jest/style', 'plugin:jest-formatting/recommended'],
-
-      rules: {},
     },
-  ],
-};
+
+    rules: {},
+  },
+];
