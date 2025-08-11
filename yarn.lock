@@ -5,6 +5,14 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"@alma-oss/commitlint-config@workspace:packages/commitlint-config":
+  version: 0.0.0-use.local
+  resolution: "@alma-oss/commitlint-config@workspace:packages/commitlint-config"
+  dependencies:
+    "@commitlint/config-conventional": "npm:^19.0.0"
+  languageName: unknown
+  linkType: soft
+
 "@alma-oss/prettier-config@workspace:packages/prettier-config":
   version: 0.0.0-use.local
   resolution: "@alma-oss/prettier-config@workspace:packages/prettier-config"
@@ -1517,15 +1525,6 @@ __metadata:
 "@lmc-eu/browserslist-config@workspace:packages/browserslist-config":
   version: 0.0.0-use.local
   resolution: "@lmc-eu/browserslist-config@workspace:packages/browserslist-config"
-  languageName: unknown
-  linkType: soft
-
-"@lmc-eu/commitlint-config@workspace:packages/commitlint-config":
-  version: 0.0.0-use.local
-  resolution: "@lmc-eu/commitlint-config@workspace:packages/commitlint-config"
-  dependencies:
-    "@commitlint/config-conventional": "npm:^19.0.0"
-    "@lmc-eu/conventional-changelog-lmc": "npm:^2.0.3"
   languageName: unknown
   linkType: soft
 
