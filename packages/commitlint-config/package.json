@@ -9,20 +9,23 @@
   ],
   "author": "Tomáš Litera <tomas.litera@lmc.eu>",
   "license": "BSD-3-Clause",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/lmc-eu/code-quality-tools",
     "directory": "packages/commitlint-config"
   },
   "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
   "publishConfig": {
     "access": "public"
   },
   "engines": {
-    "node": "^16 || ^18 || >=20"
+    "node": "^18 || >=20"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^19.0.0",
-    "@lmc-eu/conventional-changelog-lmc": "^2.0.3"
+    "@commitlint/config-conventional": "^19.0.0"
   }
 }
