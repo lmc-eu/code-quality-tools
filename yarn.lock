@@ -1639,12 +1639,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@lmc-eu/renovate-config@workspace:packages/renovate-config":
-  version: 0.0.0-use.local
-  resolution: "@lmc-eu/renovate-config@workspace:packages/renovate-config"
-  languageName: unknown
-  linkType: soft
-
 "@lmc-eu/textlint-rule-preset-lmc@workspace:packages/textlint-rule-preset-lmc":
   version: 0.0.0-use.local
   resolution: "@lmc-eu/textlint-rule-preset-lmc@workspace:packages/textlint-rule-preset-lmc"

@@ -18,7 +18,6 @@ This monorepo contains shareable configurations for various coding-style/best pr
 | ESLint                 | [@lmc-eu/eslint-config-jest](packages/eslint-config-jest)                                     | [![@lmc-eu/eslint-config-jest][ec-jest-badge]][ec-jest-npm]               |
 | ESLint                 | [@lmc-eu/eslint-config-typescript](packages/eslint-config-typescript)                         | [![@lmc-eu/eslint-config-typescript][ec-ts-badge]][ec-ts-npm]             |
 | Prettier               | [@lmc-eu/prettier-config](packages/prettier-config)                                           | [![@lmc-eu/prettier-config][pc-badge]][pc-npm]                            |
-| Renovate               | [@lmc-eu/renovate-config](packages/renovate-config)                                           | [![@lmc-eu/renovate-config][rc-badge]][rc-npm]                            |
 | Remark                 | [@almacareer/remark-config](packages/remark-config)                                           | [![@almacareer/remark-config][rmc-badge]][rmc-npm]                        |
 | Stylelint              | [@almacareer/stylelint-config](packages/stylelint-config)                                     | [![@almacareer/stylelint-config][slc-badge]][slc-npm]                     |
 | Textlint               | [@lmc-eu/textlint-rule-preset-lmc](packages/textlint-rule-preset-lmc)                         | [![@lmc-eu/textlint-rule-preset-lmc][tlc-badge]][tlc-npm]                 |
@@ -44,8 +43,6 @@ We got a lot of inspiration from a similar project at [STRV][strv-github]. Thank
 [clc-badge]: https://img.shields.io/npm/v/%40lmc-eu/commitlint-config.svg?style=flat-square
 [slc-npm]: https://www.npmjs.com/package/@almacareer/stylelint-config
 [slc-badge]: https://img.shields.io/npm/v/%40almacareer/stylelint-config.svg?style=flat-square
-[rc-npm]: https://www.npmjs.com/package/@lmc-eu/renovate-config
-[rc-badge]: https://img.shields.io/npm/v/%40lmc-eu/renovate-config.svg?style=flat-square
 [ec-base-npm]: https://www.npmjs.com/package/@lmc-eu/eslint-config-base
 [ec-base-badge]: https://img.shields.io/npm/v/%40lmc-eu/eslint-config-base.svg?style=flat-square
 [ec-gql-npm]: https://www.npmjs.com/package/@lmc-eu/eslint-config-graphql
