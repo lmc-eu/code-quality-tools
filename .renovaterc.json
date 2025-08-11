@@ -7,16 +7,5 @@
     ":dependencyDashboard"
   ],
   "enabledManagers": ["npm", "github-actions"],
-  "commitMessagePrefix": "deps: ",
-  "ignorePresets": [":ignoreModulesAndTests"],
-  "ignorePaths": [
-    "**/node_modules/**",
-    "**/bower_components/**",
-    "**/vendor/**",
-    "**/__tests__/**",
-    "**/test/**",
-    "**/tests/**",
-    "**/__fixtures__/**"
-  ],
   "prConcurrentLimit": 3
 }
