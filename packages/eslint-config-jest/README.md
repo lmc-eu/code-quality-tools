@@ -18,15 +18,15 @@ yarn add @lmc-eu/eslint-config-jest -D
 
 ## Usage
 
-Create a _.eslintrc.js_ file with the following contents:
+Create a _eslint.config.js_ file with the following contents:
 
 ```js
-module.exports = {
-  extends: [
-    // ... (base eslint config)
-    '@lmc-eu/eslint-config-jest',
-  ],
-};
+// eslint.config.js
+
+import { defineConfig } from 'eslint/config';
+import jest from '@lmc-eu/eslint-config-jest';
+
+export default defineConfig([, /* other eslint configs */ ...jest]);
 ```
 
 The shareable config can be customized in your [**eslint** configuration file](https://eslint.org/docs/user-guide/configuring).
