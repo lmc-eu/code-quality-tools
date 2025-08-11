@@ -12,6 +12,10 @@
   "workspaces": [
     "packages/*"
   ],
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module",
   "scripts": {
     "packages:diff": "lerna diff",
     "packages:changed": "lerna changed",
@@ -34,8 +38,10 @@
     "prepare": "is-ci || husky"
   },
   "devDependencies": {
+    "@alma-oss/prettier-config": "workspace:^",
+    "@almacareer/remark-config": "workspace:^",
     "@commitlint/cli": "19.8.1",
-    "eslint": "8.57.1",
+    "eslint": "9.31.0",
     "eslint-config-prettier": "9.1.2",
     "eslint-import-resolver-node": "0.3.9",
     "eslint-plugin-prettier": "5.5.3",
