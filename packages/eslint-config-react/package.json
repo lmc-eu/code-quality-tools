@@ -1,14 +1,14 @@
 {
-  "name": "@lmc-eu/eslint-config-react",
+  "name": "@alma-oss/eslint-config-react",
   "version": "2.0.6",
-  "description": "LMC's ESlint configuration for React projects",
+  "description": "Alma's ESLint configuration for React projects",
   "keywords": [
     "eslint",
     "config",
     "react",
     "preset"
   ],
-  "author": "Tomáš Litera <tomas.litera@lmc.eu>",
+  "author": "Tomáš Litera <tomas.litera@almacareer.com>",
   "homepage": "https://github.com/lmc-eu/code-quality-tools#readme",
   "license": "MIT",
   "publishConfig": {
@@ -34,10 +34,10 @@
   },
   "type": "module",
   "dependencies": {
+    "@alma-oss/eslint-config-base": "3.1.3",
     "@babel/core": "^7.16.5",
     "@babel/eslint-parser": "^7.16.5",
     "@eslint/eslintrc": "^3.3.1",
-    "@lmc-eu/eslint-config-base": "3.1.3",
     "eslint-config-airbnb": "^19.0.4"
   },
   "peerDependencies": {
@@ -46,5 +46,8 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.33.0"
   }
 }

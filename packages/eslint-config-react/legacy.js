@@ -1,3 +1,3 @@
-import baseLegacy from '@lmc-eu/eslint-config-base/legacy';
+import baseLegacy from '@alma-oss/eslint-config-base/legacy';
 
 export default baseLegacy;
