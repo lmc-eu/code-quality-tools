@@ -1,5 +1,5 @@
 import { FlatCompat } from '@eslint/eslintrc';
-import globs from '@lmc-eu/eslint-config-base/globs';
+import globs from '@alma-oss/eslint-config-base/globs';
 import jest from 'eslint-plugin-jest';
 import { fixupPluginRules } from '@eslint/compat';
 
