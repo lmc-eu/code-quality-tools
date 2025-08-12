@@ -1,19 +1,19 @@
-# @lmc-eu/eslint-config-jest
+# @alma-oss/eslint-config-jest
 
-> LMC’s ESLint config for projects using Jest as test runner
+> Alma’s ESLint config for projects using Jest as test runner
 
 These configuration files are suitable to lint Jest test files.
 
 ## Install
 
 ```bash
-npm install @lmc-eu/eslint-config-jest -D
+npm install @alma-oss/eslint-config-jest -D
 ```
 
 or
 
 ```bash
-yarn add @lmc-eu/eslint-config-jest -D
+yarn add @alma-oss/eslint-config-jest -D
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ Create a _eslint.config.js_ file with the following contents:
 // eslint.config.js
 
 import { defineConfig } from 'eslint/config';
-import jest from '@lmc-eu/eslint-config-jest';
+import jest from '@alma-oss/eslint-config-jest';
 
 export default defineConfig([, /* other eslint configs */ ...jest]);
 ```
