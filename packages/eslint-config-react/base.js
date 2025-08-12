@@ -1,3 +1,3 @@
-import base from '@lmc-eu/eslint-config-base';
+import base from '@alma-oss/eslint-config-base';
 
 export default base;

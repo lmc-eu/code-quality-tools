@@ -1,5 +1,5 @@
-import base from '@lmc-eu/eslint-config-base';
-import settings from '@lmc-eu/eslint-config-base/settings';
+import base from '@alma-oss/eslint-config-base';
+import settings from '@alma-oss/eslint-config-base/settings';
 import babelParser from '@babel/eslint-parser';
 import react from './rules/react.js';
 import reactA11y from './rules/react-a11y.js';
