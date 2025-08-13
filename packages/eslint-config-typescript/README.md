@@ -1,4 +1,4 @@
-# @lmc-eu/eslint-config-typescript
+# @alma-oss/eslint-config-typescript
 
 These configuration files are suitable to lint TypeScript code.
 
@@ -14,22 +14,22 @@ See the example _.eslintrc.js_ file below for more details and make sure you rea
 
 ## Configurations
 
-- **`@lmc-eu/eslint-config-typescript`**
+- **`@alma-oss/eslint-config-typescript`**
 
 Suitable for linting TypeScript source files.
 
 Together with this ruleset, you should also choose one base ruleset depending on your target platform:
 
-- [`@lmc-eu/eslint-config-node`][eslint-config-node]
-- [`@lmc-eu/eslint-config-react`][eslint-config-react]
+- [`@alma-oss/eslint-config-node`][eslint-config-node]
+- [`@alma-oss/eslint-config-react`][eslint-config-react]
 
-### `@lmc-eu/eslint-config-typescript/react`
+### `@alma-oss/eslint-config-typescript/react`
 
 React specific overrides.
 
 ## Optional Configurations
 
-### `@lmc-eu/eslint-config-typescript/optional`
+### `@alma-oss/eslint-config-typescript/optional`
 
 Use this ruleset together with any of the above version-specific rulesets. Provides additional insights into potential inconsistencies in the project.
 
@@ -37,22 +37,22 @@ Use this ruleset together with any of the above version-specific rulesets. Provi
 
 ## Coding Styles
 
-### `@lmc-eu/eslint-config-typescript/style`
+### `@alma-oss/eslint-config-typescript/style`
 
 This ruleset includes rules which deal with how the code looks like and not how it works. It helps keeping the code clean and consistent. 🎨
 
 A full configuration for a TypeScript on Node.js project:
 
 ```js
-// .eslintrc.js
-'use strict';
+// eslint.config.js
+import { defineConfig } from 'eslint/config';
 
-module.exports = {
+export default defineConfig({
   extends: [
-    '@lmc-eu/eslint-config-node/v10',
-    '@lmc-eu/eslint-config-node/optional',
-    '@lmc-eu/eslint-config-typescript',
-    '@lmc-eu/eslint-config-typescript/style',
+    '@alma-oss/eslint-config-node/v10',
+    '@alma-oss/eslint-config-node/optional',
+    '@alma-oss/eslint-config-typescript',
+    '@alma-oss/eslint-config-typescript/style',
   ],
 
   parserOptions: {
@@ -60,7 +60,7 @@ module.exports = {
     // @see https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#configuration
     project: './tsconfig.json',
   },
-};
+});
 ```
 
 A full configuration for a TypeScript on React project:
@@ -71,10 +71,10 @@ A full configuration for a TypeScript on React project:
 // eslint.config.mjs
 import { defineConfig, globalIgnores } from 'eslint/config';
 import { FlatCompat } from '@eslint/eslintrc';
-import react from '@lmc-eu/eslint-config-react';
-import reactOptional from '@lmc-eu/eslint-config-react/optional';
-import ts from '@lmc-eu/eslint-config-typescript';
-import tsReact from '@lmc-eu/eslint-config-typescript/react';
+import react from '@alma-oss/eslint-config-react';
+import reactOptional from '@alma-oss/eslint-config-react/optional';
+import ts from '@alma-oss/eslint-config-typescript';
+import tsReact from '@alma-oss/eslint-config-typescript/react';
 
 const compat = new FlatCompat({
   baseDirectory: import.meta.dirname,
@@ -116,6 +116,6 @@ The [vscode-eslint](https://github.com/Microsoft/vscode-eslint) plugin for integ
 
 > Notice we are adding `javascriptreact` and `typescriptreact` above. It won’t harm adding those, but you can always omit these languages if not using them.
 
-[eslint-config-node]: https://www.npmjs.com/package/@lmc-eu/eslint-config-node
-[eslint-config-react]: https://www.npmjs.com/package/@lmc-eu/eslint-config-react
+[eslint-config-node]: https://www.npmjs.com/package/@alma-oss/eslint-config-node
+[eslint-config-react]: https://www.npmjs.com/package/@alma-oss/eslint-config-react
 [ts-parser-configuration]: https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#configuration
