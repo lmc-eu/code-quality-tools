@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.1.1"></a>
+
+## [9.1.1](https://github.com/lmc-eu/code-quality-tools/compare/@almacareer/stylelint-config@9.1.0...@almacareer/stylelint-config@9.1.1) (2025-08-13)
+
+### Dependencies
+
+- Update all non-major dependencies ([4083b91](https://github.com/lmc-eu/code-quality-tools/commit/4083b91))
+
+### Styles
+
+- **stylelint-config:** Fixes format and eslint errors [#191](https://github.com/lmc-eu/code-quality-tools/issues/191) ([7f4e651](https://github.com/lmc-eu/code-quality-tools/commit/7f4e651))
+- **stylelint:** Reformat source code due to Prettier update ([d4debac](https://github.com/lmc-eu/code-quality-tools/commit/d4debac))
+
+**Note:** Version bump only for package @almacareer/stylelint-config
+
 <a name="9.1.0"></a>
 
 # [9.1.0](https://github.com/lmc-eu/code-quality-tools/compare/@almacareer/stylelint-config@9.0.1...@almacareer/stylelint-config@9.1.0) (2025-02-27)

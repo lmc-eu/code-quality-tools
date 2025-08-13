@@ -1,6 +1,6 @@
 {
   "name": "@lmc-eu/commitlint-config",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "LMC's configuration for commitlint",
   "keywords": [
     "commitlint",
@@ -23,6 +23,6 @@
   },
   "dependencies": {
     "@commitlint/config-conventional": "^17.0.0",
-    "@lmc-eu/conventional-changelog-lmc": "^2.0.3"
+    "@lmc-eu/conventional-changelog-lmc": "^2.0.4"
   }
 }

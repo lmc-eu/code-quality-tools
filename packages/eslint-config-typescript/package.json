@@ -1,7 +1,7 @@
 {
   "name": "@alma-oss/eslint-config-typescript",
   "description": "Alma's ESLint config for TypeScript projects",
-  "version": "2.1.5",
+  "version": "3.0.0-alpha.0",
   "keywords": [
     "config",
     "eslint",
@@ -27,8 +27,8 @@
   },
   "main": "index.js",
   "dependencies": {
-    "@alma-oss/eslint-config-base": "3.1.3",
-    "@alma-oss/eslint-config-react": "2.0.6",
+    "@alma-oss/eslint-config-base": "^4.0.0-alpha.0",
+    "@alma-oss/eslint-config-react": "^3.0.0-alpha.0",
     "@typescript-eslint/eslint-plugin": "^8.39.0",
     "@typescript-eslint/parser": "^8.39.0",
     "eslint-import-resolver-typescript": "^3.2.7",

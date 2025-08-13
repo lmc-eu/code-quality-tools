@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.0-alpha.0"></a>
+
+# 4.0.0-alpha.0 (2025-08-13)
+
+### BREAKING CHANGES
+
+- **eslint-config-jest:** Change library organization to alma-oss ([830cde2](https://github.com/lmc-eu/code-quality-tools/commit/830cde2))
+- **eslint-config-jest:** Update ESLint to v9 and migrate to flat config [#191](https://github.com/lmc-eu/code-quality-tools/issues/191) ([c70a86b](https://github.com/lmc-eu/code-quality-tools/commit/c70a86b))
+
+### Chores
+
+- Release [CI-SKIP] ([d60a333](https://github.com/lmc-eu/code-quality-tools/commit/d60a333))
+- Release [CI-SKIP] ([7fb0032](https://github.com/lmc-eu/code-quality-tools/commit/7fb0032))
+- Release [CI-SKIP] ([d4cc261](https://github.com/lmc-eu/code-quality-tools/commit/d4cc261))
+- Release [CI-SKIP] ([b89d961](https://github.com/lmc-eu/code-quality-tools/commit/b89d961))
+- Release [CI-SKIP] ([ea7a671](https://github.com/lmc-eu/code-quality-tools/commit/ea7a671))
+
+### Dependencies
+
+- Update all non-major dependencies ([85835d0](https://github.com/lmc-eu/code-quality-tools/commit/85835d0))
+
+**Note:** Version bump only for package @alma-oss/eslint-config-jest
+
 <a name="3.0.6"></a>
 
 ## [3.0.6](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-jest@3.0.5...@lmc-eu/eslint-config-jest@3.0.6) (2025-02-27)

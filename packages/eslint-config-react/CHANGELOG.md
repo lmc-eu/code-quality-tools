@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0-alpha.0"></a>
+
+# 3.0.0-alpha.0 (2025-08-13)
+
+### BREAKING CHANGES
+
+- **eslint-config-react:** Change library organization to alma-oss ([47ca03e](https://github.com/lmc-eu/code-quality-tools/commit/47ca03e))
+- **eslint-config-react:** Update ESLint to v9 and migrate to flat config [#191](https://github.com/lmc-eu/code-quality-tools/issues/191) ([88106d4](https://github.com/lmc-eu/code-quality-tools/commit/88106d4))
+
+### Chores
+
+- Release [CI-SKIP] ([d60a333](https://github.com/lmc-eu/code-quality-tools/commit/d60a333))
+- Release [CI-SKIP] ([7fb0032](https://github.com/lmc-eu/code-quality-tools/commit/7fb0032))
+- Release [CI-SKIP] ([d4cc261](https://github.com/lmc-eu/code-quality-tools/commit/d4cc261))
+- Release [CI-SKIP] ([b89d961](https://github.com/lmc-eu/code-quality-tools/commit/b89d961))
+- Release [CI-SKIP] ([ea7a671](https://github.com/lmc-eu/code-quality-tools/commit/ea7a671))
+
+### Dependencies
+
+- Update all non-major dependencies ([85835d0](https://github.com/lmc-eu/code-quality-tools/commit/85835d0))
+
+### Styles
+
+- **repo:** Reformat markdown files base on remark-config ([7594cd7](https://github.com/lmc-eu/code-quality-tools/commit/7594cd7)), closes [#12](https://github.com/lmc-eu/code-quality-tools/issues/12)
+
+**Note:** Version bump only for package @alma-oss/eslint-config-react
+
 <a name="2.0.6"></a>
 
 ## [2.0.6](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-react@2.0.5...@lmc-eu/eslint-config-react@2.0.6) (2025-02-27)

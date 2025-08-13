@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.0-alpha.0"></a>
+
+# 4.0.0-alpha.0 (2025-08-13)
+
+### BREAKING CHANGES
+
+- **eslint-config-base:** Change library organization to alma-oss ([0d54d1e](https://github.com/lmc-eu/code-quality-tools/commit/0d54d1e))
+- **eslint-config-base:** Update ESLint to v9 and migrate to flat config [#191](https://github.com/lmc-eu/code-quality-tools/issues/191) ([3f18531](https://github.com/lmc-eu/code-quality-tools/commit/3f18531))
+
+### Bug Fixes
+
+- **eslint-config-base:** Allow `mjs` and `cjs` extension for all configs ([eaa0aed](https://github.com/lmc-eu/code-quality-tools/commit/eaa0aed))
+- **eslint-config-base:** Allow `mjs` and `cjs` extension for ESlint config ([472303c](https://github.com/lmc-eu/code-quality-tools/commit/472303c))
+
+### Chores
+
+- Release [CI-SKIP] ([d60a333](https://github.com/lmc-eu/code-quality-tools/commit/d60a333))
+- Release [CI-SKIP] ([7fb0032](https://github.com/lmc-eu/code-quality-tools/commit/7fb0032))
+- Release [CI-SKIP] ([d4cc261](https://github.com/lmc-eu/code-quality-tools/commit/d4cc261))
+- Release [CI-SKIP] ([b89d961](https://github.com/lmc-eu/code-quality-tools/commit/b89d961))
+- Release [CI-SKIP] ([ea7a671](https://github.com/lmc-eu/code-quality-tools/commit/ea7a671))
+
+### Code Refactoring
+
+- **eslint-config-base:** Use more general glob pattern for conf/config files ([c8d3dcf](https://github.com/lmc-eu/code-quality-tools/commit/c8d3dcf))
+
+### Dependencies
+
+- Update all non-major dependencies ([85835d0](https://github.com/lmc-eu/code-quality-tools/commit/85835d0))
+
+### Features
+
+- **eslint-config-base:** Add support for Typescript in glob imports ([212a228](https://github.com/lmc-eu/code-quality-tools/commit/212a228))
+
+### Styles
+
+- **repo:** Reformat markdown files base on remark-config ([7594cd7](https://github.com/lmc-eu/code-quality-tools/commit/7594cd7)), closes [#12](https://github.com/lmc-eu/code-quality-tools/issues/12)
+
+**Note:** Version bump only for package @alma-oss/eslint-config-base
+
 <a name="3.1.3"></a>
 
 ## [3.1.3](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-base@3.1.2...@lmc-eu/eslint-config-base@3.1.3) (2025-02-27)

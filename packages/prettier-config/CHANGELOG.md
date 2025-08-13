@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+
+# 3.0.0 (2025-08-13)
+
+### BREAKING CHANGES
+
+- **prettier-config:** Migrate to Prettier v3 and ESM syntax ([42a481d](https://github.com/lmc-eu/code-quality-tools/commit/42a481d))
+- **prettier:** Change library npm organization to alma-oss ([a43b6c6](https://github.com/lmc-eu/code-quality-tools/commit/a43b6c6))
+
+### Chores
+
+- **prettier:** Introduce package entrypoint through `exports` field ([8d63e20](https://github.com/lmc-eu/code-quality-tools/commit/8d63e20))
+- Release [CI-SKIP] ([b89d961](https://github.com/lmc-eu/code-quality-tools/commit/b89d961))
+
+### Dependencies
+
+- Update all non-major dependencies ([85835d0](https://github.com/lmc-eu/code-quality-tools/commit/85835d0))
+
+### Styles
+
+- **repo:** Reformat markdown files base on remark-config ([7594cd7](https://github.com/lmc-eu/code-quality-tools/commit/7594cd7)), closes [#12](https://github.com/lmc-eu/code-quality-tools/issues/12)
+
+**Note:** Version bump only for package @alma-oss/prettier-config
+
 <a name="2.0.1"></a>
 
 ## [2.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/prettier-config@2.0.0...@lmc-eu/prettier-config@2.0.1) (2024-08-07)
