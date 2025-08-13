@@ -26,6 +26,11 @@
     "url": "https://github.com/lmc-eu/code-quality-tools/issues"
   },
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./react": "./react.js",
+    "./optional": "./optional.js"
+  },
   "dependencies": {
     "@alma-oss/eslint-config-base": "^4.0.0-alpha.0",
     "@alma-oss/eslint-config-react": "^3.0.0-alpha.0",
