@@ -1,6 +1,6 @@
 {
   "name": "@alma-oss/prettier-config",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "LMC's ESlint configuration for Prettier",
   "keywords": [
     "prettier",

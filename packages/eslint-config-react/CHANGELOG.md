@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0-alpha.0"></a>
+
+# 3.0.0-alpha.0 (2025-08-13)
+
+### BREAKING CHANGES
+
+- **eslint-config-react:** Change library organization to alma-oss ([47ca03e](https://github.com/lmc-eu/code-quality-tools/commit/47ca03e))
+- **eslint-config-react:** Update ESLint to v9 and migrate to flat config [#191](https://github.com/lmc-eu/code-quality-tools/issues/191) ([88106d4](https://github.com/lmc-eu/code-quality-tools/commit/88106d4))
+
+### Dependencies
+
+- Update all non-major dependencies ([85835d0](https://github.com/lmc-eu/code-quality-tools/commit/85835d0))
+
+**Note:** Version bump only for package @alma-oss/eslint-config-react
+
 <a name="2.0.6"></a>
 
 ## [2.0.6](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-react@2.0.5...@lmc-eu/eslint-config-react@2.0.6) (2025-02-27)

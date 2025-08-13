@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.0-alpha.0"></a>
+
+# 4.0.0-alpha.0 (2025-08-13)
+
+### BREAKING CHANGES
+
+- **eslint-config-base:** Change library organization to alma-oss ([0d54d1e](https://github.com/lmc-eu/code-quality-tools/commit/0d54d1e))
+- **eslint-config-base:** Update ESLint to v9 and migrate to flat config [#191](https://github.com/lmc-eu/code-quality-tools/issues/191) ([3f18531](https://github.com/lmc-eu/code-quality-tools/commit/3f18531))
+
+### Dependencies
+
+- Update all non-major dependencies ([85835d0](https://github.com/lmc-eu/code-quality-tools/commit/85835d0))
+
+**Note:** Version bump only for package @alma-oss/eslint-config-base
+
 <a name="3.1.3"></a>
 
 ## [3.1.3](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-base@3.1.2...@lmc-eu/eslint-config-base@3.1.3) (2025-02-27)
