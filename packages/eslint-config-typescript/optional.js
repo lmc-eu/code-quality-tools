@@ -1,3 +1,3 @@
-import baseOptional from '@lmc-eu/eslint-config-base/optional';
+import baseOptional from '@alma-oss/eslint-config-base/optional';
 
 export default baseOptional;

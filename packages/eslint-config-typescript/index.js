@@ -1,10 +1,10 @@
-import base from '@lmc-eu/eslint-config-base/index';
-import settings from '@lmc-eu/eslint-config-base/settings';
+import base from '@alma-oss/eslint-config-base';
+import settings from '@alma-oss/eslint-config-base/settings';
 // eslint-disable-next-line import/no-unresolved
 import tsEslint from 'typescript-eslint';
 // eslint-disable-next-line import/no-unresolved
 import tsParser from '@typescript-eslint/parser';
-import globs from '@lmc-eu/eslint-config-base/globs';
+import globs from '@alma-oss/eslint-config-base/globs';
 
 export default [
   ...base,

@@ -1,5 +1,5 @@
-import reactConfig from '@lmc-eu/eslint-config-react';
-import globs from '@lmc-eu/eslint-config-base/globs';
+import reactConfig from '@alma-oss/eslint-config-react';
+import globs from '@alma-oss/eslint-config-base/globs';
 
 export default [
   ...reactConfig,
