@@ -10,6 +10,7 @@ export default [
   ...base,
   tsEslint.configs.recommended,
   {
+    name: '@alma-oss/eslint-config-typescript',
     settings: {
       // Correctly recognize .ts and .d.ts files when checking import paths against the filesystem
       'import/resolver': {
