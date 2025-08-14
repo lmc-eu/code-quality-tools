@@ -10,6 +10,7 @@ export default [
   jest.configs['flat/style'],
   ...fixupPluginRules(compat.extends('plugin:jest-formatting/recommended')),
   {
+    name: '@alma-oss/eslint-config-jest',
     files: [...globs.tests, 'config/jest/**'],
 
     plugins: { jest },
