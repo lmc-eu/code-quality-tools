@@ -1,8 +1,14 @@
 # @alma-oss/eslint-config-react
 
-> Alma’s ESLint configuration for React projects
+> ESLint configuration for React projects
 
-## Installation
+## 📦 Installation
+
+```sh
+npm install --save-dev eslint @alma-oss/eslint-config-react
+# or
+yarn add --dev eslint @alma-oss/eslint-config-react
+```
 
 Wee need to install everything needed by the config using (installs package and also peer dependencies):
 
@@ -12,28 +18,31 @@ npx install-peerdeps --dev @alma-oss/eslint-config-react
 
 You can see in your package.json there is now a big list of devDependencies.
 
-## Configurations
+## 🧩 Rulesets
 
 - **`@alma-oss/eslint-config-react`**
 
-Use this ruleset to configure ESLint to work with React code.
+A generic ruleset that focuses on code correctness.
 
 - **`@alma-oss/eslint-config-react/optional`**
 
-Use this ruleset together with the above ruleset. Provides additional insights into potential inconsistencies in the project.
+Additional ruleset that might provide useful tips and hints how to improve your code.
 
 > For new projects, it is recommended to enable this ruleset. For existing projects, it is only recommended for the brave.
 
-## Recommended ESLint Configuration
+## 👨‍💻 Usage
 
 ```js
-// eslint.config.mjs
+// eslint.config.js
 
 import { defineConfig } from 'eslint/config';
-import base from '@alma-oss/eslint-config-react';
+import react from '@alma-oss/eslint-config-react';
 import optional from '@alma-oss/eslint-config-react/optional';
 
-export default defineConfig([...base, ...optional]);
+export default defineConfig({
+  ...react,
+  ...optional,
+});
 ```
 
 It is also recommended that you lint the whole project folder (that is `npx eslint .`) instead of just
@@ -64,6 +73,15 @@ export default defineConfig({
 });
 ```
 
-## License
+## 🙌 Contributing
 
-See the [LICENSE](LICENSE) file for information.
+We’re always looking for contributors to help us fix bugs, build new features,
+or help us improve the project documentation. If you’re interested, definitely
+check out our [Contributing Guide][contributing]! 👀
+
+## 📝 License
+
+Licensed under the [MIT][license].
+
+[contributing]: https://github.com/lmc-eu/code-quality-tools/blob/main/CONTRIBUTING.md
+[license]: https://github.com/lmc-eu/code-quality-tools/blob/main/LICENSE.md
