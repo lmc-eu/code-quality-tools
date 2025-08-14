@@ -1,9 +1,15 @@
 import reactConfig from '@alma-oss/eslint-config-react';
 import globs from '@alma-oss/eslint-config-base/globs';
+// eslint-disable-next-line import/no-unresolved
+import parser from '@typescript-eslint/parser';
 
 export default [
   ...reactConfig,
   {
+    name: '@alma-oss/eslint-config-typescript/react',
+    languageOptions: {
+      parser,
+    },
     rules: {
       'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     },
