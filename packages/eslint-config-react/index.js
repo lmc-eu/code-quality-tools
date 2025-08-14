@@ -11,6 +11,7 @@ export default [
   reactA11y,
   reactHooks,
   {
+    name: '@alma-oss/eslint-config-react',
     languageOptions: {
       parser: babelParser,
       parserOptions: {
