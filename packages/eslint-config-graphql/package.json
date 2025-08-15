@@ -10,6 +10,7 @@
     "alma",
     "graphql"
   ],
+  "type": "module",
   "license": "MIT",
   "repository": {
     "type": "git",
