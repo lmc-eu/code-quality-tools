@@ -30,6 +30,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@alma-oss/eslint-config-graphql@workspace:packages/eslint-config-graphql":
+  version: 0.0.0-use.local
+  resolution: "@alma-oss/eslint-config-graphql@workspace:packages/eslint-config-graphql"
+  dependencies:
+    "@graphql-eslint/eslint-plugin": "npm:^3.19.1"
+    "@lmc-eu/eslint-config-base": "npm:^3.1.3"
+    graphql: "npm:^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0"
+  peerDependencies:
+    eslint: ^8
+  languageName: unknown
+  linkType: soft
+
 "@alma-oss/eslint-config-jest@workspace:packages/eslint-config-jest":
   version: 0.0.0-use.local
   resolution: "@alma-oss/eslint-config-jest@workspace:packages/eslint-config-jest"
@@ -2103,17 +2115,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jridgewell/trace-mapping@npm:^0.3.12, @jridgewell/trace-mapping@npm:^0.3.18":
-  version: 0.3.31
-  resolution: "@jridgewell/trace-mapping@npm:0.3.31"
-  dependencies:
-    "@jridgewell/resolve-uri": "npm:^3.1.0"
-    "@jridgewell/sourcemap-codec": "npm:^1.4.14"
-  checksum: 10c0/4b30ec8cd56c5fd9a661f088230af01e0c1a3888d11ffb6b47639700f71225be21d1f7e168048d6d4f9449207b978a235c07c8f15c07705685d16dc06280e9d9
-  languageName: node
-  linkType: hard
-
-"@jridgewell/trace-mapping@npm:^0.3.24, @jridgewell/trace-mapping@npm:^0.3.28":
+"@jridgewell/trace-mapping@npm:^0.3.12, @jridgewell/trace-mapping@npm:^0.3.18, @jridgewell/trace-mapping@npm:^0.3.24, @jridgewell/trace-mapping@npm:^0.3.28":
   version: 0.3.29
   resolution: "@jridgewell/trace-mapping@npm:0.3.29"
   dependencies:
@@ -2160,18 +2162,6 @@ __metadata:
   checksum: 10c0/edc467f629695366e7d67b71840ea1ea2517d649af5567477f26b7791381cf3d7fc9768f623e2e12124f0efcc19d4108d65a36f7c1e7588331eadffb0fc4c909
   languageName: node
   linkType: hard
-
-"@lmc-eu/eslint-config-graphql@workspace:packages/eslint-config-graphql":
-  version: 0.0.0-use.local
-  resolution: "@lmc-eu/eslint-config-graphql@workspace:packages/eslint-config-graphql"
-  dependencies:
-    "@graphql-eslint/eslint-plugin": "npm:^3.19.1"
-    "@lmc-eu/eslint-config-base": "npm:^3.1.3"
-    graphql: "npm:^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0"
-  peerDependencies:
-    eslint: ^8
-  languageName: unknown
-  linkType: soft
 
 "@lmc-eu/textlint-rule-preset-lmc@workspace:packages/textlint-rule-preset-lmc":
   version: 0.0.0-use.local
