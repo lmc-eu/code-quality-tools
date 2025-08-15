@@ -1,21 +1,22 @@
-const globs = require('@lmc-eu/eslint-config-base/globs');
+import globs from '@alma-oss/eslint-config-base/globs';
+import graphqlPlugin from '@graphql-eslint/eslint-plugin';
 
-module.exports = {
-  overrides: [
-    {
-      files: [...globs.configs, ...globs, globs.typescripts],
-      processor: '@graphql-eslint/graphql',
+export default [
+  {
+    files: [...globs.configs, ...globs, globs.typescripts],
+    processor: graphqlPlugin.processor,
+  },
+  {
+    files: ['*.graphql'],
+    languageOptions: {
+      parser: graphqlPlugin.parser,
     },
-    {
-      files: ['*.graphql'],
-
-      parser: '@graphql-eslint/eslint-plugin',
-
-      plugins: ['@graphql-eslint'],
-
-      rules: {
-        '@graphql-eslint/known-type-names': 'error',
-      },
+    plugins: {
+      '@graphql-eslint': graphqlPlugin,
     },
-  ],
-};
+
+    rules: {
+      '@graphql-eslint/known-type-names': 'error',
+    },
+  },
+];
