@@ -20,6 +20,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@alma-oss/eslint-config-graphql@workspace:packages/eslint-config-graphql":
+  version: 0.0.0-use.local
+  resolution: "@alma-oss/eslint-config-graphql@workspace:packages/eslint-config-graphql"
+  dependencies:
+    "@graphql-eslint/eslint-plugin": "npm:^3.19.1"
+    "@lmc-eu/eslint-config-base": "npm:^3.1.3"
+    graphql: "npm:^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0"
+  peerDependencies:
+    eslint: ^9.0.0
+  languageName: unknown
+  linkType: soft
+
 "@alma-oss/eslint-config-jest@workspace:packages/eslint-config-jest":
   version: 0.0.0-use.local
   resolution: "@alma-oss/eslint-config-jest@workspace:packages/eslint-config-jest"
@@ -1734,18 +1746,6 @@ __metadata:
   checksum: 10c0/edc467f629695366e7d67b71840ea1ea2517d649af5567477f26b7791381cf3d7fc9768f623e2e12124f0efcc19d4108d65a36f7c1e7588331eadffb0fc4c909
   languageName: node
   linkType: hard
-
-"@lmc-eu/eslint-config-graphql@workspace:packages/eslint-config-graphql":
-  version: 0.0.0-use.local
-  resolution: "@lmc-eu/eslint-config-graphql@workspace:packages/eslint-config-graphql"
-  dependencies:
-    "@graphql-eslint/eslint-plugin": "npm:^3.19.1"
-    "@lmc-eu/eslint-config-base": "npm:^3.1.3"
-    graphql: "npm:^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0"
-  peerDependencies:
-    eslint: ^8
-  languageName: unknown
-  linkType: soft
 
 "@lmc-eu/renovate-config@workspace:packages/renovate-config":
   version: 0.0.0-use.local
