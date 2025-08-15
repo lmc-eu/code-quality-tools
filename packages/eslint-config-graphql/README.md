@@ -36,3 +36,9 @@ Additionally don’t forget to have `.graphqlconfig` file:
 This configuration uses the following plugins:
 
 - [`@graphql-eslint/eslint-plugin`](https://the-guild.dev/graphql/eslint/docs/getting-started)
+
+## 📝 License
+
+Licensed under the [MIT][license].
+
+[license]: https://github.com/lmc-eu/code-quality-tools/blob/main/LICENSE
