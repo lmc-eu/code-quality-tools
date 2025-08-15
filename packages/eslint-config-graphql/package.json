@@ -20,7 +20,7 @@
     "url": "https://github.com/lmc-eu/code-quality-tools/issues"
   },
   "engines": {
-    "node": "^16 || ^18 || >=20"
+    "node": ">=20"
   },
   "publishConfig": {
     "access": "public"
