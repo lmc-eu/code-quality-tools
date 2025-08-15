@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0-alpha.1"></a>
+
+# [3.0.0-alpha.1](https://github.com/lmc-eu/code-quality-tools/compare/@alma-oss/eslint-config-react@3.0.0-alpha.0...@alma-oss/eslint-config-react@3.0.0-alpha.1) (2025-08-15)
+
+### Bug Fixes
+
+- **eslint-config-react:** Remove unsupported `__dirname` from ESM ([26a5edf](https://github.com/lmc-eu/code-quality-tools/commit/26a5edf))
+
+### Documentation
+
+- **eslint-config-react:** Update readme according the new flat config support ([4b4079f](https://github.com/lmc-eu/code-quality-tools/commit/4b4079f))
+
+**Note:** Version bump only for package @alma-oss/eslint-config-react
+
 <a name="3.0.0-alpha.0"></a>
 
 # 3.0.0-alpha.0 (2025-08-13)

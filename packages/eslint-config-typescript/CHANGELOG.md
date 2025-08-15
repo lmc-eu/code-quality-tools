@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0-alpha.1"></a>
+
+# [3.0.0-alpha.1](https://github.com/lmc-eu/code-quality-tools/compare/@alma-oss/eslint-config-typescript@3.0.0-alpha.0...@alma-oss/eslint-config-typescript@3.0.0-alpha.1) (2025-08-15)
+
+### Bug Fixes
+
+- **eslint-config-typescript:** Add typescript parser for react extensions ([6b14b1a](https://github.com/lmc-eu/code-quality-tools/commit/6b14b1a))
+
+### Documentation
+
+- **eslint-config-typescript:** Update readme according the new flat config support ([df4f158](https://github.com/lmc-eu/code-quality-tools/commit/df4f158))
+
+### Features
+
+- **eslint-config-typescript:** Introduce package entrypoints through `exports` ([c9be43d](https://github.com/lmc-eu/code-quality-tools/commit/c9be43d))
+
+**Note:** Version bump only for package @alma-oss/eslint-config-typescript
+
 <a name="3.0.0-alpha.0"></a>
 
 # 3.0.0-alpha.0 (2025-08-13)
