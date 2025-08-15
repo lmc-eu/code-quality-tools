@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.1.2"></a>
+
+## [9.1.2](https://github.com/lmc-eu/code-quality-tools/compare/@almacareer/stylelint-config@9.1.1...@almacareer/stylelint-config@9.1.2) (2025-08-15)
+
+### Dependencies
+
+- Update all non-major dependencies ([a64ad4c](https://github.com/lmc-eu/code-quality-tools/commit/a64ad4c))
+
+**Note:** Version bump only for package @almacareer/stylelint-config
+
 <a name="9.1.1"></a>
 
 ## [9.1.1](https://github.com/lmc-eu/code-quality-tools/compare/@almacareer/stylelint-config@9.1.0...@almacareer/stylelint-config@9.1.1) (2025-08-13)

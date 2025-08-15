@@ -1,6 +1,6 @@
 {
   "name": "@alma-oss/eslint-config-react",
-  "version": "3.0.0-alpha.0",
+  "version": "3.0.0-alpha.1",
   "description": "Alma's ESLint configuration for React projects",
   "keywords": [
     "eslint",
@@ -34,7 +34,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@alma-oss/eslint-config-base": "^4.0.0-alpha.0",
+    "@alma-oss/eslint-config-base": "^4.0.0-alpha.1",
     "@babel/core": "^7.16.5",
     "@babel/eslint-parser": "^7.16.5",
     "@eslint/eslintrc": "^3.3.1",

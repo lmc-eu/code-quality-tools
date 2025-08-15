@@ -1,6 +1,6 @@
 {
   "name": "@almacareer/stylelint-config",
-  "version": "9.1.1",
+  "version": "9.1.2",
   "description": "Alma Career's config for Stylelint",
   "keywords": [
     "stylelint",

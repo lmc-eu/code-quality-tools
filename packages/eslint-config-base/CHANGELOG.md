@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.0-alpha.1"></a>
+
+# [4.0.0-alpha.1](https://github.com/lmc-eu/code-quality-tools/compare/@alma-oss/eslint-config-base@4.0.0-alpha.0...@alma-oss/eslint-config-base@4.0.0-alpha.1) (2025-08-15)
+
+### Bug Fixes
+
+- **eslint-config-base:** Remove unsupported `__dirname` in ESM ([382bfcc](https://github.com/lmc-eu/code-quality-tools/commit/382bfcc))
+
+**Note:** Version bump only for package @alma-oss/eslint-config-base
+
 <a name="4.0.0-alpha.0"></a>
 
 # 4.0.0-alpha.0 (2025-08-13)
