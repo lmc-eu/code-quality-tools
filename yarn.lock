@@ -11,7 +11,7 @@ __metadata:
   dependencies:
     "@eslint/compat": "npm:^1.3.1"
     "@eslint/eslintrc": "npm:^3.3.1"
-    eslint: "npm:^9.33.0"
+    eslint: "npm:9.33.0"
     eslint-config-airbnb-base: "npm:^15.0.0"
     eslint-plugin-import: "npm:^2.32.0"
     eslint-plugin-jsdoc: "npm:^51.4.1"
@@ -27,7 +27,7 @@ __metadata:
     "@alma-oss/eslint-config-base": "npm:^4.0.0-alpha.1"
     "@eslint/compat": "npm:^1.3.1"
     "@eslint/eslintrc": "npm:^3.3.1"
-    eslint: "npm:^9.33.0"
+    eslint: "npm:9.33.0"
     eslint-plugin-jest: "npm:^29.0.1"
     eslint-plugin-jest-formatting: "npm:^3.1.0"
   peerDependencies:
@@ -43,7 +43,7 @@ __metadata:
     "@babel/core": "npm:^7.16.5"
     "@babel/eslint-parser": "npm:^7.16.5"
     "@eslint/eslintrc": "npm:^3.3.1"
-    eslint: "npm:^9.33.0"
+    eslint: "npm:9.33.0"
     eslint-config-airbnb: "npm:^19.0.4"
   peerDependencies:
     "@babel/preset-react": ^7.16.5
@@ -62,10 +62,10 @@ __metadata:
     "@alma-oss/eslint-config-react": "npm:^3.0.0-alpha.1"
     "@typescript-eslint/eslint-plugin": "npm:^8.39.0"
     "@typescript-eslint/parser": "npm:^8.39.0"
-    eslint: "npm:^9.33.0"
+    eslint: "npm:9.33.0"
     eslint-import-resolver-typescript: "npm:^3.2.7"
     eslint-plugin-react: "npm:^7.37.5"
-    typescript: "npm:^5.9.2"
+    typescript: "npm:5.9.2"
     typescript-eslint: "npm:^8.38.0"
   peerDependencies:
     eslint: ^9.31.0
@@ -4732,7 +4732,7 @@ __metadata:
     eslint: "npm:9.33.0"
     eslint-config-prettier: "npm:9.1.2"
     eslint-import-resolver-node: "npm:0.3.9"
-    eslint-plugin-jest-formatting: "npm:^3.1.0"
+    eslint-plugin-jest-formatting: "npm:3.1.0"
     eslint-plugin-prettier: "npm:5.5.4"
     husky: "npm:9.1.7"
     is-ci: "npm:4.1.0"
@@ -5980,7 +5980,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest-formatting@npm:^3.1.0":
+"eslint-plugin-jest-formatting@npm:3.1.0, eslint-plugin-jest-formatting@npm:^3.1.0":
   version: 3.1.0
   resolution: "eslint-plugin-jest-formatting@npm:3.1.0"
   peerDependencies:
@@ -6135,7 +6135,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:9.33.0, eslint@npm:^9.33.0":
+"eslint@npm:9.33.0":
   version: 9.33.0
   resolution: "eslint@npm:9.33.0"
   dependencies:
@@ -15275,7 +15275,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:>=3 < 6, typescript@npm:^5.9.2":
+"typescript@npm:5.9.2, typescript@npm:>=3 < 6":
   version: 5.9.2
   resolution: "typescript@npm:5.9.2"
   bin:
@@ -15285,7 +15285,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A>=3 < 6#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.9.2#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A5.9.2#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A>=3 < 6#optional!builtin<compat/typescript>":
   version: 5.9.2
   resolution: "typescript@patch:typescript@npm%3A5.9.2#optional!builtin<compat/typescript>::version=5.9.2&hash=5786d5"
   bin:
