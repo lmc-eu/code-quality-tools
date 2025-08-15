@@ -1,9 +1,9 @@
-# @lmc-eu/eslint-config-graphql
+# @alma-oss/eslint-config-graphql
 
 ## Install
 
 ```bash
-npm install @lmc-eu/eslint-config-graphql -D
+npm install @alma-oss/eslint-config-graphql -D
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ Create a _.eslintrc.js_ file with the following contents:
 module.exports = {
   extends: [
     // ... (base eslint config)
-    '@lmc-eu/eslint-config-graphql',
+    '@alma-oss/eslint-config-graphql',
   ],
 };
 ```
