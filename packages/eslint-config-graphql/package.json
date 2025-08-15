@@ -10,7 +10,7 @@
     "alma",
     "graphql"
   ],
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/lmc-eu/code-quality-tools.git",
