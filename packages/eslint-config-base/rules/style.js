@@ -73,10 +73,6 @@ export default {
     // https://eslint.org/docs/rules/spaced-comment
     'spaced-comment': 'warn', // airbnb error
 
-    // Require an empty line before return statements
-    // https://eslint.org/docs/rules/newline-before-return
-    'newline-before-return': 'warn', // airbnb off
-
     // Disallow multiple empty lines
     // http://eslint.org/docs/rules/no-multiple-empty-lines
     'no-multiple-empty-lines': [

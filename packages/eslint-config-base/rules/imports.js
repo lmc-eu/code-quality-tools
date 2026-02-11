@@ -13,9 +13,12 @@ export default {
       {
         js: 'never',
         mjs: 'never',
+        cjs: 'never',
         jsx: 'never',
         ts: 'never',
         tsx: 'never',
+        cts: 'never',
+        mts: 'never',
       },
     ],
 

@@ -106,10 +106,6 @@ export default [
       // https://eslint.org/docs/rules/strict
       strict: 'error', // airbnb error
 
-      // Require an empty line before return statements
-      // https://eslint.org/docs/rules/newline-before-return
-      'newline-before-return': 'error', // airbnb off
-
       // Disallow duplicate module imports
       // https://eslint.org/docs/rules/no-duplicate-imports
       'no-duplicate-imports': 'error', // airbnb off
