@@ -1,4 +1,5 @@
 export default {
+  name: '@alma-oss/eslint-config-base/rules/best-practices',
   rules: {
     // Require return statements to either always or never specify values
     // https://eslint.org/docs/rules/consistent-return

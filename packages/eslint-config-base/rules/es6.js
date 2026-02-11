@@ -1,4 +1,5 @@
 export default {
+  name: '@alma-oss/eslint-config-base/rules/es6',
   rules: {
     // Require braces in arrow function body
     // This rule can enforce the use of braces around arrow function body.

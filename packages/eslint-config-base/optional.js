@@ -4,7 +4,7 @@ import globs from './globs.js';
 export default [
   jsdoc.configs['flat/recommended'],
   {
-    name: '@lmc-eu/eslint-config-base/optional',
+    name: '@alma-oss/eslint-config-base/optional',
     plugins: {
       jsdoc,
     },

@@ -1,4 +1,5 @@
 export default {
+  name: '@alma-oss/eslint-config-base/rules/variables',
   rules: {
     // Disallow Early Use
     // This rule will warn when it encounters a reference to an identifier that has not been yet

@@ -1,4 +1,5 @@
 export default {
+  name: '@alma-oss/eslint-config-base/rules/style',
   rules: {
     // disallow certain syntax forms
     // https://eslint.org/docs/rules/no-restricted-syntax

@@ -1,4 +1,5 @@
 export default {
+  name: '@alma-oss/eslint-config-base/rules/errors',
   rules: {
     // Disallow Use of console
     // In general, you should use a logging library which offers more flexibility in terms of log

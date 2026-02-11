@@ -6,7 +6,7 @@ const compat = new FlatCompat();
 export default [
   ...fixupConfigRules(compat.extends('eslint-config-airbnb-base/legacy')),
   {
-    name: '@lmc-eu/eslint-config-base/legacy',
+    name: '@alma-oss/eslint-config-base/legacy',
 
     rules: {},
   },
