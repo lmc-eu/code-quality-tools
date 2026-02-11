@@ -7,11 +7,12 @@ import reactHooks from './rules/react-hooks.js';
 
 export default [
   ...base,
-  react,
-  reactA11y,
-  reactHooks,
+  ...react,
+  ...reactA11y,
+  ...reactHooks,
   {
     name: '@alma-oss/eslint-config-react',
+    files: ['**/*.{js,jsx}'],
     languageOptions: {
       parser: babelParser,
       parserOptions: {
@@ -23,10 +24,6 @@ export default [
         babelOptions: {
           presets: ['@babel/preset-react'],
         },
-      },
-      globals: {
-        browser: true,
-        es6: true,
       },
     },
 
