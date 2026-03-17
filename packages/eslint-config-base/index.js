@@ -1,5 +1,4 @@
-import { FlatCompat } from '@eslint/eslintrc';
-import { fixupConfigRules } from '@eslint/compat';
+import importPlugin from 'eslint-plugin-import';
 import bestPractices from './rules/best-practices.js';
 import errors from './rules/errors.js';
 import node from './rules/node.js';
@@ -11,12 +10,18 @@ import strict from './rules/strict.js';
 import globs from './globs.js';
 import settings from './settings.js';
 
-const compat = new FlatCompat();
-
 export default [
-  ...fixupConfigRules(compat.extends('eslint-config-airbnb-base')),
   {
     name: '@alma-oss/eslint-config-base',
+
+    plugins: {
+      import: importPlugin,
+    },
+
+    languageOptions: {
+      ecmaVersion: 2018,
+      sourceType: 'module',
+    },
 
     settings,
 
