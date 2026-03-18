@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.0.0 (2026-03-18)
+
+### ⚠ BREAKING CHANGES
+
+- **commitlint:** Node.js v18 is now unsupported for this package. Use v20 or higher.
+- **commitlint:** change license from BSD-3-Clause to MIT
+- **commitlint:** the package is provided as an ESM only
+- **commitlint:** abandon usage of the `@lmc-eu/conventional-changelog-lmc`
+- **commitlint:** drop support of Node.js v16
+
+### Features
+
+- **commitlint:** change library organization to alma-oss ([3260ea8](https://github.com/lmc-eu/code-quality-tools/commit/3260ea8b9a1665cf57a6082553f18f943371f8ff))
+- **commitlint:** drop support for Node.js v18 ([8636c2b](https://github.com/lmc-eu/code-quality-tools/commit/8636c2bf7951f1db313b3cfcb6e41b9f517368a8))
+
+### Dependencies
+
+- **commitlint:** upgrade to commitlint v19 ([a652e79](https://github.com/lmc-eu/code-quality-tools/commit/a652e7994f97b0e94ba382ee330a3488a0f0ab79))
+- Update dependency @commitlint/config-conventional to v19 ([e7b89f7](https://github.com/lmc-eu/code-quality-tools/commit/e7b89f7f6ed158394756a37286df9821c24b7f96))
+
+### Chores
+
+- Release [CI-SKIP] ([3c46231](https://github.com/lmc-eu/code-quality-tools/commit/3c462316bd70cf3e9652656fc688ced332d0d47a))
+- Release [CI-SKIP] ([d60a333](https://github.com/lmc-eu/code-quality-tools/commit/d60a333a00598de3ac59f112e8aeb01da61994b2))
+
 <a name="2.0.4"></a>
 
 ## [2.0.4](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/commitlint-config@2.0.3...@lmc-eu/commitlint-config@2.0.4) (2025-08-13)

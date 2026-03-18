@@ -1,6 +1,6 @@
 {
   "name": "@alma-oss/commitlint-config",
-  "version": "2.0.4",
+  "version": "3.0.0",
   "description": "Alma's configuration for commitlint",
   "keywords": [
     "commitlint",

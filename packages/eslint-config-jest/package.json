@@ -1,6 +1,6 @@
 {
   "name": "@alma-oss/eslint-config-jest",
-  "version": "4.0.0-alpha.2",
+  "version": "4.0.0-alpha.3",
   "description": "Alma's ESlint configuration for projects using Jest as test runner",
   "keywords": [
     "eslint",
