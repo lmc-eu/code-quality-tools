@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="9.1.3"></a>
+
+## [9.1.3](https://github.com/lmc-eu/code-quality-tools/compare/@almacareer/stylelint-config@9.1.2...@almacareer/stylelint-config@9.1.3) (2026-03-18)
+
+### Dependencies
+
+- Update dependency npm-run-all2 to v8 ([85f9cad](https://github.com/lmc-eu/code-quality-tools/commit/85f9cad))
+
+**Note:** Version bump only for package @almacareer/stylelint-config
+
 <a name="9.1.2"></a>
 
 ## [9.1.2](https://github.com/lmc-eu/code-quality-tools/compare/@almacareer/stylelint-config@9.1.1...@almacareer/stylelint-config@9.1.2) (2025-08-15)

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0-alpha.2"></a>
+
+# [3.0.0-alpha.2](https://github.com/lmc-eu/code-quality-tools/compare/@alma-oss/eslint-config-typescript@3.0.0-alpha.1...@alma-oss/eslint-config-typescript@3.0.0-alpha.2) (2026-03-18)
+
+### Dependencies
+
+- Pin dependencies ([efadf48](https://github.com/lmc-eu/code-quality-tools/commit/efadf48))
+- Update all non-major dependencies ([122600f](https://github.com/lmc-eu/code-quality-tools/commit/122600f))
+- Update all non-major dependencies ([531c180](https://github.com/lmc-eu/code-quality-tools/commit/531c180))
+
+**Note:** Version bump only for package @alma-oss/eslint-config-typescript
+
 <a name="3.0.0-alpha.1"></a>
 
 # [3.0.0-alpha.1](https://github.com/lmc-eu/code-quality-tools/compare/@alma-oss/eslint-config-typescript@3.0.0-alpha.0...@alma-oss/eslint-config-typescript@3.0.0-alpha.1) (2025-08-15)
