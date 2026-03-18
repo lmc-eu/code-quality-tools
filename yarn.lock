@@ -10,6 +10,8 @@ __metadata:
   resolution: "@alma-oss/commitlint-config@workspace:packages/commitlint-config"
   dependencies:
     "@commitlint/config-conventional": "npm:^19.0.0"
+  peerDependencies:
+    "@commitlint/cli": ^19.0.0
   languageName: unknown
   linkType: soft
 
