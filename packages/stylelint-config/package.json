@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "npm-run-all2": "8.0.4",
-    "stylelint": "16.23.1"
+    "stylelint": "16.26.1"
   },
   "peerDependencies": {
     "stylelint": "^16.0.0"
