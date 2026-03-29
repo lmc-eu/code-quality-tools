@@ -3,6 +3,7 @@
   "description": "Alma's ESLint config for javascript applications that use GraphQL and Apollo client.",
   "version": "3.0.6",
   "author": "Tomas Litera <tomas.litera@almacareer.com>",
+  "type": "module",
   "keywords": [
     "config",
     "eslint",
@@ -25,13 +26,15 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
   "dependencies": {
+    "@alma-oss/eslint-config-base": "^4.0.0-alpha.2",
     "@graphql-eslint/eslint-plugin": "^4.0.0",
-    "@lmc-eu/eslint-config-base": "^3.1.3",
     "graphql": "^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0"
   },
   "peerDependencies": {
-    "eslint": "^8"
+    "eslint": "^9"
   }
 }
