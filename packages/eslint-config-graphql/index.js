@@ -20,7 +20,7 @@ export default [
       /**
        * Enforce that all GraphQL types referenced in your schema or queries are actually defined.
        *
-       * @see { @link https://the-guild.dev/graphql/eslint/rules/known-type-names }
+       * @see {@link https://the-guild.dev/graphql/eslint/rules/known-type-names}
        */
       '@graphql-eslint/known-type-names': 'error',
     },

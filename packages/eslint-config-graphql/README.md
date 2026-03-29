@@ -17,7 +17,7 @@ Create a _eslint.config.js_ file with the following contents:
 ```js
 // eslint.config.js
 
-import graphqlConfig from ‘@alma-oss/eslint-config-graphql’;
+import graphqlConfig from '@alma-oss/eslint-config-graphql';
 
 export default [
   // ... your other configs
