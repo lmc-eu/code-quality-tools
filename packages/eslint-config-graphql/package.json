@@ -26,6 +26,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "test:unit": "node --test"
+  },
   "exports": {
     ".": "./index.js"
   },
@@ -36,5 +39,8 @@
   },
   "peerDependencies": {
     "eslint": "^9"
+  },
+  "devDependencies": {
+    "eslint": "9.39.4"
   }
 }

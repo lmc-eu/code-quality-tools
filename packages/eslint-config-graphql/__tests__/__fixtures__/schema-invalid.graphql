@@ -1,0 +1,9 @@
+type Query {
+  user: UnknownType
+}
+
+type User {
+  id: ID
+  name: String
+  profile: NonExistentProfile
+}

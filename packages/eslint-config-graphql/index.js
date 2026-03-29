@@ -5,7 +5,7 @@ import graphqlPlugin from '@graphql-eslint/eslint-plugin';
 export default [
   {
     name: '@alma-oss/eslint-config-graphql',
-    files: [...globs.configs, ...globs, globs.typescripts],
+    files: [...globs.configs, ...globs.javascripts, ...globs.typescripts],
     processor: graphqlPlugin.processor,
   },
   {

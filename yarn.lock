@@ -36,6 +36,7 @@ __metadata:
   dependencies:
     "@alma-oss/eslint-config-base": "npm:^4.0.0-alpha.2"
     "@graphql-eslint/eslint-plugin": "npm:^4.0.0"
+    eslint: "npm:9.39.4"
     graphql: "npm:^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0"
   peerDependencies:
     eslint: ^9
