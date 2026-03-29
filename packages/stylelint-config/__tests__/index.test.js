@@ -50,10 +50,10 @@ describe('CSS', () => {
       assert.deepEqual(
         result.results[0].warnings.map((w) => w.text),
         [
-          'Expected custom media query name "--FOO" to be kebab-case',
-          'Expected custom property name "--FOO" to be kebab-case',
-          'Expected keyframe name "FOO" to be kebab-case',
-          'Expected id selector "#FOO" to be kebab-case',
+          'Expected custom media query name "--FOO" to be kebab-case (custom-media-pattern)',
+          'Expected custom property name "--FOO" to be kebab-case (custom-property-pattern)',
+          'Expected keyframe name "FOO" to be kebab-case (keyframes-name-pattern)',
+          'Expected id selector "#FOO" to be kebab-case (selector-id-pattern)',
           'Expected "#FOO" to have no more than 0 ID selectors (selector-max-id)',
           'Expected "#FOO" to have a specificity no more than "0,4,0" (selector-max-specificity)',
         ],
