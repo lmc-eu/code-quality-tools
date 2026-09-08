@@ -32,7 +32,7 @@
     "directory": "packages/stylelint-config"
   },
   "engines": {
-    "node": "^18.12.0 || >=20"
+    "node": ">=20"
   },
   "scripts": {
     "lint": "yarn lint:css",
