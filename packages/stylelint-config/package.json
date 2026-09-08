@@ -12,7 +12,6 @@
   "author": "Tomáš Litera <tomas.litera@almacareer.com>",
   "license": "MIT",
   "type": "module",
-  "main": "index.js",
   "files": [
     "index.js",
     "rules/extras.js",
