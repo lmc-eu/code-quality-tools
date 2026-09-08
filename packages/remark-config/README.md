@@ -1,17 +1,17 @@
-# @almacareer/remark-config
+# @alma-oss/remark-config
 
 > Alma Career’s config for [remark-cli][remark-cli-home]
 
 ## Usage
 
 ```sh
-npm i --dev remark-cli @almacareer/remark-config
+npm i --dev remark-cli @alma-oss/remark-config
 ```
 
 Now, create a _.remarkrc.js_ file in your project’s root with the following contents:
 
 ```js
-import config from '@almacareer/remark-config';
+import config from '@alma-oss/remark-config';
 
 export default {
   ...config,

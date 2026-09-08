@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@alma-oss/prettier-config": "workspace:^",
-    "@almacareer/remark-config": "workspace:^",
+    "@alma-oss/remark-config": "workspace:^",
     "@commitlint/cli": "20.5.0",
     "conventional-changelog-conventionalcommits": "7.0.2",
     "eslint": "9.39.4",
