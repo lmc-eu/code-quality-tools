@@ -104,9 +104,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@almacareer/remark-config@workspace:^, @almacareer/remark-config@workspace:packages/remark-config":
+"@alma-oss/remark-config@workspace:^, @alma-oss/remark-config@workspace:packages/remark-config":
   version: 0.0.0-use.local
-  resolution: "@almacareer/remark-config@workspace:packages/remark-config"
+  resolution: "@alma-oss/remark-config@workspace:packages/remark-config"
   dependencies:
     remark-preset-lint-consistent: "npm:^6.0.0"
     remark-preset-lint-markdown-style-guide: "npm:^6.0.0"
@@ -5336,7 +5336,7 @@ __metadata:
   resolution: "code-quality-tools@workspace:."
   dependencies:
     "@alma-oss/prettier-config": "workspace:^"
-    "@almacareer/remark-config": "workspace:^"
+    "@alma-oss/remark-config": "workspace:^"
     "@commitlint/cli": "npm:20.5.0"
     conventional-changelog-conventionalcommits: "npm:7.0.2"
     eslint: "npm:9.39.4"
