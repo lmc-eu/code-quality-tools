@@ -16,7 +16,7 @@
     "url": "git://github.com/lmc-eu/code-quality-tools.git"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "license": "MIT",
   "type": "module",
