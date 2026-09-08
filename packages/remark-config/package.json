@@ -20,7 +20,9 @@
   },
   "license": "MIT",
   "type": "module",
-  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
   "publishConfig": {
     "access": "public"
   },
