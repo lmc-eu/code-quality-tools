@@ -1,15 +1,31 @@
 {
-  "packages": ["packages/*"],
+  "$schema": "http://json.schemastore.org/lerna",
   "version": "independent",
   "npmClient": "yarn",
   "command": {
     "version": {
       "allowBranch": ["release"],
       "conventionalCommits": true,
-      "changelogPreset": "./changelog-preset.config.cjs",
+      "changelogPreset": {
+        "name": "conventionalcommits",
+        "types": [
+          { "type": "feat", "section": "Features", "effect": "bump" },
+          { "type": "fix", "section": "Bug Fixes", "effect": "bump" },
+          { "type": "revert", "section": "Reverts", "effect": "bump" },
+          { "type": "docs", "section": "Documentation", "effect": "bump" },
+          { "type": "deps", "section": "Dependencies", "effect": "bump" },
+          { "type": "chore", "section": "Chores", "effect": "bump" },
+          { "type": "perf", "section": "Performance Improvements", "effect": "bump" },
+          { "type": "style", "section": "Styles", "effect": "bump" },
+          { "type": "refactor", "section": "Code Refactoring", "effect": "bump" },
+          { "type": "test", "section": "Tests", "effect": "bump" },
+          { "type": "build", "section": "Build System", "effect": "hidden" },
+          { "type": "ci", "section": "Continuous Integration", "effect": "hidden" }
+        ]
+      },
       "createRelease": "github",
-      "push": false,
-      "ignoreChanges": ["test/**", "yarn.lock"]
+      "message": "chore(release): publish",
+      "ignoreChanges": ["yarn.lock"]
     },
     "publish": {
       "message": "chore(release): publish"
