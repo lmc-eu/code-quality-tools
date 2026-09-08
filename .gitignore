@@ -29,4 +29,5 @@ nbproject
 *.atom-*
 .tern-*
 jsconfig.json
-.yarn
+.yarn/*
+!.yarn/plugins
