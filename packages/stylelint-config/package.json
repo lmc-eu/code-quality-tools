@@ -1,5 +1,5 @@
 {
-  "name": "@almacareer/stylelint-config",
+  "name": "@alma-oss/stylelint-config",
   "version": "9.1.3",
   "description": "Alma Career's config for Stylelint",
   "keywords": [
@@ -9,7 +9,7 @@
     "career",
     "preset"
   ],
-  "author": "Tomáš Litera <tomas.litera@lmc.eu>",
+  "author": "Tomáš Litera <tomas.litera@almacareer.com>",
   "license": "MIT",
   "type": "module",
   "main": "index.js",
