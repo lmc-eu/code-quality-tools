@@ -17,7 +17,7 @@ This monorepo contains shareable configurations for various coding-style/best pr
 | ESLint       | [@lmc-eu/eslint-config-typescript](packages/eslint-config-typescript) | [![@lmc-eu/eslint-config-typescript][ec-ts-badge]][ec-ts-npm]  |
 | Prettier     | [@lmc-eu/prettier-config](packages/prettier-config)                   | [![@lmc-eu/prettier-config][pc-badge]][pc-npm]                 |
 | Remark       | [@alma-oss/remark-config](packages/remark-config)                     | [![@alma-oss/remark-config][rmc-badge]][rmc-npm]               |
-| Stylelint    | [@almacareer/stylelint-config](packages/stylelint-config)             | [![@almacareer/stylelint-config][slc-badge]][slc-npm]          |
+| Stylelint    | [@alma-oss/stylelint-config](packages/stylelint-config)               | [![@alma-oss/stylelint-config][slc-badge]][slc-npm]            |
 | Textlint     | [@lmc-eu/textlint-rule-preset-lmc](packages/textlint-rule-preset-lmc) | [![@lmc-eu/textlint-rule-preset-lmc][tlc-badge]][tlc-npm]      |
 
 ## License
@@ -35,8 +35,8 @@ We got a lot of inspiration from a similar project at [STRV][strv-github]. Thank
 [pc-badge]: https://img.shields.io/npm/v/%40lmc-eu/prettier-config.svg?style=flat-square
 [clc-npm]: https://www.npmjs.com/package/@alma-oss/commitlint-config
 [clc-badge]: https://img.shields.io/npm/v/%40alma-oss/commitlint-config.svg?style=flat-square
-[slc-npm]: https://www.npmjs.com/package/@almacareer/stylelint-config
-[slc-badge]: https://img.shields.io/npm/v/%40almacareer/stylelint-config.svg?style=flat-square
+[slc-npm]: https://www.npmjs.com/package/@alma-oss/stylelint-config
+[slc-badge]: https://img.shields.io/npm/v/%40alma-oss/stylelint-config.svg?style=flat-square
 [ec-base-npm]: https://www.npmjs.com/package/@lmc-eu/eslint-config-base
 [ec-base-badge]: https://img.shields.io/npm/v/%40lmc-eu/eslint-config-base.svg?style=flat-square
 [ec-gql-npm]: https://www.npmjs.com/package/@lmc-eu/eslint-config-graphql

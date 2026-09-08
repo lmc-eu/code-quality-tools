@@ -1,8 +1,8 @@
-# `@almacareer/stylelint-config`
+# `@alma-oss/stylelint-config`
 
-[![npm version](https://img.shields.io/npm/v/@almacareer/stylelint-config?label=npm%20package&logo=npm)](https://www.npmjs.org/package/@almacareer/stylelint-config)
-[![Node version](https://img.shields.io/node/v/@almacareer/stylelint-config.svg?style=flat&logo=nodedotjs)](http://nodejs.org/download/)
-[![Stylelint version](https://img.shields.io/npm/dependency-version/@almacareer/stylelint-config/peer/stylelint?logo=stylelint)](https://github.com/stylelint/stylelint)
+[![npm version](https://img.shields.io/npm/v/@alma-oss/stylelint-config?label=npm%20package&logo=npm)](https://www.npmjs.org/package/@alma-oss/stylelint-config)
+[![Node version](https://img.shields.io/node/v/@alma-oss/stylelint-config.svg?style=flat&logo=nodedotjs)](https://nodejs.org/download/)
+[![Stylelint version](https://img.shields.io/npm/dependency-version/@alma-oss/stylelint-config/peer/stylelint?logo=stylelint)](https://github.com/stylelint/stylelint)
 
 > Alma Career’s config for Stylelint
 
@@ -10,10 +10,10 @@
 
 ```bash
 # Yarn:
-yarn add --dev @almacareer/stylelint-config stylelint-prettier
+yarn add --dev @alma-oss/stylelint-config stylelint-prettier
 
 # npm:
-npm install --save-dev @almacareer/stylelint-config stylelint-prettier
+npm install --save-dev @alma-oss/stylelint-config stylelint-prettier
 ```
 
 > We assume you are using Prettier. That’s why we also recommend adding
@@ -29,7 +29,7 @@ This config:
 
 ## Configuration
 
-- **`@almacareer/stylelint-config`**
+- **`@alma-oss/stylelint-config`**
 
 Use this ruleset to configure Stylelint to work with your code.
 
@@ -39,7 +39,7 @@ Use this ruleset to configure Stylelint to work with your code.
 // .stylelintrc.mjs
 
 export default {
-  extends: ['@almacareer/stylelint-config', 'stylelint-prettier/recommended'],
+  extends: ['@alma-oss/stylelint-config', 'stylelint-prettier/recommended'],
 };
 ```
 
@@ -48,7 +48,7 @@ export default {
 
 ```json
 {
-  "extends": ["@almacareer/stylelint-config", "stylelint-prettier/recommended"]
+  "extends": ["@alma-oss/stylelint-config", "stylelint-prettier/recommended"]
 }
 ```
 
@@ -60,7 +60,7 @@ export default {
 ```json
 {
   "stylelint": {
-    "extends": ["@almacareer/stylelint-config", "stylelint-prettier/recommended"]
+    "extends": ["@alma-oss/stylelint-config", "stylelint-prettier/recommended"]
   }
 }
 ```

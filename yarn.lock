@@ -114,9 +114,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@almacareer/stylelint-config@workspace:packages/stylelint-config":
+"@alma-oss/stylelint-config@workspace:packages/stylelint-config":
   version: 0.0.0-use.local
-  resolution: "@almacareer/stylelint-config@workspace:packages/stylelint-config"
+  resolution: "@alma-oss/stylelint-config@workspace:packages/stylelint-config"
   dependencies:
     npm-run-all2: "npm:9.0.3"
     postcss-scss: "npm:^4.0.3"
