@@ -49,7 +49,7 @@
     "stylelint-order": "^6.0.0"
   },
   "devDependencies": {
-    "npm-run-all2": "8.0.4",
+    "npm-run-all2": "9.0.3",
     "stylelint": "16.26.1"
   },
   "peerDependencies": {
