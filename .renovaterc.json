@@ -10,11 +10,11 @@
   "prConcurrentLimit": 3,
   "packageRules": [
     {
-      "groupName": "Block conventional-changelog-conventionalcommits v8+",
-      "description": "Block v8.0.0+ due to ESM incompatibility with Lerna 9.x. Version 8.0.0+ produces broken changelog output. Allow v7.x updates. See: https://github.com/lerna/lerna/issues/4021",
+      "groupName": "Block conventional-changelog-conventionalcommits v10.4+",
+      "description": "v10.4.0's mainTemplate guard is misdetected as legacy by Lerna, crashing `lerna version`. Pinned to 10.3.0 until the Lerna fix (https://github.com/lerna/lerna/pull/4415) is released.",
       "matchManagers": ["npm"],
       "matchPackageNames": ["conventional-changelog-conventionalcommits"],
-      "allowedVersions": "<8.0.0"
+      "allowedVersions": "<10.4.0-0"
     }
   ]
 }
