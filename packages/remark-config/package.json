@@ -1,7 +1,7 @@
 {
   "name": "@alma-oss/remark-config",
   "description": "Alma Career's config for Markdown linting with Remark",
-  "version": "0.1.0",
+  "version": "1.0.0-alpha.0",
   "keywords": [
     "config",
     "lint",

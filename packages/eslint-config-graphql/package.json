@@ -1,7 +1,7 @@
 {
   "name": "@alma-oss/eslint-config-graphql",
   "description": "Alma's ESLint config for javascript applications that use GraphQL and Apollo client.",
-  "version": "3.0.6",
+  "version": "4.0.0-alpha.0",
   "author": "Tomas Litera <tomas.litera@almacareer.com>",
   "keywords": [
     "config",

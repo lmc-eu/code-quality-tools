@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 10.0.0-alpha.0 (2026-09-09)
+
+### ⚠ BREAKING CHANGES
+
+- **stylelint:** Node.js v18 is now unsupported for this package. Use
+  v20 or higher.
+- **stylelint:** The package moved from the [@almacareer](https://github.com/almacareer) scope to
+  [@alma-oss](https://github.com/alma-oss). Update your dependency to @alma-oss/stylelint-config.
+
+### Features
+
+- **stylelint:** change library organization to alma-oss ([ca3be18](https://github.com/lmc-eu/code-quality-tools/commit/ca3be184d4bfb28f0c3421aeaa346b96f56341b2))
+- **stylelint:** drop support for Node.js v18 ([bda5a53](https://github.com/lmc-eu/code-quality-tools/commit/bda5a53f3a055728c3e6d0dc4d2493e2e1c4edd2))
+
+### Dependencies
+
+- **repo:** update all non-major dependencies ([3435d9b](https://github.com/lmc-eu/code-quality-tools/commit/3435d9b7aebff0ed5a23672c18d8288f2b93db03))
+- Update all non-major dependencies ([a64ad4c](https://github.com/lmc-eu/code-quality-tools/commit/a64ad4c0f0a3fe755278876db5144ac59776d408))
+- Update dependency npm-run-all2 to v8 ([85f9cad](https://github.com/lmc-eu/code-quality-tools/commit/85f9cade2471288de184d338068591c8f41cc6f3))
+
+### Chores
+
+- **deps:** update dependency npm-run-all2 to v9 ([c838939](https://github.com/lmc-eu/code-quality-tools/commit/c838939815b4b1ef78052155033a7a18b42ad4ff))
+- **prettier:** Introduce package entrypoint through `exports` field ([8d63e20](https://github.com/lmc-eu/code-quality-tools/commit/8d63e20d43d027166903b983e262f7e94e515a3a))
+- Release [CI-SKIP] ([5cdd7b8](https://github.com/lmc-eu/code-quality-tools/commit/5cdd7b8ee8a9dcc484264f49627a773c38edba94))
+- Release [CI-SKIP] ([7a9e518](https://github.com/lmc-eu/code-quality-tools/commit/7a9e5189f85eb93dfe8b85eed91c0ec8f441d3f3))
+- Release [CI-SKIP] ([3c46231](https://github.com/lmc-eu/code-quality-tools/commit/3c462316bd70cf3e9652656fc688ced332d0d47a))
+
+### Styles
+
+- **stylelint-config:** Fixes format and eslint errors [#191](https://github.com/lmc-eu/code-quality-tools/issues/191) ([7f4e651](https://github.com/lmc-eu/code-quality-tools/commit/7f4e651ea039cefddf54fc63320f0e1d02942fe7))
+- **stylelint:** Reformat source code due to Prettier update ([d4debac](https://github.com/lmc-eu/code-quality-tools/commit/d4debac3a5db59c1eb2aaeeab51904b8f51d97d6))
+
+### Code Refactoring
+
+- **stylelint:** use modern exports field instead of main ([23a703b](https://github.com/lmc-eu/code-quality-tools/commit/23a703b67144f2858d086ea24e8218b6bea50abc))
+
+### Tests
+
+- **stylelint:** update expected results after dependency upgrade ([34cecd0](https://github.com/lmc-eu/code-quality-tools/commit/34cecd051d4421719bc182209341c0ccb6940434))
+
 <a name="9.1.3"></a>
 
 ## [9.1.3](https://github.com/lmc-eu/code-quality-tools/compare/@almacareer/stylelint-config@9.1.2...@almacareer/stylelint-config@9.1.3) (2026-03-18)

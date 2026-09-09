@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 4.0.0-alpha.0 (2026-09-09)
+
+### ⚠ BREAKING CHANGES
+
+- **eslint-config-graphql:** migrate to MIT license
+- **eslint-config-graphql:** Node.js v16 and v18 are no longer supported
+- **eslint-config-graphql:** the package has been migrated to `@alma-oss` scope
+
+### Features
+
+- **eslint-config-graphql:** change library organization to `alma-oss` ([69d60d1](https://github.com/lmc-eu/code-quality-tools/commit/69d60d18936a81f4fc873cd321524a9a05400488))
+- **eslint-config-graphql:** change license to MIT ([c15223e](https://github.com/lmc-eu/code-quality-tools/commit/c15223e9b65251d02d3176ad31612cc36f300f01))
+
+### Chores
+
+- **eslint-config-graphql:** drop support for Node.js v16 and v18 ([b678061](https://github.com/lmc-eu/code-quality-tools/commit/b678061ca7b334f97103ad3b6ee55510c941ea3a)), references [#191](https://github.com/lmc-eu/code-quality-tools/issues/191)
+- **prettier:** Introduce package entrypoint through `exports` field ([8d63e20](https://github.com/lmc-eu/code-quality-tools/commit/8d63e20d43d027166903b983e262f7e94e515a3a))
+
 <a name="3.0.6"></a>
 
 ## [3.0.6](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/eslint-config-graphql@3.0.5...@lmc-eu/eslint-config-graphql@3.0.6) (2025-02-27)

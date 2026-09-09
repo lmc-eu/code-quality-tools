@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.0](https://github.com/lmc-eu/code-quality-tools/compare/%40alma-oss%2Fcommitlint-config%403.0.0...%40alma-oss%2Fcommitlint-config%403.1.0) (2026-09-09)
+
+### Features
+
+- **commitlint:** introduce peer dependency on `@commitlint/cli` ([017dd4b](https://github.com/lmc-eu/code-quality-tools/commit/017dd4ba2a9adbce102b55225a8c241728e43ccf))
+
+### Chores
+
+- **deps:** update dependency @commitlint/cli to v20 ([39b2e39](https://github.com/lmc-eu/code-quality-tools/commit/39b2e397e5d78d02027f6236aa01b86f4a184b1a))
+
 ## 3.0.0 (2026-03-18)
 
 ### ⚠ BREAKING CHANGES
