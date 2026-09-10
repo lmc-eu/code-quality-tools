@@ -1,6 +1,6 @@
-# @lmc-eu/textlint-rule-preset-lmc
+# @alma-oss/textlint-rule-preset-alma
 
-> LMC’s config for [textlint][textlint-home]
+> Alma Career’s config for [textlint][textlint-home]
 
 Textlint doesn’t support ["extends" convention][extends-convention], thus we created [rule-preset][rule-preset-docs], a collection of rules and rulesConfig.
 
@@ -8,10 +8,10 @@ Textlint doesn’t support ["extends" convention][extends-convention], thus we c
 
 ```sh
 #Yarn
-yarn add -D @lmc-eu/textlint-rule-preset-lmc
+yarn add -D @alma-oss/textlint-rule-preset-alma
 
 # npm
-npm i --save-dev @lmc-eu/textlint-rule-preset-lmc
+npm i --save-dev @alma-oss/textlint-rule-preset-alma
 ```
 
 ## Recommended Textlint Config
@@ -23,7 +23,7 @@ npm i --save-dev @lmc-eu/textlint-rule-preset-lmc
 
 module.exports = {
   rules: {
-    '@lmc-eu/textlint-rule-preset-lmc': true,
+    '@alma-oss/textlint-rule-preset-alma': true,
   },
 };
 ```
@@ -34,7 +34,7 @@ module.exports = {
 ```json
 {
   "rules": {
-    "@lmc-eu/textlint-rule-preset-lmc": true
+    "@alma-oss/textlint-rule-preset-alma": true
   }
 }
 ```
@@ -52,7 +52,7 @@ The preset’s `terminology` rule ships with its own curated term list (see [`ru
 
 module.exports = {
   rules: {
-    '@lmc-eu/textlint-rule-preset-lmc': {
+    '@alma-oss/textlint-rule-preset-alma': {
       terminology: {
         exclude: ['ID', 'back[- ]end(\\w*)'],
       },
