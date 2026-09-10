@@ -23,6 +23,9 @@
   "engines": {
     "node": "^16 || ^18 || >=20"
   },
+  "scripts": {
+    "test": "node --test"
+  },
   "dependencies": {
     "textlint": "^12.2.2",
     "textlint-filter-rule-comments": "^1.2.2",
@@ -32,6 +35,10 @@
     "textlint-rule-terminology": "^3.0.0",
     "textlint-rule-title-case": "^3.0.0",
     "textlint-rule-write-good": "^2.0.0"
+  },
+  "devDependencies": {
+    "@textlint/kernel": "^12.2.2",
+    "@textlint/textlint-plugin-text": "^12.2.2"
   },
   "peerDependencies": {
     "textlint": "^12.2.2"
