@@ -43,7 +43,7 @@ describe('terminology rule', () => {
   });
 
   it('excludes a [pattern, replacement] term by matching the pattern string', async () => {
-    const messages = await lint({ exclude: ['build system(s?)'] }, 'We rely on the build systems here.');
+    const messages = await lint({ exclude: ['back[- ]end(\\w*)'] }, 'We rely on the back-end here.');
 
     assert.deepEqual(messages, []);
   });

@@ -54,14 +54,14 @@ module.exports = {
   rules: {
     '@lmc-eu/textlint-rule-preset-lmc': {
       terminology: {
-        exclude: ['ID', 'bug[- ]?fix(es?)', 'build system(s?)'],
+        exclude: ['ID', 'back[- ]end(\\w*)'],
       },
     },
   },
 };
 ```
 
-Each entry in `exclude` must match a term key exactly as written in the preset’s `terms` list — for a `[pattern, replacement]` pair, that’s the `pattern` string, for instance `'bug[- ]?fix(es?)'`, not a paraphrase of it.
+Each entry in `exclude` must match a term key exactly as written in the preset’s `terms` list — for a `[pattern, replacement]` pair, that’s the `pattern` string, for instance `'back[- ]end(\\w*)'`, not a paraphrase of it.
 
 Any other option you pass, including your own `terms`, is merged the same way: that specific key replaces the preset’s default for it, while every key you didn’t specify — such as `defaultTerms: false` — is kept from the preset.
 
