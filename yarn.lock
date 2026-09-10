@@ -2221,6 +2221,7 @@ __metadata:
   resolution: "@lmc-eu/textlint-rule-preset-lmc@workspace:packages/textlint-rule-preset-lmc"
   dependencies:
     "@textlint/kernel": "npm:^12.2.2"
+    "@textlint/textlint-plugin-markdown": "npm:^12.2.2"
     "@textlint/textlint-plugin-text": "npm:^12.2.2"
     textlint: "npm:^12.2.2"
     textlint-filter-rule-comments: "npm:^1.2.2"
@@ -3444,7 +3445,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@textlint/textlint-plugin-markdown@npm:^12.6.1":
+"@textlint/textlint-plugin-markdown@npm:^12.2.2, @textlint/textlint-plugin-markdown@npm:^12.6.1":
   version: 12.6.1
   resolution: "@textlint/textlint-plugin-markdown@npm:12.6.1"
   dependencies:
