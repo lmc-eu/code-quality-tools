@@ -1,6 +1,6 @@
 module.exports = {
   rules: {
-    '@lmc-eu/textlint-rule-preset-lmc': {
+    '@alma-oss/textlint-rule-preset-alma': {
       'title-case': {
         headingLevels: [6],
         exclude: [
@@ -13,7 +13,7 @@ module.exports = {
           '@lmc-eu/eslint-config-base/legacy',
           '@lmc-eu/eslint-config-base/whitespace',
           '@lmc-eu/commitlint-config',
-          '@lmc-eu/textlint-rule-preset-lmc',
+          '@alma-oss/textlint-rule-preset-alma',
         ],
       },
     },

@@ -1,24 +1,27 @@
 {
-  "name": "@lmc-eu/textlint-rule-preset-lmc",
+  "name": "@alma-oss/textlint-rule-preset-alma",
   "version": "2.1.0",
-  "description": "LMC's config for Textlint",
+  "description": "Alma Career's config for Textlint",
   "keywords": [
     "textlint",
     "textlintrule",
-    "lmc",
+    "alma",
     "config",
     "preset"
   ],
-  "author": "Tomáš Litera <tomas.litera@lmc.eu>",
-  "license": "BSD-3-Clause",
-  "main": "index.js",
+  "author": "Tomáš Litera <tomas.litera@almacareer.com>",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/lmc-eu/code-quality-tools",
-    "directory": "packages/textlint-rule-preset-lmc"
+    "directory": "packages/textlint-rule-preset-alma"
   },
   "engines": {
     "node": "^16 || ^18 || >=20"

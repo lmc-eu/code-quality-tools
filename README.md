@@ -6,19 +6,19 @@ This monorepo contains shareable configurations for various coding-style/best pr
 
 ## Available Configurations
 
-| Tool         | Package                                                               | Version                                                        |
-| ------------ | --------------------------------------------------------------------- | -------------------------------------------------------------- |
-| Browserslist | [@alma-oss/browserslist-config](packages/browserslist-config)         | [![@alma-oss/browserslist-config][blc-badge]][blc-npm]         |
-| Commitlint   | [@alma-oss/commitlint-config](packages/commitlint-config)             | [![@alma-oss/commitlint-config][clc-badge]][clc-npm]           |
-| ESLint       | [@lmc-eu/eslint-config-base](packages/eslint-config-base)             | [![@lmc-eu/eslint-config-base][ec-base-badge]][ec-base-npm]    |
-| ESLint       | [@lmc-eu/eslint-config-graphql](packages/eslint-config-graphql)       | [![@lmc-eu/eslint-config-graphql][ec-gql-badge]][ec-gql-npm]   |
-| ESLint       | [@lmc-eu/eslint-config-react](packages/eslint-config-react)           | [![@lmc-eu/eslint-config-react][ec-react-badge]][ec-react-npm] |
-| ESLint       | [@lmc-eu/eslint-config-jest](packages/eslint-config-jest)             | [![@lmc-eu/eslint-config-jest][ec-jest-badge]][ec-jest-npm]    |
-| ESLint       | [@lmc-eu/eslint-config-typescript](packages/eslint-config-typescript) | [![@lmc-eu/eslint-config-typescript][ec-ts-badge]][ec-ts-npm]  |
-| Prettier     | [@lmc-eu/prettier-config](packages/prettier-config)                   | [![@lmc-eu/prettier-config][pc-badge]][pc-npm]                 |
-| Remark       | [@alma-oss/remark-config](packages/remark-config)                     | [![@alma-oss/remark-config][rmc-badge]][rmc-npm]               |
-| Stylelint    | [@alma-oss/stylelint-config](packages/stylelint-config)               | [![@alma-oss/stylelint-config][slc-badge]][slc-npm]            |
-| Textlint     | [@lmc-eu/textlint-rule-preset-lmc](packages/textlint-rule-preset-lmc) | [![@lmc-eu/textlint-rule-preset-lmc][tlc-badge]][tlc-npm]      |
+| Tool         | Package                                                                   | Version                                                        |
+| ------------ | ------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Browserslist | [@alma-oss/browserslist-config](packages/browserslist-config)             | [![@alma-oss/browserslist-config][blc-badge]][blc-npm]         |
+| Commitlint   | [@alma-oss/commitlint-config](packages/commitlint-config)                 | [![@alma-oss/commitlint-config][clc-badge]][clc-npm]           |
+| ESLint       | [@lmc-eu/eslint-config-base](packages/eslint-config-base)                 | [![@lmc-eu/eslint-config-base][ec-base-badge]][ec-base-npm]    |
+| ESLint       | [@lmc-eu/eslint-config-graphql](packages/eslint-config-graphql)           | [![@lmc-eu/eslint-config-graphql][ec-gql-badge]][ec-gql-npm]   |
+| ESLint       | [@lmc-eu/eslint-config-react](packages/eslint-config-react)               | [![@lmc-eu/eslint-config-react][ec-react-badge]][ec-react-npm] |
+| ESLint       | [@lmc-eu/eslint-config-jest](packages/eslint-config-jest)                 | [![@lmc-eu/eslint-config-jest][ec-jest-badge]][ec-jest-npm]    |
+| ESLint       | [@lmc-eu/eslint-config-typescript](packages/eslint-config-typescript)     | [![@lmc-eu/eslint-config-typescript][ec-ts-badge]][ec-ts-npm]  |
+| Prettier     | [@lmc-eu/prettier-config](packages/prettier-config)                       | [![@lmc-eu/prettier-config][pc-badge]][pc-npm]                 |
+| Remark       | [@alma-oss/remark-config](packages/remark-config)                         | [![@alma-oss/remark-config][rmc-badge]][rmc-npm]               |
+| Stylelint    | [@alma-oss/stylelint-config](packages/stylelint-config)                   | [![@alma-oss/stylelint-config][slc-badge]][slc-npm]            |
+| Textlint     | [@alma-oss/textlint-rule-preset-alma](packages/textlint-rule-preset-alma) | [![@alma-oss/textlint-rule-preset-alma][tlc-badge]][tlc-npm]   |
 
 ## License
 
@@ -47,8 +47,8 @@ We got a lot of inspiration from a similar project at [STRV][strv-github]. Thank
 [ec-jest-badge]: https://img.shields.io/npm/v/%40lmc-eu/eslint-config-jest.svg?style=flat-square
 [ec-ts-npm]: https://www.npmjs.com/package/@lmc-eu/eslint-config-typescript
 [ec-ts-badge]: https://img.shields.io/npm/v/%40lmc-eu/eslint-config-typescript.svg?style=flat-square
-[tlc-npm]: https://www.npmjs.com/package/@lmc-eu/textlint-rule-preset-lmc
-[tlc-badge]: https://img.shields.io/npm/v/%40lmc-eu/textlint-rule-preset-lmc.svg?style=flat-square
+[tlc-npm]: https://www.npmjs.com/package/@alma-oss/textlint-rule-preset-alma
+[tlc-badge]: https://img.shields.io/npm/v/%40alma-oss/textlint-rule-preset-alma.svg?style=flat-square
 [rmc-npm]: https://www.npmjs.com/package/@alma-oss/remark-config
 [rmc-badge]: https://img.shields.io/npm/v/%40alma-oss/remark-config.svg?style=flat-square
 [strv-github]: https://github.com/strvcom/code-quality-tools

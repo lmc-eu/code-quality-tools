@@ -134,6 +134,26 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@alma-oss/textlint-rule-preset-alma@workspace:packages/textlint-rule-preset-alma":
+  version: 0.0.0-use.local
+  resolution: "@alma-oss/textlint-rule-preset-alma@workspace:packages/textlint-rule-preset-alma"
+  dependencies:
+    "@textlint/kernel": "npm:^12.2.2"
+    "@textlint/textlint-plugin-markdown": "npm:^12.2.2"
+    "@textlint/textlint-plugin-text": "npm:^12.2.2"
+    textlint: "npm:^12.2.2"
+    textlint-filter-rule-comments: "npm:^1.2.2"
+    textlint-rule-apostrophe: "npm:^2.0.0"
+    textlint-rule-common-misspellings: "npm:^1.0.1"
+    textlint-rule-stop-words: "npm:^3.0.0"
+    textlint-rule-terminology: "npm:^3.0.0"
+    textlint-rule-title-case: "npm:^3.0.0"
+    textlint-rule-write-good: "npm:^2.0.0"
+  peerDependencies:
+    textlint: ^12.2.2
+  languageName: unknown
+  linkType: soft
+
 "@ampproject/remapping@npm:^2.2.0":
   version: 2.3.0
   resolution: "@ampproject/remapping@npm:2.3.0"
@@ -2215,26 +2235,6 @@ __metadata:
   checksum: 10/7c6bd8d930cd7d4d6ebf155660c0c9f98f8a020663c2eef3c06934ea16ef446ef3df1a825f09597ef40bf25bda0cfe51fee9ff146fd4545899667e8a9ea17cf1
   languageName: node
   linkType: hard
-
-"@lmc-eu/textlint-rule-preset-lmc@workspace:packages/textlint-rule-preset-lmc":
-  version: 0.0.0-use.local
-  resolution: "@lmc-eu/textlint-rule-preset-lmc@workspace:packages/textlint-rule-preset-lmc"
-  dependencies:
-    "@textlint/kernel": "npm:^12.2.2"
-    "@textlint/textlint-plugin-markdown": "npm:^12.2.2"
-    "@textlint/textlint-plugin-text": "npm:^12.2.2"
-    textlint: "npm:^12.2.2"
-    textlint-filter-rule-comments: "npm:^1.2.2"
-    textlint-rule-apostrophe: "npm:^2.0.0"
-    textlint-rule-common-misspellings: "npm:^1.0.1"
-    textlint-rule-stop-words: "npm:^3.0.0"
-    textlint-rule-terminology: "npm:^3.0.0"
-    textlint-rule-title-case: "npm:^3.0.0"
-    textlint-rule-write-good: "npm:^2.0.0"
-  peerDependencies:
-    textlint: ^12.2.2
-  languageName: unknown
-  linkType: soft
 
 "@modelcontextprotocol/sdk@npm:^1.26.0":
   version: 1.27.1
