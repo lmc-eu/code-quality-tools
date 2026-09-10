@@ -24,7 +24,7 @@
     "directory": "packages/textlint-rule-preset-alma"
   },
   "engines": {
-    "node": "^16 || ^18 || >=20"
+    "node": ">=20"
   },
   "scripts": {
     "test": "node --test"
