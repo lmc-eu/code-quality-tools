@@ -43,7 +43,7 @@
     "@commitlint/cli": "20.5.0",
     "conventional-changelog-conventionalcommits": "10.3.0",
     "eslint": "9.39.4",
-    "eslint-config-prettier": "9.1.2",
+    "eslint-config-prettier": "10.1.8",
     "eslint-import-resolver-node": "0.3.9",
     "eslint-plugin-jest-formatting": "3.1.0",
     "eslint-plugin-prettier": "5.5.5",
