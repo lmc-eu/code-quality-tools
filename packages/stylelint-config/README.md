@@ -23,7 +23,7 @@ Configuration extends community maintained config [stylelint-config-standard-scs
 
 This config:
 
-- Extends the [`stylelint-config-recommended` shared config](https://github.com/stylelint/stylelint-config-recommended) and configures its rules for SCSS;
+- extends the [`stylelint-config-recommended` shared config](https://github.com/stylelint/stylelint-config-recommended) and configures its rules for SCSS;
 - extends the [`stylelint-config-recommended-scss` shared config](https://github.com/stylelint-scss/stylelint-config-recommended-scss) and configures its rules for SCSS;
 - extends the [`stylelint-config-standard` shared config](https://github.com/stylelint/stylelint-config-standard) and configures its rules.
 
@@ -77,12 +77,15 @@ The `order` config enforces a consistent order of content in your declaration bl
 1. Sass variables,
 2. CSS custom properties,
 3. Sass `@extend`,
-4. single-line Sass `@include`,
-5. declarations,
-6. nested rules,
+4. declarations,
+5. nested rules.
 
 For better flexibility, block at-rules (like `@media`, `@supports`, and also Sass `@if`, `@each`, etc.) can be placed
 anywhere in the declaration block.
+
+> [!NOTE]
+> Note that this config does not prescribe placement of blockless Sass `@include` at-rule. However, the Sass engine
+> may push you to place them at the end of the declaration block due to compatibility with CSS nesting.
 
 Besides, properties in the declarations must be ordered by following categories:
 

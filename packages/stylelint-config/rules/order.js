@@ -8,11 +8,6 @@ export default {
         name: 'extend',
         type: 'at-rule',
       },
-      {
-        hasBlock: false,
-        name: 'include',
-        type: 'at-rule',
-      },
       'declarations',
       'rules',
     ],
