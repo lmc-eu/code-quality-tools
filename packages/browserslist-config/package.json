@@ -19,6 +19,6 @@
     "directory": "packages/browserslist-config"
   },
   "engines": {
-    "node": "^16 || ^18 || >=20"
+    "node": ">=20"
   }
 }
