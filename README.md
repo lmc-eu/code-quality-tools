@@ -8,7 +8,7 @@ This monorepo contains shareable configurations for various coding-style/best pr
 
 | Tool         | Package                                                               | Version                                                        |
 | ------------ | --------------------------------------------------------------------- | -------------------------------------------------------------- |
-| Browserslist | [@lmc-eu/browserslist-config](packages/browserslist-config)           | [![@lmc-eu/browserslist-config][blc-badge]][blc-npm]           |
+| Browserslist | [@alma-oss/browserslist-config](packages/browserslist-config)         | [![@alma-oss/browserslist-config][blc-badge]][blc-npm]         |
 | Commitlint   | [@alma-oss/commitlint-config](packages/commitlint-config)             | [![@alma-oss/commitlint-config][clc-badge]][clc-npm]           |
 | ESLint       | [@lmc-eu/eslint-config-base](packages/eslint-config-base)             | [![@lmc-eu/eslint-config-base][ec-base-badge]][ec-base-npm]    |
 | ESLint       | [@lmc-eu/eslint-config-graphql](packages/eslint-config-graphql)       | [![@lmc-eu/eslint-config-graphql][ec-gql-badge]][ec-gql-npm]   |
@@ -29,8 +29,8 @@ See the [LICENSE](LICENSE) file for information.
 We got a lot of inspiration from a similar project at [STRV][strv-github]. Thank you very much ❤️!
 
 [alma-home]: https://www.almacareer.com
-[blc-npm]: https://npmjs.org/package/%40lmc-eu/browserslist-config
-[blc-badge]: https://img.shields.io/npm/v/%40lmc-eu/browserslist-config.svg?style=flat-square
+[blc-npm]: https://npmjs.org/package/%40alma-oss/browserslist-config
+[blc-badge]: https://img.shields.io/npm/v/%40alma-oss/browserslist-config.svg?style=flat-square
 [pc-npm]: https://www.npmjs.com/package/@lmc-eu/prettier-config
 [pc-badge]: https://img.shields.io/npm/v/%40lmc-eu/prettier-config.svg?style=flat-square
 [clc-npm]: https://www.npmjs.com/package/@alma-oss/commitlint-config

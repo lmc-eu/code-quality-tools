@@ -5,6 +5,12 @@ __metadata:
   version: 8
   cacheKey: 10
 
+"@alma-oss/browserslist-config@workspace:packages/browserslist-config":
+  version: 0.0.0-use.local
+  resolution: "@alma-oss/browserslist-config@workspace:packages/browserslist-config"
+  languageName: unknown
+  linkType: soft
+
 "@alma-oss/commitlint-config@workspace:packages/commitlint-config":
   version: 0.0.0-use.local
   resolution: "@alma-oss/commitlint-config@workspace:packages/commitlint-config"
@@ -2196,12 +2202,6 @@ __metadata:
   checksum: 10/e3b2cb1377863342acedd5ff785af3e69269bee9b44707c617d1c8bc14eeb5ac763159d6455903ffe92f143c2238e1e783c4f113f9c8910eacccf172894472da
   languageName: node
   linkType: hard
-
-"@lmc-eu/browserslist-config@workspace:packages/browserslist-config":
-  version: 0.0.0-use.local
-  resolution: "@lmc-eu/browserslist-config@workspace:packages/browserslist-config"
-  languageName: unknown
-  linkType: soft
 
 "@lmc-eu/eslint-config-base@npm:^3.1.3":
   version: 3.1.3
