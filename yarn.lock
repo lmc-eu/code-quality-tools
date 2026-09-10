@@ -2220,6 +2220,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@lmc-eu/textlint-rule-preset-lmc@workspace:packages/textlint-rule-preset-lmc"
   dependencies:
+    "@textlint/kernel": "npm:^12.2.2"
+    "@textlint/textlint-plugin-text": "npm:^12.2.2"
     textlint: "npm:^12.2.2"
     textlint-filter-rule-comments: "npm:^1.2.2"
     textlint-rule-apostrophe: "npm:^2.0.0"
@@ -3274,7 +3276,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@textlint/kernel@npm:^12.6.1":
+"@textlint/kernel@npm:^12.2.2, @textlint/kernel@npm:^12.6.1":
   version: 12.6.1
   resolution: "@textlint/kernel@npm:12.6.1"
   dependencies:
@@ -3461,7 +3463,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@textlint/textlint-plugin-text@npm:^12.6.1":
+"@textlint/textlint-plugin-text@npm:^12.2.2, @textlint/textlint-plugin-text@npm:^12.6.1":
   version: 12.6.1
   resolution: "@textlint/textlint-plugin-text@npm:12.6.1"
   dependencies:
