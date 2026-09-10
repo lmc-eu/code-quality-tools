@@ -2,7 +2,7 @@
 
 > LMC’s config for [textlint][textlint-home]
 
-Textlint doesn’t support ["extends" convention](https://github.com/textlint/textlint/issues/210), thus we created [rule-preset](https://textlint.github.io/docs/rule-preset.html), a collection of rules and rulesConfig.
+Textlint doesn’t support ["extends" convention][extends-convention], thus we created [rule-preset][rule-preset-docs], a collection of rules and rulesConfig.
 
 ## Usage
 
@@ -43,7 +43,7 @@ module.exports = {
 
 ## Excluding Terminology Rule Terms
 
-The preset’s `terminology` rule ships with its own curated term list (see [`rules/terminology.js`](rules/terminology.js)) and disables `textlint-rule-terminology`’s built-in defaults. If you only want to drop a few terms from that list, pass an `exclude` array — it’s merged with the preset’s own options, so you keep everything else, including `defaultTerms: false`:
+The preset’s `terminology` rule ships with its own curated term list (see [`rules/terminology.js`][terminology-terms]) and disables `textlint-rule-terminology`’s built-in defaults. If you only want to drop a few terms from that list, pass an `exclude` array — it’s merged with the preset’s own options, so you keep everything else, including `defaultTerms: false`:
 
 ```js
 // .textlintrc.js
@@ -67,8 +67,32 @@ Any other option you pass, including your own `terms`, is merged the same way: t
 
 This differs from textlint’s usual behavior for rule config, where a consumer-supplied options object replaces the rule’s config wholesale rather than merging with it. If you were previously relying on a partial override falling back to `textlint-rule-terminology`’s own defaults for anything you didn’t set, that fallback no longer happens — unset keys now come from this preset’s defaults instead.
 
+## Ignoring Parts of a File
+
+The preset enables textlint’s [`comments` filter rule][comments-filter-rule], so you can silence any rule — including this preset’s own rules — for a specific range of a file with inline HTML comments, without resorting to a `.textlintignore` entry for the whole file:
+
+```md
+We use the ID field here, which is fine.
+
+<!-- textlint-disable -->
+
+This block is skipped entirely, so the id field here is not flagged.
+
+<!-- textlint-enable -->
+
+We use the ID field here again, back to being checked.
+```
+
+A `<!-- textlint-disable -->` with no matching `<!-- textlint-enable -->` ignores everything for the rest of the file. See [textlint’s “Ignoring parts of files” docs][ignoring-parts-of-files] for the full comment syntax, including disabling only a specific rule.
+
 ## License
 
-See the [LICENSE](LICENSE) file for more information.
+See the [LICENSE][license] file for more information.
 
 [textlint-home]: https://github.com/textlint/textlint
+[extends-convention]: https://github.com/textlint/textlint/issues/210
+[rule-preset-docs]: https://textlint.github.io/docs/rule-preset.html
+[terminology-terms]: rules/terminology.js
+[comments-filter-rule]: https://github.com/textlint/textlint-filter-rule-comments
+[ignoring-parts-of-files]: https://textlint.github.io/docs/ignore.html#ignoring-parts-of-files
+[license]: LICENSE
