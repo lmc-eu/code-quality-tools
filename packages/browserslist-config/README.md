@@ -1,15 +1,15 @@
-# `@lmc-eu/browserslist-config`
+# `@alma-oss/browserslist-config`
 
-> LMC’s config for Browserslist
+> Alma Career’s config for Browserslist
 
 ## Installation
 
 ```bash
 # Yarn:
-yarn add --dev @lmc-eu/browserslist-config
+yarn add --dev @alma-oss/browserslist-config
 
 # npm:
-npm install --save-dev @lmc-eu/browserslist-config
+npm install --save-dev @alma-oss/browserslist-config
 ```
 
 ## Usage
@@ -17,14 +17,14 @@ npm install --save-dev @lmc-eu/browserslist-config
 Add this to `.browserslistrc` file:
 
 ```txt
-extends @lmc-eu/browserslist-config
+extends @alma-oss/browserslist-config
 ```
 
 Alternatively, add this to your `package.json` file:
 
 ```json
 "browserslist": [
-  "extends @lmc-eu/browserslist-config"
+  "extends @alma-oss/browserslist-config"
 ]
 ```
 
@@ -33,7 +33,7 @@ Alternatively, add this to your `package.json` file:
 To support Internet Explorer (or any other browser):
 
 ```txt
-extends @lmc-eu/browserslist-config
+extends @alma-oss/browserslist-config
 
 ie # sorry!
 ```
@@ -65,7 +65,7 @@ your `.browserslistrc` (or `package.json`, wherever you store your config):
 As mentioned in the stats file in your Browserslist configuration:
 
 ```txt
-extends @lmc-eu/browserslist-config
+extends @alma-oss/browserslist-config
 
 > 0.5% in my stats
 ```
