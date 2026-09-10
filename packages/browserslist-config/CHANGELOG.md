@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.0.0-alpha.0 (2026-09-10)
+
+### ⚠ BREAKING CHANGES
+
+- **browserslist:** browserslist-config no longer supports Node.js 16 or
+  18; Node.js >=20 is now required.
+- **browserslist:** browserslist-config's declared license changed from
+  BSD-3-Clause to MIT.
+- **browserslist:** The package moved from the [@lmc-eu](https://github.com/lmc-eu) scope to [@alma-oss](https://github.com/alma-oss).
+  Update your dependency to @alma-oss/browserslist-config.
+
+### Features
+
+- **browserslist:** change library organization to alma-oss ([c1c8ca1](https://github.com/lmc-eu/code-quality-tools/commit/c1c8ca106af88f4870e5da55d1abc7ff20590166))
+- **browserslist:** change license to MIT ([5d52f3a](https://github.com/lmc-eu/code-quality-tools/commit/5d52f3a65e94b5ff0fdcda0d2ebcc79d16775a1b))
+- **browserslist:** drop support for node below 20 ([aa4ab21](https://github.com/lmc-eu/code-quality-tools/commit/aa4ab2144116e598fa7b63c2a77b795e01eb143a))
+
+### Dependencies
+
+- Update actions/checkout action to v5 ([e1ab6bc](https://github.com/lmc-eu/code-quality-tools/commit/e1ab6bc089efe1447ae154918eed51b7c7e6c467))
+
 <a name="2.0.1"></a>
 
 ## [2.0.1](https://github.com/lmc-eu/code-quality-tools/compare/@lmc-eu/browserslist-config@2.0.0...@lmc-eu/browserslist-config@2.0.1) (2024-08-07)
