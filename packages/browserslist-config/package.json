@@ -8,7 +8,7 @@
     "alma"
   ],
   "author": "Adam Kudrna <adam.kudrna@lmc.eu>",
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "main": "index.js",
   "publishConfig": {
     "access": "public"
