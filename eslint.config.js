@@ -16,6 +16,19 @@ export default [
       // Disabled because off node do not resolve
       'import/extensions': 'off',
     },
+
+    settings: {
+      // The `node` resolver (via the `resolve` package) doesn't understand the
+      // package.json `exports` field, so exports-only ESM packages fail
+      // `import/no-unresolved`. Fall back to the typescript resolver
+      // (enhanced-resolve), which does support `exports`, for plain JS too.
+      'import/resolver': {
+        node: {
+          extensions: ['.mjs', '.cjs', '.js', '.json', '.node'],
+        },
+        typescript: {},
+      },
+    },
   },
   prettierConfig,
 ];
