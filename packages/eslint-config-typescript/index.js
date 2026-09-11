@@ -1,8 +1,6 @@
 import base from '@alma-oss/eslint-config-base';
 import settings from '@alma-oss/eslint-config-base/settings';
-// eslint-disable-next-line import/no-unresolved
 import tsEslint from 'typescript-eslint';
-// eslint-disable-next-line import/no-unresolved
 import tsParser from '@typescript-eslint/parser';
 import globs from '@alma-oss/eslint-config-base/globs';
 
