@@ -4,9 +4,9 @@ First, thanks for your contribution to this project! ❤️ Here are some tips h
 
 ## General usage
 
-This project uses `Makefile` for managing various chores, like dependency installation, testing, linting etc.
+This project uses `Makefile` for managing various chores, like dependency installation, testing, linting and so on.
 Make sure you run `make` right after you clone the repository - it will set you up with everything needed to get started.
-Once you are done with that, have a look at what commands (targets) are available for you to run using `make` - `make install`, `make lint` etc.
+Once you are done with that, have a look at what commands (targets) are available for you to run using `make` - `make install`, `make lint` and so on.
 
 ## Commit messages
 
