@@ -1,11 +1,14 @@
-const stopwords = require('textlint-rule-stop-words');
-const misspellings = require('textlint-rule-common-misspellings').default;
-const writegood = require('textlint-rule-write-good').default;
-const titlecase = require('textlint-rule-title-case');
-const apostrophe = require('textlint-rule-apostrophe');
-const terminology = require('./rules/terminology');
+import stopwords from 'textlint-rule-stop-words';
+import misspellingsPkg from 'textlint-rule-common-misspellings';
+import writeGoodPkg from 'textlint-rule-write-good';
+import titlecase from 'textlint-rule-title-case';
+import apostrophe from 'textlint-rule-apostrophe';
+import terminology from './rules/terminology.js';
 
-module.exports = {
+const misspellings = misspellingsPkg.default;
+const writegood = writeGoodPkg.default;
+
+export default {
   rules: {
     terminology,
     'stop-words': stopwords,

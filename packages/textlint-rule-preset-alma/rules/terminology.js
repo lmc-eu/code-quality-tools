@@ -1,4 +1,4 @@
-const terminologyRule = require('textlint-rule-terminology');
+import terminologyRule from 'textlint-rule-terminology';
 
 const defaultOptions = {
   defaultTerms: false,
@@ -109,7 +109,7 @@ function terminologyFixer(context, options) {
   return terminologyRule.fixer(context, mergeOptions(options));
 }
 
-module.exports = {
+export default {
   linter: terminologyLinter,
   fixer: terminologyFixer,
 };
