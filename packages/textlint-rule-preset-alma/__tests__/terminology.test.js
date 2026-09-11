@@ -1,10 +1,10 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { TextlintKernel } from '@textlint/kernel';
-import textPluginPkg from '@textlint/textlint-plugin-text';
+import textlintPluginText from '@textlint/textlint-plugin-text';
 import preset from '../index.js';
 
-const textPlugin = textPluginPkg.default;
+const textPlugin = textlintPluginText.default;
 
 /**
  * Lints text with only the preset's terminology rule enabled.

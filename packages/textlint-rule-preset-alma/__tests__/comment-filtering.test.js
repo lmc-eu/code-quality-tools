@@ -1,11 +1,11 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { TextlintKernel } from '@textlint/kernel';
-import markdownPluginPkg from '@textlint/textlint-plugin-markdown';
+import textlintPluginMarkdown from '@textlint/textlint-plugin-markdown';
 import commentsFilter from 'textlint-filter-rule-comments';
 import preset from '../index.js';
 
-const markdownPlugin = markdownPluginPkg.default;
+const markdownPlugin = textlintPluginMarkdown.default;
 
 /**
  * Lints markdown with the preset's terminology rule and its comment filter enabled,

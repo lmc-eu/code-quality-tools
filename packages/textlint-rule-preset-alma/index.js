@@ -1,21 +1,21 @@
-import stopwords from 'textlint-rule-stop-words';
-import misspellingsPkg from 'textlint-rule-common-misspellings';
-import writeGoodPkg from 'textlint-rule-write-good';
-import titlecase from 'textlint-rule-title-case';
-import apostrophe from 'textlint-rule-apostrophe';
+import textlintRuleStopWords from 'textlint-rule-stop-words';
+import textlintRuleCommonMisspellings from 'textlint-rule-common-misspellings';
+import textlintRuleWriteGood from 'textlint-rule-write-good';
+import textlintRuleTitleCase from 'textlint-rule-title-case';
+import textlintRuleApostrophe from 'textlint-rule-apostrophe';
 import terminology from './rules/terminology.js';
 
-const misspellings = misspellingsPkg.default;
-const writegood = writeGoodPkg.default;
+const misspellings = textlintRuleCommonMisspellings.default;
+const writegood = textlintRuleWriteGood.default;
 
 export default {
   rules: {
     terminology,
-    'stop-words': stopwords,
+    'stop-words': textlintRuleStopWords,
     'common-misspellings': misspellings,
     'write-good': writegood,
-    'title-case': titlecase,
-    apostrophe,
+    'title-case': textlintRuleTitleCase,
+    apostrophe: textlintRuleApostrophe,
   },
 
   filters: {

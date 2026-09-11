@@ -1,4 +1,4 @@
-import terminologyRule from 'textlint-rule-terminology';
+import textlintRuleTerminology from 'textlint-rule-terminology';
 
 const defaultOptions = {
   defaultTerms: false,
@@ -96,7 +96,7 @@ function mergeOptions(options = {}) {
  * @returns {object} textlint rule reporter
  */
 function terminologyLinter(context, options) {
-  return terminologyRule.linter(context, mergeOptions(options));
+  return textlintRuleTerminology.linter(context, mergeOptions(options));
 }
 
 /**
@@ -106,7 +106,7 @@ function terminologyLinter(context, options) {
  * @returns {object} textlint rule reporter
  */
 function terminologyFixer(context, options) {
-  return terminologyRule.fixer(context, mergeOptions(options));
+  return textlintRuleTerminology.fixer(context, mergeOptions(options));
 }
 
 export default {
