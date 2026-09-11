@@ -1,8 +1,10 @@
-const assert = require('node:assert/strict');
-const { describe, it } = require('node:test');
-const { TextlintKernel } = require('@textlint/kernel');
-const textPlugin = require('@textlint/textlint-plugin-text').default;
-const preset = require('../index.js');
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import { TextlintKernel } from '@textlint/kernel';
+import textPluginPkg from '@textlint/textlint-plugin-text';
+import preset from '../index.js';
+
+const textPlugin = textPluginPkg.default;
 
 /**
  * Lints text with only the preset's terminology rule enabled.
