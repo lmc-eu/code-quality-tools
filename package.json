@@ -42,7 +42,7 @@
     "@alma-oss/remark-config": "workspace:^",
     "@commitlint/cli": "20.5.0",
     "conventional-changelog-conventionalcommits": "10.3.0",
-    "eslint": "9.39.4",
+    "eslint": "10.10.0",
     "eslint-config-prettier": "9.1.2",
     "eslint-import-resolver-node": "0.3.9",
     "eslint-import-resolver-typescript": "3.10.1",
