@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved -- v5 only declares `exports`, which eslint-import-resolver-node@0.3.x can't read; Node resolves it fine at runtime.
 import textlintRuleTerminology from 'textlint-rule-terminology';
 
 const defaultOptions = {

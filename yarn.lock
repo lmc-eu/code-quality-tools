@@ -146,7 +146,7 @@ __metadata:
     textlint-rule-apostrophe: "npm:^2.0.0"
     textlint-rule-common-misspellings: "npm:^1.0.1"
     textlint-rule-stop-words: "npm:^3.0.0"
-    textlint-rule-terminology: "npm:^3.0.0"
+    textlint-rule-terminology: "npm:^5.0.0"
     textlint-rule-title-case: "npm:^3.0.0"
     textlint-rule-write-good: "npm:^2.0.0"
   peerDependencies:
@@ -3147,7 +3147,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@textlint/ast-node-types@npm:15.8.0":
+"@textlint/ast-node-types@npm:15.8.0, @textlint/ast-node-types@npm:^15.2.1":
   version: 15.8.0
   resolution: "@textlint/ast-node-types@npm:15.8.0"
   checksum: 10/793a7da8aacb8b9204afdb8e66179e591fa4a5593bbdff5ea80332ab2bc0f4bb81663855c2c7017f01d1e9ef3a0cc54c67040daf6e6c019c58f39fb007296c0e
@@ -14460,10 +14460,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strip-json-comments@npm:^3.0.1, strip-json-comments@npm:^3.1.1":
+"strip-json-comments@npm:^3.1.1":
   version: 3.1.1
   resolution: "strip-json-comments@npm:3.1.1"
   checksum: 10/492f73e27268f9b1c122733f28ecb0e7e8d8a531a6662efbd08e22cccb3f9475e90a1b82cab06a392f6afae6d2de636f977e231296400d0ec5304ba70f166443
+  languageName: node
+  linkType: hard
+
+"strip-json-comments@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "strip-json-comments@npm:5.0.3"
+  checksum: 10/3ccbf26f278220f785e4b71f8a719a6a063d72558cc63cb450924254af258a4f4c008b8c9b055373a680dc7bd525be9e543ad742c177f8a7667e0b726258e0e4
   languageName: node
   linkType: hard
 
@@ -14796,6 +14803,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"textlint-rule-helper@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "textlint-rule-helper@npm:2.5.0"
+  dependencies:
+    "@textlint/ast-node-types": "npm:^15.2.1"
+    structured-source: "npm:^4.0.0"
+    unist-util-visit: "npm:^2.0.3"
+  checksum: 10/3630d4088c90bff4bd4d9797b8c03df048f2e58912b94bbd791f0a88a639ff82cdd0e8daea1d994ae8ead390b709b4ec0331a737ecb88ee02ee4fd5c56b5903c
+  languageName: node
+  linkType: hard
+
 "textlint-rule-stop-words@npm:^3.0.0":
   version: 3.0.2
   resolution: "textlint-rule-stop-words@npm:3.0.2"
@@ -14807,14 +14825,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"textlint-rule-terminology@npm:^3.0.0":
-  version: 3.0.5
-  resolution: "textlint-rule-terminology@npm:3.0.5"
+"textlint-rule-terminology@npm:^5.0.0":
+  version: 5.2.16
+  resolution: "textlint-rule-terminology@npm:5.2.16"
   dependencies:
-    lodash: "npm:^4.17.15"
-    strip-json-comments: "npm:^3.0.1"
-    textlint-rule-helper: "npm:^2.1.1"
-  checksum: 10/728ce2998e5cbbe069f41bfce9cb00203d656b3668027676859b64904e45afaab99572a4f00bd05960d059a86d4f3c6ade97a3f7ff88193af13b1fe4806ee78c
+    strip-json-comments: "npm:^5.0.3"
+    textlint-rule-helper: "npm:^2.5.0"
+  checksum: 10/ab360380c6f398f6d984df24617edb6a2a179f0eb9a03a45f571e2df97cbc1cf326a1e41ddc8fc2ef54e534082ef5c3928b82e0513ef1e4a1fb59f5a51160131
   languageName: node
   linkType: hard
 

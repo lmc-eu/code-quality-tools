@@ -29,7 +29,7 @@ describe('terminology rule', () => {
   it('flags a term from the preset default list', async () => {
     const messages = await lint(true, 'We use the id field.');
 
-    assert.deepEqual(messages, ['Incorrect usage of the term: “id”, use “ID” instead']);
+    assert.deepEqual(messages, ['Incorrect term: “id”, use “ID” instead']);
   });
 
   it("does not flag terms from textlint-rule-terminology's own defaults", async () => {
