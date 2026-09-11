@@ -41,9 +41,9 @@
     "eslint-plugin-jsdoc": "^51.4.1"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^9.0.0 || ^10.0.0"
   },
   "devDependencies": {
-    "eslint": "9.39.4"
+    "eslint": "10.10.0"
   }
 }
