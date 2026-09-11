@@ -42,10 +42,7 @@ describe('comment filtering', () => {
 
     const messages = await lint(text);
 
-    assert.deepEqual(messages, [
-      'Incorrect usage of the term: “id”, use “ID” instead',
-      'Incorrect usage of the term: “id”, use “ID” instead',
-    ]);
+    assert.deepEqual(messages, ['Incorrect term: “id”, use “ID” instead', 'Incorrect term: “id”, use “ID” instead']);
   });
 
   it('ignores violations for the rest of the file after an unmatched textlint-disable comment', async () => {
@@ -53,12 +50,12 @@ describe('comment filtering', () => {
 
     const messages = await lint(text);
 
-    assert.deepEqual(messages, ['Incorrect usage of the term: “id”, use “ID” instead']);
+    assert.deepEqual(messages, ['Incorrect term: “id”, use “ID” instead']);
   });
 
   it('flags violations when no textlint-disable comment is present', async () => {
     const messages = await lint('We use the id field.');
 
-    assert.deepEqual(messages, ['Incorrect usage of the term: “id”, use “ID” instead']);
+    assert.deepEqual(messages, ['Incorrect term: “id”, use “ID” instead']);
   });
 });
