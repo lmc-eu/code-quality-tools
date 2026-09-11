@@ -1,7 +1,7 @@
 {
   "name": "@alma-oss/eslint-config-typescript",
   "description": "Alma's ESLint config for TypeScript projects",
-  "version": "3.0.0-alpha.2",
+  "version": "3.0.0-alpha.3",
   "keywords": [
     "config",
     "eslint",

@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.0.0-alpha.0 (2026-09-11)
+
+### ⚠ BREAKING CHANGES
+
+- **textlint:** textlint-rule-preset-lmc no longer supports Node.js 16
+  or 18; Node.js >=20 is now required.
+- **textlint:** the package is now esm-only (`"type": "module"`). It can no
+  longer be loaded with `require()` from a commonjs script — only consumption
+  via textlint's own preset resolution (`--preset` / .textlintrc `rules` key)
+  is supported, which is unaffected.
+- **textlint:** The package moved from the [@lmc-eu](https://github.com/lmc-eu) scope and was
+  renamed from @lmc-eu/textlint-rule-preset-lmc to
+  @alma-oss/textlint-rule-preset-alma. Update your dependency and any
+  .textlintrc rule config keys accordingly.
+
+### Features
+
+- **textlint:** convert textlint-rule-preset-alma to esm ([50febd3](https://github.com/lmc-eu/code-quality-tools/commit/50febd3e65e878dd3e6709cc11efe6031f925e03))
+- **textlint:** drop support for node below 20 ([0077aae](https://github.com/lmc-eu/code-quality-tools/commit/0077aae7e6b644f532511bc11b718fb575f7af86))
+- **textlint:** migrate to alma-oss scope ([1d6580c](https://github.com/lmc-eu/code-quality-tools/commit/1d6580c8b03932dd34c244c6564598b4a998b5a7))
+
+### Bug Fixes
+
+- **deps:** update dependency textlint to v15 ([459acb6](https://github.com/lmc-eu/code-quality-tools/commit/459acb6a506fc04e43471b872deca57f489ec76a))
+- **deps:** update dependency textlint-rule-apostrophe to v3 ([6964f64](https://github.com/lmc-eu/code-quality-tools/commit/6964f64c49ea9eede4fcd5f1fc381b3f8d117c3b))
+- **deps:** update dependency textlint-rule-stop-words to v5 ([27fc9c7](https://github.com/lmc-eu/code-quality-tools/commit/27fc9c785cc58da4b42bbc7b7c67232cef755eb4))
+- **deps:** update dependency textlint-rule-terminology to v5 ([10eb9ae](https://github.com/lmc-eu/code-quality-tools/commit/10eb9ae9486bb87758492c41d5f75d1c4ded8a60))
+
+### Styles
+
+- **textlint:** drop stale import/no-unresolved disable ([9338f3e](https://github.com/lmc-eu/code-quality-tools/commit/9338f3ef1e50d3327da808e7902430f334aba1d2))
+- **textlint:** use named `default` import syntax consistently ([ec64c5e](https://github.com/lmc-eu/code-quality-tools/commit/ec64c5efe9b11d2b7a1c6def5bce0625db32df8b))
+
 ## 2.1.0 (2026-09-10)
 
 ### Features

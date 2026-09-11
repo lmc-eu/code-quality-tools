@@ -1,6 +1,6 @@
 {
   "name": "@alma-oss/textlint-rule-preset-alma",
-  "version": "2.1.0",
+  "version": "3.0.0-alpha.0",
   "description": "Alma Career's config for Textlint",
   "keywords": [
     "textlint",

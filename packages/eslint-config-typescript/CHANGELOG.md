@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.0-alpha.3](https://github.com/lmc-eu/code-quality-tools/compare/%40alma-oss%2Feslint-config-typescript%403.0.0-alpha.2...%40alma-oss%2Feslint-config-typescript%403.0.0-alpha.3) (2026-09-11)
+
+### Styles
+
+- **eslint-config-typescript:** drop stale import/no-unresolved disables ([2e57cd9](https://github.com/lmc-eu/code-quality-tools/commit/2e57cd9c0be14e99205bfef9e832f75cc5661af0))
+
 <a name="3.0.0-alpha.2"></a>
 
 # [3.0.0-alpha.2](https://github.com/lmc-eu/code-quality-tools/compare/@alma-oss/eslint-config-typescript@3.0.0-alpha.1...@alma-oss/eslint-config-typescript@3.0.0-alpha.2) (2026-03-18)
