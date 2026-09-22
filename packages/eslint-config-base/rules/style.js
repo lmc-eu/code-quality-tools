@@ -101,6 +101,81 @@ export default {
       },
     ],
 
+    // enforces use of function declarations or expressions
+    // https://eslint.org/docs/rules/func-style
+    'func-style': ['off', 'expression'],
+
+    // require line breaks inside function parentheses if there are line breaks between parameters
+    // https://eslint.org/docs/rules/function-paren-newline
+    'function-paren-newline': ['error', 'multiline-arguments'],
+
+    // disallow specified identifiers
+    // https://eslint.org/docs/rules/id-denylist
+    'id-denylist': 'off',
+
+    // this option enforces minimum and maximum identifier lengths
+    // (variable names, property names etc.)
+    // https://eslint.org/docs/rules/id-length
+    'id-length': 'off',
+
+    // require identifiers to match the provided regular expression
+    // https://eslint.org/docs/rules/id-match
+    'id-match': 'off',
+
+    // Enforce the location of arrow function bodies with implicit returns
+    // https://eslint.org/docs/rules/implicit-arrow-linebreak
+    'implicit-arrow-linebreak': ['error', 'beside'],
+
+    // this option sets a specific tab width for your code
+    // https://eslint.org/docs/rules/indent
+    indent: [
+      'error',
+      2,
+      {
+        SwitchCase: 1,
+        VariableDeclarator: 1,
+        outerIIFEBody: 1,
+        FunctionDeclaration: {
+          parameters: 1,
+          body: 1,
+        },
+        FunctionExpression: {
+          parameters: 1,
+          body: 1,
+        },
+        CallExpression: {
+          arguments: 1,
+        },
+        ArrayExpression: 1,
+        ObjectExpression: 1,
+        ImportDeclaration: 1,
+        flatTernaryExpressions: false,
+        ignoredNodes: [
+          'JSXElement',
+          'JSXElement > *',
+          'JSXAttribute',
+          'JSXIdentifier',
+          'JSXNamespacedName',
+          'JSXMemberExpression',
+          'JSXSpreadAttribute',
+          'JSXExpressionContainer',
+          'JSXOpeningElement',
+          'JSXClosingElement',
+          'JSXFragment',
+          'JSXOpeningFragment',
+          'JSXClosingFragment',
+          'JSXText',
+          'JSXEmptyExpression',
+          'JSXSpreadChild',
+        ],
+        ignoreComments: false,
+      },
+    ],
+
+    // specify whether double or single quotes should be used in JSX attributes
+    // https://eslint.org/docs/rules/jsx-quotes
+    'jsx-quotes': ['off', 'prefer-double'],
+
     // enforce consistent spacing between properties in object literals
     // https://eslint.org/docs/rules/key-spacing
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
@@ -109,8 +184,33 @@ export default {
     // https://eslint.org/docs/rules/keyword-spacing
     'keyword-spacing': ['error', { before: true, after: true }],
 
+    // enforce position of line comments
+    // https://eslint.org/docs/rules/line-comment-position
+    'line-comment-position': [
+      'off',
+      {
+        position: 'above',
+        ignorePattern: '',
+        applyDefaultPatterns: true,
+      },
+    ],
+
     // require a space before & after certain keywords
     'linebreak-style': ['error', 'unix'],
+
+    // enforces empty lines around comments
+    // https://eslint.org/docs/rules/lines-around-comment
+    'lines-around-comment': 'off',
+
+    // require or disallow newlines around directives
+    // https://eslint.org/docs/rules/lines-around-directive
+    'lines-around-directive': [
+      'error',
+      {
+        before: 'always',
+        after: 'always',
+      },
+    ],
 
     // enforce a maximum line length
     'max-len': [
@@ -126,8 +226,78 @@ export default {
       },
     ],
 
+    // specify the maximum depth that blocks can be nested
+    // https://eslint.org/docs/rules/max-depth
+    'max-depth': ['off', 4],
+
+    // specify the max number of lines in a file
+    // https://eslint.org/docs/rules/max-lines
+    'max-lines': [
+      'off',
+      {
+        max: 300,
+        skipBlankLines: true,
+        skipComments: true,
+      },
+    ],
+
+    // enforce a maximum function length
+    // https://eslint.org/docs/rules/max-lines-per-function
+    'max-lines-per-function': [
+      'off',
+      {
+        max: 50,
+        skipBlankLines: true,
+        skipComments: true,
+        IIFEs: true,
+      },
+    ],
+
+    // specify the maximum depth callbacks can be nested
+    // https://eslint.org/docs/rules/max-nested-callbacks
+    'max-nested-callbacks': 'off',
+
+    // limits the number of parameters that can be used in the function declaration
+    // https://eslint.org/docs/rules/max-params
+    'max-params': ['off', 3],
+
+    // specify the maximum number of statement allowed in a function
+    // https://eslint.org/docs/rules/max-statements
+    'max-statements': ['off', 10],
+
     // enforce a maximum number of statements allowed per line
     'max-statements-per-line': ['error', { max: 1 }],
+
+    // enforce a particular style for multiline comments
+    // https://eslint.org/docs/rules/multiline-comment-style
+    'multiline-comment-style': ['off', 'starred-block'],
+
+    // require multiline ternary
+    // https://eslint.org/docs/rules/multiline-ternary
+    'multiline-ternary': ['off', 'never'],
+
+    // require a capital letter for constructors
+    // https://eslint.org/docs/rules/new-cap
+    'new-cap': [
+      'error',
+      {
+        newIsCap: true,
+        newIsCapExceptions: [],
+        capIsNew: false,
+        capIsNewExceptions: ['Immutable.Map', 'Immutable.Set', 'Immutable.List'],
+      },
+    ],
+
+    // disallow the omission of parentheses when invoking a constructor with no arguments
+    // https://eslint.org/docs/rules/new-parens
+    'new-parens': 'error',
+
+    // allow/disallow an empty newline after var statement
+    // https://eslint.org/docs/rules/newline-after-var
+    'newline-after-var': 'off',
+
+    // https://eslint.org/docs/rules/newline-before-return
+    'newline-before-return': 'off',
 
     // require a new line after each member of a multiline chain
     // https://eslint.org/docs/rules/newline-per-chained-call
@@ -180,9 +350,58 @@ export default {
     // https://eslint.org/docs/rules/no-plusplus
     'no-plusplus': 'off',
 
+    // disallow use of the Array constructor
+    // https://eslint.org/docs/rules/no-array-constructor
+    'no-array-constructor': 'error',
+
+    // disallow use of bitwise operators
+    // https://eslint.org/docs/rules/no-bitwise
+    'no-bitwise': 'error',
+
+    // disallow use of the continue statement
+    // https://eslint.org/docs/rules/no-continue
+    'no-continue': 'error',
+
+    // disallow comments inline after code
+    // https://eslint.org/docs/rules/no-inline-comments
+    'no-inline-comments': 'off',
+
+    // disallow if as the only statement in an else block
+    // https://eslint.org/docs/rules/no-lonely-if
+    'no-lonely-if': 'error',
+
+    // disallow space between function identifier and application
+    // https://eslint.org/docs/rules/no-spaced-func
+    'no-spaced-func': 'error',
+
+    // disallow tab characters entirely
+    // https://eslint.org/docs/rules/no-tabs
+    'no-tabs': 'error',
+
+    // disallow the use of ternary operators
+    // https://eslint.org/docs/rules/no-ternary
+    'no-ternary': 'off',
+
+    // disallow the use of Boolean literals in conditional expressions
+    // also, prefer `a || b` over `a ? a : b`
+    // https://eslint.org/docs/rules/no-unneeded-ternary
+    'no-unneeded-ternary': ['error', { defaultAssignment: false }],
+
+    // enforce the location of single-line statements
+    // https://eslint.org/docs/rules/nonblock-statement-body-position
+    'nonblock-statement-body-position': ['error', 'beside', { overrides: {} }],
+
     // disallow use of certain string escape sequences in string literals
     // https://eslint.org/docs/rules/no-useless-escape
     'no-useless-escape': 'error',
+
+    // Disallow the use of Math.pow in favor of the ** operator
+    // https://eslint.org/docs/rules/prefer-exponentiation-operator
+    'prefer-exponentiation-operator': 'error',
+
+    // Prefer use of an object spread over Object.assign
+    // https://eslint.org/docs/rules/prefer-object-spread
+    'prefer-object-spread': 'error',
 
     // require or disallow padding inside curly braces
     'object-curly-spacing': ['error', 'always'],
@@ -288,6 +507,10 @@ export default {
       },
     ],
 
+    // require or disallow spaces inside parentheses
+    // https://eslint.org/docs/rules/space-in-parens
+    'space-in-parens': ['error', 'never'],
+
     // require spaces around operators
     // https://eslint.org/docs/rules/space-infix-ops
     'space-infix-ops': 'error',
@@ -332,6 +555,10 @@ export default {
     // require or disallow the Unicode Byte Order Mark
     // https://eslint.org/docs/rules/unicode-bom
     'unicode-bom': ['error', 'never'],
+
+    // require regex literals to be wrapped in parentheses
+    // https://eslint.org/docs/rules/wrap-regex
+    'wrap-regex': 'off',
 
     // === ALMA CUSTOMIZATIONS ===
     // ALMA: Disabled - Alma allows for-in and for-of loops
