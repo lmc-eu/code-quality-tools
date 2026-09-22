@@ -1,7 +1,6 @@
 export default {
   name: '@alma-oss/eslint-config-base/rules/style',
   rules: {
-    // === AIRBNB BASE RULES ===
     // enforce line breaks after opening and before closing array brackets
     // https://eslint.org/docs/rules/array-bracket-newline
     'array-bracket-newline': ['off', 'consistent'],
@@ -12,6 +11,11 @@ export default {
 
     // enforce spacing inside array brackets
     'array-bracket-spacing': ['error', 'never'],
+
+    // downgraded to warn
+    // enforce spacing inside single-line blocks
+    // https://eslint.org/docs/rules/block-spacing
+    'block-spacing': 'warn',
 
     // enforce one true brace style
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],
@@ -83,8 +87,14 @@ export default {
     // enforce newline at the end of file, with no multiple empty lines
     'eol-last': ['error', 'always'],
 
+    // downgraded to warn
     // https://eslint.org/docs/rules/function-call-argument-newline
-    'function-call-argument-newline': ['error', 'consistent'],
+    'function-call-argument-newline': ['warn', 'consistent'],
+
+    // downgraded to warn
+    // enforce spacing between functions and their invocations
+    // https://eslint.org/docs/rules/func-call-spacing
+    'func-call-spacing': 'warn',
 
     // require function expressions to have a name
     // https://eslint.org/docs/rules/func-names
@@ -176,13 +186,15 @@ export default {
     // https://eslint.org/docs/rules/jsx-quotes
     'jsx-quotes': ['off', 'prefer-double'],
 
+    // downgraded to warn
     // enforce consistent spacing between properties in object literals
     // https://eslint.org/docs/rules/key-spacing
-    'key-spacing': ['error', { beforeColon: false, afterColon: true }],
+    'key-spacing': 'warn',
 
+    // downgraded to warn
     // enforce consistent spacing before and after keywords
     // https://eslint.org/docs/rules/keyword-spacing
-    'keyword-spacing': ['error', { before: true, after: true }],
+    'keyword-spacing': 'warn',
 
     // enforce position of line comments
     // https://eslint.org/docs/rules/line-comment-position
@@ -198,6 +210,10 @@ export default {
     // require a space before & after certain keywords
     'linebreak-style': ['error', 'unix'],
 
+    // require an empty line between class members
+    // https://eslint.org/docs/rules/lines-between-class-members
+    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+
     // enforces empty lines around comments
     // https://eslint.org/docs/rules/lines-around-comment
     'lines-around-comment': 'off',
@@ -212,12 +228,14 @@ export default {
       },
     ],
 
-    // enforce a maximum line length
+    // changed from 100 to 120 characters
+    // specify the maximum length of a line in your program
+    // https://eslint.org/docs/rules/max-len
     'max-len': [
       'error',
+      120,
+      2,
       {
-        code: 100,
-        tabWidth: 2,
         ignoreUrls: true,
         ignoreComments: false,
         ignoreRegExpLiterals: true,
@@ -330,9 +348,15 @@ export default {
     // https://eslint.org/docs/rules/no-multi-assign
     'no-multi-assign': 'error',
 
-    // disallow use of multiline strings
-    // https://eslint.org/docs/rules/no-multi-str
-    'no-multi-str': 'error',
+    // downgraded to warn
+    // disallow multiple empty lines, only one newline at the end
+    // http://eslint.org/docs/rules/no-multiple-empty-lines
+    'no-multiple-empty-lines': [
+      'warn',
+      {
+        max: 1,
+      },
+    ],
 
     // disallow negated conditions
     // https://eslint.org/docs/rules/no-negated-condition
@@ -370,6 +394,11 @@ export default {
     // https://eslint.org/docs/rules/no-lonely-if
     'no-lonely-if': 'error',
 
+    // allows for-in and for-of loops
+    // disallow certain syntax forms
+    // https://eslint.org/docs/rules/no-restricted-syntax
+    'no-restricted-syntax': 'off',
+
     // disallow space between function identifier and application
     // https://eslint.org/docs/rules/no-spaced-func
     'no-spaced-func': 'error',
@@ -382,18 +411,29 @@ export default {
     // https://eslint.org/docs/rules/no-ternary
     'no-ternary': 'off',
 
+    // downgraded to warn
+    // disallow trailing whitespace at the end of lines
+    // http://eslint.org/docs/rules/no-trailing-spaces
+    'no-trailing-spaces': 'warn',
+
     // disallow the use of Boolean literals in conditional expressions
     // also, prefer `a || b` over `a ? a : b`
     // https://eslint.org/docs/rules/no-unneeded-ternary
     'no-unneeded-ternary': ['error', { defaultAssignment: false }],
 
+    // downgraded to warn
+    // disallow dangling underscores in identifiers
+    // http://eslint.org/docs/rules/no-underscore-dangle
+    'no-underscore-dangle': 'warn',
+
+    // downgraded to warn
+    // disallow whitespace before properties
+    // http://eslint.org/docs/rules/no-whitespace-before-property
+    'no-whitespace-before-property': 'warn',
+
     // enforce the location of single-line statements
     // https://eslint.org/docs/rules/nonblock-statement-body-position
     'nonblock-statement-body-position': ['error', 'beside', { overrides: {} }],
-
-    // disallow use of certain string escape sequences in string literals
-    // https://eslint.org/docs/rules/no-useless-escape
-    'no-useless-escape': 'error',
 
     // Disallow the use of Math.pow in favor of the ** operator
     // https://eslint.org/docs/rules/prefer-exponentiation-operator
@@ -403,32 +443,24 @@ export default {
     // https://eslint.org/docs/rules/prefer-object-spread
     'prefer-object-spread': 'error',
 
+    // downgraded to warn
     // require or disallow padding inside curly braces
-    'object-curly-spacing': ['error', 'always'],
+    'object-curly-spacing': 'warn',
 
-    // require or disallow padding inside curly braces for destructuring assignment
-    'object-curly-newline': [
-      'error',
-      {
-        ObjectExpression: { minProperties: 4, multiline: true, consistent: true },
-        ObjectPattern: { minProperties: 4, multiline: true, consistent: true },
-        ImportDeclaration: { minProperties: 4, multiline: true, consistent: true },
-        ExportDeclaration: { minProperties: 4, multiline: true, consistent: true },
-      },
-    ],
+    // downgraded to warn
+    // enforce consistent line breaks inside braces
+    // http://eslint.org/docs/rules/object-curly-newline
+    'object-curly-newline': 'warn',
 
+    // downgraded to warn
     // enforce placing object properties on separate lines
     // https://eslint.org/docs/rules/object-property-newline
-    'object-property-newline': [
-      'error',
-      {
-        allowAllPropertiesOnSameLine: true,
-      },
-    ],
+    'object-property-newline': 'warn',
 
+    // downgraded to warn
     // require or disallow an newline around variable declarations
     // https://eslint.org/docs/rules/one-var-declaration-per-line
-    'one-var-declaration-per-line': ['error', 'always'],
+    'one-var-declaration-per-line': 'warn',
 
     // require or disallow one variable declaration per scope
     // https://eslint.org/docs/rules/one-var
@@ -442,34 +474,22 @@ export default {
     // https://eslint.org/docs/rules/operator-linebreak
     'operator-linebreak': ['error', 'before', { overrides: { '=': 'none' } }],
 
+    // downgraded to warn
     // require or disallow padding inside parentheses
-    'padded-blocks': ['error', 'never'],
+    'padded-blocks': 'warn',
 
-    // Require a default case in switch statements
-    // https://eslint.org/docs/rules/no-restricted-syntax
-    'no-restricted-syntax': [
-      'error',
-      {
-        selector: 'ForInStatement',
-        message:
-          'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
-      },
-      {
-        selector: 'ForOfStatement[right.type="CallExpression"][right.callee.object.name="arguments"]',
-        message: 'iterating over arguments.entries() will break. Use Array.from(arguments) instead.',
-      },
-      {
-        selector: 'TemplateLiteral',
-        message: 'Avoid using template strings',
-      },
-    ],
+    // custom rule for padding between statements
+    // require or disallow padding lines between statements
+    // https://eslint.org/docs/rules/padding-line-between-statements
+    'padding-line-between-statements': ['error', { blankLine: 'always', prev: '*', next: 'return' }],
 
     // require quotes around object literal property names
     // https://eslint.org/docs/rules/quote-props
     'quote-props': ['error', 'as-needed', { keywords: false, unnecessary: true, numbers: false }],
 
+    // prefer single quotes
     // specify whether double or single quotes should be used
-    quotes: ['error', 'single', { avoidEscape: true }],
+    quotes: ['warn', 'single'],
 
     // do not require jsdoc
     // https://eslint.org/docs/rules/require-jsdoc
@@ -493,27 +513,23 @@ export default {
     // https://eslint.org/docs/rules/sort-vars
     'sort-vars': 'off',
 
+    // downgraded to warn
     // require or disallow space before blocks
-    'space-before-blocks': ['error', 'always'],
+    'space-before-blocks': 'warn',
 
+    // downgraded to warn
     // require or disallow space before function opening parenthesis
     // https://eslint.org/docs/rules/space-before-function-paren
-    'space-before-function-paren': [
-      'error',
-      {
-        anonymous: 'always',
-        named: 'never',
-        asyncArrow: 'always',
-      },
-    ],
+    'space-before-function-paren': 'warn',
 
     // require or disallow spaces inside parentheses
     // https://eslint.org/docs/rules/space-in-parens
     'space-in-parens': ['error', 'never'],
 
+    // downgraded to warn
     // require spaces around operators
     // https://eslint.org/docs/rules/space-infix-ops
-    'space-infix-ops': 'error',
+    'space-infix-ops': 'warn',
 
     // Require or disallow spaces before/after unary operators
     // https://eslint.org/docs/rules/space-unary-ops
@@ -526,23 +542,10 @@ export default {
       },
     ],
 
+    // downgraded to warn
     // require or disallow a space immediately following the // or /* in a comment
     // https://eslint.org/docs/rules/spaced-comment
-    'spaced-comment': [
-      'error',
-      'always',
-      {
-        line: {
-          exceptions: ['-', '+'],
-          markers: ['=', '!', '/'],
-        },
-        block: {
-          exceptions: ['-', '+'],
-          markers: ['=', '!', '/', '*'],
-          balanced: true,
-        },
-      },
-    ],
+    'spaced-comment': 'warn',
 
     // Enforce spacing around colons of switch statements
     // https://eslint.org/docs/rules/switch-colon-spacing
@@ -559,132 +562,5 @@ export default {
     // require regex literals to be wrapped in parentheses
     // https://eslint.org/docs/rules/wrap-regex
     'wrap-regex': 'off',
-
-    // === ALMA CUSTOMIZATIONS ===
-    // ALMA: Disabled - Alma allows for-in and for-of loops
-    // disallow certain syntax forms
-    // https://eslint.org/docs/rules/no-restricted-syntax
-    'no-restricted-syntax': 'off', // airbnb forbids for-in/for-of loops
-
-    // ALMA: Custom rule for padding between statements
-    // Require or disallow padding lines between statements
-    // https://eslint.org/docs/rules/padding-line-between-statements
-    'padding-line-between-statements': ['error', { blankLine: 'always', prev: '*', next: 'return' }],
-
-    // ALMA: Custom rule for class members spacing
-    // Require an empty line between class members
-    // https://eslint.org/docs/rules/lines-between-class-members
-    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
-
-    // ALMA: Prefer single quotes
-    quotes: ['warn', 'single'], // airbnb: ['error', 'single', { avoidEscape: true }]
-
-    // ALMA: Changed max-len from 100 to 120 characters
-    // specify the maximum length of a line in your program
-    // https://eslint.org/docs/rules/max-len
-    'max-len': [
-      'error',
-      120,
-      2,
-      {
-        ignoreUrls: true,
-        ignoreComments: false,
-        ignoreRegExpLiterals: true,
-        ignoreStrings: true,
-        ignoreTemplateLiterals: true,
-      },
-    ], // airbnb: 100 characters
-
-    // ALMA: Downgraded from error to warn
-    // Enforce spacing inside single-line blocks
-    // https://eslint.org/docs/rules/block-spacing
-    'block-spacing': 'warn', // airbnb: 'error'
-
-    // ALMA: Downgraded from error to warn
-    // Enforce spacing between functions and their invocations
-    // https://eslint.org/docs/rules/func-call-spacing
-    'func-call-spacing': 'warn', // airbnb: 'error'
-
-    // ALMA: Downgraded from error to warn
-    // https://eslint.org/docs/rules/function-call-argument-newline
-    'function-call-argument-newline': ['warn', 'consistent'], // airbnb: ['error', 'consistent']
-
-    // ALMA: Downgraded from error to warn
-    // Enforces spacing between keys and values in object literal properties
-    // https://eslint.org/docs/rules/key-spacing
-    'key-spacing': 'warn', // airbnb: ['error', ...]
-
-    // ALMA: Downgraded from error to warn
-    // Require a space before & after certain keywords
-    // https://eslint.org/docs/rules/keyword-spacing
-    'keyword-spacing': 'warn', // airbnb: ['error', ...]
-
-    // ALMA: Downgraded from error to warn
-    // Require or disallow space before blocks
-    // https://eslint.org/docs/rules/space-before-blocks
-    'space-before-blocks': 'warn', // airbnb: ['error', 'always']
-
-    // ALMA: Downgraded from error to warn
-    // Require or disallow space before function opening parenthesis
-    // https://eslint.org/docs/rules/space-before-function-paren
-    'space-before-function-paren': 'warn', // airbnb: ['error', ...]
-
-    // ALMA: Downgraded from error to warn
-    // Require spaces around operators
-    // https://eslint.org/docs/rules/space-infix-ops
-    'space-infix-ops': 'warn', // airbnb: 'error'
-
-    // ALMA: Downgraded from error to warn
-    // Require or disallow a space immediately following the // or /* in a comment
-    // https://eslint.org/docs/rules/spaced-comment
-    'spaced-comment': 'warn', // airbnb: ['error', ...]
-
-    // ALMA: Downgraded from error to warn
-    // Disallow multiple empty lines
-    // http://eslint.org/docs/rules/no-multiple-empty-lines
-    'no-multiple-empty-lines': [
-      'warn',
-      {
-        max: 1,
-      },
-    ], // airbnb: ['error', ...]
-
-    // ALMA: Downgraded from error to warn
-    // Disallow trailing whitespace at the end of lines
-    // http://eslint.org/docs/rules/no-trailing-spaces
-    'no-trailing-spaces': 'warn', // airbnb: 'error'
-
-    // ALMA: Downgraded from error to warn
-    // Disallow dangling underscores in identifiers
-    // http://eslint.org/docs/rules/no-underscore-dangle
-    'no-underscore-dangle': 'warn', // airbnb: 'error'
-
-    // ALMA: Downgraded from error to warn
-    // Disallow whitespace before properties
-    // http://eslint.org/docs/rules/no-whitespace-before-property
-    'no-whitespace-before-property': 'warn', // airbnb: 'error'
-
-    // ALMA: Downgraded from error to warn
-    // Enforce consistent line breaks inside braces
-    // http://eslint.org/docs/rules/object-curly-newline
-    'object-curly-newline': 'warn', // airbnb: ['error', {...}]
-
-    // ALMA: Downgraded from error to warn
-    // Require or disallow padding inside curly braces
-    'object-curly-spacing': 'warn', // airbnb: ['error', 'always']
-
-    // ALMA: Downgraded from error to warn
-    // enforce placing object properties on separate lines
-    // https://eslint.org/docs/rules/object-property-newline
-    'object-property-newline': 'warn', // airbnb: ['error', {...}]
-
-    // ALMA: Downgraded from error to warn
-    // require or disallow an newline around variable declarations
-    // https://eslint.org/docs/rules/one-var-declaration-per-line
-    'one-var-declaration-per-line': 'warn', // airbnb: ['error', 'always']
-
-    // ALMA: Downgraded from error to warn
-    // require or disallow padding inside parentheses
-    'padded-blocks': 'warn', // airbnb: ['error', 'never']
   },
 };
