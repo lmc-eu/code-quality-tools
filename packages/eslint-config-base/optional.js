@@ -4,7 +4,7 @@ import globs from './globs.js';
 export default [
   jsdoc.configs['flat/recommended'],
   {
-    name: '@lmc-eu/eslint-config-base/optional',
+    name: '@alma-oss/eslint-config-base/optional',
     plugins: {
       jsdoc,
     },
@@ -105,10 +105,6 @@ export default [
       // Require or disallow strict mode directives
       // https://eslint.org/docs/rules/strict
       strict: 'error', // airbnb error
-
-      // Require an empty line before return statements
-      // https://eslint.org/docs/rules/newline-before-return
-      'newline-before-return': 'error', // airbnb off
 
       // Disallow duplicate module imports
       // https://eslint.org/docs/rules/no-duplicate-imports

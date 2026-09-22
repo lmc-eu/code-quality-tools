@@ -6,9 +6,10 @@ import globs from '@alma-oss/eslint-config-base/globs';
 
 export default [
   ...base,
-  tsEslint.configs.recommended,
+  ...tsEslint.configs.recommended,
   {
     name: '@alma-oss/eslint-config-typescript',
+    files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
     settings: {
       // Correctly recognize .ts and .d.ts files when checking import paths against the filesystem
       'import/resolver': {
@@ -23,11 +24,8 @@ export default [
     languageOptions: {
       parser: tsParser,
       parserOptions: {
-        ecmaVersion: 2018,
+        ecmaVersion: 'latest',
         sourceType: 'module',
-      },
-      globals: {
-        es6: true,
       },
     },
 

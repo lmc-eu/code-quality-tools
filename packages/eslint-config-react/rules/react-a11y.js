@@ -1,9 +1,5 @@
-import { FlatCompat } from '@eslint/eslintrc';
-
-const compat = new FlatCompat();
-
 export default {
-  extends: compat.extends('eslint-config-airbnb/rules/react-a11y'),
+  name: '@alma-oss/eslint-config-react/rules/react-a11y',
   rules: {
     // Enforce all anchors are valid, navigable elements
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md

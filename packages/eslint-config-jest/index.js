@@ -13,8 +13,6 @@ export default [
     name: '@alma-oss/eslint-config-jest',
     files: [...globs.tests, 'config/jest/**'],
 
-    plugins: { jest },
-
     languageOptions: {
       globals: {
         jest: true,
