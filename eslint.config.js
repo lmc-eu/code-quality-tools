@@ -6,6 +6,9 @@ import optionalBaseConfig from './packages/eslint-config-base/optional.js';
 import jestConfig from './packages/eslint-config-jest/index.js';
 
 export default [
+  {
+    ignores: ['**/__tests__/__fixtures__/**'],
+  },
   ...baseConfig,
   ...optionalBaseConfig,
   ...jestConfig,

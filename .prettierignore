@@ -1,3 +1,6 @@
 # Handlebars partials are not supported yet
 # @see https://github.com/prettier/prettier/issues/11834
 *.hbs
+
+# Test fixtures are intentionally invalid/non-standard and shouldn't be reformatted
+**/__tests__/__fixtures__/**
